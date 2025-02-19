@@ -1,0 +1,269 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="Butterworth_High_files/filelist.xml">
+<title>Butterworth_High</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>3</o:TotalTime>
+  <o:Created>2004-06-04T21:59:00Z</o:Created>
+  <o:LastSaved>2004-10-19T23:46:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>609</o:Words>
+  <o:Characters>3475</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>28</o:Lines>
+  <o:Paragraphs>8</o:Paragraphs>
+  <o:CharactersWithSpaces>4076</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>Butterworth_High</span> - performs Butterworth <span
+class=SpellE>highpass</span> filtering</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>math.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>stdio.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>stdlib.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPdef.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPimage.h</span>&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Image *<span
+class=SpellE>Butterworth_<span class=GramE>High</span></span><span class=GramE>(</span>Image *<span
+class=SpellE>in_Image</span>, <span class=SpellE>int</span> <span class=SpellE>block_size</span>, <span
+class=SpellE>int</span></pre><pre><span style='mso-spacerun:yes'>     </span>dc, <span
+class=SpellE>int</span> cutoff, <span class=SpellE>int</span> order)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE>in_Image</span>&gt; - pointer to an Image structure</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE>block_size</span>&gt; - desired block size</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;dc&gt; - drop(0) or retain(1) dc component</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;cutoff&gt; - cutoff frequency</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;order&gt; - filter order</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$<span class=SpellE>CVIPtoolsHOME\CVIPC\XFORMFILTER\filter.c</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>Butterworth_<span
+class=GramE>High</span></span><span class=GramE>(</span>)<span style='mso-spacerun:yes'>  </span>performs<span style='mso-spacerun:yes'>   </span>two-dimensional<span style='mso-spacerun:yes'>   </span><span
+class=SpellE>butterworth</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>highpass</span></span><span class=GramE><span style='mso-spacerun:yes'>  </span>filtering</span> in transform domain on input image.<span style='mso-spacerun:yes'>  </span>The</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>parameter</span> cutoff defines<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>cut-off<span style='mso-spacerun:yes'>  </span>frequency<span style='mso-spacerun:yes'>  </span>locus<span style='mso-spacerun:yes'>  </span>at</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>points<span style='mso-spacerun:yes'>  </span>for</span><span style='mso-spacerun:yes'>  </span>which the filter transfer function H(<span
+class=SpellE>u,v</span>) is at</pre><pre><span style='mso-spacerun:yes'>     </span>0.7071 <span
+class=GramE>of</span> its maximum value. All components inside <span
+class=GramE>the<span style='mso-spacerun:yes'>  </span>cir</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>cle</span></span> (or 1/4 circle if dc component is on the upper-left-hand</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>corner</span> of<span style='mso-spacerun:yes'>  </span>its<span style='mso-spacerun:yes'>  </span>transform<span style='mso-spacerun:yes'>  </span>plane)<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>radius <span style='mso-spacerun:yes'> </span>&quot;cutoff&quot;<span style='mso-spacerun:yes'>  </span>are</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>attenuated<span style='mso-spacerun:yes'>  </span>according</span><span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>transition<span style='mso-spacerun:yes'>  </span>from <span
+class=SpellE>passband</span> to</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>stopband</span></span>, depending on the degree of filter<span style='mso-spacerun:yes'>  </span>order<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>f_order</span>.</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>All<span style='mso-spacerun:yes'>  </span>frequencies</span><span style='mso-spacerun:yes'>   </span>component outside the circle (or 1/4 cir-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>cle</span></span>) are passed with no attenuation.<span style='mso-spacerun:yes'>  </span><span style='mso-spacerun:yes'> </span>If dc <span
+class=GramE>equals<span style='mso-spacerun:yes'>  </span>1</span>,<span style='mso-spacerun:yes'>  </span>the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>dc</span><span style='mso-spacerun:yes'>   </span>component<span style='mso-spacerun:yes'>  </span>will<span style='mso-spacerun:yes'>  </span>be<span style='mso-spacerun:yes'>  </span>retained, if dc = 0, dc <span
+class=SpellE>componenet</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>will</span> be dropped.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>TYPES AND C<st1:stockticker>ONST</st1:stockticker>ANTS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>None</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>A filtered image</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>HISTORY</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>History information recorded: None</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DIAGNOSTICS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>The <span class=SpellE>Butterworth_High</span> filter will work for <span
+class=GramE>both<span style='mso-spacerun:yes'>  </span>real</span>-valued</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>and<span style='mso-spacerun:yes'>  </span>imaginary</span>-<span style='mso-spacerun:yes'>  </span>valued<span style='mso-spacerun:yes'>  </span>transform.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>If<span style='mso-spacerun:yes'>  </span>the</span><span style='mso-spacerun:yes'>  </span>origin<span style='mso-spacerun:yes'>  </span>of the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>transform</span> is on the center of its frequency plane (shifted),</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>the</span> cutoff frequency can range from 1 to blocksize/2 and the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>Butterworth_<span class=GramE>High</span></span><span class=GramE><span style='mso-spacerun:yes'>  </span>function</span><span style='mso-spacerun:yes'>  </span>can<span style='mso-spacerun:yes'>  </span>be<span style='mso-spacerun:yes'>  </span>called<span style='mso-spacerun:yes'>  </span>directly<span style='mso-spacerun:yes'>   </span>with</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>correct</span><span style='mso-spacerun:yes'>   </span>parameters.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>If<span style='mso-spacerun:yes'>  </span>the</span> origin of the transform is on</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>the<span style='mso-spacerun:yes'>  </span>upper</span><span style='mso-spacerun:yes'>  </span>left-hand<span style='mso-spacerun:yes'>  </span>corner<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>   </span>its<span style='mso-spacerun:yes'>   </span>frequency<span style='mso-spacerun:yes'>   </span>plane,</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>nonfft_<span class=GramE>xformfilter</span></span><span
+class=GramE>(</span>) must be used to call <span class=SpellE>Butterworth_High</span>()</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>with</span> <span class=SpellE>filtertype</span>=4. The cutoff frequency in<span style='mso-spacerun:yes'>   </span><span
+class=GramE>this<span style='mso-spacerun:yes'>  </span>case</span><span style='mso-spacerun:yes'>  </span>can</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>range<span style='mso-spacerun:yes'>  </span>from</span><span style='mso-spacerun:yes'>  </span>1<span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>blocksize</span><span style='mso-spacerun:yes'>  </span>since a block is treated as a</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>quarter</span> of a regular block with its origin on the center. If</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>hpf_<span class=GramE>setup</span></span><span class=GramE>(</span>)<span style='mso-spacerun:yes'>  </span>is<span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span>be used to call <span
+class=SpellE>Butterworth_High</span>(), the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>transform</span> must be setup and recognized by <span
+class=SpellE>hpf_setup</span>(),<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>oth</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>erwise</span></span><span style='mso-spacerun:yes'>   </span>the<span style='mso-spacerun:yes'>   </span>setup<span style='mso-spacerun:yes'>   </span>program<span style='mso-spacerun:yes'>   </span>automatically<span style='mso-spacerun:yes'>  </span>assumes<span style='mso-spacerun:yes'>  </span>the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>transform's</span></span> dc component is on the center (<span
+class=SpellE>dcpos</span>=1).</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPtoolkit.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPimage.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPdef.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPconvert.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPview.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIEWER &quot;picture&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIDEO_APP &quot;<span
+class=SpellE>SunVideo</span> &amp;&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>void</span> main()</pre><pre><span style='mso-spacerun:yes'>      </span>{</pre><pre><span style='mso-spacerun:yes'>      </span>Image *<span
+class=SpellE>cvipImage</span>;</pre><pre><span style='mso-spacerun:yes'>      </span>IMAGE_FORMAT format;</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>char</span> *<span class=SpellE>inputfile</span>,*<span
+class=SpellE>outputfile</span>;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>(<span
+class=GramE>void</span>) <span class=SpellE>setDisplay_Image</span>(VIEWER, &quot;Default&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the<span style='mso-spacerun:yes'>  </span>Input File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>inputfile</span></span> =(char *) <span
+class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>format</span> = <span class=SpellE>getFormat_CVIP</span>(<span
+class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>cvipImage</span></span> = <span class=SpellE>read_Image</span>(inputfile,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>cvipImage</span>, <span class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span><span class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span>/* the following call performs the <span
+class=SpellE>fft_transform</span> on</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>the</span> input image with the block size equal to 256 */</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>cvipImage</span></span>=(Image *)<span
+class=SpellE>fft_transform</span>(cvipImage,256);</pre><pre><span style='mso-spacerun:yes'>      </span>/* the following call performs the <span
+class=SpellE>butterworth</span> high</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>pass</span> filtering of order 2 on the transformed image with</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>the</span> cut off frequency equal to 64 */</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>cvipImage</span></span> = (Image *)<span
+class=SpellE>Butterworth_High</span>(cvipImage,256,</pre><pre><span style='mso-spacerun:yes'>      </span>1<span
+class=GramE>,64,2</span>);</pre><pre><span style='mso-spacerun:yes'>      </span>/* the following call performs the inverse <span
+class=SpellE>fft_transform</span></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>in</span> the filtered image with the block size equal</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>to</span> 256 */</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>cvipImage</span></span> = (Image *)<span
+class=SpellE>ifft_transform</span>(cvipImage,256);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>outputfile</span></span> = <span class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>cvipImage,outputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>write_<span class=GramE>Image</span></span><span class=GramE>(</span>cvipImage,outputfile,CVIP_NO,CVIP_NO,format,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span><span class=SpellE>outputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span>}</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<h2><span style='font-size:10.0pt;font-weight:normal;mso-bidi-font-weight:bold'>XFORMFILTER
+library<o:p></o:p></span></h2>
+
+<pre style='margin-left:45.8pt;text-align:right;text-indent:-45.8pt'><span style='mso-spacerun:yes'>    </span></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1996, 2004 SIUE - by Scott E. Umbaugh and Simon Low.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

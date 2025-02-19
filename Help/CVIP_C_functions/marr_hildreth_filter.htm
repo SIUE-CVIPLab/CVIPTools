@@ -1,0 +1,121 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>marr_hildreth_filter</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Cambria",serif;
+	color:#4F81BD;
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:Consolas;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<h2>NAME</h2>
+
+<pre>     marr_hildreth_filter – performs a Marr Hildreth edge detection on the image</pre><pre>&nbsp;</pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre>      #include &lt;CVIPtoolkit.h&gt;</pre><pre>      #include &lt;CVIPconvert.h&gt;</pre><pre>      #include &lt;CVIPdef.h&gt;</pre><pre>      #include &lt;CVIPimage.h&gt;</pre><pre>      #include &lt;CVIPspfltr.h&gt;</pre><pre>&nbsp;</pre><pre>     Image * marr_hildreth_filter (Image* inputImage, float sigma, int threshold)</pre><pre>&nbsp;</pre><pre>      &lt;inputImage&gt; - pointer to the input Image structure</pre><pre>      &lt;sigma&gt; - Sigma value</pre><pre>      &lt;threshold&gt; - threshold used for zero crossings</pre><pre>&nbsp;</pre>
+
+<h2>PATH</h2>
+
+<pre>     $CVIPtoolsHOME\CVIPC\SPATIALFILTER\ marr_hildreth_filter.c</pre><pre>&nbsp;</pre>
+
+<h2>DESCRIPTION</h2>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Marr-Hildreth
+Filter works by performing three steps:</p>
+
+<p class=MsoNormal style='margin-left:.5in;line-height:200%'>1. Convolve the
+image with a Gaussian smoothing filter</p>
+
+<p class=MsoNormal style='margin-left:.5in;line-height:200%'>2. Convolve the
+image with a Laplacian mask</p>
+
+<p class=MsoNormal style='margin-left:.5in;line-height:200%'>3. Find the zero
+crossings (threshold) of the image from Step 2.</p>
+
+<pre style='margin-top:12.0pt;margin-right:0in;margin-bottom:0in;margin-left:
+.5in;margin-bottom:.0001pt'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>This algorithm was acquired from J.R. Parker, “<i>Algorithms for Image Processing and </i></span></pre><pre
+style='margin-left:.5in'><i><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>Computer Vision</span></i><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>”, Wiley, New York, 2010. </span></pre>
+
+<p class=MsoNormal style='margin-left:.5in;line-height:200%'>&nbsp;</p>
+
+<h2>TYPES AND CONSTANTS</h2>
+
+<pre>     None</pre><pre>&nbsp;</pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre>     Returns the edge detected image</pre><pre>&nbsp;</pre>
+
+<h2>HISTORY</h2>
+
+<pre>     History information recorded: None</pre>
+
+<h2>SEE ALSO</h2>
+
+<pre>     SPATIALFILTER library</pre><pre>&nbsp;</pre>
+
+<h2>AUTHOR</h2>
+
+<pre>     Copyright (C) 2010, SIUE - by Scott Umbaugh and Jhansi Lakshmi Akkineni.</pre>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

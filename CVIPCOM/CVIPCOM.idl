@@ -1,0 +1,348 @@
+// CVIPCOM.idl : IDL source for CVIPtools.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (CVIPCOM.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(CFD37216-45A1-47C1-8E50-B9DF3B16FA42),
+	dual,
+	helpstring("ICVIPTools Interface"),
+	nonextensible,
+	pointer_default(unique)
+]
+interface ICVIPTools : IDispatch
+{
+    [id(1), helpstring("method Ace2_Filter")] HRESULT Ace2_Filter([in] long* image, [in] long masksize, [in] double local_mean, [in] double local_gain, [out,retval] long* result);
+    [id(2), helpstring("method Acuity_Nightvision_Filter")] HRESULT Acuity_Nightvision_Filter([in] long* image, [in] long reason, [in] long threshold, [in] long acuity, [out,retval] long* result);
+    [id(3), helpstring("method AD_Filter")] HRESULT AD_Filter([in] long* image, [in] long iterations, [in] long speed, [in] long edge_height, [out,retval] long* result);
+    [id(4), helpstring("method Adapt_Median_Filter")] HRESULT Adapt_Median_Filter([in] long* image, [in] long masksize, [out,retval] long* result);
+    [id(5), helpstring("method Adaptive_Contrast_Filter")] HRESULT Adaptive_Contrast_Filter([in] long* image, [in] double k1, [in] double k2, [in] long kernel_size, [in] double min_gain, [in] double max_gain, [out,retval] long* result);
+    [id(6), helpstring("method Add_Image")] HRESULT Add_Image([in] long* image1, [in] long* image2, [out,retval] long* result);
+    [id(7), helpstring("method Alpha_Filter")] HRESULT Alpha_Filter([in] long* image, [in] long masksize, [in] long p, [out,retval] long* result);
+    [id(8), helpstring("method And_Image")] HRESULT And_Image([in] long* image1, [in] long* image2, [out,retval] long* result);
+    [id(9), helpstring("method Area")] HRESULT Area([in] long* labeled_image, [in] int row, [in] int col, [out,retval] long* area);
+    [id(10), helpstring("method Aspect")] HRESULT Aspect([in] long* labeled_image, [in] int row, [in] int col, [out,retval] double* aspect);
+    [id(11), helpstring("method Assemble_Bands")] HRESULT Assemble_Bands([in] long bands[3], [out,retval] long* result);
+    [id(12), helpstring("method Auto_Threshold_Segment")] HRESULT Auto_Threshold_Segment([in] long* image, [in] float limit, [out,retval] long* result);
+    [id(13), helpstring("method Bilinear_Interp")] HRESULT Bilinear_Interp([in] long* image, [in] float factor, [out,retval] long* result);
+    [id(14), helpstring("method Bilinear_Interp1")] HRESULT Bilinear_Interp1([in] long* image, [in] float xfactor, [in] float yfactor, [out,retval] long* result);
+    [id(15), helpstring("method Bintocvip")] HRESULT Bintocvip([in] BSTR* filename, [in] long bands, [in] long color_order, [in] long interleaved, [in] int height, [in] int width, [in] long verbose, [out,retval] long* cvip_image);
+    [id(16), helpstring("method Bit_Compress")] HRESULT Bit_Compress([in] BSTR* filename, [in] long* image, [in] long bitmask);
+    [id(17), helpstring("method Bit_Decompress")] HRESULT Bit_Decompress([in] BSTR* filename, [out,retval] long* result);
+    [id(18), helpstring("method Boiecox_Filter")] HRESULT Boiecox_Filter([in] long* image, [in] double variance, [in] long do_threshold, [in] long do_hyst, [in] long do_thin, [in] double high_threshold, [in] double low_threshold, [in] long* threshhold_image, [in] long* hyst_image, [out,retval] long* result);
+    [id(19), helpstring("method Btc_Compress")] HRESULT Btc_Compress([in] BSTR* filename, [in] long* image, [in] long blocksize);
+    [id(20), helpstring("method Btc_Decompression")] HRESULT Btc_Decompression([in] BSTR* filename, [out,retval] long* result);
+    [id(21), helpstring("method Btc2_Compress")] HRESULT Btc2_Compress([in] BSTR* filename, [in] long* image, [in] long blocksize);
+    [id(22), helpstring("method Btc2_Decompress")] HRESULT Btc2_Decompress([in] BSTR* filename, [out,retval] long* result);
+    [id(23), helpstring("method Btc3_Compress")] HRESULT Btc3_Compress([in] BSTR* filename, [in] long* image, [in] long blocksize);
+    [id(24), helpstring("method Btc3_Decompress")] HRESULT Btc3_Decompress([in] BSTR* filename, [out,retval] long* result);
+    [id(25), helpstring("method Butterworth_Band_Pass")] HRESULT Butterworth_Band_Pass([in] long* image, [in] long blocksize, [in] long keepdc, [in] long inner_cutoff, [in] long outer_cutoff, [in] long filter_order, [out,retval] long* result);
+    [id(26), helpstring("method Butterworth_Band_Reject")] HRESULT Butterworth_Band_Reject([in] long* image, [in] long blocksize, [in] long keepdc, [in] long inner_cutoff, [in] long outer_cutoff, [in] long filter_order, [out,retval] long* result);
+    [id(27), helpstring("method Butterworth_High")] HRESULT Butterworth_High([in] long* image, [in] long blocksize, [in] long keepdc, [in] long cutoff, [in] long filter_order, [out,retval] long* result);
+    [id(28), helpstring("method Butterworth_Low")] HRESULT Butterworth_Low([in] long* image, [in] long blocksize, [in] long keepdc, [in] long cutoff, [in] long filter_order, [out,retval] long* result);
+    [id(29), helpstring("method Canny_Filter")] HRESULT Canny_Filter([in] long* image, [in] double low_threshold, [in] double high_threshold, [in] double variance, [in] long* mag_image, [in] long* dir_image, [out,retval] long* result);
+    [id(30), helpstring("method Cast_Image")] HRESULT Cast_Image([in] long* image, [in] long datatype);
+    [id(31), helpstring("method CentroID")] HRESULT CentroID([in] long* labeled_image, [in] long row, [in] long col, [out,retval] VARIANT* centroid);
+    [id(32), helpstring("method Cerchar_Filter")] HRESULT Cerchar_Filter([in] long* image, [out,retval] long* result);
+    [id(33), helpstring("method Check_Bin")] HRESULT Check_Bin([in] long* image, [out,retval] long* is_binary);
+    [id(34), helpstring("method Check_xform_history")] HRESULT Check_xform_history([in] long* image, [in] int filter_type, [out,retval] long* result);
+    [id(35), helpstring("method Close_Consol")] HRESULT Close_Consol();
+    [id(36), helpstring("method Close_Console")] HRESULT Close_Console();
+    [id(37), helpstring("method Color_Contrast_Enhance")] HRESULT Color_Contrast_Enhance([in] long* image, [in] long low_limit, [in] long high_limit, [in] float low_clip, [in] float high_clip, [out,retval] long* result);
+    [id(38), helpstring("method ColorXform")] HRESULT ColorXform([in] long* image, [in] long color_space, [in] double* norm_vector, [in] double* white_reference, [in] long direction, [out,retval] long* result);
+    [id(39), helpstring("method CondRemap_Image")] HRESULT CondRemap_Image([in] long* image, [in] long datatype, [in] int min, [in] int max, [out,retval] long* result);
+    [id(40), helpstring("method Contra_Filter")] HRESULT Contra_Filter([in] long* image, [in] long masksize, [in] long p, [out,retval] long* result);
+    [id(41), helpstring("method Copy_Paste")] HRESULT Copy_Paste([in] long* src_image, [in] long* dest_image, [in] int src_row, [in] int src_col, [in] int height, [in] int width, [in] int dest_row, [in] int dest_col, [in] long transparent, [out,retval] long* result);
+    [id(42), helpstring("method Create_Black")] HRESULT Create_Black([in] int width, [in] int height, [out,retval] long* result);
+    [id(43), helpstring("method Create_Checkboard")] HRESULT Create_Checkboard([in] int width, [in] int height, [in] int start_col, [in] int start_row, [in] int blockx, [in] int blocky, [out,retval] long* result);
+    [id(44), helpstring("method Create_Circle")] HRESULT Create_Circle([in] int width, [in] int height, [in] int centerx, [in] int centery, [in] int radius, [out,retval] long* result);
+    [id(45), helpstring("method Create_Cosine")] HRESULT Create_Cosine([in] int img_size, [in] int frequency, [in] int direction, [out,retval] long* result);
+    [id(46), helpstring("method Create_Degenerate_Circle")] HRESULT Create_Degenerate_Circle([in] int width, [in] int height, [in] int centerx, [in] int centery, [in] int radius, [in] int blur, [out,retval] long* result);
+    [id(47), helpstring("method Create_Ellipse")] HRESULT Create_Ellipse([in] int width, [in] int height, [in] int centerx, [in] int centery, [in] int shape_width, [in] int shape_height, [out,retval] long* result);
+    [id(48), helpstring("method Create_Line")] HRESULT Create_Line([in] int width, [in] int height, [in] int tlx, [in] int tly, [in] int brx, [in] int bry, [out,retval] long* result);
+    [id(49), helpstring("method Create_Mask")] HRESULT Create_Mask([in] long width, [in] long height, [in] double* values, [out,retval] long* result);
+    [id(50), helpstring("method Create_Mesh_Sine")] HRESULT Create_Mesh_Sine([in] int rows, [in] int cols, [out,retval] long* result);
+    [id(51), helpstring("method Create_Rectangle")] HRESULT Create_Rectangle([in] int width, [in] int height, [in] int tlx, [in] int tly, [in] int shape_width, [in] int shape_height, [out,retval] long* result);
+    [id(52), helpstring("method Create_Sine")] HRESULT Create_Sine([in] int img_size, [in] int frequency, [in] int direction, [out,retval] long* result);
+    [id(53), helpstring("method Create_Squarewave")] HRESULT Create_Squarewave([in] int img_size, [in] int frequency, [in] int direction, [out,retval] long* result);
+    [id(54), helpstring("method Crop")] HRESULT Crop([in] long* image, [in] int start_row, [in] int start_col, [in] int rows, [in] int cols, [out,retval] long* result);
+    [id(55), helpstring("method CVIP_OUTPUT")] HRESULT CVIP_OUTPUT([out,retval] BSTR* message);
+    [id(56), helpstring("method CVIPhalftone")] HRESULT CVIPhalftone([in] long* image, [in] int halftone_method, [in] int maxval, [in] float threshold, [in] long retain_image, [in] long verbose, [out,retval] long* result);
+    [id(57), helpstring("method Cviptoccc")] HRESULT Cviptoccc([in] BSTR* filename, [in] long maxcolor, [in] long verbose, [in] long dermvis, [in] long* cvip_image);
+    [id(58), helpstring("method Cviptoeps")] HRESULT Cviptoeps([in] BSTR* filename, [in] long* cvip_image, [in] double scale_x, [in] double scale_y, [in] long band, [in] long verbose);
+    [id(59), helpstring("method Cviptogif")] HRESULT Cviptogif([in] BSTR* filename, [in] long* cvip_image, [in] long interlace, [in] long verbose);
+    [id(60), helpstring("method Cviptoiris")] HRESULT Cviptoiris([in] BSTR* filename, [in] long* cvip_image, [in] long verbose, [in] long prt_type);
+    [id(61), helpstring("method Cviptoitex")] HRESULT Cviptoitex([in] BSTR* filename, [in] long* cvip_image, [in] BSTR* comment, [in] long verbose);
+    [id(62), helpstring("method Cviptojpg")] HRESULT Cviptojpg([in] BSTR* filename, [in] long* cvip_image, [in] int quality, [in] long grayscale, [in] long optimize, [in] int smooth, [in] long verbose, [in] BSTR* qtablesFile);
+    [id(63), helpstring("method Cviptopnm")] HRESULT Cviptopnm([in] BSTR* filename, [in] long* cvip_image, [in] long verbose);
+    [id(64), helpstring("method Cviptoras")] HRESULT Cviptoras([in] BSTR* filename, [in] long* cvip_image, [in] long pr_type, [in] long verbose);
+    [id(65), helpstring("method Cviptotiff")] HRESULT Cviptotiff([in] BSTR* filename, [in] long* cvip_image, [in] long compression, [in] long fillorder, [in] long g3options, [in] long predictor, [in] long rowsperstrip, [in] long verbose);
+    [id(66), helpstring("method Cviptovip")] HRESULT Cviptovip([in] BSTR* filename, [in] long* cvip_image, [in] long verbose, [in] long save_history, [in] long is_compressed);
+    [id(67), helpstring("method Date_Range")] HRESULT Date_Range([in] long* image, [out,retval] VARIANT* result);
+    [id(68), helpstring("method Dct_Transform")] HRESULT Dct_Transform([in] long* image, [in] long blocksize, [out,retval] long* result);
+    [id(69), helpstring("method Delete_DisplayImage")] HRESULT Delete_DisplayImage([in] long memory_dc);
+    [id(70), helpstring("method Delete_Image")] HRESULT Delete_Image([in] long* image);
+    [id(71), helpstring("method Divide_Image")] HRESULT Divide_Image([in] long* image1, [in] long* image2, [in] long zero2num, [out,retval] long* result);
+    [id(72), helpstring("method Dpc_Compress")] HRESULT Dpc_Compress([in] BSTR* filename, [in] long* image, [in] float ratio, [in] int bit_length, [in] int clipping, [in] int direction, [in] int origin, [in] float deviation);
+    [id(73), helpstring("method Dpc_Decompress")] HRESULT Dpc_Decompress([in] BSTR* filename, [out,retval] long* result);
+    [id(74), helpstring("method Draw_mesh")] HRESULT Draw_mesh([in] long* image, [in] long* mesh);
+    [id(75), helpstring("method Duplicate_Image")] HRESULT Duplicate_Image([in] long* image, [out,retval] long* result);
+    [id(76), helpstring("method DynRLC_Compression")] HRESULT DynRLC_Compression([in] BSTR* filename, [in] long* image, [in] long window_size, [out,retval] long* result);
+    [id(77), helpstring("method DynRLC_deCompression")] HRESULT DynRLC_deCompression([in] BSTR* filename, [out,retval] long* result);
+    [id(78), helpstring("method Edge_Detect_Filter")] HRESULT Edge_Detect_Filter([in] long* image, [in] long edge_detector, [in] long mask_type, [in] long masksize, [in] long keepdc, [in] long threshold, [in] long frei_projection, [in] long frei_threshold, [in] long frei_angle, [out,retval] long* result);
+    [id(79), helpstring("method Edge_Link_Filter")] HRESULT Edge_Link_Filter([in] long* binary_image, [in] long connection_distance, [out,retval] long* result);
+    [id(80), helpstring("method Enlarge")] HRESULT Enlarge([in] long* image, [in] int rows, [in] int cols, [out,retval] long* result);
+    [id(81), helpstring("method Epstocvip")] HRESULT Epstocvip([in] BSTR* filename, [in] long verbose);
+    [id(82), helpstring("method Euler")] HRESULT Euler([in] long* labeled_image, [in] long row, [in] long col, [out,retval] long* euler);
+    [id(83), helpstring("method Exp_Ace_Filter")] HRESULT Exp_Ace_Filter([in] long* image, [in] long masksize, [in] double local_mean, [in] double local_gain, [out,retval] long* result);
+    [id(84), helpstring("method Extract_Band")] HRESULT Extract_Band([in] long* image, [in] int band, [out,retval] long* result);
+    [id(85), helpstring("method Fft_Mag")] HRESULT Fft_Mag([in] long* image, [out,retval] long* result);
+    [id(86), helpstring("method Fft_Phase")] HRESULT Fft_Phase([in] long* image, [in] long remap_norm, [in] double k, [out,retval] long* result);
+    [id(87), helpstring("method Fft_Transform")] HRESULT Fft_Transform([in] long* image, [in] long blocksize, [out,retval] long* result);
+    [id(88), helpstring("method File_To_Mesh")] HRESULT File_To_Mesh([in] BSTR* filename, [out,retval] long* result);
+    [id(89), helpstring("method Fractal_Compression")] HRESULT Fractal_Compression([in] long* image, [in] BSTR* filename, [in] double tolerance, [in] long min_part, [in] long max_part, [in] long dom_type, [in] long dom_step, [in] long c1, [in] long c2, [in] long scalebits, [in] long offsetbits, [out,retval] long* result);
+    [id(90), helpstring("method Fractal_deCompression")] HRESULT Fractal_deCompression([in] BSTR* filename, [out,retval] long* result);
+    [id(91), helpstring("method Fuzzyc_Segment")] HRESULT Fuzzyc_Segment([in] long* image, [in] double variance, [out,retval] long* result);
+    [id(92), helpstring("method Gamma_Noise")] HRESULT Gamma_Noise([in] long* image, [in] double variance, [in] int alpha, [out,retval] long* result);
+    [id(93), helpstring("method Gaussian_Blur_Filter")] HRESULT Gaussian_Blur_Filter([in] long* image, [in] long kernel_size, [out,retval] long* result);
+    [id(94), helpstring("method Gaussian_Noise")] HRESULT Gaussian_Noise([in] long* image, [in] double variance, [in] double mean, [out,retval] long* result);
+    [id(95), helpstring("method Geometric_Filter")] HRESULT Geometric_Filter([in] long* image, [in] long masksize, [out,retval] long* result);
+    [id(96), helpstring("method Geometric_Mean")] HRESULT Geometric_Mean([in] long* degr_image, [in] long* degr_fn, [in] long* psd_noise, [in] long* psd_orig, [in] double gamma, [in] double alpha, [in] long max_gain, [in] long cutoff, [out,retval] long* result);
+    [id(97), helpstring("method get_hist_real")] HRESULT get_hist_real([in] long* image, [out,retval] long* result);
+    [id(98), helpstring("method Get_Histogram_Image")] HRESULT Get_Histogram_Image([in] long* image, [out,retval] long* result);
+    [id(99), helpstring("method Get_max_min_value")] HRESULT Get_max_min_value([in] long* image, [in] double* min_max);
+    [id(100), helpstring("method Get_Mesh_Points")] HRESULT Get_Mesh_Points([in] long* mesh, [out,retval] VARIANT* points);
+    [id(101), helpstring("method GetDataFormat_Image")] HRESULT GetDataFormat_Image([in] long* image, [out,retval] long* format);
+    [id(102), helpstring("method GetDataType_Image")] HRESULT GetDataType_Image([in] long* image, [out,retval] long* datatype);
+    [id(103), helpstring("method GetImageInfo")] HRESULT GetImageInfo([in] long* image, [out,retval] VARIANT* info);
+    [id(104), helpstring("method Getlast_Hist")] HRESULT Getlast_Hist([in] long* image, [in] long* programs, [in] int num_programs, [out,retval] long* hist);
+    [id(105), helpstring("method GetNoOfBands_Image")] HRESULT GetNoOfBands_Image([in] long* image, [out,retval] long* bands);
+    [id(106), helpstring("method GetNoOfCols_Image")] HRESULT GetNoOfCols_Image([in] long* image, [out,retval] long* cols);
+    [id(107), helpstring("method GetNoOfRows_Image")] HRESULT GetNoOfRows_Image([in] long* image, [out,retval] long* rows);
+    [id(108), helpstring("method GetPixel_Image")] HRESULT GetPixel_Image([in] long* image, [in] long row, [in] long col, [out,retval] VARIANT* pixel);
+    [id(109), helpstring("method giftocvip")] HRESULT giftocvip([in] BSTR* filename, [in] long* unused, [in] long image_number, [in] long verbose);
+    [id(110), helpstring("method Glr_Compress")] HRESULT Glr_Compress([in] BSTR* filename, [in] long* image, [in] long window_size);
+    [id(111), helpstring("method Glr_Decompress")] HRESULT Glr_Decompress([in] BSTR* filename, [out,retval] long* result);
+    [id(112), helpstring("method Gray_Binary")] HRESULT Gray_Binary([in] long* image, [in] int direction, [out,retval] long* result);
+    [id(113), helpstring("method Gray_Linear")] HRESULT Gray_Linear([in] long* image, [in] double start, [in] double end, [in] double new_start, [in] double slope, [in] int oor_handling, [in] int band, [out,retval] long* result);
+    [id(114), helpstring("method Gray_Multiplication")] HRESULT Gray_Multiplication([in] long* image, [in] float ratio, [in] long byte_clipping, [out,retval] long* result);
+    [id(115), helpstring("method Gray_Multiply")] HRESULT Gray_Multiply([in] long* image, [in] float ratio, [out,retval] long* result);
+    [id(116), helpstring("method Gray_Multiply2")] HRESULT Gray_Multiply2([in] long* image, [in] float ratio, [out,retval] long* result);
+    [id(117), helpstring("method Gray_Quant_Segment")] HRESULT Gray_Quant_Segment([in] long* image, [in] long gray_levels, [out,retval] long* result);
+    [id(118), helpstring("method Graylevel_Quant")] HRESULT Graylevel_Quant([in] long* image, [in] long gray_levels, [in] long choice, [out,retval] long* result);
+    [id(119), helpstring("method Graylevel_Remap")] HRESULT Graylevel_Remap([in] long* image, [in] long r_selection, [in] long g_selection, [in] long b_selection, [out,retval] long* result);
+    [id(120), helpstring("method GVFSnake_Segment")] HRESULT GVFSnake_Segment([in] long* image, [in] long* coordinates, [in] long iterations, [in] double alpha, [in] double beta, [in] double kappa, [out,retval] long* result);
+    [id(121), helpstring("method H_image")] HRESULT H_image([in] long mask_type, [in] long height, [in] long width, [out,retval] long* result);
+    [id(122), helpstring("method Haar_Transform")] HRESULT Haar_Transform([in] long* image, [in] long direction, [in] long blocksize, [out,retval] long* result);
+    [id(123), helpstring("method Harmonic_Filter")] HRESULT Harmonic_Filter([in] long* image, [in] long masksize, [out,retval] long* result);
+    [id(124), helpstring("method Harris_Corner_Filter")] HRESULT Harris_Corner_Filter([in] long* image, [in] float alpha, [in] long threshold, [in] long border, [in] float dmin, [out,retval] long* result);
+    [id(125), helpstring("method High_Freq_Emphasis")] HRESULT High_Freq_Emphasis([in] long* image, [in] long blocksize, [in] long keepdc, [in] long cutoff, [in] double alpha, [in] long filter_order, [out,retval] long* result);
+    [id(126), helpstring("method Highboost")] HRESULT Highboost([in] long* image, [in] long masksize, [in] long center_value, [in] long add2original, [out,retval] long* result);
+    [id(127), helpstring("method HighFreq_Emphasis")] HRESULT HighFreq_Emphasis([in] long* image, [in] long xform, [in] long cutoff, [in] long filter_order, [in] double offset, [in] long keepdc, [out,retval] long* result);
+    [id(128), helpstring("method Highpass_Spatial")] HRESULT Highpass_Spatial([in] long* image, [in] long add2original, [out,retval] long* result);
+    [id(129), helpstring("method Hist_Feature")] HRESULT Hist_Feature([in] long* image, [in] long* labeled_image, [in] long row, [in] long col, [out,retval] VARIANT* features);
+    [id(130), helpstring("method Hist_Slide")] HRESULT Hist_Slide([in] long* image, [in] int slide, [out,retval] long* result);
+    [id(131), helpstring("method Hist_Spec")] HRESULT Hist_Spec([in] long* image, [in] BSTR* r_histogram, [in] BSTR* g_histogram, [in] BSTR* b_histogram, [out,retval] long* result);
+    [id(132), helpstring("method Hist_Stretch")] HRESULT Hist_Stretch([in] long* image, [in] int low_limit, [in] int high_limit, [in] float low_clip, [in] float high_clip, [out,retval] long* result);
+	[id(133), helpstring("method Hist_Thresh_Gray")] HRESULT Hist_Thresh_Gray([in] long* image, [in] float tore, [out, retval] long* result);
+    [id(134), helpstring("method Hist_Thresh_Segment")] HRESULT Hist_Thresh_Segment([in] long* image, [in] float tore, [out,retval] long* result);
+    [id(135), helpstring("method Histeq")] HRESULT Histeq([in] long* image, [in] int band, [out,retval] long* result);
+    [id(136), helpstring("method Histogram_Spec")] HRESULT Histogram_Spec([in] long* image, [in] double* histogram, [out,retval] long* result);
+    [id(137), helpstring("method History_Add")] HRESULT History_Add([in] long* image, [in] long* history);
+    [id(138), helpstring("method History_Check")] HRESULT History_Check([in] long* image, [in] int program, [out,retval] long* result);
+    [id(139), helpstring("method History_Copy")] HRESULT History_Copy([in] long* source, [in] long* destination);
+    [id(140), helpstring("method history_create")] HRESULT history_create([in] long prog, [in] long type, [in] float value, [out,retval] long* result);
+    [id(141), helpstring("method history_create2")] HRESULT history_create2([in] long prog, [in] long type, [in] int value1, [in] int value2, [out,retval] long* result);
+    [id(142), helpstring("method History_Delete_Program")] HRESULT History_Delete_Program([in] long* image, [in] int program, [out,retval] long* result);
+    [id(143), helpstring("method History_Get")] HRESULT History_Get([in] long* image, [in] int program, [out,retval] long* result);
+    [id(144), helpstring("method History_get_data")] HRESULT History_get_data([in] long* history, [in] int program, [out,retval] long* result);
+    [id(145), helpstring("method History_get_data2")] HRESULT History_get_data2([in] long* history, [in] int program, [in] int index, [out,retval] long* result);
+    [id(146), helpstring("method Homomorphic")] HRESULT Homomorphic([in] long* image, [in] double upper_limit, [in] double lower_limit, [in] long cutoff, [in] long add2original, [out,retval] long* result);
+    [id(147), helpstring("method Horizontal_Flip")] HRESULT Horizontal_Flip([in] long* image, [out,retval] long* result);
+    [id(148), helpstring("method Hough_Filter")] HRESULT Hough_Filter([in] long* image, [in] BSTR* image_name, [in] BSTR* angles_of_interest, [in] long threshold, [in] long connection_distance, [in] long interactive, [in] long delta_length, [in] long segment_length, [in] long intermediate_result, [out,retval] long* result);
+    [id(149), helpstring("method Huf_Compress")] HRESULT Huf_Compress([in] BSTR* filename, [in] long* image);
+    [id(150), helpstring("method Huf_Decompress")] HRESULT Huf_Decompress([in] BSTR* filename, [out,retval] long* result);
+    [id(151), helpstring("method Idct_Transform")] HRESULT Idct_Transform([in] long* image, [in] long blocksize, [out,retval] long* result);
+    [id(152), helpstring("method Ideal_Band_Pass")] HRESULT Ideal_Band_Pass([in] long* image, [in] long blocksize, [in] long keepdc, [in] long inner_cutoff, [in] long outer_cutoff, [out,retval] long* result);
+    [id(153), helpstring("method Ideal_Band_Reject")] HRESULT Ideal_Band_Reject([in] long* image, [in] long blocksize, [in] long keepdc, [in] long inner_cutoff, [in] long outer_cutoff, [out,retval] long* result);
+    [id(154), helpstring("method Ideal_High")] HRESULT Ideal_High([in] long* image, [in] long blocksize, [in] long keepdc, [in] long cutoff, [out,retval] long* result);
+    [id(155), helpstring("method Ideal_Low")] HRESULT Ideal_Low([in] long* image, [in] long blocksize, [in] long keepdc, [in] long cutoff, [out,retval] long* result);
+    [id(156), helpstring("method Ifft_Transform")] HRESULT Ifft_Transform([in] long* image, [in] long blocksize, [out,retval] long* result);
+    [id(157), helpstring("method Igs_Segment")] HRESULT Igs_Segment([in] long* image, [in] long gray_levels, [out,retval] long* result);
+    [id(158), helpstring("method Improved_Mmse_Filter")] HRESULT Improved_Mmse_Filter([in] long* image, [in] float threshold, [in] long kernel_size, [in] float noise_variance, [out,retval] long* result);
+    [id(159), helpstring("method Input_Mesh")] HRESULT Input_Mesh([in] long* points, [out,retval] long* result);
+    [id(160), helpstring("method Intensity_Slicing")] HRESULT Intensity_Slicing([in] long* image, [in] long* lookup_table, [in] long options, [out,retval] long* result);
+    [id(161), helpstring("method Inverse_Xformfilter")] HRESULT Inverse_Xformfilter([in] long* degr_image, [in] long* degr_fn, [in] long max_gain, [in] double cutoff, [out,retval] long* result);
+    [id(162), helpstring("method Ipct")] HRESULT Ipct([in] long* image, [in] long ignore_background, [out,retval] long* result);
+    [id(163), helpstring("method Irregular")] HRESULT Irregular([in] long* labeled_image, [in] int row, [in] int col, [out,retval] double* result);
+    [id(164), helpstring("method Jp2_Decoder")] HRESULT Jp2_Decoder([in] BSTR* filename, [out,retval] long* result);
+    [id(165), helpstring("method Jp2_Encoder")] HRESULT Jp2_Encoder([in] BSTR* filename, [in] long* image, [in] int rate, [in] int quality, [in] int layers, [in] int blocksize);
+    [id(166), helpstring("method Jpg_Compress")] HRESULT Jpg_Compress([in] BSTR* filename, [in] long* image, [in] int quality, [in] long grayscale, [in] long optimize, [in] int smooth, [in] long verbose, [in] BSTR* qtablesFile);
+    [id(167), helpstring("method Jpg_Decompress")] HRESULT Jpg_Decompress([in] BSTR* filename, [in] int num_colors, [in] long blocksmooth, [in] long grayscale, [in] long nodither, [in] long verbose, [out,retval] long* result);
+    [id(168), helpstring("method Jpgtocvip")] HRESULT Jpgtocvip([in] BSTR* filename, [in] int num_colors, [in] long blocksmooth, [in] long grayscale, [in] long nodither, [in] long verbose, [out,retval] long* result);
+    [id(169), helpstring("method K_Nearest_Neighbor")] HRESULT K_Nearest_Neighbor([in] BSTR* test_set, [in] BSTR* training_set, [in] BSTR* outputfile, [in] int normalization, [in] int distance_measure, [in] int k, [in] float s_min, [in] float s_max, [in] float r_softmax, [in] float r_minkowski, [out,retval] long* error);
+    [id(170), helpstring("method Krisch_Filter")] HRESULT Krisch_Filter([in] long* image, [in] long* dir_image, [in] long filter_type, [in] long kernel_size, [in] long keepdc, [in] long threshold, [out,retval] long* mag_image);
+    [id(171), helpstring("method Kuwahara_Filter")] HRESULT Kuwahara_Filter([in] long* image, [in] long masksize, [out,retval] long* result);
+    [id(172), helpstring("method Label")] HRESULT Label([in] long* image, [out,retval] long* result);
+    [id(173), helpstring("method Laws_Texture_Feature")] HRESULT Laws_Texture_Feature([in] long* image, [in] long* labeled_image, [in] int row, [in] int col, [in] int window_size, [in] int vector1, [in] int vector2, [out,retval] VARIANT* features);
+    [id(174), helpstring("method Least_Squares")] HRESULT Least_Squares([in] long* degr_image, [in] long* degr_fn, [in] long* smoothness_fn, [in] double gamma, [in] long max_gain, [in] long cutoff, [out,retval] long* result);
+    [id(175), helpstring("method Local_Adaptive_Zoom")] HRESULT Local_Adaptive_Zoom([in] long* image, [out,retval] long* result);
+    [id(176), helpstring("method Local_Histeq")] HRESULT Local_Histeq([in] long* image, [in] int blocksize, [in] int band, [out,retval] long* result);
+    [id(177), helpstring("method Log_Ace_Filter")] HRESULT Log_Ace_Filter([in] long* image, [in] long masksize, [in] double local_mean, [in] double local_gain, [out,retval] long* result);
+    [id(178), helpstring("method Log_Remap")] HRESULT Log_Remap([in] long* image, [in] long band, [out,retval] long* result);
+    [id(179), helpstring("method LogMap_Image")] HRESULT LogMap_Image([in] long* image, [in] int band, [out,retval] long* result);
+    [id(180), helpstring("method Lum_Average")] HRESULT Lum_Average([in] long* image, [out,retval] long* result);
+    [id(181), helpstring("method Luminance_Image")] HRESULT Luminance_Image([in] long* image, [out,retval] long* result);
+    [id(182), helpstring("method Make_Histogram")] HRESULT Make_Histogram([in] double* histogram, [in] long image_format, [in] long color_format, [in] long bands, [out,retval] long* result);
+    [id(183), helpstring("method Marr_Hildreth_Filter")] HRESULT Marr_Hildreth_Filter([in] long* image, [in] float sigma, [in] int threshold, [out,retval] long* result);
+    [id(184), helpstring("method Maximum_Filter")] HRESULT Maximum_Filter([in] long* image, [in] long masksize, [out,retval] long* result);
+    [id(185), helpstring("method Mean_Filter")] HRESULT Mean_Filter([in] long* image, [in] long masksize, [out,retval] long* result);
+    [id(186), helpstring("method Median_Cut_Segment")] HRESULT Median_Cut_Segment([in] long* image, [in] long num_colors, [in] long ignore_background, [in] long r_background, [in] long g_background, [in] long b_background, [out,retval] long* result);
+    [id(187), helpstring("method Median_Filter")] HRESULT Median_Filter([in] long* image, [in] long masksize, [out,retval] long* result);
+    [id(188), helpstring("method Mesh_To_File")] HRESULT Mesh_To_File([in] BSTR* filename, [in] long* mesh);
+    [id(189), helpstring("method Mesh_Warping")] HRESULT Mesh_Warping([in] long* image, [in] long* mesh, [in] long interpolation_method, [out,retval] long* result);
+    [id(190), helpstring("method Mesh_WarpingRI")] HRESULT Mesh_WarpingRI([in] long* image, [in] long* mesh, [in] long interpolation_method, [in] long zero_missing, [out,retval] long* result);
+    [id(191), helpstring("method Midpoint_Filter")] HRESULT Midpoint_Filter([in] long* image, [in] long masksize, [out,retval] long* result);
+    [id(192), helpstring("method Minimum_Filter")] HRESULT Minimum_Filter([in] long* image, [in] long masksize, [out,retval] long* result);
+    [id(193), helpstring("method Mmse_Filter")] HRESULT Mmse_Filter([in] long* image, [in] double noise_variance, [in] long kernel_size, [out,retval] long* result);
+    [id(194), helpstring("method Moravec_Corner_Filter")] HRESULT Moravec_Corner_Filter([in] long* image, [in] float threshold, [out,retval] long* result);
+    [id(195), helpstring("method Morph_Hitmiss")] HRESULT Morph_Hitmiss([in] long* binary_image, [in] long masksize, [in] double* mask_values, [out,retval] long* result);
+    [id(196), helpstring("method Morph_Skeleton")] HRESULT Morph_Skeleton([in] long* binary_image, [in] long masksize, [in] double* mask_values, [in] long iterations, [in] long four_eight_mask, [in] long method, [out,retval] long* result);
+    [id(197), helpstring("method Morph_Thinning")] HRESULT Morph_Thinning([in] long* binary_image, [in] long masksize, [in] double* mask_values, [out,retval] long* result);
+    [id(198), helpstring("method MorphClose")] HRESULT MorphClose([in] long* image, [in] int kernel_type, [in] int kernel_size, [in] int height, [in] int width, [out,retval] long* result);
+	[id(199), helpstring("method MorphClose_Image)")] HRESULT MorphClose_Image([in] long* image, [in] long* matrix, [in] int userOrg, [in] int x, [in] int y, [in] int size, [out, retval] long* result);
+	[id(200), helpstring("method MorphDilate")] HRESULT MorphDilate([in] long* image, [in] int kernel_type, [in] int kernel_size, [in] int height, [in] int width, [out,retval] long* result);
+	[id(201), helpstring("method MorphDilate_Image)")] HRESULT MorphDilate_Image([in] long* image, [in] int* matrix, [in] int userOrg, [in] int x, [in] int y, [in] int size, [out, retval] long* result);
+	[id(202), helpstring("method MorphErode")] HRESULT MorphErode([in] long* image, [in] int kernel_type, [in] int kernel_size, [in] int height, [in] int width, [out,retval] long* result);
+	[id(203), helpstring("method MorphErode_Image)")] HRESULT MorphErode_Image([in] long* image, [in] long* matrix, [in] int userOrg, [in] int x, [in] int y, [in] int size, [out, retval] long* result);
+	[id(204), helpstring("method Morpho")] HRESULT Morpho([in] long* image, [in] BSTR* surrounds_string, [in] long rotation, [in] long boolfunc, [in] long connectedness, [in] long iterations, [in] long fields, [out,retval] long* result);
+    [id(205), helpstring("method Morpho_com")] HRESULT Morpho_com([in] long* image, [in] BSTR* surrounds_string, [in] long rotation, [in] long boolfunc, [in] long iterations, [in] long subfields, [in] long unused, [out,retval] long* result);
+    [id(206), helpstring("method MorphOpen")] HRESULT MorphOpen([in] long* image, [in] int kernel_type, [in] int kernel_size, [in] int height, [in] int width, [out,retval] long* result);
+	[id(307), helpstring("method MorphOpen_Image)")] HRESULT MorphOpen_Image([in] long* image, [in] long* matrix, [in] int userOrg, [in] int x, [in] int y, [in] int size, [out, retval] long* result);
+	[id(208), helpstring("method Multi_Resolution_Segment")] HRESULT Multi_Resolution_Segment([in] long* image, [in] long homogeneity_test, [in] double param1, [in] double param2, [in] long run_PCT, [out,retval] long* result);
+    [id(209), helpstring("method Multiply_Image")] HRESULT Multiply_Image([in] long* image1, [in] long* image2, [out,retval] long* result);
+    [id(210), helpstring("method Nearest_Centroid")] HRESULT Nearest_Centroid([in] BSTR* test_set, [in] BSTR* training_set, [in] BSTR* outputfile, [in] int normalization, [in] int distance_measure, [in] float s_min, [in] float s_max, [in] float r_softmax, [in] float r_minkowski, [out,retval] long* error);
+    [id(211), helpstring("method Nearest_Neighbor")] HRESULT Nearest_Neighbor([in] BSTR* test_set, [in] BSTR* training_set, [in] BSTR* outputfile, [in] int normalization, [in] int distance_measure, [in] float s_min, [in] float s_max, [in] float r_softmax, [in] float r_minkowski, [out,retval] long* error);
+    [id(212), helpstring("method Neg_Exp_Noise")] HRESULT Neg_Exp_Noise([in] long* image, [in] double variance, [out,retval] long* result);
+    [id(213), helpstring("method New_Image")] HRESULT New_Image([in] long image_format, [in] long color_space, [in] int bands, [in] int height, [in] int width, [in] long datatype, [in] long data_format, [out,retval] long* result);
+    [id(214), helpstring("method Nonfft_Xformfilter")] HRESULT Nonfft_Xformfilter([in] long* image, [in] long blocksize, [in] long keepdc, [in] long filter_type, [in] long p1, [in] double p2, [in] long filter_order, [out,retval] long* result);
+    [id(215), helpstring("method Not_Image")] HRESULT Not_Image([in] long* image, [out,retval] long* result);
+    [id(216), helpstring("method Notch")] HRESULT Notch([in] BSTR* filename, [in] long* cols, [in] long* rows, [in] long* radius, [in] long* image, [in] long num_points, [in] long interactive, [out,retval] long* result);
+    [id(217), helpstring("method Object_Crop")] HRESULT Object_Crop([in] long* image, [in] long* coordinates, [in] long format, [in] long r_value, [in] long g_value, [in] long b_value, [out,retval] long* result);
+    [id(218), helpstring("method Open_Consol_Redirect_Output")] HRESULT Open_Consol_Redirect_Output();
+    [id(219), helpstring("method Or_Image")] HRESULT Or_Image([in] long* image1, [in] long* image2, [out,retval] long* result);
+    [id(220), helpstring("method Orientation")] HRESULT Orientation([in] long* labeled_image, [in] int row, [in] int col, [out,retval] long* orientation);
+    [id(221), helpstring("method Otsu_Segment")] HRESULT Otsu_Segment([in] long* image, [out,retval] long* result);
+    [id(222), helpstring("method Param_AD_Filter")] HRESULT Param_AD_Filter([in] long* image, [in] long iterations, [in] long speed, [in] long edge_height, [in] long blocksize, [out,retval] long* result);
+    [id(223), helpstring("method Parametric_Wiener")] HRESULT Parametric_Wiener([in] long* degr_image, [in] long* degr_fn, [in] long* psd_noise, [in] long* psd_orig, [in] double gamma, [in] long max_gain, [in] long cutoff, [out,retval] long* result);
+    [id(224), helpstring("method Pct")] HRESULT Pct([in] long* image, [in] long ignore_background, [in] double* background, [out,retval] long* result);
+    [id(225), helpstring("method Pct_Color")] HRESULT Pct_Color([in] long* image, [in] long ignore_background, [in] double* background, [in] long choice, [out,retval] long* result);
+    [id(226), helpstring("method Pct_Median_Segment")] HRESULT Pct_Median_Segment([in] long* image, [in] long num_colors, [out,retval] long* result);
+    [id(227), helpstring("method Perimeter")] HRESULT Perimeter([in] long* labeled_image, [in] int row, [in] int col, [out,retval] long* perimeter);
+    [id(228), helpstring("method Pngtocvip")] HRESULT Pngtocvip([in] BSTR* filename, [out,retval] long* result);
+    [id(229), helpstring("method Power_Spect_Eq")] HRESULT Power_Spect_Eq([in] long* degr_image, [in] long* degr_fn, [in] long* psd_noise, [in] long* psd_orig, [in] long max_gain, [in] long cutoff, [out,retval] long* result);
+    [id(230), helpstring("method Pratt_Merit")] HRESULT Pratt_Merit([in] long* image1, [in] long* image2, [in] double scale_factor, [out,retval] double* result);
+    [id(231), helpstring("method Prewitt_Filter")] HRESULT Prewitt_Filter([in] long* image, [in] long* dir_image, [in] long filter_type, [in] long kernel_size, [in] long keepdc, [in] long threshold, [out,retval] long* mag_image);
+    [id(232), helpstring("method Print_Image")] HRESULT Print_Image([in] int dc, [in] long* image);
+    [id(233), helpstring("method Projection")] HRESULT Projection([in] long* labeled_image, [in] int row, [in] int col, [in] int height, [in] int width, [out,retval] VARIANT* projections);
+    [id(234), helpstring("method Pseudo_Remap")] HRESULT Pseudo_Remap([in] long* image, [in] long* lookup_table, [out,retval] long* result);
+    [id(235), helpstring("method Pseudocol_Freq")] HRESULT Pseudocol_Freq([in] long* image, [in] int low_cutoff, [in] int high_cutoff, [in] int lowpass_band, [in] int bandpass_band, [in] int highpass_band, [out,retval] long* result);
+    [id(236), helpstring("method Raster_Deblur_Filter")] HRESULT Raster_Deblur_Filter([in] long* image, [out,retval] long* result);
+    [id(237), helpstring("method Rayleigh_Noise")] HRESULT Rayleigh_Noise([in] long* image, [in] double variance, [out,retval] long* result);
+    [id(238), helpstring("method Read_Image")] HRESULT Read_Image([in] BSTR* filename, [out,retval] long* result);
+    [id(239), helpstring("method Remap_Image")] HRESULT Remap_Image([in] long* image, [in] long datatype, [in] long dmin, [in] long dmax, [out,retval] long* result);
+    [id(240), helpstring("method REMAPP")] HRESULT REMAPP([in] long* image, [in] long datatype, [in] long dmin, [in] long dmax, [out,retval] long* result);
+    [id(241), helpstring("method Render_DisplayImage")] HRESULT Render_DisplayImage([in] long window_dc, [in] long* image, [out,retval] long* memory_dc);
+    [id(242), helpstring("method Rms_Error")] HRESULT Rms_Error([in] long* image1, [in] long* image2, [out,retval] VARIANT* rms_values);
+    [id(243), helpstring("method Robinson_Filter")] HRESULT Robinson_Filter([in] long* image, [in] long* dir_image, [in] long mask_type, [in] long masksize, [in] long keepdc, [in] long threshold, [out,retval] long* mag_image);
+    [id(244), helpstring("method Rotate")] HRESULT Rotate([in] long* image, [in] float degrees, [out,retval] long* result);
+    [id(245), helpstring("method Rst_invariant")] HRESULT Rst_invariant([in] long* labeled_image, [in] long row, [in] long col, [out,retval] VARIANT* features);
+    [id(246), helpstring("method Save_Compressed_Data")] HRESULT Save_Compressed_Data([in] long* image, [in] BSTR* filename);
+    [id(247), helpstring("method Sct_Split_Segment")] HRESULT Sct_Split_Segment([in] long* image, [in] long A_split, [in] long B_split, [out,retval] long* result);
+    [id(248), helpstring("method Set_Console")] HRESULT Set_Console([in] long unused);
+    [id(249), helpstring("method Sharpen_I")] HRESULT Sharpen_I([in] long* image, [in] long remap, [in] long mask_type, [in] long masksize, [in] float low_clip, [in] float high_clip, [in] long add2original, [out,retval] long* result);
+    [id(250), helpstring("method Sharpen_II")] HRESULT Sharpen_II([in] long* image, [in] long add2original, [out,retval] long* result);
+	[id(251), helpstring("method Sharpen_III")] HRESULT Sharpen_III([in] long* image, [in] long add2original, [out, retval] long* result);
+    [id(252), helpstring("method Shen_Castan_Filter")] HRESULT Shen_Castan_Filter([in] long* image, [in] double smoothing_factor, [in] long window_size, [in] double low_threshold, [in] double high_threshold, [in] long thin_factor, [in] long* intermediate_image, [out,retval] long* result);
+    [id(253), helpstring("method Show_DisplayImage")] HRESULT Show_DisplayImage([in] long window_dc, [in] long memory_dc, [in] long window_width, [in] long window_height, [in] long memory_width, [in] long memory_height);
+    [id(254), helpstring("method Show_Image")] HRESULT Show_Image([in] int dc, [in] int x, [in] int y, [in] long* image);
+    [id(255), helpstring("method Show_Image_Ex")] HRESULT Show_Image_Ex([in] int window_dc, [in] long* memory_dc, [in] int x, [in] int y, [in] long* image);
+    [id(256), helpstring("method Shrink")] HRESULT Shrink([in] long* image, [in] float factor, [out,retval] long* result);
+    [id(257), helpstring("method Simple_Wiener")] HRESULT Simple_Wiener([in] long* degr_image, [in] long* degr_fn, [in] double k, [out,retval] long* result);
+    [id(258), helpstring("method Single_Filter")] HRESULT Single_Filter([in] long* image, [in] double sizing_factor_x, [in] double sizing_factor_y, [in] long centerx, [in] long centery, [in] double rotation, [in] double beta, [in] long kernel_size, [in] double* kernel_data, [in] long choice, [out,retval] long* result);
+    [id(259), helpstring("method Snr")] HRESULT Snr([in] long* image1, [in] long* image2, [out,retval] VARIANT* snr_values);
+    [id(260), helpstring("method Sobel_Filter")] HRESULT Sobel_Filter([in] long* image, [in] long* dir_image, [in] long filter_type, [in] long kernel_size, [in] long keepdc, [in] long threshold, [out,retval] long* mag_image);
+    [id(261), helpstring("method Spatial_Quant")] HRESULT Spatial_Quant([in] long* image, [in] int rows, [in] int cols, [in] int method, [out,retval] long* result);
+    [id(262), helpstring("method Spec_Hist_Image")] HRESULT Spec_Hist_Image([in] long* image, [in] BSTR* r_histogram, [in] BSTR* g_histogram, [in] BSTR* b_histogram, [out,retval] long* result);
+    [id(263), helpstring("method Specify_Filter")] HRESULT Specify_Filter([in] long* image, [in] long mask_height, [in] long mask_width, [in] double* mask_values, [in] int normalization, [out,retval] long* result);
+    [id(264), helpstring("method Speckle_Noise")] HRESULT Speckle_Noise([in] long* image, [in] double psalt, [in] double ppepper, [out,retval] long* result);
+    [id(265), helpstring("method Spectral_Feature")] HRESULT Spectral_Feature([in] long* image, [in] long* labeled_image, [in] long rings, [in] long sectors, [in] long row, [in] long col, [out,retval] VARIANT* features);
+    [id(266), helpstring("method Split_Merge_Segment")] HRESULT Split_Merge_Segment([in] long* image, [in] long level, [in] long homogeneity_test, [in] double param1, [in] double param2, [in] long run_PCT, [out,retval] long* result);
+    [id(267), helpstring("method Subtract_Image")] HRESULT Subtract_Image([in] long* image1, [in] long* image2, [out,retval] long* result);
+    [id(268), helpstring("method TextureFeature")] HRESULT TextureFeature([in] long* image, [in] long* labeled_image, [in] long row, [in] long col, [in] long distance, [in] long bitmask, [out,retval] VARIANT* features);
+    [id(269), helpstring("method TextureFeature2")] HRESULT TextureFeature2([in] long* image, [in] long* labeled_image, [in] long band, [in] long row, [in] long col, [in] long distance, [in] long energy, [in] long inertia, [in] long correlation, [in] long inv_diff, [in] long entropy, [in] long include_zero_pairs, [out,retval] VARIANT* features);
+    [id(270), helpstring("method Thinness")] HRESULT Thinness([in] long* labeled_image, [in] int row, [in] int col, [out,retval] double* thinness);
+    [id(271), helpstring("method Threshold_Segment")] HRESULT Threshold_Segment([in] long* image, [in] long threshold, [in] long byte_remap, [out,retval] long* result);
+    [id(272), helpstring("method Tifftocvip")] HRESULT Tifftocvip([in] BSTR* filename, [in] int verbose, [out,retval] long* result);
+    [id(273), helpstring("method Tile_by_name")] HRESULT Tile_by_name([in] BSTR* filename);
+    [id(274), helpstring("method Transform_Compression")] HRESULT Transform_Compression([in] long* image, [in] BSTR* filename, [in] BSTR* quantfile, [in] long color_space, [in] long xform, [in] long basis, [in] long blocksize, [in] long quantization, [in] long use_quant_table, [in] long use_vector_quant, [in] long datatype, [in] long remap_type, [in] long keepdc, [out,retval] long* result);
+    [id(275), helpstring("method Transform_Sharpen")] HRESULT Transform_Sharpen([in] long* image, [in] long xform, [in] long cutoff, [in] long filter_type, [in] long filter_order, [in] long keepdc, [in] long add2original, [out,retval] long* result);
+    [id(276), helpstring("method Transform_Smoothing")] HRESULT Transform_Smoothing([in] long* image, [in] long xform, [in] long cutoff, [in] long filter_type, [in] long filter_order, [in] long keepdc, [out,retval] long* result);
+    [id(277), helpstring("method Translate")] HRESULT Translate([in] long* image, [in] long wrap, [in] int row_offset, [in] int col_offset, [in] int rows, [in] int cols, [in] int row_slide, [in] int col_slide, [in] float fill_val, [out,retval] long* result);
+    [id(278), helpstring("method Uniform_Noise")] HRESULT Uniform_Noise([in] long* image, [in] double variance, [in] double mean, [out,retval] long* result);
+    [id(279), helpstring("method Unsharp_Filter")] HRESULT Unsharp_Filter([in] long* image, [in] long lower_limit, [in] long upper_limit, [in] double low_clip, [in] double high_clip, [out,retval] long* result);
+    [id(280), helpstring("method Vertical_Flip")] HRESULT Vertical_Flip([in] long* image, [out,retval] long* result);
+    [id(281), helpstring("method Vq_Compress")] HRESULT Vq_Compress([in] long* image, [in] BSTR* filename, [in] long use_file_codebook, [in] long use_fixed_codebook, [in] double error_threshold, [in] BSTR* codebook_filename, [in] long num_entries, [in] long vector_height, [in] long vector_width, [out,retval] long* result);
+    [id(282), helpstring("method Vq_Decompress")] HRESULT Vq_Decompress([in] BSTR* filename, [out,retval] long* result);
+    [id(283), helpstring("method Walhad_Transform")] HRESULT Walhad_Transform([in] long* image, [in] long xform, [in] long blocksize, [out,retval] long* result);
+    [id(284), helpstring("method Watershed_Segment")] HRESULT Watershed_Segment([in] long* image, [in] int merge_result, [in] float threshold, [out,retval] long* result);
+    [id(285), helpstring("method Wavdaub4_Transform")] HRESULT Wavdaub4_Transform([in] long* image, [in] long direction, [in] long low_band, [out,retval] long* result);
+    [id(286), helpstring("method Wavhaar_Transform")] HRESULT Wavhaar_Transform([in] long* image, [in] long direction, [in] long low_band, [out,retval] long* result);
+    [id(287), helpstring("method Wiener")] HRESULT Wiener([in] long* degr_image, [in] long* degr_fn, [in] long* psd_noise, [in] long* psd_orig, [in] long max_gain, [in] long cutoff, [out,retval] long* result);
+    [id(288), helpstring("method Write_Image")] HRESULT Write_Image([in] long* image, [in] BSTR* filename, [in] long retain_image, [in] long run_setup, [in] long image_format, [in] long verbose);
+    [id(289), helpstring("method Write_JPEG_Image")] HRESULT Write_JPEG_Image([in] long* image, [in] BSTR* filename, [in] long retain_image, [in] long run_setup, [in] long image_format, [in] long verbose, [in] int ratio);
+    [id(290), helpstring("method Xor_Error")] HRESULT Xor_Error([in] long* image1, [in] long* image2, [out,retval] VARIANT* error_values);
+    [id(291), helpstring("method Xor_Image")] HRESULT Xor_Image([in] long* image1, [in] long* image2, [out,retval] long* result);
+    [id(292), helpstring("method Xvq_Compress")] HRESULT Xvq_Compress([in] long* image, [in] long xform, [in] long scheme, [in] BSTR* filename, [in] long output_data_type, [in] long remap_type, [in] long dc_term_handling, [out,retval] long* result);
+    [id(293), helpstring("method Xvq_Decompress")] HRESULT Xvq_Decompress([in] BSTR* filename, [out,retval] long* result);
+    [id(294), helpstring("method Ypmean_Filter")] HRESULT Ypmean_Filter([in] long* image, [in] long masksize, [in] long p, [out,retval] long* result);
+    [id(295), helpstring("method Zon_Compress")] HRESULT Zon_Compress([in] BSTR* filename, [in] long* image, [in] int blocksize, [in] int xform, [in] int mask_type, [in] float compression_ratio);
+    [id(296), helpstring("method Zon_Decompress")] HRESULT Zon_Decompress([in] BSTR* filename, [out,retval] long* result);
+    [id(297), helpstring("method Zon2_Compress")] HRESULT Zon2_Compress([in] BSTR* filename, [in] long* image, [in] int blocksize, [in] int xform, [in] int mask_type, [in] float compression_ratio);
+    [id(298), helpstring("method Zon2_Decompress")] HRESULT Zon2_Decompress([in] BSTR* filename, [out,retval] long* result);
+    [id(299), helpstring("method Zoom")] HRESULT Zoom([in] long* image, [in] int quadrant, [in] int col, [in] int row, [in] int cols, [in] int rows, [in] float factor_requested, [out,retval] long* result);
+    [id(300), helpstring("method Zvl_Compress")] HRESULT Zvl_Compress([in] BSTR* filename, [in] long* image);
+    [id(301), helpstring("method Zvl_Decompress")] HRESULT Zvl_Decompress([in] BSTR* filename, [out,retval] long* result);
+    [id(302), helpstring("method Dice_Coef")] HRESULT Dice_Coef([in] long* image1, [in] long* image2, [out,retval] VARIANT* error_values);
+    [id(304), helpstring("method Jaccard_Index")] HRESULT Jaccard_Index([in] long* image1, [in] long* image2, [out, retval] VARIANT* error_values);
+    [id(305), helpstring("method Overlap_Coef")] HRESULT Overlap_Coef([in] long* image1, [in] long* image2, [out, retval] VARIANT* error_values);
+    [id(306), helpstring("method CLAHE")] HRESULT CLAHE([in] long* image, [in] int blocksize, [in] double clippercent, [in] int band, [out, retval] long* result);
+    [id(308), helpstring("method CLAHE_Grid")] HRESULT CLAHE_Grid([in] long* image, [in] int blocksize, [in] double clippercent, [in] int band, [out, retval] long* result);
+    [id(309), helpstring("method superPixel")] HRESULT superPixel([in] long* image, [out, retval] long* result);
+
+};
+
+[
+	uuid(2EA48C5C-1C2F-4BD8-BD0D-63D49B32EDFA),
+	version(2.0),
+	helpstring("CVIPCOM 2.0 Type Library")
+]
+library SERVERLib
+{
+	importlib("stdole2.tlb");
+
+	[
+		uuid(FE0D49C6-136B-4775-B885-F87095347642),
+		helpstring("CVIPTools Class"),
+		version(2.0)
+	]
+	coclass CVIPTools
+	{
+		[default] interface ICVIPTools;
+	};
+};

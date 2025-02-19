@@ -1,0 +1,204 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="create_squarewave_files/filelist.xml">
+<title>create_squarewave</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2004-06-04T22:18:00Z</o:Created>
+  <o:LastSaved>2004-10-19T23:51:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>253</o:Words>
+  <o:Characters>1448</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>12</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>1698</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>create_squarewave</span> - creates a square wave image</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPtoolkit.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>waves.h</span>&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Image *<span
+class=SpellE>create_<span class=GramE>squarewave</span></span><span
+class=GramE>(</span><span class=SpellE>int</span> <span class=SpellE>img_size</span>,<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>int</span><span style='mso-spacerun:yes'>  </span>frequency,<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>int</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>choice</span>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE>img_size</span>&gt; - number of rows (and columns) in new image</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>frequency</span>&gt; - sine wave frequency</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>choice</span>&gt; - enter 1 for horizontal, 2<span style='mso-spacerun:yes'>  </span>for<span style='mso-spacerun:yes'>  </span>vertical<span style='mso-spacerun:yes'>  </span>square</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>wave</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$CVIPtoolsHOME\CVIPC\GEOMETRY\square.c</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>This function creates a horizontal or <span
+class=GramE>vertical<span style='mso-spacerun:yes'>  </span>square</span><span style='mso-spacerun:yes'>  </span>wave</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>image</span> of size <span class=SpellE>img_sizeXimg_size</span>, of frequency 1 to 256.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>TYPES AND C<st1:stockticker>ONST</st1:stockticker>ANTS</h2>
+
+<pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>A pointer to the new image</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>HISTORY</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>History information recorded: None</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPtoolkit.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'>   </span>#include &lt;<span
+class=SpellE>CVIPimage.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPdef.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPdrawimg.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPconvert.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPview.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIEWER &quot;picture&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIDEO_APP &quot;<span
+class=SpellE>SunVideo</span> &amp;&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>void</span> main()</pre><pre><span style='mso-spacerun:yes'>      </span>{</pre><pre><span style='mso-spacerun:yes'>      </span>Image *<span
+class=SpellE>cvipImage</span>;</pre><pre><span style='mso-spacerun:yes'>      </span>IMAGE_FORMAT format;</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>char</span> *<span class=SpellE>outputfile</span>;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>setDisplay_<span class=GramE>Image</span></span><span class=GramE>(</span>VIEWER, &quot;Default&quot;);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>/* the following call creates a image <span
+class=GramE>of<span style='mso-spacerun:yes'>  </span>size</span><span style='mso-spacerun:yes'>  </span>100<span style='mso-spacerun:yes'>  </span>x<span style='mso-spacerun:yes'>  </span>100</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>with<span style='mso-spacerun:yes'>  </span>freq</span> <span
+class=SpellE>uency</span> 32 and the square wave is in the horizontal</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>direction</span> */</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'>   </span><span
+class=SpellE><span class=GramE>cvipImage</span></span> = <span class=SpellE>create_squarewave</span>(100,32,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>outputfile</span></span> = <span class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>cvipImage,outputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>getFileFormat_<span class=GramE>Image</span></span><span
+class=GramE>(</span><span class=SpellE>cvipImage</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>write_<span class=GramE>Image</span></span><span class=GramE>(</span>cvipImage,outputfile,CVIP_NO,CVIP_NO,format,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span><span class=SpellE>outputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span>}</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>GEOMETRY library</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1996, 2004 SIUE -<span style='mso-spacerun:yes'>  </span>by<span style='mso-spacerun:yes'>  </span>Scott<span style='mso-spacerun:yes'>  </span>E.<span style='mso-spacerun:yes'>  </span>Umbaugh,<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>Srinivas</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>Madiraju</span>, and Kun <span class=SpellE><span class=GramE>Luo</span></span><span
+class=GramE> .</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

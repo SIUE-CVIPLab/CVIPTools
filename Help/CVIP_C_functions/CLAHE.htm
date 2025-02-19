@@ -1,0 +1,124 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>CLAHE</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:Consolas;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<h2>NAME</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp; CLAHE - performs contrast limited adaptive histogram equalization on an image.</pre><pre>&nbsp;</pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &lt;stdio.h&gt;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &quot;CVIPimage.h&quot;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &quot;CVIPdef.h&quot;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &quot;CVIPcolor.h&quot;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &quot;CVIPhisto.h&quot;</pre><pre>&nbsp;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp; Image *CLAHE(Image *inputImage, int blocksize, int clipPercent, int bandSelect)</pre><pre>&nbsp;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;inputImage&gt; - pointer to an Image structure</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;blocksize&gt; - desired blocksize</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;clipPercent&gt; - desired clipping percent</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;bandSelect&gt; - RGB band on which to calculate histogram (0,1,2)</pre><pre>&nbsp;</pre>
+
+<h2>PATH</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp; $CVIPtoolsHOME\CVIPC\Histogram\CLAHE.c</pre><pre>&nbsp;</pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp; This function performs a contrast limited adaptive histogram equalization algorithm. </pre><pre>The algorithm calculates the CDF for the neighborhood of each pixel based on the blocksize. </pre><pre>Edges are kept using a DCT symmetry method. Images must be a byte value.</pre><pre>&nbsp;</pre>
+
+<h2>TYPES AND CONSTANTS</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp; None</pre><pre>&nbsp;</pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp; A contrast limited adaptive histogram equalized image.</pre><pre>&nbsp;</pre>
+
+<h2>HISTORY</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp; History information recorded: None</pre><pre>&nbsp;</pre>
+
+<h2>EXAMPLE</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &lt;CVIPtoolkit.h&gt;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &lt;CVIPdef.h&gt;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &lt;CVIPimage.h&gt;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &lt;CVIPconvert.h&gt;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &quot;CVIPcolor.h&quot;</pre><pre>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;#include &quot;CVIPhisto.h&quot;</pre><pre>&nbsp;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void main()</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Image *cvipImage;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IMAGE_FORMAT format;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; char *inputfile, *outputfile;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int rows, cols;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setDisplay_Image(&quot;picture&quot;, &quot;Default&quot;);</pre><pre>&nbsp;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print_CVIP(&quot;\n\t\tEnter the Input File Name:&nbsp; &quot;);</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; inputfile =(char *) getString_CVIP();</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; format = getFormat_CVIP(inputfile);</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cvipImage = read_Image(inputfile, 1);</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; view_Image(cvipImage, inputfile);</pre><pre>&nbsp;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cvipImage =(Image *) CLAHE(cvipImage,16,0.05,0);</pre><pre>&nbsp;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print_CVIP(&quot;\n\t\tEnter the Output File Name:&nbsp; &quot;);</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; outputfile = getString_CVIP();</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; view_Image(cvipImage, outputfile);</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; write_Image(cvipImage,outputfile,CVIP_NO,CVIP_NO,format,1);</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; free(inputfile);</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; free(outputfile);</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</pre><pre>&nbsp;</pre>
+
+<h2>BUGS</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp; None at this time</pre><pre>&nbsp;</pre>
+
+<h2>SEE ALSO</h2>
+
+<pre>&nbsp;</pre>
+
+<h2>AUTHOR</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp; Copyright (C) 2020 SIUE - by Scott Umbaugh, Charles Stacey.</pre><pre>&nbsp;</pre>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

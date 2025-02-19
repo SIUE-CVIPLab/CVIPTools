@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{992C4287-2B4E-48C7-96EE-361EF509C8FF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Feature</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Include</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Include</AdditionalIncludeDirectories>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\CVIPC\Feature\binary_feature.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\city_block.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\Cooccurrence_Matrix.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\cvip_pgmtexture.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\CVIP_textureSetUp.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\euclidean_distance.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\hist_feature.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\k_nearest_neighbor.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\label.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\laws_texture.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\maximum_value_metric.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\min_max_normalization.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\minkowski_distance.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\nearest_centroid.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\nearest_centroid_set.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\nearest_neighbor.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\pattern_city_block.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\pattern_euclidean.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\pattern_maximum.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\pattern_min_max_normalization.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\pattern_minkowski.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\pattern_range_normalize.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\pattern_softmax_scaling_normalization.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\pattern_standard_normal_density_normalization.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\pattern_tanimoto.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\pattern_unit_vector_normalization.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\pattern_vector_inner_product.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\range_normalize.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\rst_invariant.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\size_norm_projection.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\softmax_scaling.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\spectral_feature.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\standard_normal_density_normalizatoin.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\tanimoto_metric.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\Texture_Features.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\unit_vector_normalization.c" />
+    <ClCompile Include="..\..\CVIPC\Feature\vector_inner_product.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\and.h" />
+    <ClInclude Include="..\..\Include\CVIPpattern.h" />
+    <ClInclude Include="..\..\Include\thresh.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

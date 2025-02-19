@@ -1,0 +1,211 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="pgm_files/filelist.xml">
+<title>pgm</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2004-06-04T02:28:00Z</o:Created>
+  <o:LastSaved>2004-06-09T16:23:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>399</o:Words>
+  <o:Characters>2280</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>19</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>2674</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE><span
+class=GramE>pgm</span></span> - functions to support portable <span
+class=SpellE>graymap</span> programs</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>#include &lt;<span
+class=SpellE>pgm.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>    </span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>  </span>TYPES AND CONSTANTS</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>typedef</span></span> ... gray;</pre><pre><span style='mso-spacerun:yes'>     </span>#define PGM_<span
+class=GramE>MAXMAXVAL ...</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>extern</span> gray <span class=SpellE>pgm_pbmmaxval</span>;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Each gray should <span
+class=GramE>contain<span style='mso-spacerun:yes'>  </span>only</span><span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>values<span style='mso-spacerun:yes'>  </span>between<span style='mso-spacerun:yes'>  </span>0<span style='mso-spacerun:yes'>  </span>and</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>PGM_MAXMAXVAL.</span><span style='mso-spacerun:yes'>   </span><span
+class=SpellE><span class=GramE>pgm_pbmmaxval</span></span> is the <span
+class=SpellE>maxval</span> used when a PGM</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>program</span> reads a PBM file.<span style='mso-spacerun:yes'>  </span>Normally it <span
+class=GramE>is<span style='mso-spacerun:yes'>  </span>1</span>;<span style='mso-spacerun:yes'>  </span>however,<span style='mso-spacerun:yes'>  </span>for</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>some</span> programs, a larger value gives better results.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>#define PGM_<span
+class=GramE>FORMAT ...</span></pre><pre><span style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'>  </span>#define RPGM_<span
+class=GramE>FORMAT ...</span></pre><pre><span style='mso-spacerun:yes'>     </span>#define PGM_TYPE PGM_FORMAT</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>int</span></span> PGM_FORMAT_TYPE( <span
+class=SpellE>int</span> format )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>For distinguishing different file formats and types.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>  </span>INITIALIZATION</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pgm_init</span>( <span class=SpellE>int</span>* <span
+class=SpellE>argcP</span>, char* <span class=SpellE>argv</span>[] )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>All PGM programs must call this routine.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>  </span>MEMORY MANAGEMENT</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>gray</span>** <span class=SpellE>pgm_allocarray</span>( <span
+class=SpellE>int</span> cols, <span class=SpellE>int</span> rows )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Allocate an array of grays.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>gray</span>* <span class=SpellE>pgm_allocrow</span>( <span
+class=SpellE>int</span> cols )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Allocate a row of the given number of grays.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pgm_freearray</span>( gray** grays, <span
+class=SpellE>int</span> rows )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Free the array <span
+class=GramE>allocated<span style='mso-spacerun:yes'>  </span>with</span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>pgm_allocarray</span>()<span style='mso-spacerun:yes'>  </span>containing</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>the</span> given number of rows.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pgm_freerow</span>( gray* <span
+class=SpellE>grayrow</span> )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Free a row of grays.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>  </span>READING FILES</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pgm_readpgminit</span>( FILE* <span
+class=SpellE>fp</span>, <span class=SpellE>int</span>* <span class=SpellE>colsP</span>, <span
+class=SpellE>int</span>* <span class=SpellE>rowsP</span>, gray* <span
+class=SpellE>maxvalP</span>, <span class=SpellE>int</span>* <span class=SpellE>formatP</span> )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Read the header from a PGM file, filling in the rows<span
+class=GramE>,<span style='mso-spacerun:yes'>  </span>cols</span>,</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>maxval</span></span> and format variables.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pgm_readpgmrow</span>( FILE* <span
+class=SpellE>fp</span>, gray* <span class=SpellE>grayrow</span>, <span
+class=SpellE>int</span> cols, gray <span class=SpellE>maxval</span>, <span
+class=SpellE>int</span> format )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Read a row of grays into the <span
+class=SpellE>grayrow</span> array. <span style='mso-spacerun:yes'>  </span>Format<span
+class=GramE>,<span style='mso-spacerun:yes'>  </span>cols</span>,</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>and</span> <span class=SpellE>maxval</span> were filled in by <span
+class=SpellE>pgm_readpgminit</span>().</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>gray</span>** <span class=SpellE>pgm_readpgm</span>( FILE* <span
+class=SpellE>fp</span>, <span class=SpellE>int</span>* <span class=SpellE>colsP</span>, <span
+class=SpellE>int</span>* <span class=SpellE>rowsP</span>, gray* <span
+class=SpellE>maxvalP</span> )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Read an entire <span
+class=SpellE>graymap</span> file into memory, returning the <span class=SpellE>allo</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>cated</span></span><span class=GramE><span style='mso-spacerun:yes'>  </span>array</span><span style='mso-spacerun:yes'>  </span>and filling in the rows, cols and <span
+class=SpellE>maxval</span> <span class=SpellE>vari</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>ables</span></span>.<span style='mso-spacerun:yes'>    </span>This<span style='mso-spacerun:yes'>    </span>function<span style='mso-spacerun:yes'>    </span>combines<span style='mso-spacerun:yes'>    </span><span
+class=SpellE>pgm_<span class=GramE>readpgminit</span></span><span class=GramE>(</span>),</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>pgm_<span class=GramE>allocarray</span></span><span class=GramE>(</span>) and <span
+class=SpellE>pgm_readpgmrow</span>().</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>  </span>WRITING FILES</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pgm_writepgminit</span>( FILE* <span
+class=SpellE>fp</span>, <span class=SpellE>int</span> cols, <span class=SpellE>int</span> rows, gray <span
+class=SpellE>maxval</span>, <span class=SpellE>int</span> <span class=SpellE>forceplain</span> )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Write the header for <span
+class=GramE>a<span style='mso-spacerun:yes'>  </span>portable</span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>graymap</span><span style='mso-spacerun:yes'>  </span>file.<span style='mso-spacerun:yes'>   </span><span
+class=GramE>The<span style='mso-spacerun:yes'>  </span>for</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>ceplain</span></span><span class=GramE><span style='mso-spacerun:yes'>  </span>flag</span><span style='mso-spacerun:yes'>  </span>forces<span style='mso-spacerun:yes'>  </span>a plain-format file to be written, as</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>opposed</span> to a raw-format one.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pgm_writepgmrow</span>( FILE* <span
+class=SpellE>fp</span>, gray* <span class=SpellE>grayrow</span>, <span
+class=SpellE>int</span> cols, gray <span class=SpellE>maxval</span>, <span
+class=SpellE>int</span> <span class=SpellE>forceplain</span> )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Write a row from a portable <span
+class=SpellE>graymap</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pgm_writepgm</span>( FILE* <span
+class=SpellE>fp</span>, gray** grays, <span class=SpellE>int</span> cols, <span
+class=SpellE>int</span> rows, gray <span class=SpellE>maxval</span>, <span
+class=SpellE>int</span> <span class=SpellE>forceplain</span> )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Write the header and all data for a portable <span
+class=SpellE>graymap</span>.<span style='mso-spacerun:yes'>   </span>This</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>function</span> combines <span class=SpellE>pgm_writepgminit</span>() and <span
+class=SpellE>pgm_writepgmrow</span>().</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>pbm</span>(3), <span
+class=SpellE>ppm</span>(3), pnm(3)</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=GramE>Copyright (C) 1989, 1991, 2004 by Tony Hansen and <span
+class=SpellE>Jef</span> <span class=SpellE>Poskanzer</span>.</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

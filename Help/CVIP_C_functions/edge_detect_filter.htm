@@ -1,0 +1,155 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="edge_detect_filter_files/filelist.xml">
+<title>edge_detect_filter</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2004-06-04T22:36:00Z</o:Created>
+  <o:LastSaved>2004-10-19T23:53:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>992</o:Words>
+  <o:Characters>5656</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>47</o:Lines>
+  <o:Paragraphs>13</o:Paragraphs>
+  <o:CharactersWithSpaces>6635</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>edge_detect_filter - perform edge detection</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &quot;CVIPimage.h&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;CVIPdef.h&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;CVIPfs.h&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;limits.h&gt;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Image *edge_detect_filter(Image *imageP,<span style='mso-spacerun:yes'>  </span>int<span style='mso-spacerun:yes'>  </span>program,<span style='mso-spacerun:yes'>  </span>int</pre><pre><span style='mso-spacerun:yes'>     </span>mask_choice,<span style='mso-spacerun:yes'>  </span>int mask_size, int keep_dc, int threshold, int</pre><pre><span style='mso-spacerun:yes'>     </span>threshold1, int thresh,int thr)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;imageP&gt; - pointer to an Image</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;program&gt; - desired edge detector</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;mask_choice&gt; - type of smoothing filter</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;mask_size&gt; - Laplacian mask (1 or 2)</pre><pre> <span style='mso-spacerun:yes'>     </span>&lt;keep_dc&gt; - 0 (no) or 1 (yes)</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;threshold&gt; - value for binary threshold</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;threshold1&gt; - Frei-Chen projection method</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;thresh&gt; - Frei-Chen projection threshold</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;thr&gt; - angle (in radians) for Frei-Chen edge</pre><pre><span style='mso-spacerun:yes'>              </span>or line projection threshold</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$CVIPtoolsHOME\CVIPC\SPATIALFILTER\edge_detect.c</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>This function applies various edge detection<span style='mso-spacerun:yes'>  </span>algorithms<span style='mso-spacerun:yes'>  </span>to</pre><pre><span style='mso-spacerun:yes'>     </span>&lt;imageP&gt;.<span style='mso-spacerun:yes'>    </span>The<span style='mso-spacerun:yes'>   </span>difference<span style='mso-spacerun:yes'>   </span>between<span style='mso-spacerun:yes'>  </span>this<span style='mso-spacerun:yes'>  </span>function<span style='mso-spacerun:yes'>  </span>and</pre><pre><span style='mso-spacerun:yes'>     </span>edge_detect_setup<span style='mso-spacerun:yes'>  </span>is<span style='mso-spacerun:yes'>  </span>that<span style='mso-spacerun:yes'>  </span>this<span style='mso-spacerun:yes'>  </span>function<span style='mso-spacerun:yes'>  </span>gets<span style='mso-spacerun:yes'>  </span>all<span style='mso-spacerun:yes'>   </span>the</pre><pre><span style='mso-spacerun:yes'>     </span>required<span style='mso-spacerun:yes'>  </span>input<span style='mso-spacerun:yes'>  </span>from the parameters, instead from the stan-</pre><pre><span style='mso-spacerun:yes'>     </span>dard input.<span style='mso-spacerun:yes'>  </span>Edge detectors available for &lt;program&gt; are:</pre><pre><span style='mso-spacerun:yes'>                            </span><st1:stockticker>EDGE</st1:stockticker>_KIRSCH</pre><pre><span style='mso-spacerun:yes'>                            </span><st1:stockticker>EDGE</st1:stockticker>_ROBINSON</pre><pre><span style='mso-spacerun:yes'>        </span><span style='mso-spacerun:yes'>                    </span><st1:stockticker>EDGE</st1:stockticker>_PYRAMID</pre><pre><span style='mso-spacerun:yes'>                            </span><st1:stockticker>EDGE</st1:stockticker>_LAPLACIAN</pre><pre><span style='mso-spacerun:yes'>                            </span><st1:stockticker>EDGE</st1:stockticker>_SOBEL</pre><pre><span style='mso-spacerun:yes'>                            </span><st1:stockticker>EDGE</st1:stockticker>_ROBERTS</pre><pre><span style='mso-spacerun:yes'>                            </span><st1:stockticker>EDGE</st1:stockticker>_PREWITT</pre><pre><span style='mso-spacerun:yes'>                            </span><st1:stockticker>EDGE</st1:stockticker>_FREI</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>If a smoothing filter is desired as<span style='mso-spacerun:yes'>  </span>a<span style='mso-spacerun:yes'>  </span>preprocessing<span style='mso-spacerun:yes'>  </span>step,</pre><pre><span style='mso-spacerun:yes'>     </span>set &lt;mask_choice&gt; to:</pre><pre><span style='mso-spacerun:yes'>                       </span>1 = Gaussian blur</pre><pre><span style='mso-spacerun:yes'>                       </span>2 = generic lowpass 1</pre><pre><span style='mso-spacerun:yes'>                       </span>3 = generic lowpass 2</pre><pre><span style='mso-spacerun:yes'>                       </span>4 = neighborhood average</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'>  </span>For &lt;mask_size&gt;:</pre><pre><span style='mso-spacerun:yes'>     </span>If you select <st1:stockticker>EDGE</st1:stockticker>_LAPLACIAN, set &lt;mask_size&gt;:</pre><pre><span style='mso-spacerun:yes'>                    </span>1 = [0,-1,0; -1,4,-1; 0,-1,0]</pre><pre><span style='mso-spacerun:yes'>                    </span>2 = [1,-2,1; -2,4,-2; 1,-2,1]</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>If you select <st1:stockticker>EDGE</st1:stockticker>_SOBEL, set &lt;mask_size&gt;:</pre><pre><span style='mso-spacerun:yes'>     </span>kernel size (3,5,or 7)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>If you select <st1:stockticker>EDGE</st1:stockticker>_ROBERTS, set &lt;mask_size&gt;:</pre><pre><span style='mso-spacerun:yes'>     </span>1 = G[f(x,y)]=[f(x,y)-f(x+1,y)]^2+[f(x,y)-f(x,y+1)]^2}^1/2)</pre><pre><span style='mso-spacerun:yes'>     </span>2 = G[f(x,y)]=|f(x,y)-f(x+1,y+1)|+|f(x+1,y)-f(x,y+1)|</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>If you select <st1:stockticker>EDGE</st1:stockticker>_PREWITT, set &lt;mask_size&gt; to desired</pre><pre><span style='mso-spacerun:yes'>     </span>kernel size</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>If you select <st1:stockticker>EDGE</st1:stockticker>_FREI, you<span style='mso-spacerun:yes'>  </span>need<span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span>set<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>following:</pre><pre><span style='mso-spacerun:yes'>     </span>&lt;threshold1&gt; :</pre><pre><span style='mso-spacerun:yes'>                    </span>1 = Project onto edge subspace</pre><pre><span style='mso-spacerun:yes'>                    </span>2 = Project onto line subspace</pre><pre><span style='mso-spacerun:yes'>                    </span>3 = Show complete projection</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;thresh&gt; :</pre><pre><span style='mso-spacerun:yes'>       </span><span style='mso-spacerun:yes'>          </span>1 = Set threshold on edge projection</pre><pre><span style='mso-spacerun:yes'>                 </span>2 = Set threshold on line projection</pre><pre><span style='mso-spacerun:yes'>                 </span>3 = Smallest angle between the above</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>If &lt;thresh&gt; = 1 or 2, set &lt;thr&gt; = threshold angle (radians)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>NOTE: FOR ALL OF THE ABOVE PARAMETERS, USE THE VALUE -1<span style='mso-spacerun:yes'>  </span>FOR</pre><pre><span style='mso-spacerun:yes'>     </span>ANY PARAMETER NOT NEEDED.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>TYPES AND C<st1:stockticker>ONST</st1:stockticker>ANTS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>None</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>An edge-detected image</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>HISTORY</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>History information recorded: None</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPtoolkit.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPimage.h&gt;</pre><pre> <span style='mso-spacerun:yes'>     </span>#include &lt;CVIPdef.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPspfltr.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPconvert.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPview.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIEWER &quot;picture&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIDEO_APP &quot;SunVideo &amp;&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>void main()</pre><pre><span style='mso-spacerun:yes'>      </span>{</pre><pre><span style='mso-spacerun:yes'>      </span>Image *cvipImage;</pre><pre><span style='mso-spacerun:yes'>      </span>Image *cvipImage4;</pre><pre><span style='mso-spacerun:yes'>      </span>IMAGE_FORMAT format;</pre><pre><span style='mso-spacerun:yes'>      </span>char *inputfile,*outputfile;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>setDisplay_Image(VIEWER, &quot;Default&quot;);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>print_CVIP(&quot;\n\t\tEnter the<span style='mso-spacerun:yes'>  </span>Input File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span>inputfile =(char *) getString_CVIP();</pre><pre><span style='mso-spacerun:yes'>      </span>format = getFormat_CVIP(inputfile);</pre><pre><span style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'>   </span>cvipImage = read_Image(inputfile, 1);</pre><pre><span style='mso-spacerun:yes'>      </span>view_Image(cvipImage, inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>free(inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>cast_Image(cvipImage,CVIP_SHORT);</pre><pre><span style='mso-spacerun:yes'>      </span>/* the following function performs <st1:stockticker>EDGE</st1:stockticker>_FREI edge</pre><pre><span style='mso-spacerun:yes'>      </span>detection.Projection is done onto the edge subspace</pre><pre><span style='mso-spacerun:yes'>      </span>with the threshold angle equal to 1.05 radians */</pre><pre><span style='mso-spacerun:yes'>      </span>cvipImage4=edge_detect_filter(cvipImage,<st1:stockticker>EDGE</st1:stockticker>_FREI,-1,</pre><pre><span style='mso-spacerun:yes'>      </span>-1,-1,-1,1,1,1.05);</pre><pre><span style='mso-spacerun:yes'>      </span>print_CVIP(&quot;\n\t\tEnter the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span>outputfile = getString_CVIP();</pre><pre><span style='mso-spacerun:yes'>      </span>view_Image(cvipImage4,outputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>write_Image(cvipImage4,outputfile,CVIP_NO,CVIP_NO,format,1);</pre><pre><span style='mso-spacerun:yes'>      </span>free(outputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>}</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPtoolkit.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPimage.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPdef.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPspfltr.h&gt;</pre><pre><span style='mso-spacerun:yes'>    </span><span style='mso-spacerun:yes'>  </span>#include &lt;CVIPconvert.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPview.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIEWER &quot;picture&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIDEO_APP &quot;SunVideo &amp;&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>void main()</pre><pre><span style='mso-spacerun:yes'>      </span>{</pre><pre><span style='mso-spacerun:yes'>      </span>Image *cvipImage;</pre><pre><span style='mso-spacerun:yes'>      </span>IMAGE_FORMAT format;</pre><pre><span style='mso-spacerun:yes'>      </span>char *inputfile,*outputfile;</pre><pre><span style='mso-spacerun:yes'>      </span>Image *cvipImage1;</pre><pre><span style='mso-spacerun:yes'>      </span>Image *cvipImage2;</pre><pre><span style='mso-spacerun:yes'>      </span>Image *cvipImage3;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>(void) setDisplay_Image(VIEWER);</pre><pre><span style='mso-spacerun:yes'>      </span>print_CVIP(&quot;\n\t\tEnter the<span style='mso-spacerun:yes'>  </span>Input File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span>inputfile =(char *) getString_CVIP();</pre><pre><span style='mso-spacerun:yes'>      </span>format = getFormat_CVIP(inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>cvipImage = read_Image(inputfile, 1);</pre><pre><span style='mso-spacerun:yes'>      </span>view_Image(cvipImage, inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>cast_Image(cvipImage,CVIP_SHORT);</pre><pre><span style='mso-spacerun:yes'>      </span>/* for all the edge detecting functions there is no</pre><pre><span style='mso-spacerun:yes'>      </span>preprocessing step */</pre><pre><span style='mso-spacerun:yes'>      </span>/* Laplacian edge detection */</pre><pre><span style='mso-spacerun:yes'>      </span>/* the mask is [0,-1,0; -1,4,-1; 0,-1,0]*/</pre><pre><span style='mso-spacerun:yes'>      </span>cvipImage1=edge_detect_filter(cvipImage,<st1:stockticker>EDGE</st1:stockticker>_LAPLACIAN,</pre><pre><span style='mso-spacerun:yes'>      </span>-1,1,-1,-1,-1,-1,-1);</pre><pre><span style='mso-spacerun:yes'>      </span>print_CVIP(&quot;\n\t\tEnter the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span>outputfile = getString_CVIP();</pre><pre><span style='mso-spacerun:yes'>      </span>view_Image(cvipImage1,outputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>write_Image(cvipImage1,outputfile,CVIP_NO,CVIP_NO,format,1);</pre><pre><span style='mso-spacerun:yes'>      </span>free(outputfile);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>/* Sobel edge detection */</pre><pre><span style='mso-spacerun:yes'>      </span>/* mask size is 3 */</pre><pre><span style='mso-spacerun:yes'>      </span>cvipImage = read_Image(inputfile, 1);</pre><pre><span style='mso-spacerun:yes'>      </span>cast_Image(cvipImage,CVIP_SHORT);</pre><pre><span style='mso-spacerun:yes'>      </span>cvipImage2=edge_detect_filter(cvipImage,<st1:stockticker>EDGE</st1:stockticker>_SOBEL,-1,3,</pre><pre><span style='mso-spacerun:yes'>      </span>-1,-1,-1,-1,-1);</pre><pre><span style='mso-spacerun:yes'>      </span>print_CVIP(&quot;\n\t\tEnter the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span>outputfile = getString_CVIP();</pre><pre><span style='mso-spacerun:yes'>      </span>view_Image(cvipImage2,outputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>write_Image(cvipImage2,outputfile,CVIP_NO,CVIP_NO,format,1);</pre><pre><span style='mso-spacerun:yes'>      </span>free(outputfile);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>/* Roberts edge detection */</pre><pre><span style='mso-spacerun:yes'>      </span>/* type -1:Regular gradient</pre><pre><span style='mso-spacerun:yes'>             </span>G[f(x,y)] = {[f(x,y)-f(x+1,y)]^2 +</pre><pre><span style='mso-spacerun:yes'>                             </span>[f(x,y)-f(x,y+1)]^2}^1/2 */</pre><pre><span style='mso-spacerun:yes'>      </span>cvipImage = read_Image(inputfile, 1);</pre><pre><span style='mso-spacerun:yes'>      </span>cast_Image(cvipImage,CVIP_SHORT);</pre><pre><span style='mso-spacerun:yes'>      </span>cvipImage3=edge_detect_filter(cvipImage,<st1:stockticker>EDGE</st1:stockticker>_ROBERTS,</pre><pre><span style='mso-spacerun:yes'>      </span>-1,1,-1,-1,-1,-1,-1);</pre><pre><span style='mso-spacerun:yes'>      </span>print_CVIP(&quot;\n\t\tEnter the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span>outputfile = getString_CVIP();</pre><pre><span style='mso-spacerun:yes'>      </span>view_Image(cvipImage3,outputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>write_Image(cvipImage3,outputfile,CVIP_NO,CVIP_NO,format,1);</pre><pre><span style='mso-spacerun:yes'>      </span>free(outputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>free(inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>}</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>    </span>SPATIALFILTER library, edge_detect_setup</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1996, 2004 SIUE - by Scott Umbaugh, Greg Hance,<span style='mso-spacerun:yes'>  </span>and</pre><pre><span style='mso-spacerun:yes'>     </span>Kun Luo.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

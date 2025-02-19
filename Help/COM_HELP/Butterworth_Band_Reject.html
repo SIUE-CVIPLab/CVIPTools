@@ -1,0 +1,337 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="Butterworth_Band_Reject_files/filelist.xml">
+<body background="./background.gif">
+<title>Butterworth_Band_Reject</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Iris Cheng</o:Author>
+  <o:LastAuthor>Iris Cheng</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2003-11-04T17:12:00Z</o:Created>
+  <o:LastSaved>2003-11-04T17:12:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>232</o:Words>
+  <o:Characters>1326</o:Characters>
+  <o:Company>Westar</o:Company>
+  <o:Lines>11</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>1555</o:CharactersWithSpaces>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:\5B8B\4F53;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-top:2.5pt;
+	margin-right:0in;
+	margin-bottom:2.5pt;
+	margin-left:0in;
+	mso-para-margin-top:.5gd;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:.5gd;
+	mso-para-margin-left:0in;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:SimSun;
+	mso-bidi-font-family:SimSun;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=571
+ style='width:5.95in;border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:
+ 0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black";
+  mso-fareast-font-family:SimSun'>Name<o:p></o:p></span></p>
+  </td>
+  <td width=444 colspan=2 valign=top style='width:333.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black";
+  mso-fareast-font-family:SimSun'>Butterworth_Band_Reject<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'><pre>performs Butterworth<span style='mso-spacerun:yes'>  </span>band<span style='mso-spacerun:yes'>  </span>reject<o:p></o:p></pre><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'><span style='mso-spacerun:yes'>     </span>filtering<o:p></o:p></pre>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black";
+  mso-fareast-font-family:SimSun'>Function Prototype</span><span
+  style='mso-fareast-font-family:SimSun'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'>HRESULT
+  Butterworth_Band_Reject([in] long* image,[in] long<span style='mso-tab-count:
+  1'>            </span>block_size, [in] long<span style='mso-tab-count:1'>            </span>dc,
+  [in] long<span style='mso-tab-count:1'>      </span>inner, [in] long<span
+  style='mso-tab-count:1'>   </span>outer, [in] long<span style='mso-tab-count:
+  1'>  </span>order,[out,retval] long* Result_Image)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black";
+  mso-fareast-font-family:SimSun'>Return Value<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt'><span
+  style='mso-fareast-font-family:SimSun'>Result_Image<o:p></o:p></span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt'><span
+  style='mso-fareast-font-family:SimSun'>long *<o:p></o:p></span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'><span style='mso-spacerun:yes'>  </span>Result image<o:p></o:p></pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black";
+  mso-fareast-font-family:SimSun'>Parameters<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt'><span
+  style='font-family:"Arial Black";mso-fareast-font-family:SimSun'>Name<o:p></o:p></span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt'><span
+  style='font-family:"Arial Black";mso-fareast-font-family:SimSun'>Type<o:p></o:p></span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt'><span
+  style='font-family:"Arial Black";mso-fareast-font-family:SimSun'>Description<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt'><span
+  style='mso-fareast-font-family:SimSun'>image<o:p></o:p></span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt'><span
+  style='mso-fareast-font-family:SimSun'>long *<o:p></o:p></span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'>pointer to an Image structure<o:p></o:p></pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt'>block_size<span
+  style='mso-fareast-font-family:SimSun'><o:p></o:p></span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt'><span
+  style='mso-fareast-font-family:SimSun'>Long*<o:p></o:p></span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'>desired block size<o:p></o:p></pre><pre style='margin-top:6.0pt;
+  margin-right:0in;margin-bottom:6.0pt;margin-left:0in'><o:p>&nbsp;</o:p></pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt'><span
+  style='mso-fareast-font-family:SimSun'>Dc<o:p></o:p></span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt'><span
+  style='mso-fareast-font-family:SimSun'>Long <o:p></o:p></span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'>drop(0) or retain(1) dc component<o:p></o:p></pre><pre style='margin-top:
+  6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:0in'><o:p>&nbsp;</o:p></pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt'><span
+  style='mso-fareast-font-family:SimSun'>Inner<o:p></o:p></span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt'><span
+  style='mso-fareast-font-family:SimSun'>Long <o:p></o:p></span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'>- inner cutoff frequency<o:p></o:p></pre><pre style='margin-top:6.0pt;
+  margin-right:0in;margin-bottom:6.0pt;margin-left:0in'><o:p>&nbsp;</o:p></pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt'><span
+  style='mso-fareast-font-family:SimSun'>Outer<o:p></o:p></span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt'><span
+  style='mso-fareast-font-family:SimSun'>Long <o:p></o:p></span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'>outer cutoff frequency<o:p></o:p></pre><pre style='margin-top:6.0pt;
+  margin-right:0in;margin-bottom:6.0pt;margin-left:0in'><o:p>&nbsp;</o:p></pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt'><span
+  style='mso-fareast-font-family:SimSun'>Order<o:p></o:p></span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin:0in;margin-bottom:.0001pt'><span
+  style='mso-fareast-font-family:SimSun'>long <o:p></o:p></span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'>filter order<o:p></o:p></pre><pre style='margin-top:6.0pt;margin-right:
+  0in;margin-bottom:6.0pt;margin-left:0in'><o:p>&nbsp;</o:p></pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black";
+  mso-fareast-font-family:SimSun'>Description</span><span style='mso-fareast-font-family:
+  SimSun'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'><pre>Butterworth_Band_Reject() performs two-dimensional<span style='mso-spacerun:yes'>  </span>butter-<o:p></o:p></pre><pre><span style='mso-spacerun:yes'>     </span>worth<span style='mso-spacerun:yes'>  </span>bandreject<span style='mso-spacerun:yes'>  </span>filtering<span style='mso-spacerun:yes'>  </span>in<span style='mso-spacerun:yes'>  </span>transform<span style='mso-spacerun:yes'>  </span>domain on input<o:p></o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+  class=GramE>image</span>. The filter transfer function of order &lt;order&gt; is:<o:p></o:p></pre><pre><span style='mso-spacerun:yes'>                  </span>H(u,v) = 1 / (1+ pow(k, 2*order))<o:p></o:p></pre><pre><span style='mso-spacerun:yes'>         </span>where k = D(u,v)W / [pow(D(u,v), 2) - pow(D0, 2)]<o:p></o:p></pre><pre><span style='mso-spacerun:yes'>     </span>D(u, v) is the distance from the origin, W the width of<span style='mso-spacerun:yes'>  </span>the<o:p></o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+  class=GramE>band</span>,<span style='mso-spacerun:yes'>  </span>and<span style='mso-spacerun:yes'>  </span>D0<span style='mso-spacerun:yes'>  </span>is<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>center of the band. W is calculated<o:p></o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+  class=GramE>using</span> the inner and outer cut-off frequencies specified. The<o:p></o:p></pre><pre><span style='mso-spacerun:yes'>     </span>frequency<span style='mso-spacerun:yes'>  </span>components<span style='mso-spacerun:yes'>  </span>within the band enclosed by inner and<o:p></o:p></pre><pre><span style='mso-spacerun:yes'>     </span>outer cut-off frequencies are attenuated<span style='mso-spacerun:yes'>  </span>according<span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span>the<o:p></o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+  class=GramE>transfer</span> function.<span style='mso-spacerun:yes'>  </span>All frequencies outside the band are not<o:p></o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+  class=GramE>attenuated</span>.<span style='mso-spacerun:yes'>  </span>The band is a 1/4 of a circular band if the<span style='mso-spacerun:yes'>  </span>dc<o:p></o:p></pre><pre><span style='mso-spacerun:yes'>     </span>component<span style='mso-spacerun:yes'>  </span>is on the upper left-hand corner of its transform<o:p></o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+  class=GramE>plane</span>. If dc equals 1, the dc component will be retained, if<o:p></o:p></pre><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'><span style='mso-spacerun:yes'>     </span><span class=GramE>dc</span> equals, the dc component will be dropped.<o:p></o:p></pre><pre><o:p>&nbsp;</o:p></pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black";
+  mso-fareast-font-family:SimSun'>Bugs</span><span style='mso-fareast-font-family:
+  SimSun'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17;mso-yfti-lastrow:yes'>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'>None.<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;
+margin-left:0in'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

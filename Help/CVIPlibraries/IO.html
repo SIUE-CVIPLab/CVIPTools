@@ -1,0 +1,618 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="IO_files/filelist.xml">
+<title>IO</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2004-06-04T02:23:00Z</o:Created>
+  <o:LastSaved>2004-07-12T22:45:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1663</o:Words>
+  <o:Characters>9482</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>79</o:Lines>
+  <o:Paragraphs>22</o:Paragraphs>
+  <o:CharactersWithSpaces>11123</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre>IO - <span class=SpellE>CVIPtools</span> toolkit library for general<span style='mso-spacerun:yes'>  </span>purpose<span style='mso-spacerun:yes'>  </span>I/O,</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>memory</span> management, etc.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>#include &lt;<span
+class=SpellE>CVIPio.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>     </span>#include &lt;<span
+class=SpellE>CVIPtoolkit.h</span>&gt;</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>  </span>TYPES AND CONSTANTS</pre><pre><span style='mso-spacerun:yes'>     </span>#define LINELENGTH 80</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>  </span>INITIALIZATION</pre><pre><span style='mso-spacerun:yes'>     </span>********************************************************</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>init_CVIP</span>( <span
+class=SpellE>int</span>* <span class=SpellE>argcP</span>, char* <span
+class=SpellE>argv</span>[] )</pre><pre><span style='mso-spacerun:yes'>     </span>********************************************************</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>argcP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>the</span></em> <em><span style='font-family:"Courier New"'>number</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>command</span></em> <em><span style='font-family:"Courier New"'>line</span></em> <em><span
+style='font-family:"Courier New"'>arguments</span></em></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>argv</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>array</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>pointers</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>the</span></em> <em><span style='font-family:"Courier New"'>command</span></em> <em><span
+style='font-family:"Courier New"'>line</span></em> <em><span style='font-family:
+"Courier New"'>arguments</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Description: searches for global command line arguments such</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>as</span><span style='mso-spacerun:yes'>   </span>--<span style='mso-spacerun:yes'>   </span>&quot;-quit&quot;<span style='mso-spacerun:yes'>   </span>-<span style='mso-spacerun:yes'>   </span>do<span style='mso-spacerun:yes'>  </span>not<span style='mso-spacerun:yes'>  </span>print<span style='mso-spacerun:yes'>  </span>messages<span style='mso-spacerun:yes'>  </span>issued<span style='mso-spacerun:yes'>  </span>w/</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>cvip_<span class=GramE>msg</span></span><span class=GramE>(</span>...)<span style='mso-spacerun:yes'>  </span>&quot;-version&quot; - print current version<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>CVIP-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>tools</span> and then exit program.<span style='mso-spacerun:yes'>  </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>  </span>MESSAGES AND ERRORS</pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>quiet_CVIP</span>(void)</pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Description: turns off messages displayed by <span
+class=SpellE>msg_<span class=GramE>CVIP</span></span><span class=GramE>(</span>...)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>verbose_CVIP</span>(void)</pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Description: turns on messages <span
+class=GramE>displayed<span style='mso-spacerun:yes'>  </span>by</span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>msg_CVIP</span>(...).</pre><pre><span style='mso-spacerun:yes'>     </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'>  </span>*************************************************</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>usage_CVIP</span>( const char *fn, const char *usage )</pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>fn</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>character</span></em> <em><span style='font-family:"Courier New"'>string</span></em> <em><span
+style='font-family:"Courier New"'>containing</span></em> <em><span
+style='font-family:"Courier New"'>the</span></em></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE><em><span style='font-family:"Courier New"'>name</span></em></span> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>the</span></em> <em><span style='font-family:"Courier New"'>program</span></em></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>usage</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>character</span></em> <em><span style='font-family:"Courier New"'>string</span></em> <em><span
+style='font-family:"Courier New"'>containing</span></em> <em><span
+style='font-family:"Courier New"'>a</span></em></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE><em><span style='font-family:"Courier New"'>usage</span></em></span> <em><span
+style='font-family:"Courier New"'>message</span></em> <em><span
+style='font-family:"Courier New"'>for</span></em> <em><span style='font-family:
+"Courier New"'>the</span></em> <em><span style='font-family:"Courier New"'>current</span></em> <em><span
+style='font-family:"Courier New"'>program</span></em>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Description: prints a usage message out to <span
+class=SpellE><span class=GramE>stderr</span></span><span class=GramE><span style='mso-spacerun:yes'>  </span>and</span><span style='mso-spacerun:yes'>  </span>then</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>exits</span> the program.<span style='mso-spacerun:yes'>  </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>perror_CVIP</span>( const char *fn, const char *reason )</pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>fn</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>character</span></em> <em><span style='font-family:"Courier New"'>string</span></em> <em><span
+style='font-family:"Courier New"'>containing</span></em> <em><span
+style='font-family:"Courier New"'>the</span></em></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE><em><span style='font-family:"Courier New"'>name</span></em></span> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>the</span></em> <em><span style='font-family:"Courier New"'>program</span></em></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>usage</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>character</span></em> <em><span style='font-family:"Courier New"'>string</span></em> <em><span
+style='font-family:"Courier New"'>containing</span></em> <em><span
+style='font-family:"Courier New"'>a</span></em></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE><em><span style='font-family:"Courier New"'>message</span></em></span> <em><span
+style='font-family:"Courier New"'>about</span></em> <em><span style='font-family:
+"Courier New"'>the</span></em> <em><span style='font-family:"Courier New"'>reason</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>the</span></em> <em><span style='font-family:"Courier New"'>error</span></em>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Description: print a <span
+class=GramE>system<span style='mso-spacerun:yes'>  </span>error</span><span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>stderr</span>.<span style='mso-spacerun:yes'>   </span>Author(s):</pre><pre><span style='mso-spacerun:yes'>     </span>Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>msg_CVIP</span>( const char *fn, const char *<span
+class=SpellE>msg</span>, ... )</pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>fn</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>character</span></em> <em><span style='font-family:"Courier New"'>string</span></em> <em><span
+style='font-family:"Courier New"'>containing</span></em> <em><span
+style='font-family:"Courier New"'>the</span></em></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE><em><span style='font-family:"Courier New"'>name</span></em></span> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>the</span></em> <em><span style='font-family:"Courier New"'>program</span></em>/<em><span
+style='font-family:"Courier New"'>function</span></em></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>msg</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>format</span></em> <em><span
+style='font-family:"Courier New"'>control</span></em> <em><span
+style='font-family:"Courier New"'>string</span></em> <em><span
+style='font-family:"Courier New"'>in</span></em> <em><span style='font-family:
+"Courier New"'>the</span></em></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE><em><span style='font-family:"Courier New"'>form</span></em></span> <em><span
+style='font-family:"Courier New"'>of</span></em> <span class=SpellE><em><span
+style='font-family:"Courier New"'>printf</span></em></span>(...) (<em><span
+style='font-family:"Courier New"'>e</span></em>.<em><span style='font-family:
+"Courier New"'>g</span></em>. &quot;<em><span style='font-family:"Courier New"'>x</span></em> = %<em><span
+style='font-family:"Courier New"'>d</span></em>&quot;).</pre><pre><span style='mso-spacerun:yes'>     </span>&lt;...&gt; - <em><span
+style='font-family:"Courier New"'>list</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>variables</span></em>, <span
+class=SpellE><em><span style='font-family:"Courier New"'>seperated</span></em></span> <em><span
+style='font-family:"Courier New"'>by</span></em> <em><span style='font-family:
+"Courier New"'>commas</span></em>, <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>be</span></em></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE><em><span style='font-family:"Courier New"'>used</span></em></span> <em><span
+style='font-family:"Courier New"'>by</span></em> <em><span style='font-family:
+"Courier New"'>the</span></em> <em><span style='font-family:"Courier New"'>format</span></em> <em><span
+style='font-family:"Courier New"'>control</span></em> <em><span
+style='font-family:"Courier New"'>string</span></em>. <span class=GramE>(<em><span
+style='font-family:"Courier New"'>e</span></em>.<em><span style='font-family:
+"Courier New"'>g</span></em>.)</span> -</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><em><span style='font-family:"Courier New"'>msg</span></em>_<span
+class=GramE><em><span style='font-family:"Courier New"'>CVIP</span></em></span></span><span
+class=GramE>(</span>&quot;<span class=SpellE><em><span style='font-family:"Courier New"'>myfunc</span></em></span>&quot;, &quot;<em><span
+style='font-family:"Courier New"'>x</span></em> = %<em><span style='font-family:
+"Courier New"'>d</span></em>&quot;, <em><span style='font-family:"Courier New"'>3</span></em>) =&gt; &quot;<span
+class=SpellE><em><span style='font-family:"Courier New"'>myfunc</span></em></span>: <em><span
+style='font-family:"Courier New"'>x</span></em> = <em><span style='font-family:
+"Courier New"'>3</span></em>&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Description: <span
+class=GramE>print<span style='mso-spacerun:yes'>  </span>an</span><span style='mso-spacerun:yes'>  </span>informational<span style='mso-spacerun:yes'>  </span>message.<span style='mso-spacerun:yes'>   </span>Author(s):</pre><pre><span style='mso-spacerun:yes'>     </span>Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>print_CVIP</span>( const char *<span
+class=SpellE>msg</span>, ... )</pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>msg</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>format</span></em> <em><span
+style='font-family:"Courier New"'>control</span></em> <em><span
+style='font-family:"Courier New"'>string</span></em> <em><span
+style='font-family:"Courier New"'>in</span></em> <em><span style='font-family:
+"Courier New"'>the</span></em></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE><em><span style='font-family:"Courier New"'>form</span></em></span> <em><span
+style='font-family:"Courier New"'>of</span></em> <span class=SpellE><em><span
+style='font-family:"Courier New"'>printf</span></em></span>(...) (<em><span
+style='font-family:"Courier New"'>e</span></em>.<em><span style='font-family:
+"Courier New"'>g</span></em>. &quot;<em><span style='font-family:"Courier New"'>x</span></em> = %<em><span
+style='font-family:"Courier New"'>d</span></em>&quot;).</pre><pre><span style='mso-spacerun:yes'>     </span>&lt;...&gt; - <em><span
+style='font-family:"Courier New"'>list</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>variables</span></em>, <span
+class=SpellE><em><span style='font-family:"Courier New"'>seperated</span></em></span> <em><span
+style='font-family:"Courier New"'>by</span></em> <em><span style='font-family:
+"Courier New"'>commas</span></em>, <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>be</span></em></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE><em><span style='font-family:"Courier New"'>used</span></em></span> <em><span
+style='font-family:"Courier New"'>by</span></em> <em><span style='font-family:
+"Courier New"'>the</span></em> <em><span style='font-family:"Courier New"'>format</span></em> <em><span
+style='font-family:"Courier New"'>control</span></em> <em><span
+style='font-family:"Courier New"'>string</span></em>. <span class=GramE>(<em><span
+style='font-family:"Courier New"'>e</span></em>.<em><span style='font-family:
+"Courier New"'>g</span></em>.)</span> -</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><em><span style='font-family:"Courier New"'>msg</span></em>_<span
+class=GramE><em><span style='font-family:"Courier New"'>CVIP</span></em></span></span><span
+class=GramE>(</span>&quot;<span class=SpellE><em><span style='font-family:"Courier New"'>myfunc</span></em></span>&quot;, &quot;<em><span
+style='font-family:"Courier New"'>x</span></em> = %<em><span style='font-family:
+"Courier New"'>d</span></em>&quot;, <em><span style='font-family:"Courier New"'>3</span></em>) =&gt; &quot;<span
+class=SpellE><em><span style='font-family:"Courier New"'>myfunc</span></em></span>: <em><span
+style='font-family:"Courier New"'>x</span></em> = <em><span style='font-family:
+"Courier New"'>3</span></em>&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Description: print an informational message.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>Like<span style='mso-spacerun:yes'>  </span><span class=SpellE>msg</span></span><span
+class=SpellE>_CVIP</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>except<span style='mso-spacerun:yes'>  </span>the</span> source function is not printed.<span style='mso-spacerun:yes'>  </span>Author(s): <span
+class=SpellE>Gre</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>gory</span> <span class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>void</span> <span class=SpellE>error_CVIP</span>( const char *fn, const char *error, ... )</pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>fn</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>character</span></em> <em><span style='font-family:"Courier New"'>string</span></em> <em><span
+style='font-family:"Courier New"'>containing</span></em> <em><span
+style='font-family:"Courier New"'>the</span></em></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE><em><span style='font-family:"Courier New"'>name</span></em></span> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>the</span></em> <em><span style='font-family:"Courier New"'>program</span></em>/<em><span
+style='font-family:"Courier New"'>function</span></em></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>format</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>format</span></em> <em><span
+style='font-family:"Courier New"'>control</span></em> <em><span
+style='font-family:"Courier New"'>string</span></em> <em><span
+style='font-family:"Courier New"'>in</span></em> <em><span style='font-family:
+"Courier New"'>the</span></em></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE><em><span style='font-family:"Courier New"'>form</span></em></span> <em><span
+style='font-family:"Courier New"'>of</span></em> <span class=SpellE><em><span
+style='font-family:"Courier New"'>printf</span></em></span>(...) (<em><span
+style='font-family:"Courier New"'>e</span></em>.<em><span style='font-family:
+"Courier New"'>g</span></em>. &quot;<em><span style='font-family:"Courier New"'>x</span></em> != %<em><span
+style='font-family:"Courier New"'>d</span></em>&quot;).</pre><pre><span style='mso-spacerun:yes'>     </span>&lt;...&gt; - <em><span
+style='font-family:"Courier New"'>list</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>variables</span></em>, <span
+class=SpellE><em><span style='font-family:"Courier New"'>seperated</span></em></span> <em><span
+style='font-family:"Courier New"'>by</span></em> <em><span style='font-family:
+"Courier New"'>commas</span></em>, <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>be</span></em></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE><em><span style='font-family:"Courier New"'>used</span></em></span> <em><span
+style='font-family:"Courier New"'>by</span></em> <em><span style='font-family:
+"Courier New"'>the</span></em> <em><span style='font-family:"Courier New"'>format</span></em> <em><span
+style='font-family:"Courier New"'>control</span></em> <em><span
+style='font-family:"Courier New"'>string</span></em>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Description: print an error message prefixed <span
+class=GramE>by<span style='mso-spacerun:yes'>  </span>a</span><span style='mso-spacerun:yes'>  </span>standard</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>CVIPtools</span></span><span class=GramE><span style='mso-spacerun:yes'>  </span>error</span><span style='mso-spacerun:yes'>  </span>tag.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>(e.g.)</span><span style='mso-spacerun:yes'>  </span>- <span
+class=SpellE>error_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;<span
+class=SpellE>myfunc</span>&quot;, &quot;x !=</pre><pre><span style='mso-spacerun:yes'>     </span>%d&quot;, 3) =<span
+class=GramE>&gt;<span style='mso-spacerun:yes'>  </span>&quot;</span>&lt;<span
+class=SpellE>myfunc</span>-error&gt;:<span style='mso-spacerun:yes'>  </span>x<span style='mso-spacerun:yes'>  </span>!=<span style='mso-spacerun:yes'>  </span>3&quot;<span style='mso-spacerun:yes'>  </span>Author(s):<span style='mso-spacerun:yes'>  </span>Gregory</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>Hance</span></span><span class=GramE>.</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>  </span>PARSING USER INPUT</pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>char</span> *<span class=SpellE>getString_CVIP</span>(void)</pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Returns: pointer to string of input text <span
+class=GramE>LINELENGTH<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>charac</span></span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>ters</span></span> long</pre><pre><span style='mso-spacerun:yes'>     </span>Description: obtain a string of characters from <span
+class=SpellE>stdin</span> <span class=GramE>up<span style='mso-spacerun:yes'>  </span>to</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>the</span> first <span class=SpellE>newline</span> character. If more than LINELENGTH <span
+class=SpellE>charac</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>ters</span></span> are read the rest of the input is <span
+class=SpellE>dicarded</span><span style='mso-spacerun:yes'>  </span>up<span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span>and</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>including</span> the <span class=SpellE>newline</span> char.</pre><pre><span style='mso-spacerun:yes'>     </span>Diagnostics: returns NULL pointer w/ appropriate <span
+class=GramE>error<span style='mso-spacerun:yes'>  </span><span class=SpellE>mes</span></span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>sage<span style='mso-spacerun:yes'>  </span>upon</span><span style='mso-spacerun:yes'>  </span>(1) memory allocation failure, (2) error reading</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>from</span> standard input.</pre><pre><span style='mso-spacerun:yes'>     </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>long</span> <span class=SpellE>getInt_CVIP</span>(<span
+class=SpellE>int</span> base, long <span class=SpellE>low_limit</span>, long <span
+class=SpellE>up_limit</span>)</pre><pre><span style='mso-spacerun:yes'>  </span><span style='mso-spacerun:yes'>   </span>*************************************************</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>base</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>base</span></em>/<em><span style='font-family:
+"Courier New"'>radix</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>number</span></em> (<em><span
+style='font-family:"Courier New"'>2</span></em> <em><span style='font-family:
+"Courier New"'>to</span></em> <em><span style='font-family:"Courier New"'>36</span></em> <em><span
+style='font-family:"Courier New"'>inclusive</span></em>)</pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>low</span></em>_<em><span
+style='font-family:"Courier New"'>limit</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>lower</span></em> <em><span style='font-family:
+"Courier New"'>limit</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>acceptable</span></em> <em><span
+style='font-family:"Courier New"'>input</span></em></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>up</span></em>_<em><span
+style='font-family:"Courier New"'>limit</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>upper</span></em> <em><span style='font-family:
+"Courier New"'>limit</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>acceptable</span></em> <em><span
+style='font-family:"Courier New"'>input</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Returns: an integer value Description: obtain value <span
+class=GramE>of<span style='mso-spacerun:yes'>  </span>type</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>int</span></span><span style='mso-spacerun:yes'>   </span>from<span style='mso-spacerun:yes'>   </span>standard<span style='mso-spacerun:yes'>   </span>input<span style='mso-spacerun:yes'>   </span>within<span style='mso-spacerun:yes'>   </span>a<span style='mso-spacerun:yes'>  </span>specified<span style='mso-spacerun:yes'>  </span>range</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>&lt;<span class=SpellE>low_limit</span>&gt;...&lt;<span
+class=SpellE>up_limit</span>&gt;.</span><span style='mso-spacerun:yes'>  </span>This function uses the <span
+class=GramE>C<span style='mso-spacerun:yes'>  </span>library</span></pre><pre><span style='mso-spacerun:yes'>     </span>function<span
+class=GramE>--<span style='mso-spacerun:yes'>  </span><span class=SpellE>strtol</span></span>(..)<span style='mso-spacerun:yes'>   </span><span
+class=GramE>and<span style='mso-spacerun:yes'>  </span>expects</span><span style='mso-spacerun:yes'>  </span>the number to consist</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>of</span>... (1) <span class=GramE>an</span> optional plus or minus sign. (2) <span
+class=GramE>a</span> sequence<span style='mso-spacerun:yes'>  </span>of</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>decimal<span style='mso-spacerun:yes'>  </span>digits</span> which may be <span
+class=SpellE>preceeded</span> by 0x or 0X for <span class=SpellE>hexa</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>decimal</span> values.<span style='mso-spacerun:yes'>  </span>Diagnostics: prompts user for another value</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>when</span> the value entered is... (1) - a candidate for overflow,</pre><pre><span style='mso-spacerun:yes'>     </span>(2) <span
+class=GramE>bogus</span>, (4) not within the specified range &lt;<span
+class=SpellE>low_limit</span>&gt;...</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>&lt;<span class=SpellE>up_limit</span>&gt;.</span><span style='mso-spacerun:yes'>  </span><span
+class=GramE>Returns<span style='mso-spacerun:yes'>  </span>with</span><span style='mso-spacerun:yes'>  </span>value<span style='mso-spacerun:yes'>  </span>of 0 w/ appropriate error</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>message</span> when a call is made to <span class=SpellE>get_int</span>(...)<span style='mso-spacerun:yes'>  </span>and &lt;<span
+class=SpellE>low_limit</span>&gt;</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>&lt;<span style='mso-spacerun:yes'>  </span>&lt;</span><span
+class=SpellE>up_limit</span>&gt;<span style='mso-spacerun:yes'>  </span>or<span style='mso-spacerun:yes'>  </span>base is not between 2 and 36.<span style='mso-spacerun:yes'>  </span>Author(s):</pre><pre><span style='mso-spacerun:yes'>     </span>Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>unsigned</span> long <span class=SpellE>getUInt_CVIP</span>(<span
+class=SpellE>int</span> base, unsigned long <span class=SpellE>low_limit</span>, unsigned long <span
+class=SpellE>up_limit</span>)</pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>base</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>base</span></em>/<em><span style='font-family:
+"Courier New"'>radix</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>number</span></em> (<em><span
+style='font-family:"Courier New"'>2</span></em> <em><span style='font-family:
+"Courier New"'>to</span></em> <em><span style='font-family:"Courier New"'>36</span></em> <em><span
+style='font-family:"Courier New"'>inclusive</span></em>)</pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>low</span></em>_<em><span
+style='font-family:"Courier New"'>limit</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>lower</span></em> <em><span style='font-family:
+"Courier New"'>limit</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>acceptable</span></em> <em><span
+style='font-family:"Courier New"'>input</span></em></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>up</span></em>_<em><span
+style='font-family:"Courier New"'>limit</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>upper</span></em> <em><span style='font-family:
+"Courier New"'>limit</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>acceptable</span></em> <em><span
+style='font-family:"Courier New"'>input</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Returns: unsigned integer value Description: obtain value of</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>type<span style='mso-spacerun:yes'>  </span>unsigned</span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>int</span><span style='mso-spacerun:yes'>  </span>from<span style='mso-spacerun:yes'>  </span>standard input within a specified</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>range</span> &lt;<span class=SpellE>low_limit</span>&gt;...&lt;<span
+class=SpellE>up_limit</span>&gt;.<span style='mso-spacerun:yes'>  </span>This <span
+class=GramE>function<span style='mso-spacerun:yes'>  </span>uses</span><span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>C</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>library<span style='mso-spacerun:yes'>  </span>function</span>--<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>strtoul</span>(..)<span style='mso-spacerun:yes'>   </span><span
+class=GramE>and</span> expects the number to</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>consist</span> of... (1) <span class=GramE>an</span> optional plus<span style='mso-spacerun:yes'>  </span>or<span style='mso-spacerun:yes'>  </span>minus<span style='mso-spacerun:yes'>  </span>sign.<span style='mso-spacerun:yes'>  </span>(2)<span style='mso-spacerun:yes'>  </span><span
+class=GramE>a</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>sequence<span style='mso-spacerun:yes'>  </span>of</span><span style='mso-spacerun:yes'>  </span>decimal digits which may be <span
+class=SpellE>preceeded</span> by 0x or</pre><pre><span style='mso-spacerun:yes'>     </span>0X for hexadecimal values.<span style='mso-spacerun:yes'>  </span>Diagnostics:<span style='mso-spacerun:yes'>  </span><span
+class=GramE>prompts<span style='mso-spacerun:yes'>  </span>user</span><span style='mso-spacerun:yes'>  </span>for</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>another</span> value when the value entered is... (1) - a candidate</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>for</span> overflow, (2) bogus, (4) not within the specified<span style='mso-spacerun:yes'>  </span>range</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>&lt;<span class=SpellE>low_limit</span>&gt;...<span style='mso-spacerun:yes'>   </span>&lt;<span
+class=SpellE>up_limit</span>&gt;.</span><span style='mso-spacerun:yes'>  </span><span
+class=GramE>Returns<span style='mso-spacerun:yes'>  </span>with</span><span style='mso-spacerun:yes'>  </span>value<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>0 w/</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>appropriate<span style='mso-spacerun:yes'>  </span>error</span><span style='mso-spacerun:yes'>  </span>message<span style='mso-spacerun:yes'>  </span>when<span style='mso-spacerun:yes'>  </span>a<span style='mso-spacerun:yes'>   </span>call<span style='mso-spacerun:yes'>   </span>is<span style='mso-spacerun:yes'>   </span>made<span style='mso-spacerun:yes'>   </span>to</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>get_<span class=GramE>uint</span></span><span class=GramE>(</span>...)<span style='mso-spacerun:yes'>   </span>and<span style='mso-spacerun:yes'>  </span>&lt;<span
+class=SpellE>low_limit</span>&gt; &lt; &lt;UP_LIMIT&gt; &lt;<span class=SpellE><em
+************************************************* up_limit) double low_limit,
+getFloat_CVIP(double Hance. Gregory Author(s): 36. and 2 between not is base or><span
+style='font-family:"Courier New"'>low</span></em>_<em><span style='font-family:
+"Courier New"'>limit</span></em></span>&gt; - <em><span style='font-family:
+"Courier New"'>lower</span></em> <em><span style='font-family:"Courier New"'>limit</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>acceptable</span></em> <em><span style='font-family:"Courier New"'>input</span></em></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>up</span></em>_<em><span
+style='font-family:"Courier New"'>limit</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>upper</span></em> <em><span style='font-family:
+"Courier New"'>limit</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>acceptable</span></em> <em><span
+style='font-family:"Courier New"'>input</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Returns: double <span
+class=SpellE>precison</span> floating <span class=GramE>point<span style='mso-spacerun:yes'>  </span>value</span><span style='mso-spacerun:yes'>  </span>Description:</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>obtain<span style='mso-spacerun:yes'>  </span>value</span><span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>type<span style='mso-spacerun:yes'>  </span>double from standard input within a</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>specified<span style='mso-spacerun:yes'>  </span>range</span><span style='mso-spacerun:yes'>  </span>&lt;<span
+class=SpellE>low_limit</span>&gt;...&lt;<span class=SpellE>up_limit</span>&gt;.<span style='mso-spacerun:yes'>   </span><span
+class=GramE>This<span style='mso-spacerun:yes'>  </span>function</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>uses<span style='mso-spacerun:yes'>  </span>the</span><span style='mso-spacerun:yes'>  </span>C library function -- <span
+class=SpellE>strtod</span>(..)<span style='mso-spacerun:yes'>  </span><span
+class=GramE>and</span> expects the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>number</span> to consist of... (1) <span class=GramE>an</span> optional plus or minus<span style='mso-spacerun:yes'>  </span>sign.</pre><pre><span style='mso-spacerun:yes'>     </span>(2)<span style='mso-spacerun:yes'>  </span><span
+class=GramE>a</span> sequence of decimal digits possibly containing a sin-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>gle</span></span> decimal point, and (3) an optional exponent<span style='mso-spacerun:yes'>  </span>part,<span style='mso-spacerun:yes'>  </span>con-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>sisting</span></span><span class=GramE><span style='mso-spacerun:yes'>  </span>of</span><span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>letter<span style='mso-spacerun:yes'>  </span>e<span style='mso-spacerun:yes'>  </span>or<span style='mso-spacerun:yes'>  </span>E.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>an</span> optional sign, and a</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>sequence</span> of decimal digits.<span style='mso-spacerun:yes'>  </span>Diagnostics: <span
+class=GramE>prompts<span style='mso-spacerun:yes'>  </span>user</span><span style='mso-spacerun:yes'>  </span>for</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>another</span> value when the value entered is... (1) - a candidate</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>for</span> overflow, (2) a candidate for overflow, (3)<span style='mso-spacerun:yes'>  </span>bogus,<span style='mso-spacerun:yes'>  </span>(4)</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>not<span style='mso-spacerun:yes'>  </span>within</span><span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>specified<span style='mso-spacerun:yes'>  </span>range &lt;<span
+class=SpellE>low_limit</span>&gt;...&lt;<span class=SpellE>up_limit</span>&gt;.</pre><pre><span style='mso-spacerun:yes'>     </span>Returns with value of 0 w/ appropriate error message <span
+class=GramE>when<span style='mso-spacerun:yes'>  </span>a</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>call</span> is made to <span class=SpellE>get_float</span>(...) and &lt;<span
+class=SpellE>low_limit</span>&gt; &lt; &lt;UP_LIMIT&gt;. &lt;<span class=GramE><em
+************************************************* Hance. Gregory Author(s):
+size) size_t cols, int unsigned rows, depth, *allocMatrix3D_CVIP(unsigned void
+MANAGEMENT MEMORY><span style='font-family:"Courier New"'>depth</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>depth</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>rows</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>number</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>rows</span></em> <em><span style='font-family:"Courier New"'>in</span></em> <em><span
+style='font-family:"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>cols</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>number</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>columns</span></em> <em><span style='font-family:"Courier New"'>in</span></em> <em><span
+style='font-family:"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>size</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>size</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>each</span></em> <em><span
+style='font-family:"Courier New"'>matrix</span></em> <em><span
+style='font-family:"Courier New"'>element</span></em> (<em><span
+style='font-family:"Courier New"'>e</span></em>.<em><span style='font-family:
+"Courier New"'>g</span></em>. <span class=SpellE><em><span style='font-family:
+"Courier New"'>sizeof</span></em></span>(<em><span style='font-family:"Courier New"'>float</span></em>))</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Returns: triple pointer to a new <span
+class=GramE>instance<span style='mso-spacerun:yes'>  </span>of</span><span style='mso-spacerun:yes'>  </span>an<span style='mso-spacerun:yes'>  </span>array<span style='mso-spacerun:yes'>  </span>of</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>matrices</span>.<span style='mso-spacerun:yes'>    </span>Description:<span style='mso-spacerun:yes'>   </span><span
+class=GramE>allocate<span style='mso-spacerun:yes'>  </span>an</span><span style='mso-spacerun:yes'>  </span>array<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>&lt;depth&gt;</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>matrices</span> each with &lt;rows&gt; rows and &lt;cols&gt; cols with an<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>ele</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>ment</span></span><span class=GramE><span style='mso-spacerun:yes'>  </span>size</span><span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>&lt;size&gt;.<span style='mso-spacerun:yes'>  </span>NOTE: use freeMatrix3D_<span
+class=GramE>CVIP(</span>...) to</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>free<span style='mso-spacerun:yes'>  </span>the</span><span style='mso-spacerun:yes'>  </span>matrix<span style='mso-spacerun:yes'>  </span>Diagnostics:<span style='mso-spacerun:yes'>  </span>returns<span style='mso-spacerun:yes'>  </span>NULL<span style='mso-spacerun:yes'>  </span>pointer<span style='mso-spacerun:yes'>   </span>w/</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>corresponding<span style='mso-spacerun:yes'>  </span>error</span> message upon memory allocation failure.</pre><pre><span style='mso-spacerun:yes'>     </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> *<span class=SpellE>allocMatrix_CVIP</span>(unsigned <span
+class=SpellE>int</span> rows, unsigned <span class=SpellE>int</span> cols, <span
+class=SpellE>size_t</span> size)</pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>rows</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>number</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>rows</span></em> <em><span style='font-family:"Courier New"'>in</span></em> <em><span
+style='font-family:"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>cols</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>number</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>columns</span></em> <em><span style='font-family:"Courier New"'>in</span></em> <em><span
+style='font-family:"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>size</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>size</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>each</span></em> <em><span
+style='font-family:"Courier New"'>matrix</span></em> <em><span
+style='font-family:"Courier New"'>element</span></em> (<em><span
+style='font-family:"Courier New"'>e</span></em>.<em><span style='font-family:
+"Courier New"'>g</span></em>. <span class=SpellE><em><span style='font-family:
+"Courier New"'>sizeof</span></em></span>(<em><span style='font-family:"Courier New"'>float</span></em>))</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Returns: double pointer <span
+class=GramE>to<span style='mso-spacerun:yes'>  </span>a</span><span style='mso-spacerun:yes'>  </span>new<span style='mso-spacerun:yes'>  </span>instance<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>a<span style='mso-spacerun:yes'>  </span>matrix.</pre><pre><span style='mso-spacerun:yes'>     </span>Description:<span style='mso-spacerun:yes'>  </span><span
+class=GramE>allocate<span style='mso-spacerun:yes'>  </span>an</span><span style='mso-spacerun:yes'>  </span>array<span style='mso-spacerun:yes'>  </span>of &lt;rows&gt; rows and &lt;cols&gt;</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>cols<span style='mso-spacerun:yes'>  </span>with</span><span style='mso-spacerun:yes'>  </span>an<span style='mso-spacerun:yes'>  </span>element<span style='mso-spacerun:yes'>   </span>size<span style='mso-spacerun:yes'>   </span>of<span style='mso-spacerun:yes'>   </span>&lt;size&gt;.<span style='mso-spacerun:yes'>    </span>NOTE:<span style='mso-spacerun:yes'>   </span>use</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>freeMatrix_<span class=GramE>CVIP</span></span><span class=GramE>(</span>...)<span style='mso-spacerun:yes'>   </span>to<span style='mso-spacerun:yes'>  </span>free<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>matrix.<span style='mso-spacerun:yes'>   </span>Diagnostics:</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>returns</span> NULL pointer w/<span style='mso-spacerun:yes'>  </span>corresponding<span style='mso-spacerun:yes'>  </span>error<span style='mso-spacerun:yes'>  </span>message<span style='mso-spacerun:yes'>  </span>upon</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>memory</span> allocation failure.<span style='mso-spacerun:yes'>  </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>freeMatrix_CVIP</span>(void *<span
+class=SpellE>matP</span>)</pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>matP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>matrix</span></em> <em><span style='font-family:"Courier New"'>allocated</span></em> <em><span
+style='font-family:"Courier New"'>w</span></em>/ <span class=SpellE><em><span
+style='font-family:"Courier New"'>matalloc</span></em></span></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>number</span></em>_<em><span
+style='font-family:"Courier New"'>of</span></em>_<em><span style='font-family:
+"Courier New"'>planes</span></em></span>&gt; - <em><span style='font-family:
+"Courier New"'>depth</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>matrix</span></em> (<em><span
+style='font-family:"Courier New"'>number</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>data</span></em> <em><span style='font-family:"Courier New"'>bands</span></em>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Description: free the memory associated with a <span
+class=GramE>matrix<span style='mso-spacerun:yes'>  </span><span class=SpellE>allo</span></span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>cated</span></span> by <span class=SpellE>allocMatrix_CVIP</span>.<span style='mso-spacerun:yes'>  </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> freeMatrix3D_CVIP(void *<span class=SpellE>matP</span>)</pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>matP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>matrix</span></em> <em><span style='font-family:"Courier New"'>allocated</span></em> <em><span
+style='font-family:"Courier New"'>w</span></em>/ <span class=SpellE><em><span
+style='font-family:"Courier New"'>matalloc</span></em></span></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>number</span></em>_<em><span
+style='font-family:"Courier New"'>of</span></em>_<em><span style='font-family:
+"Courier New"'>planes</span></em></span>&gt; - <em><span style='font-family:
+"Courier New"'>depth</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>matrix</span></em> (<em><span
+style='font-family:"Courier New"'>number</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>data</span></em> <em><span style='font-family:"Courier New"'>bands</span></em>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Description: free the memory associated with a <span
+class=GramE>matrix<span style='mso-spacerun:yes'>  </span><span class=SpellE>allo</span></span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>cated</span></span> by allocMatrix3D_CVIP Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><span style='mso-spacerun:yes'>      </span>FILE * <span
+class=SpellE>openRead_<span class=GramE>CVIP</span></span><span class=GramE>(</span> const char *name)</pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>name</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>file</span></em> <em><span style='font-family:
+"Courier New"'>name</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Description: opens a <span
+class=GramE>file<span style='mso-spacerun:yes'>  </span>for</span><span style='mso-spacerun:yes'>  </span>reading<span style='mso-spacerun:yes'>  </span>Author(s):<span style='mso-spacerun:yes'>  </span>Gregory</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>Hance</span></span><span class=GramE>.</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><span style='mso-spacerun:yes'>  </span><span style='mso-spacerun:yes'>    </span>FILE * <span
+class=SpellE>openWrite_<span class=GramE>CVIP</span></span><span class=GramE>(</span> const char *name, CVIP_BOOLEAN nice)</pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>name</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>file</span></em> <em><span style='font-family:
+"Courier New"'>name</span></em></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>nice</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>priority</span></em> <em><span
+style='font-family:"Courier New"'>level</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>the</span></em> <em><span
+style='font-family:"Courier New"'>command</span></em>; <em><span
+style='font-family:"Courier New"'>if</span></em> <em><span style='font-family:
+"Courier New"'>non</span></em>-<em><span style='font-family:"Courier New"'>zero</span></em>, <em><span
+style='font-family:"Courier New"'>checks</span></em></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE><em><span style='font-family:"Courier New"'>for</span></em></span> <em><span
+style='font-family:"Courier New"'>existing</span></em> <em><span
+style='font-family:"Courier New"'>file</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>same</span></em> <em><span
+style='font-family:"Courier New"'>name</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Description: writes a file to disk, prompting <span
+class=GramE>for<span style='mso-spacerun:yes'>  </span>overwrite</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>permission</span>.<span style='mso-spacerun:yes'>  </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>void</span> * <span class=SpellE>close_CVIP</span>(FILE* f)</pre><pre><span style='mso-spacerun:yes'>     </span>*************************************************</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<em><span
+style='font-family:"Courier New"'>f</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>file</span></em> <em><span style='font-family:
+"Courier New"'>name</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Description: closes a file Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>BUGS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=GramE>none</span> as of yet</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>CVIPtools</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1992, 1993, 2004 SIUE - by Gregory <span
+class=SpellE><span class=GramE>Hance</span></span><span class=GramE><span style='mso-spacerun:yes'>  </span>and</span><span style='mso-spacerun:yes'>  </span>Scott</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>Umbaugh</span></span><span class=GramE>.</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

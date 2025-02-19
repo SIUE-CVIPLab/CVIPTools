@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{715AF32E-39C9-4AEE-9FE8-AF8673CC3CB2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CVIPGUI</RootNamespace>
+    <AssemblyName>CVIPtools</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>5.6.5.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>CVIPtools.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E853317D00AED24346F5D7921D697B293788437A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CVIPGUI_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\AnalysisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analysis\AnalysisForm.designer.cs">
+      <DependentUpon>AnalysisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\Classification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Analysis\Classification.designer.cs">
+      <DependentUpon>Classification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\ClassificationResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analysis\ClassificationResults.designer.cs">
+      <DependentUpon>ClassificationResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\CvipObject.cs" />
+    <Compile Include="Analysis\EdgeDetection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Analysis\EdgeDetection.designer.cs">
+      <DependentUpon>EdgeDetection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\FeatureFile.cs" />
+    <Compile Include="Analysis\FeatureHeader.cs" />
+    <Compile Include="Analysis\Features.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Analysis\Features.designer.cs">
+      <DependentUpon>Features.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\FeatureViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analysis\FeatureViewer.designer.cs">
+      <DependentUpon>FeatureViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\Geometry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Analysis\Geometry.designer.cs">
+      <DependentUpon>Geometry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\HitOrMissMasks.cs" />
+    <Compile Include="Analysis\MorphGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analysis\MorphGrid.Designer.cs">
+      <DependentUpon>MorphGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\Preprocessing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Analysis\Preprocessing.designer.cs">
+      <DependentUpon>Preprocessing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\Segmentation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Analysis\Segmentation.designer.cs">
+      <DependentUpon>Segmentation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\MorphologicalMaskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analysis\MorphologicalMaskForm.Designer.cs">
+      <DependentUpon>MorphologicalMaskForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\MorphologicalMasks.cs" />
+    <Compile Include="Analysis\ThinningMasks.cs" />
+    <Compile Include="Analysis\Transforms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Analysis\Transforms.designer.cs">
+      <DependentUpon>Transforms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compression\CompressionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compression\CompressionForm.designer.cs">
+      <DependentUpon>CompressionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compression\Lossless.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Compression\Lossless.designer.cs">
+      <DependentUpon>Lossless.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compression\Lossy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Compression\Lossy.designer.cs">
+      <DependentUpon>Lossy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compression\Postprocessing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Compression\Postprocessing.Designer.cs">
+      <DependentUpon>Postprocessing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compression\Preprocessing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Compression\Preprocessing.designer.cs">
+      <DependentUpon>Preprocessing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compression\viewTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compression\viewTable.designer.cs">
+      <DependentUpon>viewTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\ImageQueue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\ImageQueue.designer.cs">
+      <DependentUpon>ImageQueue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\InfoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\InfoPanel.designer.cs">
+      <DependentUpon>InfoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\NonBlinkingStatusLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Win32Msgs.cs" />
+    <Compile Include="Enhancement\CustomRemapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enhancement\CustomRemapForm.Designer.cs">
+      <DependentUpon>CustomRemapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enhancement\EnhancementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enhancement\EnhancementForm.designer.cs">
+      <DependentUpon>EnhancementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enhancement\Histograms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enhancement\Histograms.designer.cs">
+      <DependentUpon>Histograms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enhancement\Pseudocolor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enhancement\Pseudocolor.designer.cs">
+      <DependentUpon>Pseudocolor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enhancement\Sharpening.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enhancement\Sharpening.designer.cs">
+      <DependentUpon>Sharpening.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enhancement\Smoothing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enhancement\Smoothing.designer.cs">
+      <DependentUpon>Smoothing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetIntDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetIntDialog.Designer.cs">
+      <DependentUpon>GetIntDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaunchCameraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaunchCameraForm.Designer.cs">
+      <DependentUpon>LaunchCameraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiddleLayer\CvipConstant.cs" />
+    <Compile Include="MiddleLayer\CvipOp.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Restoration\FrequencyFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Restoration\FrequencyFilter.designer.cs">
+      <DependentUpon>FrequencyFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restoration\GeometricTransform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Restoration\GeometricTransform.designer.cs">
+      <DependentUpon>GeometricTransform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restoration\FrequencyFilterMask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restoration\FrequencyFilterMask.designer.cs">
+      <DependentUpon>FrequencyFilterMask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restoration\Noise.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Restoration\Noise.designer.cs">
+      <DependentUpon>Noise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restoration\RestorationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restoration\RestorationForm.designer.cs">
+      <DependentUpon>RestorationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restoration\SpatialFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Restoration\SpatialFilter.designer.cs">
+      <DependentUpon>SpatialFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\UtilFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\UtilFilter.designer.cs">
+      <DependentUpon>UtilFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\UtilFilterMask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\UtilFilterMask.designer.cs">
+      <DependentUpon>UtilFilterMask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\UtilArithLogic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\UtilArithLogic.Designer.cs">
+      <DependentUpon>UtilArithLogic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\UtilCompare.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\UtilCompare.Designer.cs">
+      <DependentUpon>UtilCompare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\UtilConvert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\UtilConvert.Designer.cs">
+      <DependentUpon>UtilConvert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\UtilCreate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\UtilCreate.Designer.cs">
+      <DependentUpon>UtilCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\UtilEnhance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\UtilEnhance.Designer.cs">
+      <DependentUpon>UtilEnhance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\UtilitiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\UtilitiesForm.Designer.cs">
+      <DependentUpon>UtilitiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\UtilSize.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\UtilSize.Designer.cs">
+      <DependentUpon>UtilSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\UtilStats.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utilities\UtilStats.Designer.cs">
+      <DependentUpon>UtilStats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewer\AreaSelection.cs" />
+    <Compile Include="Viewer\Mesh.cs" />
+    <Compile Include="Viewer\ViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewer\ViewerForm.designer.cs">
+      <DependentUpon>ViewerForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\AnalysisForm.resx">
+      <DependentUpon>AnalysisForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\Classification.resx">
+      <DependentUpon>Classification.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\ClassificationResults.resx">
+      <DependentUpon>ClassificationResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\EdgeDetection.resx">
+      <DependentUpon>EdgeDetection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\Features.resx">
+      <DependentUpon>Features.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\FeatureViewer.resx">
+      <DependentUpon>FeatureViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\Geometry.resx">
+      <DependentUpon>Geometry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\MorphGrid.resx">
+      <DependentUpon>MorphGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\Preprocessing.resx">
+      <DependentUpon>Preprocessing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\Segmentation.resx">
+      <DependentUpon>Segmentation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\MorphologicalMaskForm.resx">
+      <DependentUpon>MorphologicalMaskForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\Transforms.resx">
+      <DependentUpon>Transforms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compression\CompressionForm.resx">
+      <DependentUpon>CompressionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compression\Lossless.resx">
+      <DependentUpon>Lossless.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compression\Lossy.resx">
+      <DependentUpon>Lossy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compression\Postprocessing.resx">
+      <DependentUpon>Postprocessing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compression\Preprocessing.resx">
+      <DependentUpon>Preprocessing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compression\viewTable.resx">
+      <DependentUpon>viewTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\ImageQueue.resx">
+      <DependentUpon>ImageQueue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\InfoPanel.resx">
+      <DependentUpon>InfoPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enhancement\CustomRemapForm.resx">
+      <DependentUpon>CustomRemapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enhancement\EnhancementForm.resx">
+      <DependentUpon>EnhancementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enhancement\Histograms.resx">
+      <DependentUpon>Histograms.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enhancement\Pseudocolor.resx">
+      <DependentUpon>Pseudocolor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enhancement\Sharpening.resx">
+      <DependentUpon>Sharpening.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enhancement\Smoothing.resx">
+      <DependentUpon>Smoothing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetIntDialog.resx">
+      <DependentUpon>GetIntDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaunchCameraForm.resx">
+      <DependentUpon>LaunchCameraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Restoration\FrequencyFilter.resx">
+      <DependentUpon>FrequencyFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restoration\GeometricTransform.resx">
+      <DependentUpon>GeometricTransform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restoration\FrequencyFilterMask.resx">
+      <DependentUpon>FrequencyFilterMask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restoration\Noise.resx">
+      <DependentUpon>Noise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restoration\RestorationForm.resx">
+      <DependentUpon>RestorationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restoration\SpatialFilter.resx">
+      <DependentUpon>SpatialFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\UtilFilter.resx">
+      <DependentUpon>UtilFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\UtilFilterMask.resx">
+      <DependentUpon>UtilFilterMask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\UtilArithLogic.resx">
+      <DependentUpon>UtilArithLogic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\UtilCompare.resx">
+      <DependentUpon>UtilCompare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\UtilConvert.resx">
+      <DependentUpon>UtilConvert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\UtilCreate.resx">
+      <DependentUpon>UtilCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\UtilEnhance.resx">
+      <DependentUpon>UtilEnhance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\UtilitiesForm.resx">
+      <DependentUpon>UtilitiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\UtilSize.resx">
+      <DependentUpon>UtilSize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\UtilStats.resx">
+      <DependentUpon>UtilStats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer\ViewerForm.resx">
+      <DependentUpon>ViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="CVIPGUI_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CVIPtools.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SERVERLib">
+      <Guid>{2EA48C5C-1C2F-4BD8-BD0D-63D49B32EDFA}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

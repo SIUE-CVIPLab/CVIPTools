@@ -1,0 +1,155 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="translate_files/filelist.xml">
+<title>translate</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2004-06-05T01:23:00Z</o:Created>
+  <o:LastSaved>2004-10-20T00:19:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>426</o:Words>
+  <o:Characters>2432</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>20</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>2853</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>translate - moves the entire image or a part of the image</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPimage.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPmatrix.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPgeometry.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPdef.h&gt;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Image *translate(Image *cvipImage, CVIP_BOOLEAN do_wrap, int</pre><pre><span style='mso-spacerun:yes'>     </span>r_off,<span style='mso-spacerun:yes'>  </span>int<span style='mso-spacerun:yes'>  </span>c_off, int r_mount,int c_mount,int r_slide, int</pre><pre><span style='mso-spacerun:yes'>     </span>c_slide, float fill_out)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;cvipImage&gt; - pointer to an Image structure</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;do_wrap&gt; - wrap image during translation if CVIP_YES</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;r_off&gt; - row # of upper-left pixel in area to move</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;c_off&gt; - column # of upper-left pixel in area to move</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;r_mount&gt; - height of area to move</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;c_mount&gt; - width of area to move</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;r_slide&gt; - distance to slide vertically</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;c_slide&gt; - distance to slide horizontally</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;fill_out&gt; - value to fill vacated area in cut-and-paste</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$CVIPtoolsHOME\CVIPC\GEOMETRY\translate.c</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Translate can perform two different<span style='mso-spacerun:yes'>  </span>operations,<span style='mso-spacerun:yes'>  </span>horizontal</pre><pre><span style='mso-spacerun:yes'>     </span>and<span style='mso-spacerun:yes'>  </span>vertical translation of an image, or cut-and-paste of a</pre><pre><span style='mso-spacerun:yes'>     </span>part of an image. Translation moves the image as a whole; it</pre><pre><span style='mso-spacerun:yes'>     </span>can either wrap the image around the 'edges' or fill vacated</pre><pre><span style='mso-spacerun:yes'>     </span>areas with a constant value.<span style='mso-spacerun:yes'>  </span>Cut-and-paste<span style='mso-spacerun:yes'>  </span>moves<span style='mso-spacerun:yes'>  </span>a<span style='mso-spacerun:yes'>  </span>user-</pre><pre><span style='mso-spacerun:yes'>     </span>defined part of the image, and fills the vacated area with a</pre><pre><span style='mso-spacerun:yes'>     </span>user-provided value.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>TYPES AND C<st1:stockticker>ONST</st1:stockticker>ANTS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>none</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Returns<span style='mso-spacerun:yes'>  </span>a<span style='mso-spacerun:yes'>  </span>translated<span style='mso-spacerun:yes'>  </span>image<span style='mso-spacerun:yes'>  </span>upon<span style='mso-spacerun:yes'>  </span>successful<span style='mso-spacerun:yes'>  </span>completion;</pre><pre><span style='mso-spacerun:yes'>     </span>returns NULL if an error occurs.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>BUGS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>None at this time</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPtoolkit.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPimage.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPdef.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPgeometry.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPconvert.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPview.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIEWER &quot;picture&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIDEO_APP &quot;SunVideo &amp;&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>void main()</pre><pre><span style='mso-spacerun:yes'>      </span>{</pre><pre><span style='mso-spacerun:yes'>      </span>Image *cvipImage;</pre><pre><span style='mso-spacerun:yes'>      </span>IMAGE_FORMAT format;</pre><pre><span style='mso-spacerun:yes'>      </span>char *inputfile,*outputfile;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>setDisplay_Image(VIEWER, &quot;Default&quot;);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>print_CVIP(&quot;0Enter the<span style='mso-spacerun:yes'>  </span>Input File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span>inputfile =(char *) getString_CVIP();</pre><pre><span style='mso-spacerun:yes'>      </span>format = getFormat_CVIP(inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>cvipImage = read_Image(inputfile, 1);</pre><pre><span style='mso-spacerun:yes'>      </span>view_Image(cvipImage, inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>free(inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>/*the following call translates the image both in the</pre><pre><span style='mso-spacerun:yes'>      </span>horizontal and vertical direction.The starting point</pre><pre><span style='mso-spacerun:yes'>      </span>of the translation is 0,0 and the ending point of</pre><pre><span style='mso-spacerun:yes'>      </span>translation is 255,255.The amount of translation is</pre><pre><span style='mso-spacerun:yes'>      </span>10 pixels in the horizontal and vertical direction*/</pre><pre><span style='mso-spacerun:yes'>      </span>cvipImage = translate(cvipImage,CVIP_YES,0,0,256,256,</pre><pre><span style='mso-spacerun:yes'>      </span>10,10,0);</pre><pre><span style='mso-spacerun:yes'>      </span>print_CVIP(&quot;0Enter the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span>outputfile = getString_CVIP();</pre><pre><span style='mso-spacerun:yes'>      </span>view_Image(cvipImage,outputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>write_Image(cvipImage,outputfile,CVIP_NO,CVIP_NO,format,1);</pre><pre><span style='mso-spacerun:yes'>      </span>free(outputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>}</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>GEOMETRY library</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1995, 2004 SIUE - by Scott Umbaugh and Kun Luo.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

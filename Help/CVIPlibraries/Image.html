@@ -1,0 +1,898 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=FrontPage.Editor.Document>
+<meta name=Generator content="Microsoft FrontPage 4.0">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="Image_files/filelist.xml">
+<title>Image</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="State"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="City"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>6</o:Revision>
+  <o:TotalTime>3</o:TotalTime>
+  <o:Created>2004-06-04T02:22:00Z</o:Created>
+  <o:LastSaved>2004-07-12T22:44:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>3238</o:Words>
+  <o:Characters>18461</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>153</o:Lines>
+  <o:Paragraphs>43</o:Paragraphs>
+  <o:CharactersWithSpaces>21656</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Image - <span class=SpellE>CVIPtools</span> toolkit library containing routines for</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>image</span> type conversion, memory management, etc.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>#include &lt;<span
+class=SpellE>CVIPimage.h</span>&gt;</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp; </span>TYPES AND CONSTANTS</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>typedef</span> <span class=SpellE>enum</span> {PBM, PGM, PPM, EPS, TIF, GIF, RAS, ITX, IRIS, CCC, BIN, VIP, GLR, BTC, BRC, HUF, ZVL, ARITH, BTC2, BTC3, DPC, ZON, ZON2, SAFVR, JPG, WVQ, FRA, VQ, XVQ} IMAGE_FORMAT;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>typedef</span></span> <span class=SpellE>enum</span> {BINARY, GRAY_SCALE, RGB, HSL, HSV, SCT, CCT, LUV, LAB, XYZ}</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>COLOR_FORMAT;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>typedef</span></span> <span class=SpellE>struct</span> {</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>IMAGE_FORMAT <span
+class=SpellE>image_format</span>;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>COLOR_FORMAT <span
+class=SpellE>color_space</span>;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>int</span></span> bands;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix **<span
+class=SpellE>image_ptr</span>;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>HISTORY story;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>} Image;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>typedef</span></span> <span class=SpellE>enum</span> {CVIP_BYTE, CVIP_SHORT, CVIP_INTEGER, CVIP_FLOAT, CVIP_DOUBLE} CVIP_TYPE;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>typedef</span></span> <span class=SpellE>enum</span> {REAL, COMPLEX} FORMAT;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>typedef</span></span> <span class=SpellE>struct</span> {</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>CVIP_TYPE <span
+class=SpellE>data_type</span>;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>FORMAT <span
+class=SpellE>data_format</span>;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>unsigned</span> <span class=SpellE>int</span> rows;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>unsigned</span> <span class=SpellE>int</span> cols;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> **<span class=SpellE>rptr</span>;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> **iptr;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>} Matrix;</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>FUNCTIONS</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>The following functions are included in this <span
+class=SpellE>manpage</span>:</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>cast_Image</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getRealPixel_Image</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>delete_Image</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getRealRow_Image</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>dump_Image</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getRow_Image</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>duplicate_Image</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>history_add</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getBandVector_Image</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>history_check</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getBand_Image</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>history_copy</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getColorSpace_Image</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>history_get</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getDataFormat_Image</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>history_print</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getDataType_Image</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>history_show</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getFileFormat_Image</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>makeComplex_Image</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getImagPixel_Image</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>makeReal_Image</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getImagRow_Image</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>new_Image</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getNoOfBands_Image</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>setBand_Image</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getNoOfCols_Image</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>setImagPixel_Image</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getNoOfRows_Image</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>setPixel_Image</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getPixel_Image</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>setRealPixel_Image</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getData_Image</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getRealData_Image</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>The C files containing these functions are located under $<span
+class=SpellE>CVIPtoolsHOME</span>\CVIPC\Image</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span>MEMORY MANAGEMENT</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Image *<span
+class=SpellE>new_<span class=GramE>Image</span></span><span class=GramE>(</span>IMAGE_FORMAT <span
+class=SpellE>image_format</span>, COLOR_FORMAT <span class=SpellE>color_space</span>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>int</span></span> bands, <span class=SpellE>int</span> <span
+class=SpellE>heigth</span>, <span class=SpellE>int</span> width, CVIP_TYPE <span
+class=SpellE>data_type</span>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>FORMAT <span
+class=SpellE>data_format</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre> <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>image</span></em>_<em><span
+style='font-family:"Courier New"'>format</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>original</span></em> <em><span
+style='font-family:"Courier New"'>file</span></em> <em><span style='font-family:
+"Courier New"'>format</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>image</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>color</span></em>_<em><span
+style='font-family:"Courier New"'>space</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>current</span></em> <em><span
+style='font-family:"Courier New"'>color</span></em> <em><span style='font-family:
+"Courier New"'>space</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>image</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>bands</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>number</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>spectral</span></em> <em><span style='font-family:"Courier New"'>bands</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>height</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>height</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>image</span></em> (<em><span style='font-family:"Courier New"'>no</span></em>. <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>rows</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>width</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>width</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>image</span></em> (<em><span
+style='font-family:"Courier New"'>no</span></em>. <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>cols</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>data</span></em>_<em><span
+style='font-family:"Courier New"'>type</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>current</span></em> <em><span
+style='font-family:"Courier New"'>data</span></em> <em><span style='font-family:
+"Courier New"'>type</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>image</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>data</span></em>_<em><span
+style='font-family:"Courier New"'>format</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>specifies</span></em> <em><span
+style='font-family:"Courier New"'>real</span></em> <em><span style='font-family:
+"Courier New"'>or</span></em> <em><span style='font-family:"Courier New"'>complex</span></em> <em><span
+style='font-family:"Courier New"'>data</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: <span
+class=GramE>pointer<span style='mso-spacerun:yes'>&nbsp; </span>to</span><span style='mso-spacerun:yes'>&nbsp; </span>Image<span style='mso-spacerun:yes'>&nbsp; </span>structure.<span style='mso-spacerun:yes'>&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span>Image</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>class<span style='mso-spacerun:yes'>&nbsp; </span>constructor</span>.<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=GramE>creates<span style='mso-spacerun:yes'>&nbsp; </span>a</span><span style='mso-spacerun:yes'>&nbsp; </span>new instance of a <span
+class=SpellE>CVIPtools</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Image <span
+class=SpellE>structure.The</span> Image structure is the primary <span
+class=GramE>means<span style='mso-spacerun:yes'>&nbsp; </span>of</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>data<span style='mso-spacerun:yes'>&nbsp; </span>transport</span><span style='mso-spacerun:yes'>&nbsp; </span>in <span
+class=SpellE>CVIPtools</span>. Ordinarily the developer does</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>not</span> have to worry about allocating an Image structure in the</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>sense</span> that the function <span class=SpellE>read_Image</span>(...) returns a pointer to</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>an</span> Image structure that has been initialized to the <span
+class=SpellE>specifi</span>-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>cations</span></span><span class=GramE><span style='mso-spacerun:yes'>&nbsp; </span>of</span><span style='mso-spacerun:yes'>&nbsp; </span>a<span style='mso-spacerun:yes'>&nbsp; </span>particular image. Diagnostics returns a NULL</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>pointer</span> w/ respective error message when a memory allocation</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>request</span> can not be satisfied.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> <span class=SpellE>delete_Image</span>(Image *A)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>A</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Image</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Image class destructor. Free all elements of an</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>Image<span style='mso-spacerun:yes'>&nbsp; </span>structure</span>.<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>Diagnostics:<span style='mso-spacerun:yes'>&nbsp; </span>complains if the structure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>passed</span> is not valid.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span>Image DISPLAY</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Image *<span
+class=SpellE>duplicate_<span class=GramE>Image</span></span><span class=GramE>(</span>const Image *a)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>a</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Image</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns:<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=GramE>pointer<span style='mso-spacerun:yes'>&nbsp; </span>to</span><span style='mso-spacerun:yes'>&nbsp; </span>new<span style='mso-spacerun:yes'>&nbsp; </span>Image<span style='mso-spacerun:yes'>&nbsp; </span>structure.<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>Description:</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>creates<span style='mso-spacerun:yes'>&nbsp; </span>a</span> new instance of the Image structure pointed to by</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>&lt;a&gt;.</span> This function is useful if one wants to <span
+class=GramE>pass<span style='mso-spacerun:yes'>&nbsp; </span>an</span><span style='mso-spacerun:yes'>&nbsp; </span>Image</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>structure<span style='mso-spacerun:yes'>&nbsp; </span>to</span><span style='mso-spacerun:yes'>&nbsp; </span>a<span style='mso-spacerun:yes'>&nbsp; </span>function to be processed while maintaining</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>the</span> integrity of the original image.<span style='mso-spacerun:yes'>&nbsp; </span>Diagnostics: complains</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>and<span style='mso-spacerun:yes'>&nbsp; </span>returns</span><span style='mso-spacerun:yes'>&nbsp; </span>NULL<span style='mso-spacerun:yes'>&nbsp; </span>pointer<span style='mso-spacerun:yes'>&nbsp; </span>upon memory allocation failure.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span>CASTING TO NEW TYPES - FORMATS</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>cast_Image</span>(Image *src, CVIP_TYPE <span
+class=SpellE>dtype</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>src</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Image</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>type</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>new</span></em> <em><span style='font-family:
+"Courier New"'>data</span></em> <em><span style='font-family:"Courier New"'>type</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: 0 or 1.<span style='mso-spacerun:yes'>&nbsp; </span>Description: casts an Image structure into</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>a<span style='mso-spacerun:yes'>&nbsp; </span>more</span><span style='mso-spacerun:yes'>&nbsp; </span>precise<span style='mso-spacerun:yes'>&nbsp; </span>data<span style='mso-spacerun:yes'>&nbsp; </span>type.<span style='mso-spacerun:yes'>&nbsp; </span>Diagnostics: returns 1 if the</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>cast</span> can be performed (i.e. the type specified by &lt;type&gt;<span style='mso-spacerun:yes'>&nbsp; </span>is</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>more<span style='mso-spacerun:yes'>&nbsp; </span>precise</span><span style='mso-spacerun:yes'>&nbsp; </span>than that of &lt;<span
+class=SpellE>src</span>&gt; and 0 if the type of &lt;<span class=SpellE>src</span>&gt;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>is</span> more precise than that of &lt;type&gt;. If <span
+class=GramE>the<span style='mso-spacerun:yes'>&nbsp; </span>types</span><span style='mso-spacerun:yes'>&nbsp; </span>are<span style='mso-spacerun:yes'>&nbsp; </span>the</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>same<span style='mso-spacerun:yes'>&nbsp; </span>or<span style='mso-spacerun:yes'>&nbsp; </span>0<span style='mso-spacerun:yes'>&nbsp; </span>is<span style='mso-spacerun:yes'>&nbsp; </span>returned<span style='mso-spacerun:yes'>&nbsp; </span>then<span style='mso-spacerun:yes'>&nbsp; </span>&lt;<span
+class=SpellE>src</span>&gt;<span style='mso-spacerun:yes'>&nbsp; </span>is<span style='mso-spacerun:yes'>&nbsp; </span>left<span style='mso-spacerun:yes'>&nbsp; </span>untouched.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> <span class=SpellE>makeComplex_Image</span>(Image *<span
+class=SpellE>src</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>src</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> &quot;<em><span
+style='font-family:"Courier New"'>real</span></em>&quot; <em><span
+style='font-family:"Courier New"'>Image</span></em> <em><span style='font-family:
+"Courier New"'>structure</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: create a &quot;complex&quot; Image <span
+class=GramE>structure<span style='mso-spacerun:yes'>&nbsp; </span>by</span><span style='mso-spacerun:yes'>&nbsp; </span><span
+class=SpellE>reallo</span>-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>cating</span></span><span class=GramE><span style='mso-spacerun:yes'>&nbsp; </span>the</span><span style='mso-spacerun:yes'>&nbsp; </span>storage<span style='mso-spacerun:yes'>&nbsp; </span>the associated with the Image -- &lt;<span
+class=SpellE>src</span>&gt;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: complains when an <span
+class=GramE>invalid<span style='mso-spacerun:yes'>&nbsp; </span>Image</span><span style='mso-spacerun:yes'>&nbsp; </span>structure<span style='mso-spacerun:yes'>&nbsp; </span>is</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>passed</span>.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> <span class=SpellE>makeReal_Image</span>(Image *<span
+class=SpellE>src</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>src</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> &quot;<em><span
+style='font-family:"Courier New"'>complex</span></em>&quot; <em><span
+style='font-family:"Courier New"'>Image</span></em> <em><span style='font-family:
+"Courier New"'>structure</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: create a &quot;real&quot; Image structure by reallocating</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>the</span> storage the associated with the Image -- &lt;<span
+class=SpellE>src</span>&gt;. <span class=SpellE>Diagnos</span>-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>tics</span>: complains when an invalid Image structure<span style='mso-spacerun:yes'>&nbsp; </span>is<span style='mso-spacerun:yes'>&nbsp; </span>passed.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span>IMPORTING &amp; EXPORTING DATA</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> <span class=SpellE>getBandVector_Image</span>(Image *imageP, void *<span
+class=SpellE>vecP</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>imageP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>vecP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>vector</span></em> <em><span
+style='font-family:"Courier New"'>that</span></em> <em><span style='font-family:
+"Courier New"'>will</span></em> <em><span style='font-family:"Courier New"'>reference</span></em> <em><span
+style='font-family:"Courier New"'>the</span></em> <em><span style='font-family:
+"Courier New"'>image</span></em> <em><span style='font-family:"Courier New"'>data</span></em> <em><span
+style='font-family:"Courier New"'>bands</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: unload the Image bands into a vector Author(s):</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>unsigned</span> <span class=SpellE>getNoOfRows_Image</span>(Image *image)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>image</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns the <span
+class=GramE>height<span style='mso-spacerun:yes'>&nbsp; </span>of</span><span style='mso-spacerun:yes'>&nbsp; </span>an<span style='mso-spacerun:yes'>&nbsp; </span>Image.<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>Author(s):</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre> <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>unsigned</span> <span class=SpellE>getNoOfCols_Image</span>(Image *image)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>image</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns the width of an Image.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): <span
+class=SpellE>Gre</span>-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>gory</span> <span class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> *<span class=SpellE>getData_Image</span>(Image *<span
+class=SpellE>image,unsigned</span> <span class=SpellE>int</span> bands)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>image</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns reference to the real data of <span
+class=GramE>a<span style='mso-spacerun:yes'>&nbsp; </span>matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>for</span> the particular band.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> *<span class=SpellE>getRealData_Image</span>(Image *<span
+class=SpellE>image,unsigned</span> <span class=SpellE>int</span> bands)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>image</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns reference to the real data of <span
+class=GramE>a<span style='mso-spacerun:yes'>&nbsp; </span>matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>for</span> the particular band.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>CVIP_TYPE <span
+class=SpellE>getDataType_<span class=GramE>Image</span></span><span
+class=GramE>(</span>Image *image)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>image</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=GramE>returns<span style='mso-spacerun:yes'>&nbsp; </span>the</span><span style='mso-spacerun:yes'>&nbsp; </span>data<span style='mso-spacerun:yes'>&nbsp; </span>type<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>an<span style='mso-spacerun:yes'>&nbsp; </span>Image<span style='mso-spacerun:yes'>&nbsp; </span>(e.g.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>CVIP_BYTE<span
+class=GramE>,CVIP</span>_FLOAT, etc.)<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>FORMAT <span
+class=SpellE>getDataFormat_<span class=GramE>Image</span></span><span
+class=GramE>(</span>Image *image)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>image</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns the data format of an image (i.e.<span style='mso-spacerun:yes'>&nbsp; </span>REAL</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>or</span> COMPLEX).<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>IMAGE_FORMAT <span
+class=SpellE>getFileFormat_<span class=GramE>Image</span></span><span
+class=GramE>(</span>Image *image)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>image</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns <span
+class=GramE>the<span style='mso-spacerun:yes'>&nbsp; </span>file</span><span style='mso-spacerun:yes'>&nbsp; </span>format<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>an<span style='mso-spacerun:yes'>&nbsp; </span>Image<span style='mso-spacerun:yes'>&nbsp; </span>(e.g.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>PPM<span class=GramE>,PGM,etc</span></span>.).<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>COLOR_FORMAT <span
+class=SpellE>getColorSpace_<span class=GramE>Image</span></span><span
+class=GramE>(</span>Image *image)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>image</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns <span
+class=GramE>the<span style='mso-spacerun:yes'>&nbsp; </span>color</span><span style='mso-spacerun:yes'>&nbsp; </span>space<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>an<span style='mso-spacerun:yes'>&nbsp; </span>Image<span style='mso-spacerun:yes'>&nbsp; </span>(e.g.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>RGB<span
+class=GramE>,GRAY</span>, etc.).<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>unsigned</span> <span class=SpellE>getNoOfBands_Image</span>(Image *image)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>image</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns the number of data bands <span
+class=GramE>in<span style='mso-spacerun:yes'>&nbsp; </span>an</span><span style='mso-spacerun:yes'>&nbsp; </span>Image.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix *<span
+class=SpellE>getBand_<span class=GramE>Image</span></span><span class=GramE>(</span>Image *image, unsigned band)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>image</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>band</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>band</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>bands</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns a <span
+class=GramE>band<span style='mso-spacerun:yes'>&nbsp; </span>of</span><span style='mso-spacerun:yes'>&nbsp; </span>Image<span style='mso-spacerun:yes'>&nbsp; </span>data<span style='mso-spacerun:yes'>&nbsp; </span>as<span style='mso-spacerun:yes'>&nbsp; </span>a<span style='mso-spacerun:yes'>&nbsp; </span>Matrix.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix *<span
+class=SpellE>setBand_<span class=GramE>Image</span></span><span class=GramE>(</span>Image *image, unsigned band, unsigned <span
+class=SpellE>band_no</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>image</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>band</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>new</span></em> <em><span style='font-family:
+"Courier New"'>band</span></em> <em><span style='font-family:"Courier New"'>number</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>reference</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>band</span></em>_<em><span
+style='font-family:"Courier New"'>no</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>band</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>bands</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: add a new reference to a band <span
+class=GramE>of<span style='mso-spacerun:yes'>&nbsp; </span>matrix</span><span style='mso-spacerun:yes'>&nbsp; </span>data.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Sets <span
+class=SpellE>band_no</span> equal to band.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> *<span class=SpellE>getRealRow_Image</span>(Image *image, unsigned row, unsigned band)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>image</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>row</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>rows</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>band</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>band</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>bands</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns a reference to a real row of image data</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>in<span style='mso-spacerun:yes'>&nbsp; </span>band</span><span style='mso-spacerun:yes'>&nbsp; </span>&lt;band&gt;<span style='mso-spacerun:yes'>&nbsp; </span>at<span style='mso-spacerun:yes'>&nbsp; </span>row offset &lt;row&gt;..<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>Hance</span></span><span class=GramE>.</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> *<span class=SpellE>getRow_Image</span>(Image *image, unsigned row, unsigned band)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span style='mso-spacerun:yes'>&nbsp;</span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>image</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>row</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>rows</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>band</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>band</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>bands</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span>same as &quot;<span
+class=SpellE>getRealRow_Image</span>&quot; Author(s):<span style='mso-spacerun:yes'>&nbsp; </span>Gregory</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>Hance</span></span><span class=GramE>.</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> *<span class=SpellE>getImagRow_Image</span>(Image *image, unsigned row, unsigned band)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>image</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>row</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>rows</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>band</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>band</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>bands</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span>returns a reference <span
+class=GramE>to<span style='mso-spacerun:yes'>&nbsp; </span>an</span><span style='mso-spacerun:yes'>&nbsp; </span>imaginary<span style='mso-spacerun:yes'>&nbsp; </span>row<span style='mso-spacerun:yes'>&nbsp; </span>of</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>image<span style='mso-spacerun:yes'>&nbsp; </span>data</span><span style='mso-spacerun:yes'>&nbsp; </span>in band &lt;band&gt; at row offset &lt;row&gt;.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s):</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>type</span> <span class=SpellE>getRealPixel_Image</span>(Image *image, type, unsigned <span
+class=SpellE>col</span>, unsigned row,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>unsigned</span> band)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>image</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>type</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>the</span></em> <em><span style='font-family:
+"Courier New"'>name</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>a</span></em> <em><span style='font-family:
+"Courier New"'>valid</span></em> &quot;<em><span style='font-family:"Courier New"'>C</span></em>&quot;, <span
+class=SpellE><em><span style='font-family:"Courier New"'>CVIPtools</span></em></span> <em><span
+style='font-family:"Courier New"'>data</span></em> <em><span style='font-family:
+"Courier New"'>type</span></em> (<em><span style='font-family:"Courier New"'>i</span></em>.<em><span
+style='font-family:"Courier New"'>e</span></em>. <em><span style='font-family:
+"Courier New"'>one</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>byte</span></em>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE><em><span style='font-family:"Courier New"'>short</span></em></span>, <span
+class=SpellE><em><span style='font-family:"Courier New"'>int</span></em></span>, <em><span
+style='font-family:"Courier New"'>float</span></em> <em><span style='font-family:
+"Courier New"'>or</span></em> <em><span style='font-family:"Courier New"'>double</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>col</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>column</span></em> <em><span
+style='font-family:"Courier New"'>number</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>reference</span></em> (<em><span style='font-family:"Courier New"'>0</span></em> ... <em><span
+style='font-family:"Courier New"'>cols</span></em>-<em><span style='font-family:
+"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>row</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>rows</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>band</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>band</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>bands</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: read a real pixel <span
+class=GramE>sample<span style='mso-spacerun:yes'>&nbsp; </span>of</span><span style='mso-spacerun:yes'>&nbsp; </span>image<span style='mso-spacerun:yes'>&nbsp; </span>data<span style='mso-spacerun:yes'>&nbsp; </span>from</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>band<span style='mso-spacerun:yes'>&nbsp; </span>&lt;</span>band&gt;<span style='mso-spacerun:yes'>&nbsp; </span>at<span style='mso-spacerun:yes'>&nbsp; </span>row<span style='mso-spacerun:yes'>&nbsp; </span>offset &lt;row&gt; and column offset &lt;<span
+class=SpellE>col</span>&gt;.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>type</span> <span class=SpellE>getPixel_Image</span>(Image *image, type, unsigned <span
+class=SpellE>col</span>, unsigned row,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>unsigned</span> band)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>image</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>type</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>the</span></em> <em><span style='font-family:
+"Courier New"'>name</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>a</span></em> <em><span style='font-family:
+"Courier New"'>valid</span></em> &quot;<em><span style='font-family:"Courier New"'>C</span></em>&quot;, <span
+class=SpellE><em><span style='font-family:"Courier New"'>CVIPtools</span></em></span> <em><span
+style='font-family:"Courier New"'>data</span></em> <em><span style='font-family:
+"Courier New"'>type</span></em> (<em><span style='font-family:"Courier New"'>i</span></em>.<em><span
+style='font-family:"Courier New"'>e</span></em>. <em><span style='font-family:
+"Courier New"'>one</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>byte</span></em>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE><em><span style='font-family:"Courier New"'>short</span></em></span>, <span
+class=SpellE><em><span style='font-family:"Courier New"'>int</span></em></span>, <em><span
+style='font-family:"Courier New"'>float</span></em> <em><span style='font-family:
+"Courier New"'>or</span></em> <em><span style='font-family:"Courier New"'>double</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>col</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>column</span></em> <em><span
+style='font-family:"Courier New"'>number</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>reference</span></em> (<em><span style='font-family:"Courier New"'>0</span></em> ... <em><span
+style='font-family:"Courier New"'>cols</span></em>-<em><span style='font-family:
+"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>row</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>rows</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>band</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>band</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>bands</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: same as &quot;<span
+class=SpellE>getRealPixel_Image</span>&quot; Author(s): Gregory</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>Hance</span></span><span class=GramE>.</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>type</span> <span class=SpellE>getImagPixel_Image</span>(Image *image, type, unsigned <span
+class=SpellE>col</span>, unsigned row,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>unsigned</span> band)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>image</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>type</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>the</span></em> <em><span style='font-family:
+"Courier New"'>name</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>a</span></em> <em><span style='font-family:
+"Courier New"'>valid</span></em> &quot;<em><span style='font-family:"Courier New"'>C</span></em>&quot;, <span
+class=SpellE><em><span style='font-family:"Courier New"'>CVIPtools</span></em></span> <em><span
+style='font-family:"Courier New"'>data</span></em> <em><span style='font-family:
+"Courier New"'>type</span></em> (<em><span style='font-family:"Courier New"'>i</span></em>.<em><span
+style='font-family:"Courier New"'>e</span></em>. <em><span style='font-family:
+"Courier New"'>one</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>byte</span></em>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE><em><span style='font-family:"Courier New"'>short</span></em></span>, <span
+class=SpellE><em><span style='font-family:"Courier New"'>int</span></em></span>, <em><span
+style='font-family:"Courier New"'>float</span></em> <em><span style='font-family:
+"Courier New"'>or</span></em> <em><span style='font-family:"Courier New"'>double</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>col</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>column</span></em> <em><span
+style='font-family:"Courier New"'>number</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>reference</span></em> (<em><span style='font-family:"Courier New"'>0</span></em> ... <em><span
+style='font-family:"Courier New"'>cols</span></em>-<em><span style='font-family:
+"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>row</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>rows</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>band</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>band</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>bands</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: read an imaginary pixel <span
+class=GramE>sample<span style='mso-spacerun:yes'>&nbsp; </span>of</span><span style='mso-spacerun:yes'>&nbsp; </span>image<span style='mso-spacerun:yes'>&nbsp; </span>data</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>from<span style='mso-spacerun:yes'>&nbsp; </span>band</span><span style='mso-spacerun:yes'>&nbsp; </span>&lt;band&gt;<span style='mso-spacerun:yes'>&nbsp; </span>at<span style='mso-spacerun:yes'>&nbsp; </span>row<span style='mso-spacerun:yes'>&nbsp; </span>offset<span style='mso-spacerun:yes'>&nbsp; </span>&lt;row&gt; and column offset</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE>col</span></span>&gt;.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> <span class=SpellE>history_add</span>(image, <span
+class=SpellE>newstuff</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Image *image;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>HISTORY <span
+class=SpellE>newstuff</span>;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Adds the contents in the structure pointed to by <span
+class=SpellE>newstuff</span> to the</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>image</span> history.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>#include &quot;<span
+class=SpellE>CVIPimage.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>HISTORY stuff;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>int</span></span> *hptr;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>stuff</span> = (HISTORY)<span class=SpellE>malloc</span>(<span
+class=SpellE>sizeof</span>(<span class=SpellE>struct</span> history));</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>stuff</span>-&gt;packetP = (PACKET *)<span class=SpellE>malloc</span>(<span
+class=SpellE>sizeof</span>(PACKET));</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>stuff</span>-&gt;packetP-&gt;dsize=1;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>stuff</span>-&gt;packetP-&gt;dtype=(CVIP_TYPE *)<span class=SpellE>malloc</span>(<span
+class=SpellE>sizeof</span>(CVIP_TYPE));</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>stuff</span>-&gt;packetP-&gt;dtype[0]=CVIP_INTEGER;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>hptr</span></span>=(<span class=SpellE>int</span> *)<span
+class=SpellE>malloc</span>(<span class=SpellE>sizeof</span>(<span class=SpellE>int</span>));</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>hptr</span></span><span class=GramE>[</span>0]=<span
+class=SpellE>block_size</span>;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>stuff</span>-&gt;packetP-&gt;dptr=(void **)<span class=SpellE>malloc</span>(<span
+class=SpellE>sizeof</span>(void *)*dsize);</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>stuff</span>-&gt;packetP-&gt;dptr=(void *)(<span class=SpellE>int</span> *)hptr;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>stuff</span>-&gt;next=(HISTORY)NULL;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>stuff</span>-&gt;<span class=SpellE>ftag</span>=WALSH;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>history_<span class=GramE>add</span></span><span class=GramE>(</span><span
+class=SpellE>input_Image</span>, stuff);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:place><st1:City><span
+  class=SpellE><span class=GramE>Arve</span></span><span class=GramE> <span
+  class=SpellE>Kjoelen</span></span></st1:City><span class=GramE>, </span><st1:State><span
+  class=GramE>Southern</span></st1:State><span class=GramE> </span><st1:State><span
+  class=GramE>Illinois</span></st1:State></st1:place><span class=GramE> University at Edwardsville, 1993.</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>The document <span
+class=SpellE>history_doc.frame</span> contained in $CVIPHOME/docs contains a</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>complete listing of the routines supported by the history structure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>along with additional documentation.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>============================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>CVIP_BOOLEAN <span
+class=SpellE>history_check</span>(PROGRAMS routine, Image *<span class=SpellE>your_image</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>============================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Determines whether the <span
+class=SpellE>CVIPtools</span> program specified by 'routine' has been</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>performed on the image.<span style='mso-spacerun:yes'>&nbsp; </span>returns CVIP_YES if the program has been performed, returns CVIP_NO if the program has not been performed on that image.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>#include &quot;<span
+class=SpellE>CVIPimage.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>#include &quot;<span
+class=SpellE>CVIPdef.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>#include &quot;<span
+class=SpellE>CVIPtools.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Image *my_image;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>if(<span
+class=SpellE>history_check</span>(FFT, <span class=SpellE>my_image</span>) {</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>...</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>}</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>else {</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>...</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>}</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:place><st1:City><span
+  class=SpellE><span class=GramE>Arve</span></span><span class=GramE> <span
+  class=SpellE>Kjoelen</span></span></st1:City><span class=GramE>, </span><st1:State><span
+  class=GramE>Southern</span></st1:State><span class=GramE> </span><st1:State><span
+  class=GramE>Illinois</span></st1:State></st1:place><span class=GramE> University at Edwardsville, 1993.</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>The document <span
+class=SpellE>history_doc.frame</span> contained in $CVIPHOME/docs contains a</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>complete listing of the routines supported by the history structure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>along with additional documentation.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>HISTORY <span
+class=SpellE>history_get</span>(Image *image, PROGRAMS routine)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Checks whether the <span
+class=SpellE>CVIPtools</span> program specified by 'routine' has been</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>performed on the image.<span style='mso-spacerun:yes'>&nbsp; </span>Returns a pointer to the history structure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>containing information about the program.<span style='mso-spacerun:yes'>&nbsp; </span>If the program has not been</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>performed on the image, (HISTORY)NULL is returned.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>/* This sample code extracts the <span
+class=SpellE>blocksize</span> of a previously */</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>/* performed FFT from the history structure of an image.<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>*/</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>#include &quot;<span
+class=SpellE>CVIPimage.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>#include &quot;<span
+class=SpellE>CVIPdef.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>#include &quot;<span
+class=SpellE>CVIPtools.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Image *my_image;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>HISTORY story;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>int</span> *dataptr;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>int</span> <span class=SpellE>blocksize</span>;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>if(history_check(HAAR, <span
+class=SpellE>my_image</span>) {</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>story=(HISTORY)<span
+class=SpellE>history_get</span>(<span class=SpellE>my_image</span>, HAAR);</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>dataptr</span>=(<span class=SpellE>int</span> *)story-&gt;<span
+class=SpellE>packetP</span>-&gt;<span class=SpellE>dptr</span>;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>blocksize</span>=<span class=SpellE>dataptr</span>[0];</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>The document <span
+class=SpellE>history_doc.frame</span> contained in $CVIPHOME/docs contains a</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>complete listing of the routines supported by the history structure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>along with additional documentation.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>====================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>void <span
+class=SpellE>history_show</span>(Image *<span class=SpellE>your_image</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>====================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>This routine checks the image history structure for entries (programs</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>that have been performed on the structure). It then passes each entry</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>to the function <span
+class=SpellE>history_print</span>, which prints the processing history to <span
+class=SpellE>stdout</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>AUTHOR <st1:place><st1:City><span
+  class=SpellE>Arve</span> <span class=SpellE>Kjoelen</span></st1:City>, <st1:State>Southern</st1:State> <st1:State>Illinois</st1:State></st1:place> University at Edwardsville, 1993</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>SEE ALSO</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>The document <span
+class=SpellE>history_doc.frame</span> contained in $CVIPHOME/docs contains a</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>complete listing of the routines supported by the history structure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>along with additional documentation.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>====================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>void <span
+class=SpellE>history_print</span>(HISTORY stuff)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>====================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>This routine performs the actual output of the information associated</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>with the history structure passed to it.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>The document <span
+class=SpellE>history_doc.frame</span> contained in $CVIPHOME/docs contains a</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>complete listing of the routines supported by the history structure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>along with additional documentation.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>void <span
+class=SpellE>history_copy</span>(Image *fromimage, Image *<span class=SpellE>toimage</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Copies the history information contained in <span
+class=SpellE>fromimage</span> to <span class=SpellE>to</span> image.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>#include &quot;<span
+class=SpellE>CVIPimage.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Image *fromimage, *<span
+class=SpellE>toimage</span>;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>(void)history_copy(fromimage, <span
+class=SpellE>toimage</span>);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>void <span
+class=SpellE>setRealPixel_Image</span>(Image *image, type, unsigned <span
+class=SpellE>col</span>, unsigned row,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>unsigned band, type pixel)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>image</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>type</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>the</span></em> <em><span style='font-family:
+"Courier New"'>name</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>a</span></em> <em><span style='font-family:
+"Courier New"'>valid</span></em> &quot;<em><span style='font-family:"Courier New"'>C</span></em>&quot;, <span
+class=SpellE><em><span style='font-family:"Courier New"'>CVIPtools</span></em></span> <em><span
+style='font-family:"Courier New"'>data</span></em> <em><span style='font-family:
+"Courier New"'>type</span></em> (<em><span style='font-family:"Courier New"'>i</span></em>.<em><span
+style='font-family:"Courier New"'>e</span></em>. <em><span style='font-family:
+"Courier New"'>one</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>byte</span></em>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><em><span
+style='font-family:"Courier New"'>short</span></em>, <span class=SpellE><em><span
+style='font-family:"Courier New"'>int</span></em></span>, <em><span
+style='font-family:"Courier New"'>float</span></em> <em><span style='font-family:
+"Courier New"'>or</span></em> <em><span style='font-family:"Courier New"'>double</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>col</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>column</span></em> <em><span
+style='font-family:"Courier New"'>number</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>reference</span></em> (<em><span style='font-family:"Courier New"'>0</span></em> ... <em><span
+style='font-family:"Courier New"'>cols</span></em>-<em><span style='font-family:
+"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>row</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>rows</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>band</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>band</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>bands</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>pixel</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pixel</span></em> <em><span style='font-family:
+"Courier New"'>sample</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>type</span></em> &lt;<em><span
+style='font-family:"Courier New"'>type</span></em>&gt;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: write a real pixel sample of image data to band</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;band&gt;<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>at<span style='mso-spacerun:yes'>&nbsp; </span>row<span style='mso-spacerun:yes'>&nbsp; </span>offset<span style='mso-spacerun:yes'>&nbsp; </span>&lt;row&gt;<span style='mso-spacerun:yes'>&nbsp; </span>and<span style='mso-spacerun:yes'>&nbsp; </span>column<span style='mso-spacerun:yes'>&nbsp; </span>offset<span style='mso-spacerun:yes'>&nbsp; </span>&lt;<span
+class=SpellE>col</span>&gt;.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>void <span
+class=SpellE>setPixel_Image</span>(Image *image, type, unsigned <span
+class=SpellE>col</span>, unsigned row,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>unsigned band, type pixel)</pre><pre> <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>image</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>type</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>the</span></em> <em><span style='font-family:
+"Courier New"'>name</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>a</span></em> <em><span style='font-family:
+"Courier New"'>valid</span></em> &quot;<em><span style='font-family:"Courier New"'>C</span></em>&quot;, <span
+class=SpellE><em><span style='font-family:"Courier New"'>CVIPtools</span></em></span> <em><span
+style='font-family:"Courier New"'>data</span></em> <em><span style='font-family:
+"Courier New"'>type</span></em> (<em><span style='font-family:"Courier New"'>i</span></em>.<em><span
+style='font-family:"Courier New"'>e</span></em>. <em><span style='font-family:
+"Courier New"'>one</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>byte</span></em>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><em><span
+style='font-family:"Courier New"'>short</span></em>, <span class=SpellE><em><span
+style='font-family:"Courier New"'>int</span></em></span>, <em><span
+style='font-family:"Courier New"'>float</span></em> <em><span style='font-family:
+"Courier New"'>or</span></em> <em><span style='font-family:"Courier New"'>double</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>col</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>column</span></em> <em><span
+style='font-family:"Courier New"'>number</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>reference</span></em> (<em><span style='font-family:"Courier New"'>0</span></em> ... <em><span
+style='font-family:"Courier New"'>cols</span></em>-<em><span style='font-family:
+"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>row</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>rows</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>band</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>band</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>bands</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>pixel</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pixel</span></em> <em><span style='font-family:
+"Courier New"'>sample</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>type</span></em> &lt;<em><span
+style='font-family:"Courier New"'>type</span></em>&gt;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: same as &quot;<span
+class=SpellE>setRealPixel_Image</span>&quot;.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s):<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=SpellE>Gre</span>-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>gory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>void <span
+class=SpellE>setImagPixel_Image</span>(Image *image, type, unsigned <span
+class=SpellE>col</span>, unsigned row,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>unsigned band, type pixel)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>image</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>Image</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>type</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>the</span></em> <em><span style='font-family:
+"Courier New"'>name</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>a</span></em> <em><span style='font-family:
+"Courier New"'>valid</span></em> &quot;<em><span style='font-family:"Courier New"'>C</span></em>&quot;, <span
+class=SpellE><em><span style='font-family:"Courier New"'>CVIPtools</span></em></span> <em><span
+style='font-family:"Courier New"'>data</span></em> <em><span style='font-family:
+"Courier New"'>type</span></em> (<em><span style='font-family:"Courier New"'>i</span></em>.<em><span
+style='font-family:"Courier New"'>e</span></em>. <em><span style='font-family:
+"Courier New"'>one</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>byte</span></em>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><em><span
+style='font-family:"Courier New"'>short</span></em>, <span class=SpellE><em><span
+style='font-family:"Courier New"'>int</span></em></span>, <em><span
+style='font-family:"Courier New"'>float</span></em> <em><span style='font-family:
+"Courier New"'>or</span></em> <em><span style='font-family:"Courier New"'>double</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>col</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>column</span></em> <em><span
+style='font-family:"Courier New"'>number</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>reference</span></em> (<em><span style='font-family:"Courier New"'>0</span></em> ... <em><span
+style='font-family:"Courier New"'>cols</span></em>-<em><span style='font-family:
+"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>row</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>rows</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>band</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>band</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>reference</span></em> (<em><span
+style='font-family:"Courier New"'>0</span></em> ... <em><span style='font-family:
+"Courier New"'>bands</span></em>-<em><span style='font-family:"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>pixel</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pixel</span></em> <em><span style='font-family:
+"Courier New"'>sample</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>type</span></em> &lt;<em><span
+style='font-family:"Courier New"'>type</span></em>&gt;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: write an imaginary pixel sample of<span style='mso-spacerun:yes'>&nbsp; </span>image<span style='mso-spacerun:yes'>&nbsp; </span>data</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>to<span style='mso-spacerun:yes'>&nbsp; </span>band &lt;band&gt; at row offset &lt;row&gt; and column offset &lt;<span
+class=SpellE>col</span>&gt;.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span>MISC.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>CVIP_BOOLEAN <span
+class=SpellE>dump_Image</span>(Image *<span class=SpellE>src</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=====================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>src</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Image</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: 1 upon success; 0 upon failure. Description:<span style='mso-spacerun:yes'>&nbsp; </span>print</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>the contents of an Image structure Diagnostics: returns 0 if</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>the pointer to the Image structure is not valid.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s):</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>BUGS</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>none as of yet</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=SpellE>CVIPtools</span> library quick reference guide</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Copyright (C) 1992, 1993, 2004 SIUE - by Gregory <span
+class=SpellE><span class=GramE>Hance</span></span><span class=GramE><span style='mso-spacerun:yes'>&nbsp; </span>and</span><span style='mso-spacerun:yes'>&nbsp; </span>Scott</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>Umbaugh</span>.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>CONVERSION(for read_Image, write_Image)</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Copyright (C) 1995, 2004 SIUE - by Scott <span
+class=SpellE>Umbaugh</span>.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

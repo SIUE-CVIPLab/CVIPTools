@@ -1,0 +1,189 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="unsharp_filter_files/filelist.xml">
+<title>unsharp_filter</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2004-06-05T01:27:00Z</o:Created>
+  <o:LastSaved>2004-10-20T00:19:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>350</o:Words>
+  <o:Characters>1996</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>16</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2342</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>unsharp_filter - performs unsharp masking</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPtoolkit.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPtools.h&gt;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Image<span
+class=GramE>*<span style='mso-spacerun:yes'>  </span>unsharp</span>_filter(Image<span style='mso-spacerun:yes'>  </span>*inputImage,<span style='mso-spacerun:yes'>  </span>int<span style='mso-spacerun:yes'>  </span>lower,<span style='mso-spacerun:yes'>  </span>int</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>upper</span>,<span style='mso-spacerun:yes'>  </span>float low_clip, float high_clip)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>inputImage</span>&gt; - pointer to an Image structure</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>lower</span>&gt; - lower limit for histogram shrink (0-254)</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>upper</span>&gt; - upper limit for histogram shrink (1-255)</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;low_clip&gt; - percentage of low values to clip</pre><pre><span style='mso-spacerun:yes'>                   </span><span
+class=GramE>during</span> hist_stretch</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;high_clip&gt; - percentage of high values to clip</pre><pre><span style='mso-spacerun:yes'>                    </span><span
+class=GramE>during</span> hist_stretch</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$CVIPtoolsHOME\CVIPC\SPATIALFILTER\unsharp.c</pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Unsharp masking is a technique that <span
+class=GramE>combines<span style='mso-spacerun:yes'>  </span>filtering</span><span style='mso-spacerun:yes'>  </span>and</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>histogram</span> modification. The input image is lowpass filtered;</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>a</span> histogram shrink is then performed on the filtered<span style='mso-spacerun:yes'>  </span>image.</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>The<span style='mso-spacerun:yes'>  </span>resultant</span><span style='mso-spacerun:yes'>  </span>image is subtracted from the original, and a</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>histogram</span> stretch completes the process.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>TYPES AND C<st1:stockticker>ONST</st1:stockticker>ANTS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>None</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>A filtered image</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>HISTORY</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>History information recorded: None</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPtoolkit.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPimage.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPdef.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPspfltr.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPconvert.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPview.h&gt;</pre><pre><span style='mso-spacerun:yes'>     </span><span style='mso-spacerun:yes'> </span>#define VIEWER &quot;picture&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIDEO_APP &quot;SunVideo &amp;&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>void</span> main()</pre><pre><span style='mso-spacerun:yes'>      </span>{</pre><pre><span style='mso-spacerun:yes'>      </span>Image *cvipImage;</pre><pre><span style='mso-spacerun:yes'>      </span>IMAGE_FORMAT format;</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>char</span> *inputfile,*outputfile;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>setDisplay_<span
+class=GramE>Image(</span>VIEWER, &quot;Default&quot;);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>print_<span
+class=GramE>CVIP(</span>&quot;\n\t\tEnter the<span style='mso-spacerun:yes'>  </span>Input File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>inputfile</span> =(char *) getString_CVIP();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>format</span> = getFormat_CVIP(inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>cvipImage</span> = read_Image(inputfile, 1);</pre><pre><span style='mso-spacerun:yes'>      </span>view_<span
+class=GramE>Image(</span>cvipImage, inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span>inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>/* the following call performs unsharp masking with</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>the</span> shrinking range between 0 and 200 and the lower</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>and</span> higher clipping values equal to .01 for</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>histogram</span> stretching */</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>cvipImage</span> = unsharp_filter(cvipImage,0,200,.01,.01);</pre><pre><span style='mso-spacerun:yes'>      </span>print_<span
+class=GramE>CVIP(</span>&quot;\n\t\tEnter the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>outputfile</span> = getString_CVIP();</pre><pre><span style='mso-spacerun:yes'>      </span>view_<span
+class=GramE>Image(</span>cvipImage,outputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>write_<span
+class=GramE>Image(</span>cvipImage,outputfile,CVIP_NO,CVIP_NO,format,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span>outputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>}</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>SPATIALFILTER library</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1996, 2004 SIUE - by Scott E. Umbaugh and Kun Luo.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

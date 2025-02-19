@@ -1,0 +1,213 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="fuzzyc_segment_files/filelist.xml">
+<title>fuzzyc_segment</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>3</o:TotalTime>
+  <o:Created>2004-06-04T22:59:00Z</o:Created>
+  <o:LastSaved>2005-12-01T22:15:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>657</o:Words>
+  <o:Characters>3748</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>31</o:Lines>
+  <o:Paragraphs>8</o:Paragraphs>
+  <o:CharactersWithSpaces>4397</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>fuzzyc_segment</span> - image segmentation based on fuzzy c-means</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPtoolkit.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>fuzzyc.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPdef.h</span>&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Image *<span
+class=SpellE>fuzzyc_<span class=GramE>segment</span></span><span class=GramE>(</span>Image *<span
+class=SpellE>srcImage</span>, float variance)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE>srcImage</span>&gt; - pointer to 3-band Image structure</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>variance</span>&gt; - value for Gaussian <span class=SpellE>kernal</span> variance</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$<span class=SpellE>CVIPtoolsHOME\CVIPC\SEGMENTATION\fuzzyc.c</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Color image segmentation based on <span
+class=SpellE>thresholding</span> and the fuzzy</pre><pre><span style='mso-spacerun:yes'>     </span>c-means can be divided into two stages: coarse and fine <span
+class=SpellE>seg</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>mentation</span>.<span style='mso-spacerun:yes'>  </span>The coarse segmentation is<span style='mso-spacerun:yes'>  </span>intended<span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span>reduce</pre><pre><span style='mso-spacerun:yes'>     </span>the<span style='mso-spacerun:yes'>  </span>computational burden required for the fine segmentation</pre><pre><span style='mso-spacerun:yes'>     </span>- the fuzzy c-means. In coarse segmentation,<span style='mso-spacerun:yes'>  </span>a<span style='mso-spacerun:yes'>  </span>scale-space</pre><pre><span style='mso-spacerun:yes'>     </span>filter<span style='mso-spacerun:yes'>  </span>is used to analyze the histograms of the three color</pre><pre><span style='mso-spacerun:yes'>     </span>components. It determines the number of valid<span style='mso-spacerun:yes'>  </span>classes<span style='mso-spacerun:yes'>   </span>and</pre><pre><span style='mso-spacerun:yes'>     </span>assigns<span style='mso-spacerun:yes'>  </span>classified pixels to these classes according to the</pre><pre><span style='mso-spacerun:yes'>     </span>threshold value (safety margins).<span style='mso-spacerun:yes'>  </span>The<span style='mso-spacerun:yes'>   </span>fine<span style='mso-spacerun:yes'>   </span>segmentation</pre><pre><span style='mso-spacerun:yes'>     </span>uses fuzzy c-means to assign the remaining unclassified pix-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>els</span> to their closest class. Histogram<span style='mso-spacerun:yes'>   </span>analysis<span style='mso-spacerun:yes'>  </span>using<span style='mso-spacerun:yes'>  </span>the</pre><pre><span style='mso-spacerun:yes'>     </span>scale-space<span style='mso-spacerun:yes'>  </span>filter<span style='mso-spacerun:yes'>  </span>in coarse segmentation stage is a tech-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>nique</span> that<span style='mso-spacerun:yes'>  </span>involves generating a <span
+class=SpellE>multiscale</span><span style='mso-spacerun:yes'>  </span>description of</pre><pre><span style='mso-spacerun:yes'>     </span>histogram<span style='mso-spacerun:yes'>  </span>by<span style='mso-spacerun:yes'>  </span>convolving<span style='mso-spacerun:yes'>  </span>it<span style='mso-spacerun:yes'>  </span>with a series of Gaussians of</pre><pre><span style='mso-spacerun:yes'>     </span>gradually increasing width, and marking<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>   </span>location<span style='mso-spacerun:yes'>  </span>and</pre><pre><span style='mso-spacerun:yes'>     </span>direction<span style='mso-spacerun:yes'>  </span>of the sign change of zero-crossing in its second</pre><pre><span style='mso-spacerun:yes'>     </span>derivatives. The parameter (x,<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>tau</span>)-space<span style='mso-spacerun:yes'>  </span>is known<span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span>be</pre><pre><span style='mso-spacerun:yes'>     </span>the<span style='mso-spacerun:yes'>  </span>scale-space where <span
+class=SpellE>tau</span> is the scale constant.<span style='mso-spacerun:yes'>  </span>The scale</pre><pre><span style='mso-spacerun:yes'>     </span>constant <span
+class=SpellE>tau</span> is inversely<span style='mso-spacerun:yes'>  </span>proportional to<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>number<span style='mso-spacerun:yes'>   </span>of</pre><pre><span style='mso-spacerun:yes'>     </span>peaks and valleys that can be extracted from the histograms.</pre><pre><span style='mso-spacerun:yes'>     </span>The importance of this fact is that if prior<span style='mso-spacerun:yes'>  </span>knowledge<span style='mso-spacerun:yes'>   </span>is</pre><pre><span style='mso-spacerun:yes'>     </span>known about a particular type of image, <span
+class=SpellE>tau</span> can be set to be</pre><pre><span style='mso-spacerun:yes'>     </span>a constant to<span style='mso-spacerun:yes'>  </span>obtain<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>desired<span style='mso-spacerun:yes'>  </span>number<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>   </span>peaks<span style='mso-spacerun:yes'>  </span>and</pre><pre><span style='mso-spacerun:yes'>     </span>values,<span style='mso-spacerun:yes'>  </span>and<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>process can be made unsupervised. The <span
+class=SpellE>tau</span></pre><pre><span style='mso-spacerun:yes'>     </span>value that will give satisfactory<span style='mso-spacerun:yes'>  </span>result <span style='mso-spacerun:yes'> </span>in<span style='mso-spacerun:yes'>  </span>most<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>the</pre><pre><span style='mso-spacerun:yes'>     </span>color<span style='mso-spacerun:yes'>  </span>space<span style='mso-spacerun:yes'>  </span>used<span style='mso-spacerun:yes'>  </span>in<span style='mso-spacerun:yes'>  </span>an<span style='mso-spacerun:yes'>  </span>experiment is 5. After histogram</pre><pre><span style='mso-spacerun:yes'>     </span>analysis, valid classes will<span style='mso-spacerun:yes'>  </span>be<span style='mso-spacerun:yes'>  </span>determined<span style='mso-spacerun:yes'>  </span>according<span style='mso-spacerun:yes'>   </span>to</pre><pre><span style='mso-spacerun:yes'>     </span>the<span style='mso-spacerun:yes'>  </span>safety<span style='mso-spacerun:yes'>  </span>margin<span style='mso-spacerun:yes'>  </span>(Usually<span style='mso-spacerun:yes'>  </span>5%<span style='mso-spacerun:yes'>  </span>- 20%) specified by user.</pre><pre><span style='mso-spacerun:yes'>     </span>Classified pixels will be assigned to their valid<span style='mso-spacerun:yes'>   </span>classes,</pre><pre><span style='mso-spacerun:yes'>     </span>and<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>other<span style='mso-spacerun:yes'>  </span>pixels<span style='mso-spacerun:yes'>  </span>will be tagged as unclassified.<span style='mso-spacerun:yes'>  </span>In</pre><pre><span style='mso-spacerun:yes'>     </span>this implementation, they will appear as white pixels<span style='mso-spacerun:yes'>  </span>(255)</pre><pre><span style='mso-spacerun:yes'>     </span>on<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>image. The larger the safety margin, the more <span
+class=SpellE>accu</span>-</pre><pre><span style='mso-spacerun:yes'>     </span>rate the result of the<span style='mso-spacerun:yes'>  </span>segmentation<span style='mso-spacerun:yes'>   </span>will<span style='mso-spacerun:yes'>  </span>be,<span style='mso-spacerun:yes'>   </span>and<span style='mso-spacerun:yes'>   </span>the</pre><pre><span style='mso-spacerun:yes'>     </span>more<span style='mso-spacerun:yes'>   </span>computational<span style='mso-spacerun:yes'>  </span>efforts<span style='mso-spacerun:yes'>  </span>it<span style='mso-spacerun:yes'>  </span>will<span style='mso-spacerun:yes'>  </span>need when using the</pre><pre><span style='mso-spacerun:yes'>     </span>fuzzy c-means in fine stage.<span style='mso-spacerun:yes'>  </span>In<span style='mso-spacerun:yes'>  </span>fine<span style='mso-spacerun:yes'>  </span>segmentation<span style='mso-spacerun:yes'>  </span>stage,</pre><pre><span style='mso-spacerun:yes'>     </span>the fuzzy membership of the unclassified pixels will be cal-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>culated</span> and assigned to the class where they have<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>max-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>imum</span><span style='mso-spacerun:yes'>  </span>membership<span style='mso-spacerun:yes'>  </span>value.<span style='mso-spacerun:yes'>  </span>The last parameter the user has to</pre><pre><span style='mso-spacerun:yes'>     </span>decide when<span style='mso-spacerun:yes'>  </span>using<span style='mso-spacerun:yes'>  </span>the program<span style='mso-spacerun:yes'>  </span>is the display color of the</pre><pre><span style='mso-spacerun:yes'>     </span>result<span style='mso-spacerun:yes'>  </span>image.<span style='mso-spacerun:yes'>   </span>The<span style='mso-spacerun:yes'>  </span>user has the option of using the means</pre><pre><span style='mso-spacerun:yes'>     </span>value for each valid class or the predefined colors for<span style='mso-spacerun:yes'>  </span>the</pre><pre><span style='mso-spacerun:yes'>     </span>segmented regions.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>TYPES AND C<st1:stockticker>ONST</st1:stockticker>ANTS</h2>
+
+<pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Pointer to an Image structure on success, and<span style='mso-spacerun:yes'>  </span>NULL<span style='mso-spacerun:yes'>  </span>pointer</pre><pre><span style='mso-spacerun:yes'>     </span>on failure.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPtoolkit.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPdef.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPconvert.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>fuzzyc.h</span>&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>           </span>void main()</pre><pre><span style='mso-spacerun:yes'>           </span>{</pre><pre><span style='mso-spacerun:yes'>           </span>Image *<span
+class=SpellE>cvipImage</span>;</pre><pre><span style='mso-spacerun:yes'>           </span>IMAGE_FORMAT format;</pre><pre><span style='mso-spacerun:yes'>           </span>char *<span
+class=SpellE>inputfile</span>, *<span class=SpellE>outputfile</span>;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>           </span><span
+class=SpellE>setDisplay_Image</span>(&quot;picture&quot;, &quot;Default&quot;);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>           </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the Input File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span
+style='mso-tab-count:1'>        </span><span style='mso-tab-count:1'>        </span>/* <span
+class=GramE>The</span> input file should be a 3-band Image */<span
+style='mso-tab-count:1'> </span></pre><pre><span style='mso-spacerun:yes'>           </span><span
+class=SpellE><span class=GramE>inputfile</span></span> =(char *) <span
+class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>           </span>format = <span
+class=SpellE>getFormat_CVIP</span>(<span class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>           </span><span
+class=SpellE>cvipImage</span> = <span class=SpellE>read_Image</span>(<span
+class=SpellE>inputfile</span>, 1);</pre><pre><span style='mso-spacerun:yes'>           </span><span
+class=SpellE>view_Image</span>(<span class=SpellE>cvipImage</span>, <span
+class=SpellE>inputfile</span>);</pre><pre> <span style='mso-spacerun:yes'>          </span><span
+class=SpellE>cvipImage</span> = (Image *) <span class=SpellE>fuzzyc_segment</span>(<span
+class=SpellE>cvipImage</span>,<span style='mso-spacerun:yes'>  </span>4.0);</pre><pre><span style='mso-spacerun:yes'>               </span>/* Four color example */</pre><pre><span style='mso-spacerun:yes'>           </span><span
+class=SpellE>print_CVIP</span>(&quot;\n\t\<span class=SpellE>tEnter</span> the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>           </span><span
+class=SpellE>outputfile</span> = <span class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>           </span><span
+class=SpellE>view_Image</span>(<span class=SpellE>cvipImage</span>, <span
+class=SpellE>outputfile</span>);</pre><pre> <span style='mso-spacerun:yes'>          </span><span
+class=SpellE>write_Image</span>(cvipImage,outputfile,CVIP_NO,CVIP_NO,format,1);</pre><pre><span style='mso-spacerun:yes'>           </span>free(<span
+class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>           </span>free(<span
+class=SpellE>outputfile</span>);</pre><pre><span style='mso-spacerun:yes'>           </span>}</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>BUGS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>None at this time</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>    </span>SEGMENTATION library</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1995, 2004 SIUE - by Scott Umbaugh and Greg <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

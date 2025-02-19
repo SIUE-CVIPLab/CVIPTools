@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DC8740EF-7908-46B0-B7DA-C22F4A35DA37}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Conversion</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Include</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Include</AdditionalIncludeDirectories>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>CURL_STATICLIB;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\CVIPC\Conversion\bintocvip.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\bmptocvip.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\ccctocvip.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\convert.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\convertutils.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\cvipandiris.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptobin.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptobmp.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptoccc.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptoeps.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptogif.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptoitex.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptojpeg.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptojpeg2000.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptopnm.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptops.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptoras.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptotiff.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptovip.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\epstocvip.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\giftocvip.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\gray_binary.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\halftone.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\itextocvip.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\jpeg2000tocvip.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\jpegtocvip.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\navy.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\pnmtocvip.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\rastocvip.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\tifftocvip.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\viptocvip.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\BMP\BMPDECOD.C" />
+    <ClCompile Include="..\..\CVIPC\Conversion\BMP\BMPENCOD.C" />
+    <ClCompile Include="..\..\CVIPC\Conversion\BMP\BMPHEAD.C" />
+    <ClCompile Include="..\..\CVIPC\Conversion\BMP\BMPREAD.C" />
+    <ClCompile Include="..\..\CVIPC\Conversion\BMP\BMPWRITE.C" />
+    <ClCompile Include="..\..\CVIPC\Conversion\BMP\ENDIANIO.C" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\bio.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\cio.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\cviptoopj.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\dwt.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\event.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\getopt.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\index.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\j2k.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\j2k_lib.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\jp2.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\jp2_decode.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\jp2_encode.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\jpt.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\mct.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\mqc.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\openjpeg.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\opjconvert.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\opjimage.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\opjtocvip.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\pi.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\raw.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\t1.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\t1_generate_luts.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\t2.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\tcd.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\tgt.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\adler32.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\compress.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\crc32.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\deflate.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\gzio.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\infback.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\inffast.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\inflate.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\inftrees.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\minigzip.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\png.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngerror.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pnggccrd.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngget.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngmem.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngpread.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngread.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngrio.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngrtran.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngrutil.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngset.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngtrans.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngvcrd.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngwio.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngwrite.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngwtran.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngwutil.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\readPNG.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\trees.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\uncompr.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\writePNG.c" />
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\zutil.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

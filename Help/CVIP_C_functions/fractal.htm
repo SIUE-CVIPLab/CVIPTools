@@ -1,0 +1,304 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="fractal_files/filelist.xml">
+<title>fractal</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>10</o:TotalTime>
+  <o:Created>2004-06-04T22:58:00Z</o:Created>
+  <o:LastSaved>2004-10-19T23:56:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>983</o:Words>
+  <o:Characters>5606</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>46</o:Lines>
+  <o:Paragraphs>13</o:Paragraphs>
+  <o:CharactersWithSpaces>6576</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span><span class=GramE>fractal</span> - A fractal compression method</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;sys/<span
+class=SpellE>types.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;sys/<span
+class=SpellE>stat.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPtoolkit.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPconvert.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPdef.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPimage.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPtransform.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>fractal.h</span>&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>frac_compress</span>(Image *<span
+class=SpellE>inputImage,char</span><span style='mso-spacerun:yes'>  </span>*filename,<span style='mso-spacerun:yes'>  </span>double</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>tol</span></span>,<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>int</span><span style='mso-spacerun:yes'>  </span>min_part1,<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>int</span><span style='mso-spacerun:yes'>  </span>max_part1,<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>int</span><span style='mso-spacerun:yes'>  </span>dom_type1,<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>int</span></pre><pre><span style='mso-spacerun:yes'>     </span>dom_step1, char c1, char c2, <span
+class=SpellE>int</span> s_bits1, <span class=SpellE><span class=GramE>int</span></span> o_bits1)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE><span class=GramE>inputImage</span></span>&gt; - pointer to an Image structure</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>filename</span>&gt; - character array</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE><span class=GramE>tol</span></span>&gt; - tolerance value</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;min_part1&gt; - recursion size min.</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;max_part1&gt; - recursion size max.</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;dom_type1&gt; - domain type</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;dom_step1&gt; - domain step</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;c1&gt; - character(y/n) for searching 24 domain classes</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;c2&gt; - character(y/n) for searching 3 domain classes</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;s_bits1&gt; - scaling bits</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;o_bits1&gt; - offset bits</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Image *<span
+class=SpellE>frac_decompress</span>(char *filename)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>input</span>&gt; - character array</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$<span class=SpellE>CVIPtoolsHOME\CVIPC\COMPRESSION\fracenc.c,fracdec.c</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>Fractal compression utilizes the property of <span
+class=GramE>self<span style='mso-spacerun:yes'>  </span>similar</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>ity</span></span> in images. The natural images are such that a portion of</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>the</span> image is always an affine transformation of<span style='mso-spacerun:yes'>  </span>some<span style='mso-spacerun:yes'>  </span>other</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>portion<span style='mso-spacerun:yes'>  </span>of</span><span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>image.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>The<span style='mso-spacerun:yes'>  </span>fractal</span> compression method in</pre><pre><span style='mso-spacerun:yes'>     </span>CVIPtools uses the <span
+class=SpellE>quadtree</span> scheme <span class=GramE>to<span style='mso-spacerun:yes'>  </span>partition</span><span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>image</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>into<span style='mso-spacerun:yes'>  </span><span class=SpellE>subimages</span></span><span style='mso-spacerun:yes'>  </span>and each of the <span
+class=SpellE>subimage</span> is compared to the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>domains(</span>which also are <span class=SpellE>subimages</span>) and the resulting<span style='mso-spacerun:yes'>  </span>mapping</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>equations<span style='mso-spacerun:yes'>  </span>are</span><span style='mso-spacerun:yes'>  </span>stored<span style='mso-spacerun:yes'>  </span>in<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>compressed file. A <span
+class=SpellE>quadtree</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>scheme</span> is a representation of an image in which<span style='mso-spacerun:yes'>  </span>each<span style='mso-spacerun:yes'>  </span>node,</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>corresponding<span style='mso-spacerun:yes'>  </span>to</span><span style='mso-spacerun:yes'>  </span>a<span style='mso-spacerun:yes'>  </span>square<span style='mso-spacerun:yes'>  </span>portion of the image, contains</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>four</span> <span class=SpellE>subnodes</span>, corresponding to the four<span style='mso-spacerun:yes'>  </span>quadrants<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>square</span>.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>The<span style='mso-spacerun:yes'>  </span>root</span><span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>tree<span style='mso-spacerun:yes'>  </span>is the initial image. The</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>decompression</span> algorithm is an iterative process which<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>util</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>izes</span></span><span class=GramE><span style='mso-spacerun:yes'>  </span>the</span><span style='mso-spacerun:yes'>  </span>stored mapping in the compressed file to generate</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>the</span> decompressed image.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'>  </span>The tolerance is a real value which is <span
+class=GramE>a<span style='mso-spacerun:yes'>  </span>loose</span><span style='mso-spacerun:yes'>  </span>target<span style='mso-spacerun:yes'>  </span>for</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>the<span style='mso-spacerun:yes'>  </span>final</span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>rms</span><span style='mso-spacerun:yes'>  </span>error<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>encoded image. Lower values</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>result</span> in better looking encoded images which have<span style='mso-spacerun:yes'>  </span>a<span style='mso-spacerun:yes'>  </span>lower</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>compression</span> ratio.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>The recursion size min. is the minimum number of <span
+class=GramE>times<span style='mso-spacerun:yes'>  </span>that</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>the<span style='mso-spacerun:yes'>  </span>largest</span><span style='mso-spacerun:yes'>  </span>square<span style='mso-spacerun:yes'>  </span>sub-image<span style='mso-spacerun:yes'>  </span>will<span style='mso-spacerun:yes'>  </span>be recursively <span
+class=SpellE>parti</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>tioned</span></span>. Using larger values will result <span
+class=GramE>in<span style='mso-spacerun:yes'>  </span>higher</span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>compres</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>sion</span></span><span class=GramE><span style='mso-spacerun:yes'>  </span>ratios</span> when the file is easy to encode. Using a recur-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>sion</span></span> size min. of 2 for a 256x256 image means that the image</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>will<span style='mso-spacerun:yes'>  </span>be</span><span style='mso-spacerun:yes'>  </span>partitioned<span style='mso-spacerun:yes'>  </span>at<span style='mso-spacerun:yes'>  </span>least twice, so we would look for</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>mapping</span> starting from 64x64 <span class=SpellE>subimage</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>The recursion size max.</span> <span class=GramE>is</span> the maximum number of times<span style='mso-spacerun:yes'>  </span>that</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>the<span style='mso-spacerun:yes'>  </span>largest</span><span style='mso-spacerun:yes'>  </span>square<span style='mso-spacerun:yes'>  </span>sub-image<span style='mso-spacerun:yes'>  </span>will<span style='mso-spacerun:yes'>  </span>be recursively <span
+class=SpellE>parti</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>tioned</span></span>. Using larger values will help encode the fine detail</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>in</span> the image at the cost of lower compression ratios.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>The domain type selects a method for determining <span
+class=GramE>the<span style='mso-spacerun:yes'>  </span>domain</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>pool<span style='mso-spacerun:yes'>  </span>with</span><span style='mso-spacerun:yes'>  </span>which the range is compared to get the resultant</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>mapping</span>. The domain pool type 0 gives fast results while the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>results<span style='mso-spacerun:yes'>  </span>get</span><span style='mso-spacerun:yes'>  </span>slower with higher values for the domain pool.</pre><pre><span style='mso-spacerun:yes'>     </span>The domain pool type 2 takes <span
+class=GramE>a</span> exceptionally long time.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>The domain step determines the selection of the domain pool.</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>If<span style='mso-spacerun:yes'>  </span>we</span><span style='mso-spacerun:yes'>  </span>choose<span style='mso-spacerun:yes'>  </span>a<span style='mso-spacerun:yes'>  </span>higher value of d, the density of domains</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>would</span> be higher and this would <span class=SpellE>reult</span> in higher<span style='mso-spacerun:yes'>  </span>compression.</pre><pre><span style='mso-spacerun:yes'>     </span>The higher compression occurs at the expense of time.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>The character c1(y/n) <span
+class=GramE>specifies<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>ths</span></span><span style='mso-spacerun:yes'>  </span>search<span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span>24<span style='mso-spacerun:yes'>  </span>domain</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>classes</span>. This results in better encodings with slower <span
+class=SpellE>encod</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>ing</span></span> times. The character c2(y/n) specifies the <span
+class=GramE>search<span style='mso-spacerun:yes'>  </span>to</span><span style='mso-spacerun:yes'>  </span>3</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>domain<span style='mso-spacerun:yes'>  </span>sub</span><span style='mso-spacerun:yes'>  </span>classes.<span style='mso-spacerun:yes'>  </span>This results in slower encoding times</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>with</span> better encodings.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>The scaling bits specifies the number of bits used <span
+class=GramE>to<span style='mso-spacerun:yes'>  </span><span class=SpellE>quan</span></span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>tize</span></span><span class=GramE><span style='mso-spacerun:yes'>  </span>the</span><span style='mso-spacerun:yes'>  </span>scale<span style='mso-spacerun:yes'>  </span>factor of the affine transformation of the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>pixel</span> values between the domain and the range.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>The<span style='mso-spacerun:yes'>  </span>default</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>value</span> is 5.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>The offset bits specifies the number of bits <span
+class=GramE>used<span style='mso-spacerun:yes'>  </span>to</span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>quan</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>tize</span></span><span class=GramE><span style='mso-spacerun:yes'>  </span>the</span><span style='mso-spacerun:yes'>  </span>offset<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>the affine transformation between the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>domain</span> and the range. The default value is 7.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>You can play with all the parameters mentioned above <span
+class=GramE>in<span style='mso-spacerun:yes'>  </span>the</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>cviptcl</span></span> shell. In the CVIPtools GUI, the character c1 and c2</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>are</span> combined to slower<span style='mso-spacerun:yes'>  </span>encoding<span style='mso-spacerun:yes'>  </span>button,<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>scaling<span style='mso-spacerun:yes'>  </span>and</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>offset<span style='mso-spacerun:yes'>  </span>bits</span><span style='mso-spacerun:yes'>  </span>are<span style='mso-spacerun:yes'>  </span>set<span style='mso-spacerun:yes'>  </span>to default values of 5 and 7 and the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>domain</span> step is set to 1.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>TYPES AND C<st1:stockticker>ONST</st1:stockticker>ANTS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>#define <span class=GramE>bound(</span>a)<span style='mso-spacerun:yes'>   </span>((a) &lt; 0.0 ? 0 : ((a)&gt;255.0? 255 : a))</pre><pre><span style='mso-spacerun:yes'>     </span>#define DEBUG 0</pre><pre><span style='mso-spacerun:yes'>     </span>#define <span
+class=GramE>swap(</span><span class=SpellE>a,b,TYPE</span>)<span style='mso-spacerun:yes'>           </span>{TYPE _temp; _temp=b; b=a; a= _temp;}</pre><pre><span style='mso-spacerun:yes'>     </span>#define IMAGE_TYPE unsigned char</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span><span class=SpellE>frac_compress</span>: 0 on success, -1 on failure</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>frac_decompression</span>:<span style='mso-spacerun:yes'>  </span><span
+class=GramE>an<span style='mso-spacerun:yes'>  </span>uncompressed</span><span style='mso-spacerun:yes'>  </span>image<span style='mso-spacerun:yes'>   </span>pointer<span style='mso-spacerun:yes'>   </span>on</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>success,</span>a</span> NULL pointer on failure</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;sys/<span
+class=SpellE>types.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;sys/<span
+class=SpellE>stat.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPtoolkit.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPconvert.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPdef.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPimage.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPtransform.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>fractal.h</span>&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>void</span> main() {</pre><pre><span style='mso-spacerun:yes'>         </span>Image *<span
+class=SpellE>cvipImage</span>, *<span class=SpellE>outImage</span>;</pre><pre><span style='mso-spacerun:yes'>         </span>IMAGE_FORMAT format;</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>char</span> *<span class=SpellE>inputfile</span>, *<span
+class=SpellE>outputfile</span>;</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>char</span> c1='n',c2='n';</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=SpellE>setDisplay_<span class=GramE>Image</span></span><span class=GramE>(</span>&quot;picture&quot;, &quot;Default&quot;);</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the Input File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=SpellE><span class=GramE>inputfile</span></span> =(char *) <span
+class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=SpellE><span class=GramE>cvipImage</span></span> = <span class=SpellE>read_Image</span>(<span
+class=SpellE>inputfile</span>, 1);</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>cvipImage</span>, <span class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the Compressed File Name:&quot;);</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=SpellE><span class=GramE>outputfile</span></span> =(char *) <span
+class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>         </span>/* <span
+class=GramE>The</span> following command will compress the input image with the</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>tolerance</span> value equal to 15, recursion size min. equal to 4 and</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>recursion</span> size max. <span class=GramE>equal</span> to 6, domain type equal to 0, domain step</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>equal</span> to 1, scale bits equal to 5 and offset bits equal to 7 with</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>faster</span> compression time */</pre><pre><span style='mso-spacerun:yes'>         </span>if (<span
+class=SpellE>frac_compress</span>(cvipImage,outputfile,15,4,6,0,1,c1,c2,5,7)&lt;0) {</pre><pre><span style='mso-spacerun:yes'>          </span><span
+class=SpellE>error_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;<span
+class=SpellE>frac_compress</span>&quot;, &quot;compression failed&quot;);</pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=GramE>exit(</span>1);</pre><pre><span style='mso-spacerun:yes'>         </span>} else if ((<span
+class=SpellE>outImage</span>=<span class=SpellE>frac_<span class=GramE>decompression</span></span><span
+class=GramE>(</span><span class=SpellE>outputfile</span>))==NULL){</pre><pre><span style='mso-spacerun:yes'>          </span><span
+class=SpellE>error_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;<span
+class=SpellE>frac_decompress</span>&quot;, &quot;decompression failed&quot;);</pre><pre><span style='mso-spacerun:yes'>             </span><span
+class=GramE>exit(</span>1);</pre><pre><span style='mso-spacerun:yes'>         </span>} else <span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>outImage</span>, <span class=SpellE>outputfile</span>);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>free(</span><span class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>free(</span><span class=SpellE>outputfile</span>);</pre><pre><span style='mso-spacerun:yes'>         </span>}</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>BUGS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>None</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>COMPRESSION library</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1996, 2004 SIUE - by<span style='mso-spacerun:yes'>  </span>Scott<span style='mso-spacerun:yes'>  </span>E.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>Umbaugh<span style='mso-spacerun:yes'>  </span>and</span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>Makam</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>Sreenivas</span></span><span class=GramE>.</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

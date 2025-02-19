@@ -1,0 +1,763 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CVIPGUI.AboutForm" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAABACCgAAAAgAACAAIACAAAAAFAAgAAAAAABAFA=</HashCode>
+      <FileName>AboutForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.AnalysisForm" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAgQAICQABIIAYASBEAACAEAAAAAAAACAAAQCABA=</HashCode>
+      <FileName>Analysis\AnalysisForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.CompressionForm" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABEBAAAACAAAAABAACAAAACAEACAAQAAAAAAABAAAA=</HashCode>
+      <FileName>Compression\CompressionForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.viewTable" Collapsed="true">
+    <Position X="12.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCKKAAAAAaAAABCAFACCAABCIEAAAAABlAAAgAQBBIg=</HashCode>
+      <FileName>Compression\viewTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.ImageQueue" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAcAAAAAACAQCBAACACABIQGFCCAgAIUoAAIAAAAhUQ=</HashCode>
+      <FileName>CustomControls\ImageQueue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CVIPGUI.ImageQueueListView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgIAAAAAIAACABAACkAAFAwEAAIADAIEIAgIQEggAxA=</HashCode>
+      <FileName>CustomControls\ImageQueue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CVIPGUI.ImageQueueSplitter" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAABAAAAAgIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomControls\ImageQueue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.ImageQueueListItem" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAgIAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomControls\ImageQueue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.ViewerCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAAEEAAAAAgBAQCAAABAQAAAACAAAUCAAAAABQIAA=</HashCode>
+      <FileName>CustomControls\ImageQueue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CVIPGUI.SelectedViewerCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAAEAAAAAAABAQCAAABIQEAAAAAAAECAAAIABQYAA=</HashCode>
+      <FileName>CustomControls\ImageQueue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CVIPGUI.InfoPanel" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwSAAAAAASoAQAAAAACBQIACAAAAYAEAAAAEAABA4AA=</HashCode>
+      <FileName>CustomControls\InfoPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.NonBlinkingStatusLabel" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAABAAAAAABAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomControls\NonBlinkingStatusLabel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.CustomRemapForm" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>glGtQycVCOCQBAAACSqkWC4CJVABwTFKoKCSBAICAEI=</HashCode>
+      <FileName>Enhancement\CustomRemapForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.EnhancementForm" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACBAAgAAAICAACACQEAAAAIABAAAACwAAAA=</HashCode>
+      <FileName>Enhancement\EnhancementForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.GetIntDialog" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAQkAAACAACACAQAAAEAAAAAgAAAAAAA=</HashCode>
+      <FileName>GetIntDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.LaunchCameraForm" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAAAAACAAAAAAAACAAAACEEAAAAAABABAAABAABA=</HashCode>
+      <FileName>LaunchCameraForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.MainForm" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>9p/+/b/u2uT2tv+v/zTtfPZXee63a9Xf2fr126/z790=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.CvipConstant" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAEAAAAAAAAA=</HashCode>
+      <FileName>MiddleLayer\CvipConstant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.CvipFunctionNames" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>fLd8k4C92/8Rxe8kS65ObVMypC7R3+f4Z918+9fLPMo=</HashCode>
+      <FileName>MiddleLayer\CvipConstant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.CvipOp" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>k+mzmsdr379Dy3Yp9tmI//tRfvX/W6xo9Kdf+z+8n0c=</HashCode>
+      <FileName>MiddleLayer\CvipOp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Program" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.RestorationForm" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAAAAEACAAAAAACACAAAACAkAAAAAAAAAEFACAAAA=</HashCode>
+      <FileName>Restoration\RestorationForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.UtilitiesForm" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABFAAAACBAAAAAAACAAgAjAEBAAAAIAgkCQAAgAAQ=</HashCode>
+      <FileName>Utilities\UtilitiesForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.AreaSelection" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAAAAQAICBCQBgAAAAAAAAAAiAgAAAAAAABABaAAECQ=</HashCode>
+      <FileName>Viewer\AreaSelection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Mesh" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAmAgBQkkIAAAAAAJAAgAAAEEAAAJAQAAFQAAA=</HashCode>
+      <FileName>Viewer\Mesh.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.ViewerForm" Collapsed="true">
+    <Position X="11" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YoOImQAICyqQNQEIIyDgwAQCVDIQRiMTJ2ggSMEiUAA=</HashCode>
+      <FileName>Viewer\ViewerForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Analysis.Classification" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>OKCABkCiSTqYNNFRjTCkGULK+Y8DQDBTliAYMWBESEI=</HashCode>
+      <FileName>Analysis\Classification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Analysis.ClassificationResults" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCAAAACACAAAAAAICCAAAACAAgAQAAAMKAAAQAQAQA=</HashCode>
+      <FileName>Analysis\ClassificationResults.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Analysis.CvipObject" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MIRgIAAEAQmIgQEEAgUgEgQABrkAIkAAAAY0RQAAQAA=</HashCode>
+      <FileName>Analysis\CvipObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Analysis.EdgeDetection" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>bLKQ96LrT3eCCRlw9z/wLvtWzg1XNOzhlk/Hcp65vMM=</HashCode>
+      <FileName>Analysis\EdgeDetection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Analysis.FeatureFile" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQIAAAAEQAAAIBAUCAAABAQAAAAABAAEEAQAQAFQIAA=</HashCode>
+      <FileName>Analysis\FeatureFile.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CVIPGUI.Analysis.FeatureHeader" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQAoGACUQBIYAAAUkgKCiQFAQDCRjIMBYioIAAAMEjg=</HashCode>
+      <FileName>Analysis\FeatureHeader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Analysis.Features" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>owhHQSCkQSjQLR0kABPILl4OeGEZVgGK/uexfxKJMHg=</HashCode>
+      <FileName>Analysis\Features.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Analysis.FeatureViewer" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMAAAEkQkCAAJAIIAACAAAAaABQGQEEAAIEAgAAQAAA=</HashCode>
+      <FileName>Analysis\FeatureViewer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Analysis.Geometry" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>dY4AQaDIkWvYiEE8WLLYiESCLIggKIigbSYqaSARCWI=</HashCode>
+      <FileName>Analysis\Geometry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Analysis.HitOrMissMasks" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAABAIAAQCAAEAAAAAAAACAQAAAAAAABAAAA=</HashCode>
+      <FileName>Analysis\HitOrMissMasks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Analysis.MorphologicalMaskForm" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGAACSAQAEACAGCJDIQCKCA4ZAAAIaAASAAAGGE=</HashCode>
+      <FileName>Analysis\MorphologicalMaskForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Analysis.MorphologicalMasks" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAABAAAAAAAAAAAAAAIAAIAAAAAACAAABAAgA=</HashCode>
+      <FileName>Analysis\MorphologicalMasks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Analysis.Segmentation" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ceRCCzarR6PZP7MLiMjDqvMbGObSq9eCpaiRYGnTvO8=</HashCode>
+      <FileName>Analysis\Segmentation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Analysis.ThinningMasks" Collapsed="true">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAABAIAAQCAAEAAAAAAAACAQAAAAAAABAAAA=</HashCode>
+      <FileName>Analysis\ThinningMasks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Analysis.Transforms" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>I5EQCzI+gaHQA8UQEEDgC9QjLSIVGOKABXR5YKiJLEA=</HashCode>
+      <FileName>Analysis\Transforms.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Compression.Lossless" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACACAIASECABEwCEGACEAKCAAAAAAABDAAIAAEAEA=</HashCode>
+      <FileName>Compression\Lossless.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Compression.Lossy" Collapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/yIEDnEKabGCWhn82iGLCGFOugKUALigFTAcMvXbx/o=</HashCode>
+      <FileName>Compression\Lossy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Compression.Preprocessing" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAQACAMFSEQIAMIQAigK0QCCAAACAAoBAACIAAkAHA=</HashCode>
+      <FileName>Compression\Preprocessing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Enhancement.Histograms" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEEAISwdCbuAAI8CHCmMCHMSeFsSOK2NHQrAYKyFREQ=</HashCode>
+      <FileName>Enhancement\Histograms.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Enhancement.Pseudocolor" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MBINBQAIwSGjQBFGBKDIDEACCUhAgAgIBkEgYAIUANg=</HashCode>
+      <FileName>Enhancement\Pseudocolor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Enhancement.Sharpening" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQKABQAACAAhAAeNCHNIAADeEDAiAFwMgQACSgAAAA=</HashCode>
+      <FileName>Enhancement\Sharpening.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Enhancement.Smoothing" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAEBACAcBSUgAwFAQSaECMIviAAgAEIIDWABIGg2AEg=</HashCode>
+      <FileName>Enhancement\Smoothing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Properties.Resources" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Properties.Settings" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Restoration.FrequencyFilter" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IMCYSjMe0aPwXaeIEgShKsAjfKhFkJKnNVQgZJuBCNA=</HashCode>
+      <FileName>Restoration\FrequencyFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Restoration.FrequencyFilterMask" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGAACSAAAEEAAGCACIACCAC4Z0AAgCAAAAAAEEA=</HashCode>
+      <FileName>Restoration\FrequencyFilterMask.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Restoration.GeometricTransform" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACUDAI4SEQiIHRQgqgmEAGSIAIkAAcRBIAYCEGAEA=</HashCode>
+      <FileName>Restoration\GeometricTransform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Restoration.Noise" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEBAAAAIBSOCFBUQAACECUACCAAAQpEshIEYIAIEQMA=</HashCode>
+      <FileName>Restoration\Noise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Restoration.SpatialFilter" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAgBMOIdAXOQASEA8QaCiNErOhIEMLAILihgIOwbBVQ=</HashCode>
+      <FileName>Restoration\SpatialFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Utilities.UtilArithLogic" Collapsed="true">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IRQAAIAABSGAGAEQCIGESEACGBAAAAAABAASYACBAEA=</HashCode>
+      <FileName>Utilities\UtilArithLogic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Utilities.UtilCompare" Collapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oBQAAIAQBSUACAEQAAGACkASCBAAiAAABBECYQCAAEk=</HashCode>
+      <FileName>Utilities\UtilCompare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Utilities.UtilConvert" Collapsed="true">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/xNgBAQIgTBgkJEAGh6AiWGHijAhAIEALqcCKEgBwGA=</HashCode>
+      <FileName>Utilities\UtilConvert.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Utilities.UtilCreate" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>rEXIPJPFB7OvPN01pKiVvGhzTrQYY7VFpoJeZUaKINE=</HashCode>
+      <FileName>Utilities\UtilCreate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Utilities.UtilEnhance" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/yUAIAZQaSJIlhUAQACQqOAHKiBCCACARf0TpCFAB3Y=</HashCode>
+      <FileName>Utilities\UtilEnhance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Utilities.UtilFilter" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oiwAGCMMoafQBiOIkQChGkASXDFAARygF+IDYBYtAEg=</HashCode>
+      <FileName>Utilities\UtilFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Utilities.UtilFilterMask" Collapsed="true">
+    <Position X="2.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAEAGAACyAQkElDAOCADcQCaAA4YlAAoiAQwAAgGGA=</HashCode>
+      <FileName>Utilities\UtilFilterMask.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Utilities.UtilSize" Collapsed="true">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MUQQAIWAgeCIAAEIQJDAiWACGBAIBAAARUACaACQAUA=</HashCode>
+      <FileName>Utilities\UtilSize.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CVIPGUI.Utilities.UtilStats" Collapsed="true">
+    <Position X="7.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>7wIAgIAADaDgBRFAAAGQGEEHDHAAAAACBCICICDDEmA=</HashCode>
+      <FileName>Utilities\UtilStats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="CVIPGUI.NotchZone" Collapsed="true">
+    <Position X="0.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAEAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>MiddleLayer\CvipOp.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="CVIPGUI.BaseCodes" Collapsed="true">
+    <Position X="2.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAABIAAAAIAAAAAAAAIAAAAAAEAFg=</HashCode>
+      <FileName>CustomControls\Win32Msgs.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.HDM" Collapsed="true">
+    <Position X="7.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AKAAAgAQAgAhAAIAIACAMAAAIgADAIABAAAADAAAIZA=</HashCode>
+      <FileName>CustomControls\Win32Msgs.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.HDN" Collapsed="true">
+    <Position X="9.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAGAAAAABFAAATAAACAAAAACAAAABhAAAQQAACABA=</HashCode>
+      <FileName>CustomControls\Win32Msgs.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.HT" Collapsed="true">
+    <Position X="12.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIgAIAABASAIAgAAABAgxAgQEAAABAQgAAAAAEAEAAA=</HashCode>
+      <FileName>CustomControls\Win32Msgs.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.LVM" Collapsed="true">
+    <Position X="9.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>yEjEQIJUElzh7J8AMkEMJMRNKAAHEuXrRKgG5qjALdg=</HashCode>
+      <FileName>CustomControls\Win32Msgs.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.LVN" Collapsed="true">
+    <Position X="11" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAgCIAAATCBQBAKIIIAAACAACAAAIAgAAAAAAAEKEA=</HashCode>
+      <FileName>CustomControls\Win32Msgs.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.NM" Collapsed="true">
+    <Position X="12.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAEAIEACAAEICgAACAAABAABAUEAAAAIGAgAA=</HashCode>
+      <FileName>CustomControls\Win32Msgs.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.OCM" Collapsed="true">
+    <Position X="2.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIACAAQBBAAABBAAAlAAAEAAABAAgwAAnAAAAAAA=</HashCode>
+      <FileName>CustomControls\Win32Msgs.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.WM" Collapsed="true">
+    <Position X="9.25" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RsEqsyXua71PgmJDj6pn2WLu/orApfVt0N13AWeYB84=</HashCode>
+      <FileName>CustomControls\Win32Msgs.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.colorFormat" Collapsed="true">
+    <Position X="4" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAoAAAAAMAAQAAAAAAAAgAIAAAAAAAAAAAAAACg=</HashCode>
+      <FileName>MiddleLayer\CvipConstant.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.dataFormat" Collapsed="true">
+    <Position X="7.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>MiddleLayer\CvipConstant.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.dataType" Collapsed="true">
+    <Position X="9.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAgAAAAgAAAAAAAAAEAAAAAAgAAAAA=</HashCode>
+      <FileName>MiddleLayer\CvipConstant.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.imageFormat" Collapsed="true">
+    <Position X="0.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>HAAggAAAAoAAQAIQAIAAAAAGAGFAFAAAAAIGUAAByqA=</HashCode>
+      <FileName>MiddleLayer\CvipConstant.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.kernelType" Collapsed="true">
+    <Position X="2.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACCAAAAAAAIAAAAAAAAAAIAA=</HashCode>
+      <FileName>MiddleLayer\CvipConstant.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.LogRemap" Collapsed="true">
+    <Position X="4" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAIAAABAAAAA=</HashCode>
+      <FileName>MiddleLayer\CvipConstant.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.SelectionState" Collapsed="true">
+    <Position X="11" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAABAAIAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Viewer\AreaSelection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Analysis.EdgeDetectSelection" Collapsed="true">
+    <Position X="12.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQAAAgEAAoCgEAAAAAAAAQAAQCACAAAAABICAIAAAQA=</HashCode>
+      <FileName>Analysis\EdgeDetection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Analysis.GeometrySelection" Collapsed="true">
+    <Position X="4" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQABAAAAAAAAAAAQIAAAAABAQ=</HashCode>
+      <FileName>Analysis\Geometry.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Analysis.ResizeMethod" Collapsed="true">
+    <Position X="7.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Analysis\Geometry.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Analysis.ZoomQuadrant" Collapsed="true">
+    <Position X="11" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAEAABAAAAAACIAAE=</HashCode>
+      <FileName>Analysis\Geometry.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Analysis.Direction" Collapsed="true">
+    <Position X="11" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAQYAAAAAAEAAAYACAAAAEA=</HashCode>
+      <FileName>Analysis\MorphologicalMaskForm.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Analysis.SegmentationSelection" Collapsed="true">
+    <Position X="9.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBAAACAAAMACAABAAAgAAAAAAEAABAAAgAAAAIBAEAA=</HashCode>
+      <FileName>Analysis\Segmentation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Analysis.TransformSelection" Collapsed="true">
+    <Position X="5.75" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAIAAIAABACQAggBAAIAAAAQAAAQAAAAAAACAAIAAA=</HashCode>
+      <FileName>Analysis\Transforms.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Compression.LosslessSelection" Collapsed="true">
+    <Position X="5.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAABAAAAAgAAAAEAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Compression\Lossless.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Compression.LossySelection" Collapsed="true">
+    <Position X="7.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAABgkAAAAAQAgAAQAEAAAAAAAAAAIIEAAAABA=</HashCode>
+      <FileName>Compression\Lossy.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Compression.PreprocessingSelection" Collapsed="true">
+    <Position X="4" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBAAEAAAAAAAEA=</HashCode>
+      <FileName>Compression\Preprocessing.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Enhancement.HistSelection" Collapsed="true">
+    <Position X="11" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAQAAAAAAAAABAAAKgAUQIAAAAAAAAAEAgAAAAgAA=</HashCode>
+      <FileName>Enhancement\Histograms.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Enhancement.PseudoSelection" Collapsed="true">
+    <Position X="5.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAQAAAAAQAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Enhancement\Pseudocolor.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Enhancement.SmoothingSelection" Collapsed="true">
+    <Position X="2.25" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAIAAAAAAAAEAAIQAAAAAIUAIMAAAAAABAAAAAA=</HashCode>
+      <FileName>Enhancement\Smoothing.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Restoration.FreqFilterSelection" Collapsed="true">
+    <Position X="2.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAQAAAQAAAEAoAEAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Restoration\FrequencyFilter.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Restoration.Shape" Collapsed="true">
+    <Position X="0.5" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAABAAAAAAACCAAAAAAAQCAAAAAAAAAAAA=</HashCode>
+      <FileName>Restoration\FrequencyFilter.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Restoration.TransformType" Collapsed="true">
+    <Position X="7.5" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAKQAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Restoration\FrequencyFilter.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Restoration.GeoTransformSelection" Collapsed="true">
+    <Position X="5.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Restoration\GeometricTransform.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Restoration.NoiseSelection" Collapsed="true">
+    <Position X="0.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAAAAAAAAAAAAAAACAAAAIAAAABAAAEAAAAA=</HashCode>
+      <FileName>Restoration\Noise.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Restoration.SpatialSelection" Collapsed="true">
+    <Position X="4" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIIAAIAAAhAgEgAgQAAAAAAAAAMAAAAAABAIAAgA=</HashCode>
+      <FileName>Restoration\SpatialFilter.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Utilities.ArithLogicSelection" Collapsed="true">
+    <Position X="0.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAASAAgAAAAAADAAAAAAgIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\UtilArithLogic.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Utilities.CreateSelection" Collapsed="true">
+    <Position X="5.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQABACAAAAAABAAAEAEAAAAAikACBQAAAAAAABAAA=</HashCode>
+      <FileName>Utilities\UtilCreate.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Utilities.FilterSelection" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAEAAAAAAAhAAAAAAAQAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Utilities\UtilFilter.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CVIPGUI.Utilities.Shape" Collapsed="true">
+    <Position X="12.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAABAAAAAAACCAAAAAAAQCAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\UtilFilter.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="CVIPGUI.GenericStateChange" Collapsed="true">
+    <Position X="0.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomControls\ImageQueue.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="CVIPGUI.ViewerChanged" Collapsed="true">
+    <Position X="5.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomControls\ImageQueue.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="CVIPGUI.RectangleChanged" Collapsed="true">
+    <Position X="4" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Viewer\AreaSelection.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="CVIPGUI.MouseEvent" Collapsed="true">
+    <Position X="2.25" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Viewer\ViewerForm.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

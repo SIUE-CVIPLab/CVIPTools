@@ -1,0 +1,2251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{ed0854fe-6298-49e9-af03-ef061cf0ba4c}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="CVIP Files">
+      <UniqueIdentifier>{d051dd54-da3b-461c-ac22-00532204a536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files">
+      <UniqueIdentifier>{733be201-79f3-41fc-9dcb-33f692c6f3db}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\ArithLogic">
+      <UniqueIdentifier>{b7107b52-4a49-442c-9755-441f9bcb1d9b}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\BandUtilities">
+      <UniqueIdentifier>{6c177b57-d60f-4eb5-a9f8-8009169499d9}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Color">
+      <UniqueIdentifier>{6f30052a-537e-4c46-84f4-98e2e1078529}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Compression">
+      <UniqueIdentifier>{b442436c-6895-4d0f-b5b7-12ab10e60d41}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Conversion">
+      <UniqueIdentifier>{fb360ffd-1285-4b48-a251-e505a94a2c85}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Conversion\BMP">
+      <UniqueIdentifier>{18de88bb-03e1-4342-b38c-b47074631b01}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Conversion\JPEG">
+      <UniqueIdentifier>{08504045-b8aa-4930-99be-2c0b1e84e835}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Conversion\JPEG2000">
+      <UniqueIdentifier>{9c6d9f27-0ccd-4f5c-86c1-c6ea12a802b9}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Conversion\PBMPLUS">
+      <UniqueIdentifier>{fea3de48-457f-4e52-af44-109ea9b610e6}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Conversion\PNGwithZLIB">
+      <UniqueIdentifier>{f891148e-d4ce-4e4a-9dc2-5a8a556733f5}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Conversion\TIFF">
+      <UniqueIdentifier>{5d052ca8-ff75-45e9-888b-36029f959cdb}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Display">
+      <UniqueIdentifier>{9a08a3c1-03e4-4a7d-88ae-c5b4304d393f}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Feature">
+      <UniqueIdentifier>{03937591-daf0-4284-a68e-238944751d9e}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Geometry">
+      <UniqueIdentifier>{7f06ed54-9ae9-455b-ad90-71ed9290d769}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Histogram">
+      <UniqueIdentifier>{c27375a4-eb0a-429e-b044-5e424a2fe095}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Image">
+      <UniqueIdentifier>{b753ab5b-a901-4eb9-ad0b-2381ca11dddd}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\IOUtilities">
+      <UniqueIdentifier>{12f24609-d1a5-4dc4-b59e-b6e0d1160dd7}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Mapping">
+      <UniqueIdentifier>{4adf3d4c-1e32-41cf-8b09-20c5e5c039ac}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\MatrixAlgebra">
+      <UniqueIdentifier>{87fe64a4-ddfd-4c01-a94d-9ba7871baa76}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Morphological">
+      <UniqueIdentifier>{e1b90af8-9bfb-4a94-a94a-a25cd346e7fc}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Noise">
+      <UniqueIdentifier>{0847ece4-9a04-47ab-97d5-33d3c3511c86}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Object">
+      <UniqueIdentifier>{ed882f59-673c-4e7b-94dd-5f5235664e8d}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\ObjectManager">
+      <UniqueIdentifier>{85829d72-0718-4c38-9878-1c9d29c6fc4f}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\RegionOfInterest">
+      <UniqueIdentifier>{b40d8806-e47c-4bf9-9e2d-7591e325b359}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Segmentation">
+      <UniqueIdentifier>{5797eb7f-24e7-41b4-b400-0af5852fb156}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\SpatialFilter">
+      <UniqueIdentifier>{7c0bbcfa-a515-4e8e-b8d9-5c03057ea2d4}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Transforms">
+      <UniqueIdentifier>{9ae85abf-e0ef-4674-b999-4c468c9619e8}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\VectorAlgebra">
+      <UniqueIdentifier>{01de40cb-3e5d-4baa-b6b7-8e94aa9d868c}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\XformFilter">
+      <UniqueIdentifier>{39cb5218-7409-4bb1-bf55-05541b51b112}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Feature\Header Files">
+      <UniqueIdentifier>{533b12c5-5d7b-49ee-97c2-b46aea1d6831}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Feature\Header Files\rpc">
+      <UniqueIdentifier>{b99bd2df-31aa-4e73-a4d3-50f153c89c30}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="CVIP Files\Source Files\Feature\Header Files\X11">
+      <UniqueIdentifier>{4352027d-41bf-4f03-a105-3a9d22ead990}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CVIPCOM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVIPCOM_i.c">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVIPtools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\ArithLogic\arithlogic.c">
+      <Filter>CVIP Files\Source Files\ArithLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\BandUtilities\assemble_bands.c">
+      <Filter>CVIP Files\Source Files\BandUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\BandUtilities\bandcast.c">
+      <Filter>CVIP Files\Source Files\BandUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\BandUtilities\bandcopy.c">
+      <Filter>CVIP Files\Source Files\BandUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\BandUtilities\bandminmax.c">
+      <Filter>CVIP Files\Source Files\BandUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\BandUtilities\extract_band.c">
+      <Filter>CVIP Files\Source Files\BandUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\BandUtilities\mem_alloc.c">
+      <Filter>CVIP Files\Source Files\BandUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Color\color_adjust.c">
+      <Filter>CVIP Files\Source Files\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Color\color_contrast_enhance.c">
+      <Filter>CVIP Files\Source Files\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Color\ColorMap.c">
+      <Filter>CVIP Files\Source Files\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Color\cxform.c">
+      <Filter>CVIP Files\Source Files\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Color\cxform_setup.c">
+      <Filter>CVIP Files\Source Files\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Color\lum_average.c">
+      <Filter>CVIP Files\Source Files\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Color\luminance.c">
+      <Filter>CVIP Files\Source Files\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Color\misc_fcns.c">
+      <Filter>CVIP Files\Source Files\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Color\pct.c">
+      <Filter>CVIP Files\Source Files\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Color\pseudocol_freq.c">
+      <Filter>CVIP Files\Source Files\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Color\pseudocolor.c">
+      <Filter>CVIP Files\Source Files\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\bitplane_RLC.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\block_trunc_coding.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\com_setup.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\dpcm.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\fracdec.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\fracenc.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\grey_RLC.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\huffman.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\jpeg.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\LBG_utils.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\m_btc.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\quant.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\rms_error.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\trans_compr.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\vector_quantization.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\vq_coding.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\vq_fileio.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\vq_initial.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\wvq.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\xvq.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\zonal.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\zonal2.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Compression\zvl.c">
+      <Filter>CVIP Files\Source Files\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\bintocvip.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\bmptocvip.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\ccctocvip.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\convert.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\convertutils.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\cvipandiris.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\cviptobin.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\cviptobmp.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\cviptoccc.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\cviptoeps.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\cviptogif.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\cviptoitex.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\cviptojpeg.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\cviptojpeg2000.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\cviptopnm.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\cviptops.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\cviptoras.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\cviptotiff.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\cviptovip.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\epstocvip.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\giftocvip.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\gray_binary.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\halftone.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\itextocvip.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\jpeg2000tocvip.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\jpegtocvip.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\navy.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\pnmtocvip.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\rastocvip.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\tifftocvip.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\viptocvip.c">
+      <Filter>CVIP Files\Source Files\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\BMP\BMPDECOD.C">
+      <Filter>CVIP Files\Source Files\Conversion\BMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\BMP\BMPENCOD.C">
+      <Filter>CVIP Files\Source Files\Conversion\BMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\BMP\BMPHEAD.C">
+      <Filter>CVIP Files\Source Files\Conversion\BMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\BMP\BMPREAD.C">
+      <Filter>CVIP Files\Source Files\Conversion\BMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\BMP\BMPWRITE.C">
+      <Filter>CVIP Files\Source Files\Conversion\BMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\BMP\ENDIANIO.C">
+      <Filter>CVIP Files\Source Files\Conversion\BMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\cdjpeg.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcapimin.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcapistd.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jccoefct.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jccolor.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcdctmgr.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jchuff.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcinit.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcmainct.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcmarker.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcmaster.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcomapi.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcparam.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcphuff.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcprepct.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcsample.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jctrans.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdapimin.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdapistd.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdatadst.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdatasrc.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdcoefct.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdcolor.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jddctmgr.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdhuff.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdinput.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdmainct.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdmarker.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdmaster.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdmerge.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdphuff.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdpostct.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdsample.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdtrans.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jerror.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jfdctflt.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jfdctfst.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jfdctint.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jidctflt.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jidctfst.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jidctint.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jidctred.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jmemansi.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jmemmgr.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jquant1.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jquant2.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jrdcvip.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jutils.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jwrcvip.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\rdbmp.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\rdcolmap.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\rdgif.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\rdppm.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\rdrle.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\rdswitch.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\rdtarga.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\wrbmp.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\wrgif.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\wrppm.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\wrrle.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\wrtarga.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\bio.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\cio.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\cviptoopj.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\dwt.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\event.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\getopt.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\index.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\j2k.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\j2k_lib.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\jp2.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\jp2_decode.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\jp2_encode.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\jpt.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\mct.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\mqc.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\openjpeg.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\opjconvert.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\opjimage.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\opjtocvip.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\pi.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\raw.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\t1.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\t1_generate_luts.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\t2.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\tcd.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\tgt.c">
+      <Filter>CVIP Files\Source Files\Conversion\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpbm1.c">
+      <Filter>CVIP Files\Source Files\Conversion\PBMPLUS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpbm2.c">
+      <Filter>CVIP Files\Source Files\Conversion\PBMPLUS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpbm3.c">
+      <Filter>CVIP Files\Source Files\Conversion\PBMPLUS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpbm4.c">
+      <Filter>CVIP Files\Source Files\Conversion\PBMPLUS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpbm5.c">
+      <Filter>CVIP Files\Source Files\Conversion\PBMPLUS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpgm1.c">
+      <Filter>CVIP Files\Source Files\Conversion\PBMPLUS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpgm2.c">
+      <Filter>CVIP Files\Source Files\Conversion\PBMPLUS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpnm1.c">
+      <Filter>CVIP Files\Source Files\Conversion\PBMPLUS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpnm2.c">
+      <Filter>CVIP Files\Source Files\Conversion\PBMPLUS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpnm3.c">
+      <Filter>CVIP Files\Source Files\Conversion\PBMPLUS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpnm4.c">
+      <Filter>CVIP Files\Source Files\Conversion\PBMPLUS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libppm1.c">
+      <Filter>CVIP Files\Source Files\Conversion\PBMPLUS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libppm2.c">
+      <Filter>CVIP Files\Source Files\Conversion\PBMPLUS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libppm3.c">
+      <Filter>CVIP Files\Source Files\Conversion\PBMPLUS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libppm4.c">
+      <Filter>CVIP Files\Source Files\Conversion\PBMPLUS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libppm5.c">
+      <Filter>CVIP Files\Source Files\Conversion\PBMPLUS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\adler32.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\compress.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\crc32.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\deflate.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\gzio.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\infback.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\inffast.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\inflate.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\inftrees.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\minigzip.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\png.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngerror.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pnggccrd.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngget.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngmem.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngpread.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngread.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngrio.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngrtran.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngrutil.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngset.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngtrans.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngvcrd.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngwio.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngwrite.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngwtran.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngwutil.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\readPNG.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\trees.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\uncompr.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\writePNG.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\PNG\zutil.c">
+      <Filter>CVIP Files\Source Files\Conversion\PNGwithZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_aux.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_close.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_codec.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_color.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_compress.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_dir.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_dirinfo.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_dirread.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_dirwrite.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_dumpmode.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_error.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_extension.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_fax3.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_fax3sm.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_flush.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_getimage.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_jpeg.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_luv.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_lzw.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_next.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_open.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_packbits.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_pixarlog.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_predict.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_print.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_read.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_strip.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_swab.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_thunder.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_tile.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_version.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_warning.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_win32.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_write.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_zip.c">
+      <Filter>CVIP Files\Source Files\Conversion\TIFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Display\display.c">
+      <Filter>CVIP Files\Source Files\Display</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\binary_feature.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\city_block.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\Cooccurrence_Matrix.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\cvip_pgmtexture.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\CVIP_textureSetUp.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\euclidean_distance.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\hist_feature.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\k_nearest_neighbor.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\label.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\laws_texture.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\maximum_value_metric.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\min_max_normalization.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\minkowski_distance.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\nearest_centroid.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\nearest_centroid_set.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\nearest_neighbor.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\pattern_city_block.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\pattern_euclidean.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\pattern_maximum.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\pattern_min_max_normalization.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\pattern_minkowski.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\pattern_range_normalize.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\pattern_softmax_scaling_normalization.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\pattern_standard_normal_density_normalization.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\pattern_tanimoto.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\pattern_unit_vector_normalization.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\pattern_vector_inner_product.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\range_normalize.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\rst_invariant.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\size_norm_projection.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\softmax_scaling.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\spectral_feature.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\standard_normal_density_normalizatoin.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\tanimoto_metric.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\Texture_Features.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\unit_vector_normalization.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Feature\vector_inner_product.c">
+      <Filter>CVIP Files\Source Files\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Geometry\bilinear.c">
+      <Filter>CVIP Files\Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Geometry\copy_paste.c">
+      <Filter>CVIP Files\Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Geometry\cosine.c">
+      <Filter>CVIP Files\Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Geometry\create_image.c">
+      <Filter>CVIP Files\Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Geometry\crop.c">
+      <Filter>CVIP Files\Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Geometry\enlarge.c">
+      <Filter>CVIP Files\Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Geometry\horizontal.c">
+      <Filter>CVIP Files\Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Geometry\local_adaptive_zoom.c">
+      <Filter>CVIP Files\Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Geometry\object_crop.c">
+      <Filter>CVIP Files\Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Geometry\rotate.c">
+      <Filter>CVIP Files\Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Geometry\SeedFill.c">
+      <Filter>CVIP Files\Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Geometry\shrink.c">
+      <Filter>CVIP Files\Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Geometry\sine.c">
+      <Filter>CVIP Files\Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Geometry\spatial_quant.c">
+      <Filter>CVIP Files\Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Geometry\square.c">
+      <Filter>CVIP Files\Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Geometry\translate.c">
+      <Filter>CVIP Files\Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Geometry\warp.c">
+      <Filter>CVIP Files\Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Geometry\zoom.c">
+      <Filter>CVIP Files\Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Histogram\ee.c">
+      <Filter>CVIP Files\Source Files\Histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Histogram\eefunc.c">
+      <Filter>CVIP Files\Source Files\Histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Histogram\get_hist_real.c">
+      <Filter>CVIP Files\Source Files\Histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Histogram\graylevel_mod.c">
+      <Filter>CVIP Files\Source Files\Histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Histogram\hist_slide.c">
+      <Filter>CVIP Files\Source Files\Histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Histogram\hist_stretch.c">
+      <Filter>CVIP Files\Source Files\Histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Histogram\histeq.c">
+      <Filter>CVIP Files\Source Files\Histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Histogram\histogram.c">
+      <Filter>CVIP Files\Source Files\Histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Histogram\local_heq.c">
+      <Filter>CVIP Files\Source Files\Histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Image\chk_bin.c">
+      <Filter>CVIP Files\Source Files\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Image\history.c">
+      <Filter>CVIP Files\Source Files\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Image\image.c">
+      <Filter>CVIP Files\Source Files\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\IOUtilities\errormsg.c">
+      <Filter>CVIP Files\Source Files\IOUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\IOUtilities\file.c">
+      <Filter>CVIP Files\Source Files\IOUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\IOUtilities\getvalue.c">
+      <Filter>CVIP Files\Source Files\IOUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\IOUtilities\MemAlloc.c">
+      <Filter>CVIP Files\Source Files\IOUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Mapping\logremap.c">
+      <Filter>CVIP Files\Source Files\Mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Mapping\relremap.c">
+      <Filter>CVIP Files\Source Files\Mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_alloc.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_arith_bin.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_conj.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_convolve.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_copy.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_CovEig.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_crop.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_det.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_file.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_invert.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_logic_bin.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_magnitude.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_makecomplex.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_makereal.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_mult.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_print.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_scale.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_sqrt.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_trans.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\rec2pol.c">
+      <Filter>CVIP Files\Source Files\MatrixAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Morphological\labeling_lab.c">
+      <Filter>CVIP Files\Source Files\Morphological</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Morphological\morph.c">
+      <Filter>CVIP Files\Source Files\Morphological</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Morphological\morph_hitmiss.c">
+      <Filter>CVIP Files\Source Files\Morphological</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Morphological\morph_skeleton.c">
+      <Filter>CVIP Files\Source Files\Morphological</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Morphological\morph_thinning.c">
+      <Filter>CVIP Files\Source Files\Morphological</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Morphological\morphCODE.c">
+      <Filter>CVIP Files\Source Files\Morphological</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Morphological\morphSET.c">
+      <Filter>CVIP Files\Source Files\Morphological</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Noise\noise.c">
+      <Filter>CVIP Files\Source Files\Noise</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Object\DigitalLine.c">
+      <Filter>CVIP Files\Source Files\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Object\Object.c">
+      <Filter>CVIP Files\Source Files\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Object\ObjectContour.c">
+      <Filter>CVIP Files\Source Files\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Object\ObjectLabel.c">
+      <Filter>CVIP Files\Source Files\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Object\ObjectProperties.c">
+      <Filter>CVIP Files\Source Files\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Object\ObjectSetUp.c">
+      <Filter>CVIP Files\Source Files\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Object\TrimList.c">
+      <Filter>CVIP Files\Source Files\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\ObjectManager\DLL.c">
+      <Filter>CVIP Files\Source Files\ObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\ObjectManager\HT.c">
+      <Filter>CVIP Files\Source Files\ObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\ObjectManager\LL.c">
+      <Filter>CVIP Files\Source Files\ObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\ObjectManager\Stack.c">
+      <Filter>CVIP Files\Source Files\ObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\RegionOfInterest\ROI.c">
+      <Filter>CVIP Files\Source Files\RegionOfInterest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Segmentation\autothreshold_segment.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Segmentation\findNonSkin.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Segmentation\fuzzyc.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Segmentation\gray_quant.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Segmentation\gvfsnake.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Segmentation\hist_thresh.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Segmentation\igs.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Segmentation\median_cut.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Segmentation\otsu.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Segmentation\pct_median.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Segmentation\sct_split.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Segmentation\Spline.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Segmentation\split_merge.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Segmentation\splitnMerge.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Segmentation\threshold.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Segmentation\watershed.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\adaptive_anisotropic_diffusion.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\adaptive_contrast.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\boiecox_edge.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\canny_edge_detection.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\cerchar_filter.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\convolve_Image.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\edge_detect.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\harris_corner_detection.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\hough.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\img_sharp.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\improved_mmse_filter.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\kirsch_filter.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\kuwahara_filter.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\lee_filter.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\median_hist.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\mmse_filter.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\moravec_corner_detection.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\nightvision.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\nonmaxima_suppression.cpp">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\pratts.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\prewitt_filter.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\raster_deblur.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\robinson_filter.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\shen_castan_edge.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\single_filter.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\smooth.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\sobel_filter.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\spatial_filter.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\spatial_tools.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\unsharp.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Transforms\check_xform_history.c">
+      <Filter>CVIP Files\Source Files\Transforms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Transforms\dct.c">
+      <Filter>CVIP Files\Source Files\Transforms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Transforms\fft.c">
+      <Filter>CVIP Files\Source Files\Transforms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Transforms\fft_mag.c">
+      <Filter>CVIP Files\Source Files\Transforms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Transforms\fft_phase.c">
+      <Filter>CVIP Files\Source Files\Transforms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Transforms\fft_setup.c">
+      <Filter>CVIP Files\Source Files\Transforms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Transforms\haar.c">
+      <Filter>CVIP Files\Source Files\Transforms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Transforms\inverse_fft.c">
+      <Filter>CVIP Files\Source Files\Transforms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Transforms\walhad.c">
+      <Filter>CVIP Files\Source Files\Transforms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Transforms\wavelet.c">
+      <Filter>CVIP Files\Source Files\Transforms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Transforms\xform_setup.c">
+      <Filter>CVIP Files\Source Files\Transforms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Transforms\xform_util.c">
+      <Filter>CVIP Files\Source Files\Transforms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Transforms\zero_pad.c">
+      <Filter>CVIP Files\Source Files\Transforms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\VectorAlgebra\bandvec.c">
+      <Filter>CVIP Files\Source Files\VectorAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\VectorAlgebra\filterVector.c">
+      <Filter>CVIP Files\Source Files\VectorAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\VectorAlgebra\findHisto.c">
+      <Filter>CVIP Files\Source Files\VectorAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\VectorAlgebra\normalize.c">
+      <Filter>CVIP Files\Source Files\VectorAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\VectorAlgebra\subSample.c">
+      <Filter>CVIP Files\Source Files\VectorAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\VectorAlgebra\VectorMinMax.c">
+      <Filter>CVIP Files\Source Files\VectorAlgebra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\XformFilter\bpf_setup.c">
+      <Filter>CVIP Files\Source Files\XformFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\XformFilter\brf_setup.c">
+      <Filter>CVIP Files\Source Files\XformFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\XformFilter\filter.c">
+      <Filter>CVIP Files\Source Files\XformFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\XformFilter\h_image.c">
+      <Filter>CVIP Files\Source Files\XformFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\XformFilter\hfe_setup.c">
+      <Filter>CVIP Files\Source Files\XformFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\XformFilter\homomorphic.c">
+      <Filter>CVIP Files\Source Files\XformFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\XformFilter\hpf_setup.c">
+      <Filter>CVIP Files\Source Files\XformFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\XformFilter\lpf_setup.c">
+      <Filter>CVIP Files\Source Files\XformFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\XformFilter\nonfft_filter.c">
+      <Filter>CVIP Files\Source Files\XformFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\XformFilter\notch.c">
+      <Filter>CVIP Files\Source Files\XformFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\XformFilter\restore_xformfilter.c">
+      <Filter>CVIP Files\Source Files\XformFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\XformFilter\xformfilter_setup.c">
+      <Filter>CVIP Files\Source Files\XformFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\Histogram\CLAHE.c">
+      <Filter>CVIP Files\Source Files\Histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\ArithLogic\dice_coef.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\ArithLogic\xor_error.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\ArithLogic\overlap_coef.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\ArithLogic\jaccard_index.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVIPC\SpatialFilter\marr_hildreth_edge.c">
+      <Filter>CVIP Files\Source Files\SpatialFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="superPixel.c">
+      <Filter>CVIP Files\Source Files\Segmentation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CVIPCOM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVIPCOM_i.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVIPtools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\bilinear.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\bilinear_prim.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\bio.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\bitplane_RLC.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\block_trunc_coding.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\BMP.H">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\boundary_points.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\cderror.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\cdjpeg.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\cio.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\color_adjust.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ColorMap.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\convert.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPalloc.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIParith.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIParithlogic.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPband.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPbin.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPbitwiseIO.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPccc.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPcmap.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPcolor.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPcomplex.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPcompress.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPconutils.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPconvert.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPdef.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPdermvis.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPdisplay.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPdrawimg.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPenhance.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPeps.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPerror.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPfeatures.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPfile.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPfs.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPgeometry.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPget.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPgif.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPhalftone.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPheli_rot.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPhisto.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPhistory.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPicon.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPimage.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPiris.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPitex.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPjpeg.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPjpeg2000.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPluminance.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPmagic.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPmanager.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPmap.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPmatrix.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPmesh.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPmorph.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPnoise.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPobject.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPparse.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPpattern.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPpng.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPpnm.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPps.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPras.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIProi.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPsegment.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPspfltr.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPstring.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPtexture.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPtiff.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPtoolkit.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPtools.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPtransform.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPtyp.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPvector.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPview.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPvip.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPxel.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CVIPxformfilter.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\DATATYPE.H">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\deform_template.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\DermVis.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\DermvisDat.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\DigitalLine.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\dirent.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\dithers.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\DLL.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\dwt.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ee.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\eefunc.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ENDIANIO.H">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\event.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\fcm.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\filterVector.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\findHisto.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\findNonSkin.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\fix.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\fractal.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ftw.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\fuzzyc.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\g3states.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\getopt.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\gray_binary.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\grey_RLC.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\hist.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\hist_thresh.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\histogram.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\HT.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\huffman.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\image.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\imaging.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\img2imgmap.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\index.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\int.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\j2k.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\j2k_lib.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\jchuff.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\jconfig.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\jdct.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\jdhuff.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\jerror.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\jinclude.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\jmemsys.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\jmorecfg.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\jp2.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\jpegint.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\jpeglib.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\jpt.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\jversion.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\labeling.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\laws_texture.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\LBG.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\libpbm.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\libpgm.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\libppm.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Link.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\LL.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\m_CovEig.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\m_file.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\machdep.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\masks.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\MATcopy.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\MATmult.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\MATpwise.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\MATscale.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\mct.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\median_cut.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\misc_fcns.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\mqc.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\mymath.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\newfeature.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Object.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ObjectContour.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ObjectLabel.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ObjectProperties.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\openjpeg.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\opj_includes.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\opj_malloc.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\pbm.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\pbmfont.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\pbmplus.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\pct.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\pgm.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\pi.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\pnm.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\port.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ppbm.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ppbmplus.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ppgm.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ppm.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ppmcmap.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ppmdraw.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\prototypes.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\pversion.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\rast.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\raw.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\sct_split.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SeedFill.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\seg.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Spline.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\split_merge.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Stack.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\subSample.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\t1.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\t1_luts.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\t2.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\t4.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\tcd.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\tgt.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\threshold.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\tif_config.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\tif_dir.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\tif_fax3.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\tif_predict.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\tiff.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\tiffcomp.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\tiffconf.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\tiffio.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\tiffiop.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\tiffvers.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\TrimList.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\tristimulus.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\uvcode.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\vector_data.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\vector_quant.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\version.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\watershed.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\wavelet.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\waves.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\zconf.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\zlib.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\zonal.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\rpc\auth.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\rpc\auth_uni.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\rpc\bcopy.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\rpc\clnt.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\rpc\netdb.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\rpc\pmap_cln.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\rpc\pmap_pro.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\rpc\pmap_rmt.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\rpc\rpc.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\rpc\rpc_msg.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\rpc\svc.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\rpc\svc_auth.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\rpc\types.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\rpc\xdr.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\X11\cursorfont.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\X11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\X11\keysym.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\X11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\X11\keysymdef.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\X11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\X11\X.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\X11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\X11\Xatom.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\X11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\X11\Xfuncproto.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\X11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\X11\Xlib.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\X11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\X11\Xutil.h">
+      <Filter>CVIP Files\Source Files\Feature\Header Files\X11</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CVIPCOM.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CVIPCOM.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="CVIPCOM.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="CVIPtools.rgs">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="CVIPCOM.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+</Project>

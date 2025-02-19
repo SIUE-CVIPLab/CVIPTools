@@ -1,0 +1,915 @@
+/***************************************************************************
+======================================================================
+Computer Vision/Image Processing Tool Project - Dr. Scott Umbaugh SIUE
+======================================================================
+                                                                      
+             File Name: cviptogif.c
+           Description: contains a routine to write the contents of a CVIPtools
+			Image structure to a GIF file.
+         Related Files: CVIPimage.h, CVIPgif.h, Imakefile
+   Initial Coding Date: 1/24/93
+           Portability: Standard (ANSI) C
+             Credit(s): Gregory Hance, E.E. Dept. SIUE
+
+  Global Function List: cviptogif
+			
+****************************************************************************
+
+** Copyright (C) 1991, 1992, 1993 SIUE - by Scott Umbaugh, Greg Hance.
+** Copyright (C) 1989 by Jef Poskanzer.
+**
+** Permission to use, copy, modify, and distribute this software and its
+** documentation for any purpose and without fee is hereby granted, provided
+** that the above copyright notice appear in all copies and that both that
+** copyright notice and this permission notice appear in supporting
+** documentation.  This software is provided "as is" without express or
+** implied warranty.
+
+RCS (Revision Control System) Information - Added automatically by RCS) 
+
+$Log: cviptogif.c,v $
+Revision 1.11  1997/05/18 04:04:59  yawei
+GetPixel ==> GifGetPixel
+to avoid conflict with definitions in WINGDI.h on Win32
+
+Revision 1.10  1997/05/02 17:25:35  yawei
+undelete input image
+
+Revision 1.9  1997/04/28 23:43:52  yawei
+added grayscale support
+
+Revision 1.8  1997/03/08 17:00:26  yawei
+Swaped CVIP_YES and CVIP_NO
+
+Revision 1.7  1997/03/08 00:43:09  yawei
+Name Changes:
+	BOOLEAN ==> CVIP_BOOLEAN
+	FALSE ==> CVIP_NO
+	TRUE ==> CVIP_YES
+	BYTE ==> CVIP_BYTE
+	SHORT ==> CVIP_SHORT
+	INTEGER ==> CVIP_INTEGER
+	FLOAT ==> CVIP_FLOAT
+	DOUBLE ==> CVIP_DOUBLE
+	TYPE ==> CVIP_TYPE
+
+Revision 1.6  1997/01/15 17:07:28  yawei
+Global Change:  IMAGE ==> Image
+
+ * Revision 1.5  1995/10/31  14:13:11  akjoele
+ * Added aexplicit casts to lines 153,154 and 155 to comply with ANSI C and
+ * eliminate compilation warnings.
+ *
+ * Revision 1.4  1995/10/31  14:04:38  akjoele
+ * Changed code so that it doesn't call pm_error (and therefore exits)
+ * when encountering an image with > 256 colors.
+ *
+ * Revision 1.3  1994/12/21  08:07:29  luok
+ * check file into RCS
+ *
+ * Revision 1.2  1994/12/21  07:59:28  luok
+ * check the file into RCS
+ *
+ * Revision 1.1  1993/05/31  07:10:12  hanceg
+ * Initial revision
+ *                                                         
+
+*****************************************************************************/
+/*
+** Based on GIFENCOD by David Rowley <mgardi@watdscu.waterloo.edu>.A
+** Lempel-Zim compression based on "compress".
+**
+** The Graphics Interchange Format(c) is the Copyright property of
+** CompuServe Incorporated.  GIF(sm) is a Service Mark property of
+** CompuServe Incorporated.
+*/
+
+#include "CVIPtoolkit.h"
+#include "CVIPdef.h"
+#include "median_cut.h"
+#include "CVIPband.h"
+#include "ppm.h"
+#include "ppmcmap.h"
+#define NO_STD_INCLUDES
+#include "CVIPimage.h"
+#include "CVIPxel.h"
+
+#define MAXCOLORS 256
+
+/*
+ * Pointer to function returning an int
+ */
+typedef int (* ifunptr)();
+
+/*
+ * a code_int must be able to hold 2**BITS values of type int, and also -1
+ */
+typedef int             code_int;
+
+#ifdef SIGNED_COMPARE_SLOW
+typedef unsigned long int count_int;
+typedef unsigned short int count_short;
+#else /*SIGNED_COMPARE_SLOW*/
+typedef long int          count_int;
+#endif /*SIGNED_COMPARE_SLOW*/
+
+static int colorstobpp ARGS(( int colors ));
+static int GifGetPixel ARGS(( int x, int y ));
+static void BumpPixel ARGS(( void ));
+static int GIFNextPixel ARGS(( ifunptr getpixel ));
+static void GIFEncode ARGS(( FILE* fp, int GWidth, int GHeight, int GInterlace, int Background, int BitsPerPixel, int Red[], int Green[], int Blue[], ifunptr GifGetPixel ));
+static void Putword ARGS(( int w, FILE* fp ));
+static void compress ARGS(( int init_bits, FILE* outfile, ifunptr ReadValue ));
+static void output ARGS(( code_int code ));
+static void cl_block ARGS(( void ));
+static void cl_hash ARGS(( count_int hsize ));
+static void writeerr ARGS(( void ));
+static void char_init ARGS(( void ));
+static void char_out ARGS(( int c ));
+static void flush_char ARGS(( void ));
+
+static pixel** pixels;
+static colorhash_table cht;
+
+void
+cviptogif( gif_Image, gif_name, outfp, interlace, verbose)
+    Image *gif_Image;
+    int interlace;
+    char *gif_name;
+    FILE *outfp;
+    int verbose;
+    {
+    int argn, rows, cols, colors, i, BitsPerPixel;
+    pixval maxval = 255;
+    colorhist_vector chv;
+    int Red[MAXCOLORS], Green[MAXCOLORS], Blue[MAXCOLORS];
+    char *prog_name[1] = {"cviptogif"};
+	 Color bg = {0, 0, 0};
+    
+    int GifGetPixel(int, int);
+    void GIFEncode ( FILE*, int, int, int, int, int, int *, int *, int *, ifunptr);
+
+    ppm_init( &verbose, prog_name);
+   
+    rows = gif_Image->image_ptr[0]->rows;
+    cols = gif_Image->image_ptr[0]->cols;	
+   
+    if ((pixels = ppm_allocarray(cols, rows)) == NULL)
+       pm_error("couldn't alloc space for image" );
+
+    if (getNoOfBands_Image(gif_Image) == 1) {
+    	Image *images[3];
+	images[0] = gif_Image;
+	images[1] = duplicate_Image(gif_Image);
+	images[2] = duplicate_Image(gif_Image);
+	gif_Image = assemble_bands(images, 3);
+	/*delete_Image(images[0]);*/
+	delete_Image(images[1]); delete_Image(images[2]);
+	printf("%s: Grayscale image converted to color image\n", prog_name[0]);
+    }
+    CVIP_TO_PNM(pixels, gif_Image->image_ptr[0]->rptr,gif_Image->image_ptr[1]->rptr,gif_Image->image_ptr[2]->rptr,rows,cols,byte);
+
+    /* Figure out the colormap. */
+    msg_CVIP(prog_name[0], "computing colormap..." );
+    chv = ppm_computecolorhist( pixels, cols, rows, MAXCOLORS, &colors );
+    if ( chv == (colorhist_vector) 0 ) {
+	fprintf(stderr, "too many colors - try quantizing to %d colors\n%s%s", MAXCOLORS,
+		"using median_cut_segment()\n","This might take a long time\n");
+	gif_Image = median_cut_segment(gif_Image, MAXCOLORS, CVIP_NO, bg);
+	if (!gif_Image) {
+		fprintf(stderr, "too many colors - try quantizing to %d colors", MAXCOLORS );
+		return; 
+	}
+    	CVIP_TO_PNM(pixels, gif_Image->image_ptr[0]->rptr,gif_Image->image_ptr[1]->rptr,
+		gif_Image->image_ptr[2]->rptr,rows,cols,byte);
+    	chv = ppm_computecolorhist( pixels, cols, rows, MAXCOLORS, &colors );
+    }
+    msg_CVIP(prog_name[0], "%d colors found", colors );
+    
+    msg_CVIP(prog_name[0],"writing %dx%d GIF file to %s.", rows, cols, gif_name);
+    msg_CVIP(prog_name[0],"8 bits per sample.");
+    msg_CVIP(prog_name[0],"1 sample per pixel (colormaps to 3).\n");
+
+    /* Now turn the ppm colormap into the appropriate GIF colormap. */
+    if ( maxval > 255 )
+	msg_CVIP(prog_name[0],
+	    "maxval is not 255 - automatically rescaling colors" );
+
+    for ( i = 0; i < colors; ++i )
+	{
+	if ( maxval == 255 )
+	    {
+	    Red[i] = PPM_GETR( chv[i].color );
+	    Green[i] = PPM_GETG( chv[i].color );
+	    Blue[i] = PPM_GETB( chv[i].color );
+	    }
+	else
+	    {
+	    Red[i] = (int) (PPM_GETR( chv[i].color ) * (float)(255.0/(float)maxval));
+	    Green[i] = (int) (PPM_GETG( chv[i].color ) * (float)(255.0/(float)maxval));
+	    Blue[i] = (int) (PPM_GETB( chv[i].color ) * (float)(255.0/(float)maxval));
+	    }
+	}
+    BitsPerPixel = colorstobpp( colors );
+    /* And make a hash table for fast lookup. */
+    cht = ppm_colorhisttocolorhash( chv, colors );
+    ppm_freecolorhist( chv );
+
+    /* All set, let's do it. */
+    GIFEncode(
+	outfp, cols, rows, interlace, 0, BitsPerPixel,
+        Red, Green, Blue, GifGetPixel );
+    }
+
+
+static int
+colorstobpp( colors )
+int colors;
+    {
+    int bpp;
+
+    if ( colors <= 2 )
+	bpp = 1;
+    else if ( colors <= 4 )
+	bpp = 2;
+    else if ( colors <= 8 )
+	bpp = 3;
+    else if ( colors <= 16 )
+	bpp = 4;
+    else if ( colors <= 32 )
+	bpp = 5;
+    else if ( colors <= 64 )
+	bpp = 6;
+    else if ( colors <= 128 )
+	bpp = 7;
+    else if ( colors <= 256 )
+	bpp = 8;
+    else
+	pm_error( "can't happen" );
+
+    return bpp;
+    }
+
+static int
+GifGetPixel( x, y )
+int x, y;
+    {
+    int color;
+
+    color = ppm_lookupcolor( cht, &pixels[y][x] );
+    return color;
+    }
+
+
+/*****************************************************************************
+ *
+ * GIFENCODE.C    - GIF Image compression interface
+ *
+ * GIFEncode( FName, GHeight, GWidth, GInterlace, Background,
+ *            BitsPerPixel, Red, Green, Blue, GifGetPixel )
+ *
+ *****************************************************************************/
+
+#define CVIP_YES 1
+#define CVIP_NO 0
+
+static int Width, Height;
+static int curx, cury;
+static long CountDown;
+static int Pass = 0;
+static int Interlace;
+
+/*
+ * Bump the 'curx' and 'cury' to point to the next pixel
+ */
+static void
+BumpPixel()
+{
+        /*
+         * Bump the current X position
+         */
+        ++curx;
+
+        /*
+         * If we are at the end of a scan line, set curx back to the beginning
+         * If we are interlaced, bump the cury to the appropriate spot,
+         * otherwise, just increment it.
+         */
+        if( curx == Width ) {
+                curx = 0;
+
+                if( !Interlace )
+                        ++cury;
+                else {
+                     switch( Pass ) {
+
+                       case 0:
+                          cury += 8;
+                          if( cury >= Height ) {
+                                ++Pass;
+                                cury = 4;
+                          }
+                          break;
+
+                       case 1:
+                          cury += 8;
+                          if( cury >= Height ) {
+                                ++Pass;
+                                cury = 2;
+                          }
+                          break;
+
+                       case 2:
+                          cury += 4;
+                          if( cury >= Height ) {
+                             ++Pass;
+                             cury = 1;
+                          }
+                          break;
+
+                       case 3:
+                          cury += 2;
+                          break;
+                        }
+                }
+        }
+}
+
+/*
+ * Return the next pixel from the image
+ */
+static int
+GIFNextPixel( getpixel )
+ifunptr getpixel;
+{
+        int r;
+
+        if( CountDown == 0 )
+                return EOF;
+
+        --CountDown;
+
+        r = ( * getpixel )( curx, cury );
+
+        BumpPixel();
+
+        return r;
+}
+
+/* public */
+
+static void
+GIFEncode( fp, GWidth, GHeight, GInterlace, Background,
+           BitsPerPixel, Red, Green, Blue, GifGetPixel )
+
+FILE* fp;
+int GWidth, GHeight;
+int GInterlace;
+int Background;
+int BitsPerPixel;
+int Red[], Green[], Blue[];
+ifunptr GifGetPixel;
+{
+        int B;
+        int RWidth, RHeight;
+        int LeftOfs, TopOfs;
+        int Resolution;
+        int ColorMapSize;
+        int InitCodeSize;
+        int i;
+
+        Interlace = GInterlace;
+
+        ColorMapSize = 1 << BitsPerPixel;
+
+        RWidth = Width = GWidth;
+        RHeight = Height = GHeight;
+        LeftOfs = TopOfs = 0;
+
+        Resolution = BitsPerPixel;
+
+        /*
+         * Calculate number of bits we are expecting
+         */
+        CountDown = (long)Width * (long)Height;
+
+        /*
+         * Indicate which pass we are on (if interlace)
+         */
+        Pass = 0;
+
+        /*
+         * The initial code size
+         */
+        if( BitsPerPixel <= 1 )
+                InitCodeSize = 2;
+        else
+                InitCodeSize = BitsPerPixel;
+
+        /*
+         * Set up the current x and y position
+         */
+        curx = cury = 0;
+
+        /*
+         * Write the Magic header
+         */
+        fwrite( "GIF87a", 1, 6, fp );
+
+        /*
+         * Write out the screen width and height
+         */
+        Putword( RWidth, fp );
+        Putword( RHeight, fp );
+
+        /*
+         * Indicate that there is a global colour map
+         */
+        B = 0x80;       /* Yes, there is a color map */
+
+        /*
+         * OR in the resolution
+         */
+        B |= (Resolution - 1) << 5;
+
+        /*
+         * OR in the Bits per Pixel
+         */
+        B |= (BitsPerPixel - 1);
+
+        /*
+         * Write it out
+         */
+        fputc( B, fp );
+
+        /*
+         * Write out the Background colour
+         */
+        fputc( Background, fp );
+
+        /*
+         * Byte of 0's (future expansion)
+         */
+        fputc( 0, fp );
+
+        /*
+         * Write out the Global Colour Map
+         */
+        for( i=0; i<ColorMapSize; ++i ) {
+                fputc( Red[i], fp );
+                fputc( Green[i], fp );
+                fputc( Blue[i], fp );
+        }
+
+        /*
+         * Write an Image separator
+         */
+        fputc( ',', fp );
+
+        /*
+         * Write the Image header
+         */
+
+        Putword( LeftOfs, fp );
+        Putword( TopOfs, fp );
+        Putword( Width, fp );
+        Putword( Height, fp );
+
+        /*
+         * Write out whether or not the image is interlaced
+         */
+        if( Interlace )
+                fputc( 0x40, fp );
+        else
+                fputc( 0x00, fp );
+
+        /*
+         * Write out the initial code size
+         */
+        fputc( InitCodeSize, fp );
+
+        /*
+         * Go and actually compress the data
+         */
+        compress( InitCodeSize+1, fp, GifGetPixel );
+
+        /*
+         * Write out a Zero-length packet (to end the series)
+         */
+        fputc( 0, fp );
+
+        /*
+         * Write the GIF file terminator
+         */
+        fputc( ';', fp );
+
+}
+
+/*
+ * Write out a word to the GIF file
+ */
+static void
+Putword( w, fp )
+int w;
+FILE* fp;
+{
+        fputc( w & 0xff, fp );
+        fputc( (w / 256) & 0xff, fp );
+}
+
+
+/***************************************************************************
+ *
+ *  GIFCOMPR.C       - GIF Image compression routines
+ *
+ *  Lempel-Ziv compression based on 'compress'.  GIF modifications by
+ *  David Rowley (mgardi@watdcsu.waterloo.edu)
+ *
+ ***************************************************************************/
+
+/*
+ * General DEFINEs
+ */
+
+#define BITS    12
+
+#define HSIZE  5003            /* 80% occupancy */
+
+#ifdef NO_UCHAR
+ typedef char   char_type;
+#else /*NO_UCHAR*/
+ typedef        unsigned char   char_type;
+#endif /*NO_UCHAR*/
+
+/*
+ *
+ * GIF Image compression - modified 'compress'
+ *
+ * Based on: compress.c - File compression ala IEEE Computer, June 1984.
+ *
+ * By Authors:  Spencer W. Thomas       (decvax!harpo!utah-cs!utah-gr!thomas)
+ *              Jim McKie               (decvax!mcvax!jim)
+ *              Steve Davies            (decvax!vax135!petsd!peora!srd)
+ *              Ken Turkowski           (decvax!decwrl!turtlevax!ken)
+ *              James A. Woods          (decvax!ihnp4!ames!jaw)
+ *              Joe Orost               (decvax!vax135!petsd!joe)
+ *
+ */
+#include <ctype.h>
+
+#define ARGVAL() (*++(*argv) || (--argc && *++argv))
+
+static int n_bits;                        /* number of bits/code */
+static int maxbits = BITS;                /* user settable max # bits/code */
+static code_int maxcode;                  /* maximum code, given n_bits */
+static code_int maxmaxcode = (code_int)1 << BITS; /* should NEVER generate this code */
+#ifdef COMPATIBLE               /* But wrong! */
+# define MAXCODE(n_bits)        ((code_int) 1 << (n_bits) - 1)
+#else /*COMPATIBLE*/
+# define MAXCODE(n_bits)        (((code_int) 1 << (n_bits)) - 1)
+#endif /*COMPATIBLE*/
+
+static count_int htab [HSIZE];
+static unsigned short codetab [HSIZE];
+#define HashTabOf(i)       htab[i]
+#define CodeTabOf(i)    codetab[i]
+
+static code_int hsize = HSIZE;                 /* for dynamic table sizing */
+
+/*
+ * To save much memory, we overlay the table used by compress() with those
+ * used by decompress().  The tab_prefix table is the same size and type
+ * as the codetab.  The tab_suffix table needs 2**BITS characters.  We
+ * get this from the beginning of htab.  The output stack uses the rest
+ * of htab, and contains characters.  There is plenty of room for any
+ * possible stack (stack used to be 8000 characters).
+ */
+
+#define tab_prefixof(i) CodeTabOf(i)
+#define tab_suffixof(i)        ((char_type*)(htab))[i]
+#define de_stack               ((char_type*)&tab_suffixof((code_int)1<<BITS))
+
+static code_int free_ent = 0;                  /* first unused entry */
+
+/*
+ * block compression parameters -- after all codes are used up,
+ * and compression rate changes, start over.
+ */
+static int clear_flg = 0;
+
+static int offset;
+static long int in_count = 1;            /* length of input */
+static long int out_count = 0;           /* # of codes output (for debugging) */
+
+/*
+ * compress stdin to stdout
+ *
+ * Algorithm:  use open addressing double hashing (no chaining) on the
+ * prefix code / next character combination.  We do a variant of Knuth's
+ * algorithm D (vol. 3, sec. 6.4) along with G. Knott's relatively-prime
+ * secondary probe.  Here, the modular division first probe is gives way
+ * to a faster exclusive-or manipulation.  Also do block compression with
+ * an adaptive reset, whereby the code table is cleared when the compression
+ * ratio decreases, but after the table fills.  The variable-length output
+ * codes are re-sized at this point, and a special CLEAR code is generated
+ * for the decompressor.  Late addition:  construct the table according to
+ * file size for noticeable speed improvement on small files.  Please direct
+ * questions about this implementation to ames!jaw.
+ */
+
+static int g_init_bits;
+static FILE* g_outfile;
+
+static int ClearCode;
+static int EOFCode;
+
+static void
+compress( init_bits, outfile, ReadValue )
+int init_bits;
+FILE* outfile;
+ifunptr ReadValue;
+{
+    register long fcode;
+    register code_int i /* = 0 */;
+    register int c;
+    register code_int ent;
+    register code_int disp;
+    register code_int hsize_reg;
+    register int hshift;
+
+    /*
+     * Set up the globals:  g_init_bits - initial number of bits
+     *                      g_outfile   - pointer to output file
+     */
+    g_init_bits = init_bits;
+    g_outfile = outfile;
+
+    /*
+     * Set up the necessary values
+     */
+    offset = 0;
+    out_count = 0;
+    clear_flg = 0;
+    in_count = 1;
+    maxcode = MAXCODE(n_bits = g_init_bits);
+
+    ClearCode = (1 << (init_bits - 1));
+    EOFCode = ClearCode + 1;
+    free_ent = ClearCode + 2;
+
+    char_init();
+
+    ent = GIFNextPixel( ReadValue );
+
+    hshift = 0;
+    for ( fcode = (long) hsize;  fcode < 65536L; fcode *= 2L )
+        ++hshift;
+    hshift = 8 - hshift;                /* set hash code range bound */
+
+    hsize_reg = hsize;
+    cl_hash( (count_int) hsize_reg);            /* clear hash table */
+
+    output( (code_int)ClearCode );
+
+#ifdef SIGNED_COMPARE_SLOW
+    while ( (c = GIFNextPixel( ReadValue )) != (unsigned) EOF ) {
+#else /*SIGNED_COMPARE_SLOW*/
+    while ( (c = GIFNextPixel( ReadValue )) != EOF ) {	/* } */
+#endif /*SIGNED_COMPARE_SLOW*/
+
+        ++in_count;
+
+        fcode = (long) (((long) c << maxbits) + ent);
+        i = (((code_int)c << hshift) ^ ent);    /* xor hashing */
+
+        if ( HashTabOf (i) == fcode ) {
+            ent = CodeTabOf (i);
+            continue;
+        } else if ( (long)HashTabOf (i) < 0 )      /* empty slot */
+            goto nomatch;
+        disp = hsize_reg - i;           /* secondary hash (after G. Knott) */
+        if ( i == 0 )
+            disp = 1;
+probe:
+        if ( (i -= disp) < 0 )
+            i += hsize_reg;
+
+        if ( HashTabOf (i) == fcode ) {
+            ent = CodeTabOf (i);
+            continue;
+        }
+        if ( (long)HashTabOf (i) > 0 )
+            goto probe;
+nomatch:
+        output ( (code_int) ent );
+        ++out_count;
+        ent = c;
+#ifdef SIGNED_COMPARE_SLOW
+        if ( (unsigned) free_ent < (unsigned) maxmaxcode) {
+#else /*SIGNED_COMPARE_SLOW*/
+        if ( free_ent < maxmaxcode ) {	/* } */
+#endif /*SIGNED_COMPARE_SLOW*/
+            CodeTabOf (i) = free_ent++; /* code -> hashtable */
+            HashTabOf (i) = fcode;
+        } else
+                cl_block();
+    }
+    /*
+     * Put out the final code.
+     */
+    output( (code_int)ent );
+    ++out_count;
+    output( (code_int) EOFCode );
+}
+
+/*****************************************************************
+ * TAG( output )
+ *
+ * Output the given code.
+ * Inputs:
+ *      code:   A n_bits-bit integer.  If == -1, then EOF.  This assumes
+ *              that n_bits =< (long)wordsize - 1.
+ * Outputs:
+ *      Outputs code to the file.
+ * Assumptions:
+ *      Chars are 8 bits long.
+ * Algorithm:
+ *      Maintain a BITS character long buffer (so that 8 codes will
+ * fit in it exactly).  Use the VAX insv instruction to insert each
+ * code in turn.  When the buffer fills up empty it and start over.
+ */
+
+static unsigned long cur_accum = 0;
+static int cur_bits = 0;
+
+static unsigned long masks[] = { 0x0000, 0x0001, 0x0003, 0x0007, 0x000F,
+                                  0x001F, 0x003F, 0x007F, 0x00FF,
+                                  0x01FF, 0x03FF, 0x07FF, 0x0FFF,
+                                  0x1FFF, 0x3FFF, 0x7FFF, 0xFFFF };
+
+static void
+output( code )
+code_int  code;
+{
+    cur_accum &= masks[ cur_bits ];
+
+    if( cur_bits > 0 )
+        cur_accum |= ((long)code << cur_bits);
+    else
+        cur_accum = code;
+
+    cur_bits += n_bits;
+
+    while( cur_bits >= 8 ) {
+        char_out( (unsigned int)(cur_accum & 0xff) );
+        cur_accum >>= 8;
+        cur_bits -= 8;
+    }
+
+    /*
+     * If the next entry is going to be too big for the code size,
+     * then increase it, if possible.
+     */
+   if ( free_ent > maxcode || clear_flg ) {
+
+            if( clear_flg ) {
+
+                maxcode = MAXCODE (n_bits = g_init_bits);
+                clear_flg = 0;
+
+            } else {
+
+                ++n_bits;
+                if ( n_bits == maxbits )
+                    maxcode = maxmaxcode;
+                else
+                    maxcode = MAXCODE(n_bits);
+            }
+        }
+
+    if( code == EOFCode ) {
+        /*
+         * At EOF, write the rest of the buffer.
+         */
+        while( cur_bits > 0 ) {
+                char_out( (unsigned int)(cur_accum & 0xff) );
+                cur_accum >>= 8;
+                cur_bits -= 8;
+        }
+
+        flush_char();
+
+        fflush( g_outfile );
+
+        if( ferror( g_outfile ) )
+                writeerr();
+    }
+}
+
+/*
+ * Clear out the hash table
+ */
+static void
+cl_block ()             /* table clear for block compress */
+{
+
+        cl_hash ( (count_int) hsize );
+        free_ent = ClearCode + 2;
+        clear_flg = 1;
+
+        output( (code_int)ClearCode );
+}
+
+static void
+cl_hash(hsize)          /* reset code table */
+register count_int hsize;
+{
+
+        register count_int *htab_p = htab+hsize;
+
+        register long i;
+        register long m1 = -1;
+
+        i = hsize - 16;
+        do {                            /* might use Sys V memset(3) here */
+                *(htab_p-16) = m1;
+                *(htab_p-15) = m1;
+                *(htab_p-14) = m1;
+                *(htab_p-13) = m1;
+                *(htab_p-12) = m1;
+                *(htab_p-11) = m1;
+                *(htab_p-10) = m1;
+                *(htab_p-9) = m1;
+                *(htab_p-8) = m1;
+                *(htab_p-7) = m1;
+                *(htab_p-6) = m1;
+                *(htab_p-5) = m1;
+                *(htab_p-4) = m1;
+                *(htab_p-3) = m1;
+                *(htab_p-2) = m1;
+                *(htab_p-1) = m1;
+                htab_p -= 16;
+        } while ((i -= 16) >= 0);
+
+        for ( i += 16; i > 0; --i )
+                *--htab_p = m1;
+}
+
+static void
+writeerr()
+{
+        pm_error( "error writing output file" );
+}
+
+/******************************************************************************
+ *
+ * GIF Specific routines
+ *
+ ******************************************************************************/
+
+/*
+ * Number of characters so far in this 'packet'
+ */
+static int a_count;
+
+/*
+ * Set up the 'byte output' routine
+ */
+static void
+char_init()
+{
+        a_count = 0;
+}
+
+/*
+ * Define the storage for the packet accumulator
+ */
+static char accum[ 256 ];
+
+/*
+ * Add a character to the end of the current packet, and if it is 254
+ * characters, flush the packet to disk.
+ */
+static void
+char_out( c )
+int c;
+{
+        accum[ a_count++ ] = c;
+        if( a_count >= 254 )
+                flush_char();
+}
+
+/*
+ * Flush the packet to disk, and reset the accumulator
+ */
+static void
+flush_char()
+{
+        if( a_count > 0 ) {
+                fputc( a_count, g_outfile );
+                fwrite( accum, 1, a_count, g_outfile );
+                a_count = 0;
+        }
+}
+
+/* The End */

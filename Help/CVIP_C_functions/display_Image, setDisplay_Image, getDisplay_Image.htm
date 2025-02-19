@@ -1,0 +1,244 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List
+href="display_Image,%20setDisplay_Image,%20getDisplay_Image_files/filelist.xml">
+<title>display_Image,setDisplay_Image,getDisplay_Image</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2004-06-04T22:30:00Z</o:Created>
+  <o:LastSaved>2004-10-19T23:52:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>525</o:Words>
+  <o:Characters>2993</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>24</o:Lines>
+  <o:Paragraphs>7</o:Paragraphs>
+  <o:CharactersWithSpaces>3511</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>display_Image</span>, <span
+class=SpellE>setDisplay_Image</span>, <span class=SpellE>getDisplay_Image</span> - function</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>suites<span style='mso-spacerun:yes'>  </span>for</span> displaying an image by executing a shell command</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>or</span> internal function call</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPtoolkit.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPdef.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPview.h</span>&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>void<span style='mso-spacerun:yes'>  </span><span class=SpellE>display</span></span><span
+class=SpellE>_Image</span>(const<span style='mso-spacerun:yes'>  </span>char<span style='mso-spacerun:yes'>  </span>*<span
+class=SpellE>image_name</span>,<span style='mso-spacerun:yes'>  </span>IMAGE_FORMAT</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>format</span>);</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE>image_name</span>&gt; - name of the image file</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>format</span>&gt; - the image format</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>void</span> <span class=SpellE>setDisplay_Image</span>(char *viewer, char *format);</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>viewer</span>&gt; - viewer name</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>format</span>&gt; - intermediate image format for display</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>char</span> *<span class=SpellE>getDisplay_Image</span>(void);</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$CVIPtoolsHOME\CVIPC\Display\display.c</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>These three functions are usually used <span
+class=GramE>in<span style='mso-spacerun:yes'>  </span>conjunction</span><span style='mso-spacerun:yes'>  </span>with</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span>3)<span style='mso-spacerun:yes'>  </span>and<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>display_RAMImage</span>(3)<span style='mso-spacerun:yes'>  </span>for<span style='mso-spacerun:yes'>  </span>the purpose of</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>displaying</span><span style='mso-spacerun:yes'>     </span>an<span style='mso-spacerun:yes'>     </span>image.<span style='mso-spacerun:yes'>     </span><span
+class=SpellE>setDisplay_<span class=GramE>Image</span></span><span class=GramE>(</span>3)<span style='mso-spacerun:yes'>     </span>and</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>getDisplay_<span class=GramE>Image</span></span><span class=GramE>(</span>3)<span style='mso-spacerun:yes'>  </span>are<span style='mso-spacerun:yes'>  </span>used<span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span>set<span style='mso-spacerun:yes'>  </span>and get the program</pre><pre><span style='mso-spacerun:yes'>     </span>(<span
+class=GramE>viewer</span>) used to display an image.<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>display_<span class=GramE>Image</span></span><span class=GramE>(</span>3) is used</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>to<span style='mso-spacerun:yes'>  </span>display</span><span style='mso-spacerun:yes'>  </span>an image stored on the disk using the specified</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>viewer</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Since usual <span
+class=GramE>external<span style='mso-spacerun:yes'>  </span>viewers</span><span style='mso-spacerun:yes'>  </span>can<span style='mso-spacerun:yes'>  </span>not<span style='mso-spacerun:yes'>  </span>display<span style='mso-spacerun:yes'>  </span>some<span style='mso-spacerun:yes'>  </span>CVIP</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>specific<span style='mso-spacerun:yes'>  </span>image</span><span style='mso-spacerun:yes'>  </span>formats<span style='mso-spacerun:yes'>  </span>(such<span style='mso-spacerun:yes'>  </span>as<span style='mso-spacerun:yes'>  </span>FFT spectrum with float</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>data</span>), The second parameter for <span class=SpellE>setDisplay_Image</span>(3) is<span style='mso-spacerun:yes'>  </span>used</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>to</span><span style='mso-spacerun:yes'>   </span>perform<span style='mso-spacerun:yes'>   </span>necessary<span style='mso-spacerun:yes'>  </span>conversion<span style='mso-spacerun:yes'>  </span>before<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>image<span style='mso-spacerun:yes'>  </span>is</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>displayed</span>. <span class=GramE>With<span style='mso-spacerun:yes'>  </span>a</span><span style='mso-spacerun:yes'>  </span>fully<span style='mso-spacerun:yes'>  </span>functional<span style='mso-spacerun:yes'>  </span>viewer,<span style='mso-spacerun:yes'>   </span>the<span style='mso-spacerun:yes'>  </span>second</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>parameter</span> can be set to &quot;Default&quot;, or a NULL pointer, and no</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>conversion</span> will be performed.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>One special case is when the display program is set as &quot;Ram-</pre><pre><span style='mso-spacerun:yes'>     </span>Viewer&quot;, the RAM viewer is used. The currently available RAM</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>viewer</span> is <span class=SpellE>display_RAMImage</span>(3) for the X windows system.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Usually, the user doesn't <span
+class=SpellE>dirrectly</span> call <span class=SpellE>display_<span
+class=GramE>Image</span></span><span class=GramE>(</span>3) or</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>display_<span class=GramE>RAMImage</span></span><span class=GramE>(</span>3).<span style='mso-spacerun:yes'>    </span>Instead,<span style='mso-spacerun:yes'>   </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span>3)<span style='mso-spacerun:yes'>  </span>should<span style='mso-spacerun:yes'>  </span>be</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>called</span>, which automatically decides which function should be</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>called</span> based on the viewer choice.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>TYPES AND C<st1:stockticker>ONST</st1:stockticker>ANTS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>NONE</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>getDisplay_<span
+class=GramE>Image</span></span><span class=GramE>(</span>3):<span style='mso-spacerun:yes'>  </span>a string of the current<span style='mso-spacerun:yes'>  </span>viewer;<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>oth</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>ers</span></span>: void</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>HISTORY</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>History information recorded: None</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPtoolkit.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPimage.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPconvert.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPview.h</span>&gt;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>void</span> main()</pre><pre><span style='mso-spacerun:yes'>      </span>{</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>char</span> *<span class=SpellE>inputfile</span>;</pre><pre><span style='mso-spacerun:yes'>      </span>IMAGE_FORMAT format;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the Input File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>inputfile</span></span> =(char *) <span
+class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>format</span> = <span class=SpellE>getFormat_CVIP</span>(<span
+class=SpellE>inputfile</span>);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>/* Note the difference with <span
+class=SpellE>view_Image</span> &amp; <span class=SpellE>display_RAMImage</span>,</pre><pre><span style='mso-spacerun:yes'>         </span>The image is not even read, and the only thing that</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=SpellE><span class=GramE>display_Image</span></span> does is call a shell command to display</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>the</span> image. Usually you should call <span class=SpellE>view_<span
+class=GramE>Image</span></span><span class=GramE>(</span>3),</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>instead</span> of <span class=SpellE>display_Image</span>(3).</pre><pre><span style='mso-spacerun:yes'>       </span>*/</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>setDisplay_<span class=GramE>Image</span></span><span class=GramE>(</span>&quot;picture&quot;, &quot;Default&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span>/* You can use <span
+class=SpellE>setDisplay_<span class=GramE>Image</span></span><span class=GramE>(</span>&quot;xv&quot;, &quot;JPG&quot;) to <span
+class=SpellE>sepcify</span></pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>that</span> you want to use &quot;xv&quot; as the viewer, and use JPG</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>as</span> the image format for display. If the second</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>parameter</span> is NULL or &quot;Default&quot;, the original image</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>format</span> of the image is used, which might not be</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=SpellE><span class=GramE>displable</span></span> on some systems. For example, there is</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>currently</span> no viewer on Windows95/NT to display VIP</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>images</span>.</pre><pre><span style='mso-spacerun:yes'>       </span>*/</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>display_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>inputfile</span>, format);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span><span class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>     </span><span style='mso-spacerun:yes'> </span>}</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>BUGS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>None at this time</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Display library, <span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span>3), <span
+class=SpellE>display_RAMImage</span>(3).</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C<span class=GramE>)<span style='mso-spacerun:yes'>  </span>1995</span>,<span style='mso-spacerun:yes'>  </span>1996, 2004<span style='mso-spacerun:yes'>  </span>SIUE<span style='mso-spacerun:yes'>  </span>-<span style='mso-spacerun:yes'>  </span>by<span style='mso-spacerun:yes'>  </span>Scott<span style='mso-spacerun:yes'>  </span>Umbaugh<span style='mso-spacerun:yes'>  </span>and</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>Yansheng</span> <span class=SpellE>Wei</span>.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

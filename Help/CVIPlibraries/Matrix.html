@@ -1,0 +1,943 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=FrontPage.Editor.Document>
+<meta name=Generator content="Microsoft FrontPage 4.0">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="Matrix_files/filelist.xml">
+<title>Matrix</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="Street"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="address"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>6</o:Revision>
+  <o:TotalTime>6</o:TotalTime>
+  <o:Created>2004-06-04T02:25:00Z</o:Created>
+  <o:LastSaved>2004-07-12T22:46:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>4170</o:Words>
+  <o:Characters>23770</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>198</o:Lines>
+  <o:Paragraphs>55</o:Paragraphs>
+  <o:CharactersWithSpaces>27885</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix <span class=GramE>-<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=SpellE>CVIPtools</span></span><span style='mso-spacerun:yes'>&nbsp; </span>toolkit<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>library<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>for<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>numerical</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>analysis/</span>linear algebra and matrix manipulation</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>#include &lt;<span
+class=SpellE>CVIPmatrix.h</span>&gt;</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp; </span>TYPES AND CONSTANTS</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>typedef</span></span> <span class=SpellE>enum</span> {CVIP_BYTE, CVIP_SHORT, CVIP_INTEGER, CVIP_FLOAT, CVIP_DOUBLE} CVIP_TYPE;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>typedef</span></span> <span class=SpellE>enum</span> {REAL, COMPLEX} FORMAT;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>typedef</span></span> <span class=SpellE>struct</span> {</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>CVIP_TYPE <span
+class=SpellE>data_type</span>;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>FORMAT <span
+class=SpellE>data_format</span>;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>unsigned</span> <span class=SpellE>int</span> rows;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>unsigned</span> <span class=SpellE>int</span> cols;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='mso-spacerun:yes'>&nbsp;&nbsp;</span><span
+class=GramE>void</span> **<span class=SpellE>rptr</span>;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> **<span class=SpellE>iptr</span>;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>} Matrix;</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>FUNCTIONS</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>The following functions are included in this man page:</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>CANG<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getImagVal_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>CASSIGN<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getNoOfCols_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>CMAG<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getNoOfRows_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>CMUL<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getRealData_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>MAGSQ<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getRealRow_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>POL2REC<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getRealVal_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>REC2POL<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getRow_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>add_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getVal_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>copy_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>invert_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>covariance_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>makeComplex_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>crop_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>makeReal_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>delete_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>mult_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>det_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>multPWise_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>eigenSystem_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>new_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>fastCopy_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>print_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getDataFormat_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>rect2pol_Matrix</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getData_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>scale_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getDataType_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>sub_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getImagData_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>transpose_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>getImagRow_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='mso-spacerun:yes'>&nbsp;&nbsp;</span><span
+class=SpellE>and_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>clone_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>duplicate_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>setRealVal_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>setVal_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>setImagVal_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>conj_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>mag_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>square_mag_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class=SpellE>sqrt_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>cbrt_Matrix</span> </pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class=SpellE>divide_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>clone_Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>read_Matrix</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>write_Matrix</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span>MEMORY MANAGEMENT</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix *<span
+class=SpellE>new_<span class=GramE>Matrix</span></span><span class=GramE>(</span>unsigned <span
+class=SpellE>int</span> rows, unsigned <span class=SpellE>int</span> cols, CVIP_TYPE <span
+class=SpellE>data_type</span>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>FORMAT <span
+class=SpellE>data_format</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>rows</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>number</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>rows</span></em> <em><span style='font-family:"Courier New"'>for</span></em> <em><span
+style='font-family:"Courier New"'>new</span></em> <em><span style='font-family:
+"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>cols</span></em></span>&gt; - <span
+class=SpellE><em><span style='font-family:"Courier New"'>nuber</span></em></span> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>cols</span></em> <em><span style='font-family:"Courier New"'>for</span></em> <em><span
+style='font-family:"Courier New"'>new</span></em> <em><span style='font-family:
+"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>data</span></em>_<em><span
+style='font-family:"Courier New"'>type</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>one</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>CVIP</span></em>_<em><span
+style='font-family:"Courier New"'>BYTE</span></em>, <em><span style='font-family:
+"Courier New"'>CVIP</span></em>_<em><span style='font-family:"Courier New"'>SHORT</span></em>, <em><span
+style='font-family:"Courier New"'>CVIP</span></em>_<em><span style='font-family:
+"Courier New"'>INTEGER</span></em>, <em><span style='font-family:"Courier New"'>CVIP</span></em>_<em><span
+style='font-family:"Courier New"'>FLOAT</span></em> <em><span style='font-family:
+"Courier New"'>or</span></em> <em><span style='font-family:"Courier New"'>CVIP</span></em>_<em><span
+style='font-family:"Courier New"'>DOUBLE</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>data</span></em>_<em><span
+style='font-family:"Courier New"'>format</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>one</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>REAL</span></em> <em><span
+style='font-family:"Courier New"'>or</span></em> <em><span style='font-family:
+"Courier New"'>IMAGINARY</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: a pointer to the newly <span
+class=GramE>allocated<span style='mso-spacerun:yes'>&nbsp; </span>Matrix</span><span style='mso-spacerun:yes'>&nbsp; </span>structure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Matrix class constructor. <span
+class=GramE>allocates</span> a structure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>of</span> type Matrix with &lt;rows&gt; x &lt;cols&gt; data<span style='mso-spacerun:yes'>&nbsp; </span>elements<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>type</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>&lt;<span class=SpellE>data_type</span>&gt;.</span><span style='mso-spacerun:yes'>&nbsp;&nbsp; </span><span
+class=GramE>The<span style='mso-spacerun:yes'>&nbsp; </span>Matrix</span><span style='mso-spacerun:yes'>&nbsp; </span>structure<span style='mso-spacerun:yes'>&nbsp; </span>contains two members,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>**<span
+class=SpellE>rptr</span> and **<span class=SpellE>iptr</span> which are used to reference <span
+class=GramE>the<span style='mso-spacerun:yes'>&nbsp; </span>real</span><span style='mso-spacerun:yes'>&nbsp; </span>and</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>imaginary<span style='mso-spacerun:yes'>&nbsp; </span>data</span><span style='mso-spacerun:yes'>&nbsp; </span>respectively. The matrix data is contiguous</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>in</span> the sense that a reference to the address<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>first</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>element<span style='mso-spacerun:yes'>&nbsp; </span>may</span> be used to dereference all others. Diagnostics:</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>returns</span> NULL pointer w/<span style='mso-spacerun:yes'>&nbsp; </span>corresponding<span style='mso-spacerun:yes'>&nbsp; </span>error<span style='mso-spacerun:yes'>&nbsp; </span>message<span style='mso-spacerun:yes'>&nbsp; </span>upon</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>memory</span> allocation failure.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span style='mso-spacerun:yes'>&nbsp;</span><span
+class=GramE>void</span> <span class=SpellE>delete_Matrix</span>(Matrix *A)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>A</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>structure</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Matrix class Destructor. Frees all memory <span
+class=SpellE>asso</span>-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>ciated</span></span> with a Matrix structure.<span style='mso-spacerun:yes'>&nbsp; </span>NOTE: Matrix structure must</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>be</span> allocated be <span class=SpellE>new_Matrix</span> Diagnostics: returns<span style='mso-spacerun:yes'>&nbsp; </span>with<span style='mso-spacerun:yes'>&nbsp; </span>error</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>message</span> when invalid Matrix structure is passed.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s):</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span>MATRIX MANIPULATION</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre> <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class=GramE>unsigned</span> <span class=SpellE>getNoOfRows_Matrix</span>(Matrix *matrix)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>matrix</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns number <span
+class=GramE>of<span style='mso-spacerun:yes'>&nbsp; </span>rows</span><span style='mso-spacerun:yes'>&nbsp; </span>in<span style='mso-spacerun:yes'>&nbsp; </span>a<span style='mso-spacerun:yes'>&nbsp; </span>Matrix<span style='mso-spacerun:yes'>&nbsp; </span>object.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>unsigned</span> <span class=SpellE>getNoOfCols_Matrix</span>(Matrix *matrix)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>matrix</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns number of columns in <span
+class=GramE>a<span style='mso-spacerun:yes'>&nbsp; </span>Matrix</span><span style='mso-spacerun:yes'>&nbsp; </span>object.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>CVIP_TYPE <span
+class=SpellE>getDataType_<span class=GramE>Matrix</span></span><span
+class=GramE>(</span>Matrix *matrix)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>matrix</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=GramE>returns<span style='mso-spacerun:yes'>&nbsp; </span>data</span><span style='mso-spacerun:yes'>&nbsp; </span>type<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>Matrix<span style='mso-spacerun:yes'>&nbsp; </span>object<span style='mso-spacerun:yes'>&nbsp; </span>(e.g.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>CVIP_BYTE<span class=GramE>,CVIP</span>_FLOAT,etc</span>.).<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp; </span><span style='mso-spacerun:yes'>&nbsp;&nbsp;</span>FORMAT <span
+class=SpellE>getDataFormat_<span class=GramE>Matrix</span></span><span
+class=GramE>(</span>Matrix *matrix)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>matrix</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns data format of <span
+class=GramE>a<span style='mso-spacerun:yes'>&nbsp; </span>Matrix</span><span style='mso-spacerun:yes'>&nbsp; </span>object<span style='mso-spacerun:yes'>&nbsp; </span>(i.e.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>REAL or COMPLEX).</span><span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> *<span class=SpellE>getRealData_Matrix</span>(Matrix *matrix)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>matrix</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns reference to the real data of <span
+class=GramE>a<span style='mso-spacerun:yes'>&nbsp; </span>Matrix</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>object</span> (mapped into rows).<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> *<span class=SpellE>getData_Matrix</span>(Matrix *matrix)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>matrix</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: same as &quot;<span
+class=SpellE>getRealData_Matrix</span>&quot;.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s):<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=SpellE>Gre</span>-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>gory</span> <span class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> *<span class=SpellE>getRealRow_Matrix</span>(Matrix *matrix, unsigned row)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>matrix</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>row</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> (<em><span style='font-family:"Courier New"'>0</span></em> ... <em><span
+style='font-family:"Courier New"'>rows</span></em>-<em><span style='font-family:
+"Courier New"'>1</span></em>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns a reference to a row of real <span
+class=GramE>data<span style='mso-spacerun:yes'>&nbsp; </span>from</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>a</span> Matrix object.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> *<span class=SpellE>getRow_Matrix</span>(Matrix *matrix, unsigned row)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>matrix</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>row</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> (<em><span style='font-family:"Courier New"'>0</span></em> ... <em><span
+style='font-family:"Courier New"'>rows</span></em>-<em><span style='font-family:
+"Courier New"'>1</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: same as &quot;<span
+class=SpellE>getRealRow_Matrix</span>&quot;.<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>Author(s):<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=SpellE>Gre</span>-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>gory</span> <span class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> *<span class=SpellE>getImagData_Matrix</span>(matrix)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>matrix</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns a reference to the imaginary data <span
+class=GramE>of<span style='mso-spacerun:yes'>&nbsp; </span>a</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix object (mapped into rows).<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> *<span class=SpellE>getImagRow_Matrix</span>(<span
+class=SpellE>matrix,row</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>matrix</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em>.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>row</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>number</span></em> (<em><span style='font-family:"Courier New"'>0</span></em> ... <em><span
+style='font-family:"Courier New"'>rows</span></em>-<em><span style='font-family:
+"Courier New"'>1</span></em>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns a reference to a row of <span
+class=GramE>imaginary<span style='mso-spacerun:yes'>&nbsp; </span>data</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>from</span> a Matrix object.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>type</span> <span class=SpellE>getRealVal_Matrix</span>(Matrix *matrix, type, unsigned x, unsigned y)</pre><pre> <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>matrix</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>type</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>valid</span></em> &quot;<em><span
+style='font-family:"Courier New"'>C</span></em>&quot; <em><span
+style='font-family:"Courier New"'>data</span></em> <em><span style='font-family:
+"Courier New"'>type</span></em> (<span class=SpellE><em><span style='font-family:
+"Courier New"'>i</span></em>.<em><span style='font-family:"Courier New"'>e</span></em>.<em><span
+style='font-family:"Courier New"'>one</span></em></span> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>byte</span></em>, <em><span style='font-family:"Courier New"'>short</span></em>, <span
+class=SpellE><em><span style='font-family:"Courier New"'>int</span></em></span>, <em><span
+style='font-family:"Courier New"'>float</span></em> <em><span style='font-family:
+"Courier New"'>or</span></em> <em><span style='font-family:"Courier New"'>double</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>x</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>column</span></em> <em><span
+style='font-family:"Courier New"'>offset</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>y</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>offset</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns a &quot;real&quot; element from a <span
+class=GramE>Matrix<span style='mso-spacerun:yes'>&nbsp; </span>object</span>.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE>type</span>&gt; <span class=SpellE>getVal_Matrix</span>(Matrix *matrix, type, unsigned x, unsigned y)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>matrix</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>type</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>valid</span></em> &quot;<span class=SpellE><em><span
+style='font-family:"Courier New"'>C</span></em>&quot;<em><span
+style='font-family:"Courier New"'>data</span></em></span> <em><span
+style='font-family:"Courier New"'>type</span></em> (<span class=SpellE><em><span
+style='font-family:"Courier New"'>i</span></em>.<em><span style='font-family:
+"Courier New"'>e</span></em>.<em><span style='font-family:"Courier New"'>one</span></em></span> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>byte</span></em>, <em><span style='font-family:"Courier New"'>short</span></em>, <span
+class=SpellE><em><span style='font-family:"Courier New"'>int</span></em></span>, <em><span
+style='font-family:"Courier New"'>float</span></em> <em><span style='font-family:
+"Courier New"'>or</span></em> <em><span style='font-family:"Courier New"'>double</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>x</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>column</span></em> <em><span
+style='font-family:"Courier New"'>offset</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>y</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>offset</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: same as &quot;<span
+class=SpellE>getRealVal_Matrix</span>&quot;.<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>Author(s):<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=SpellE>Gre</span>-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>gory</span> <span class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE>type</span>&gt; <span class=SpellE>getImagVal_Matrix</span>(Matrix *matrix, type, unsigned x, unsigned y)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>matrix</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>type</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>valid</span></em> &quot;<em><span
+style='font-family:"Courier New"'>C</span></em>&quot; <em><span
+style='font-family:"Courier New"'>data</span></em> <em><span style='font-family:
+"Courier New"'>type</span></em> (<em><span style='font-family:"Courier New"'>i</span></em>.<em><span
+style='font-family:"Courier New"'>e</span></em>. <em><span style='font-family:
+"Courier New"'>one</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>byte</span></em>, <em><span style='font-family:
+"Courier New"'>short</span></em>, <span class=SpellE><em><span
+style='font-family:"Courier New"'>int</span></em></span>, <em><span
+style='font-family:"Courier New"'>float</span></em> <em><span style='font-family:
+"Courier New"'>or</span></em> <em><span style='font-family:"Courier New"'>double</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>x</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>column</span></em> <em><span
+style='font-family:"Courier New"'>offset</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>y</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>offset</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns an &quot;imaginary&quot; <span
+class=GramE>element<span style='mso-spacerun:yes'>&nbsp; </span>from</span><span style='mso-spacerun:yes'>&nbsp; </span>a<span style='mso-spacerun:yes'>&nbsp; </span>Matrix</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>object</span>.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre> <span style='mso-spacerun:yes'>&nbsp;</span>BINARY ARITHMETIC OPERATORS</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix *<span
+class=SpellE>add_<span class=GramE>Matrix</span></span><span class=GramE>(</span>const Matrix *<span
+class=SpellE>A,const</span> Matrix *B);</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>A</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>first</span></em> <em><span style='font-family:"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp; </span><span style='mso-spacerun:yes'>&nbsp;&nbsp;</span>&lt;<em><span
+style='font-family:"Courier New"'>B</span></em>&gt; -<em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>second</span></em> <em><span style='font-family:"Courier New"'>matrix</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer <span
+class=GramE>to<span style='mso-spacerun:yes'>&nbsp; </span>resultant</span><span style='mso-spacerun:yes'>&nbsp; </span>matrix<span style='mso-spacerun:yes'>&nbsp; </span>containing,<span style='mso-spacerun:yes'>&nbsp; </span>&lt;A&gt;+&lt;B&gt;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=GramE>adds<span style='mso-spacerun:yes'>&nbsp; </span>the</span> contents of &lt;A&gt; to that of &lt;B&gt;. Uses</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>the</span> PWISE_MAT macro to do<span style='mso-spacerun:yes'>&nbsp; </span>all<span style='mso-spacerun:yes'>&nbsp; </span>25<span style='mso-spacerun:yes'>&nbsp; </span>combinations<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>matrix</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>types</span>.<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=GramE>Promotes<span style='mso-spacerun:yes'>&nbsp; </span>to</span><span style='mso-spacerun:yes'>&nbsp; </span>most precise type of &lt;A&gt; and &lt;B&gt;. Sup-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>ports</span> complex matrices.<span style='mso-spacerun:yes'>&nbsp; </span>Diagnostics: <span
+class=GramE>returns<span style='mso-spacerun:yes'>&nbsp; </span>NULL</span><span style='mso-spacerun:yes'>&nbsp; </span>pointer</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>w</span>/ error message when matrix sizes do not agree.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s):</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix *<span
+class=SpellE>sub_<span class=GramE>Matrix</span></span><span class=GramE>(</span>const Matrix *<span
+class=SpellE>A,const</span> Matrix *B);</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>A</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>first</span></em> <em><span style='font-family:"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>B</span></em>&gt; -<em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>second</span></em> <em><span style='font-family:"Courier New"'>matrix</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer <span
+class=GramE>to<span style='mso-spacerun:yes'>&nbsp; </span>resultant</span><span style='mso-spacerun:yes'>&nbsp; </span>matrix<span style='mso-spacerun:yes'>&nbsp; </span>containing,<span style='mso-spacerun:yes'>&nbsp; </span>&lt;A&gt;-&lt;B&gt;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: subtracts the contents of &lt;B&gt; from that of &lt;A&gt;.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Uses the PWISE_MAT macro to do all 25 combinations of matrix</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>types</span>.<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=GramE>Promotes<span style='mso-spacerun:yes'>&nbsp; </span>to</span><span style='mso-spacerun:yes'>&nbsp; </span>most precise type of &lt;A&gt; and &lt;B&gt;. Sup-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>ports</span> complex matrices Diagnostics: returns NULL pointer<span style='mso-spacerun:yes'>&nbsp; </span>w/</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>error<span style='mso-spacerun:yes'>&nbsp; </span>message</span><span style='mso-spacerun:yes'>&nbsp; </span>when<span style='mso-spacerun:yes'>&nbsp; </span>matrix sizes do not agree.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s):</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span>MATRIX MULTIPLICATION</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix *<span
+class=SpellE>multPWise_<span class=GramE>Matrix</span></span><span class=GramE>(</span>const Matrix *A, const Matrix *B)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>A</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>first</span></em> <em><span style='font-family:"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>B</span></em>&gt; -<em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>second</span></em> <em><span style='font-family:"Courier New"'>matrix</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer <span
+class=GramE>to<span style='mso-spacerun:yes'>&nbsp; </span>resultant</span><span style='mso-spacerun:yes'>&nbsp; </span>matrix<span style='mso-spacerun:yes'>&nbsp; </span>containing,<span style='mso-spacerun:yes'>&nbsp; </span>&lt;A&gt;*&lt;B&gt;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=GramE>multiplies<span style='mso-spacerun:yes'>&nbsp; </span>the</span><span style='mso-spacerun:yes'>&nbsp; </span>contents<span style='mso-spacerun:yes'>&nbsp; </span>of &lt;B&gt; from that of</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>&lt;A&gt;.</span><span style='mso-spacerun:yes'>&nbsp; </span>Uses the PWISE_MULT macro to do all 25 combinations of</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>matrix<span style='mso-spacerun:yes'>&nbsp; </span>types</span>. Promotes to most precise type of &lt;A&gt; and &lt;B&gt;.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Supports complex matrices Diagnostics: returns <span
+class=GramE>NULL<span style='mso-spacerun:yes'>&nbsp; </span>pointer</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>w</span>/ error message when matrix sizes do not agree.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s):</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix *<span
+class=SpellE>mult_<span class=GramE>Matrix</span></span><span class=GramE>(</span>const Matrix *<span
+class=SpellE>A,const</span> Matrix *B)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>A</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>first</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>structure</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>B</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>second</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>structure</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer to Matrix structure containing <span
+class=GramE>the<span style='mso-spacerun:yes'>&nbsp; </span>result</span>-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>ing</span></span><span class=GramE><span style='mso-spacerun:yes'>&nbsp; </span>vector</span><span style='mso-spacerun:yes'>&nbsp; </span>multiplication,<span style='mso-spacerun:yes'>&nbsp; </span>&lt;A&gt;x&lt;B&gt;<span style='mso-spacerun:yes'>&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=SpellE>peforms</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix cross product of &lt;A&gt; <span
+class=GramE>and<span style='mso-spacerun:yes'>&nbsp; </span>&lt;</span>B&gt;.<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span><span
+class=GramE>Promotes <span style='mso-spacerun:yes'>&nbsp;</span>result</span><span style='mso-spacerun:yes'>&nbsp; </span>to</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>most</span> precise type of &lt;A&gt; and &lt;B&gt;.<span style='mso-spacerun:yes'>&nbsp; </span>Uses MULT_MAT macro to do</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>all</span> 25 type combinations of matrices.<span style='mso-spacerun:yes'>&nbsp; </span>Diagnostics:<span style='mso-spacerun:yes'>&nbsp; </span>returns</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>NULL<span style='mso-spacerun:yes'>&nbsp; </span>pointer</span><span style='mso-spacerun:yes'>&nbsp; </span>w/<span style='mso-spacerun:yes'>&nbsp; </span>error<span style='mso-spacerun:yes'>&nbsp; </span>message<span style='mso-spacerun:yes'>&nbsp; </span>when...<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>rows in &lt;B&gt;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>...problems w/ Matrix structure.</span><span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix *<span
+class=SpellE>sqrt_<span class=GramE>Matrix</span></span><span class=GramE>(</span>Matrix *a)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>a</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Matrix</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns:<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=GramE>pointer<span style='mso-spacerun:yes'>&nbsp; </span>to</span><span style='mso-spacerun:yes'>&nbsp; </span>Matrix<span style='mso-spacerun:yes'>&nbsp; </span>structure<span style='mso-spacerun:yes'>&nbsp; </span>containing<span style='mso-spacerun:yes'>&nbsp; </span>matrix</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>square</span> root.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Computes the square root of each element of the</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>passed</span> matrix, works on both REAL and COMPLEX matrices.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: Frees up old matrix.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author: <span
+class=SpellE>Arve</span> <span class=SpellE>Kjoelen</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span>GENERAL MATRIX UTILTIES</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> <span class=SpellE>print_Matrix</span>(const Matrix *A)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>A</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>venerable</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>structure</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Prints out the contents of <span
+class=GramE>a<span style='mso-spacerun:yes'>&nbsp; </span>matrix</span><span style='mso-spacerun:yes'>&nbsp; </span>structure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>in</span> row - column format.<span style='mso-spacerun:yes'>&nbsp; </span>Diagnostics: Row 1: &lt;col.1&gt; &lt;col.2&gt;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>...<span style='mso-spacerun:yes'>&nbsp; </span>&lt;<span
+class=SpellE>col.N</span>&gt;<span style='mso-spacerun:yes'>&nbsp; </span>...<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=GramE>Row<span style='mso-spacerun:yes'>&nbsp; </span>N</span>:<span style='mso-spacerun:yes'>&nbsp; </span>&lt;col.1&gt;<span style='mso-spacerun:yes'>&nbsp; </span>&lt;col.3&gt;<span style='mso-spacerun:yes'>&nbsp; </span>...<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>&lt;<span
+class=SpellE>col.N</span>&gt;.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>============================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>CVIP_BOOLEAN <span
+class=SpellE>conj_<span class=GramE>Matrix</span></span><span class=GramE>(</span>Matrix *A)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>============================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>A</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Matrix</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: 1 <span
+class=SpellE>upons</span> success, 0 upon failure (A is real or NULL)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=GramE>Calculates<span style='mso-spacerun:yes'>&nbsp; </span>the</span><span style='mso-spacerun:yes'>&nbsp; </span>complex conjugate of a Matrix</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>structure</span> <st1:Street><st1:address>IN PLACE</st1:address></st1:Street>.<span style='mso-spacerun:yes'>&nbsp; </span>Diagnostics: If it is <span
+class=GramE>desired<span style='mso-spacerun:yes'>&nbsp; </span>to</span><span style='mso-spacerun:yes'>&nbsp; </span>keep</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>the<span style='mso-spacerun:yes'>&nbsp; </span>original</span>,<span style='mso-spacerun:yes'>&nbsp; </span>call<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=SpellE>duplicate_Matrix</span><span style='mso-spacerun:yes'>&nbsp; </span>first.<span style='mso-spacerun:yes'>&nbsp; </span>Author: <span
+class=SpellE>Arve</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>Kjoelen</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>CVIP_BOOLEAN <span
+class=SpellE>copy_Matrix</span>(const Matrix *A, Matrix *B, CVIP_BOOLEAN force)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>A</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>source</span></em> <em><span style='font-family:"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>B</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>destination</span></em> <em><span style='font-family:"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>force</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>force</span></em> <em><span style='font-family:
+"Courier New"'>operation</span></em> <em><span style='font-family:"Courier New"'>even</span></em> <em><span
+style='font-family:"Courier New"'>if</span></em> <em><span style='font-family:
+"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>B</span></em>&gt; <em><span style='font-family:
+"Courier New"'>is</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>a</span></em> <em><span style='font-family:
+"Courier New"'>less</span></em> <em><span style='font-family:"Courier New"'>precise</span></em> <em><span
+style='font-family:"Courier New"'>type</span></em> <em><span style='font-family:
+"Courier New"'>than</span></em> &lt;<em><span style='font-family:"Courier New"'>A</span></em>&gt;.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: 1 upon success, 0 upon<span style='mso-spacerun:yes'>&nbsp; </span>failure<span style='mso-spacerun:yes'>&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span>Copy</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>contents<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>&lt;A&gt;<span style='mso-spacerun:yes'>&nbsp; </span>into &lt;B&gt;. Uses the macro MAT_COPY to</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>support all 25 combinations of matrix<span style='mso-spacerun:yes'>&nbsp; </span>types.<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>Diagnostics:</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>returns 1 upon success and 0 upon failure; matrix sizes must</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>agree and if &lt;force&gt; is CVIP_NO then<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=SpellE>copy_Matrix</span><span style='mso-spacerun:yes'>&nbsp; </span>will<span style='mso-spacerun:yes'>&nbsp; </span>not</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>perform<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>copy<span style='mso-spacerun:yes'>&nbsp; </span>if<span style='mso-spacerun:yes'>&nbsp; </span>&lt;B&gt;<span style='mso-spacerun:yes'>&nbsp; </span>is<span style='mso-spacerun:yes'>&nbsp; </span>less<span style='mso-spacerun:yes'>&nbsp; </span>precise<span style='mso-spacerun:yes'>&nbsp; </span>than<span style='mso-spacerun:yes'>&nbsp; </span>&lt;A&gt;.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>CVIP_BOOLEAN <span
+class=SpellE>fastCopy_Matrix</span>(const Matrix *A, Matrix *B)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>A</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>source</span></em> <em><span style='font-family:"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>B</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>destination</span></em> <em><span style='font-family:"Courier New"'>matrix</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: 1 upon success, 0 upon<span style='mso-spacerun:yes'>&nbsp; </span>failure<span style='mso-spacerun:yes'>&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span>Copy</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>contents<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>&lt;A&gt;<span style='mso-spacerun:yes'>&nbsp; </span>into<span style='mso-spacerun:yes'>&nbsp; </span>&lt;B&gt;.<span style='mso-spacerun:yes'>&nbsp; </span>Uses<span style='mso-spacerun:yes'>&nbsp; </span>a faster method of</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>transfering</span> data than in <span class=SpellE>copy_Matrix</span><span style='mso-spacerun:yes'>&nbsp; </span>for<span style='mso-spacerun:yes'>&nbsp; </span>matrices<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>the</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>same<span style='mso-spacerun:yes'>&nbsp; </span>type.<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>Diagnostics: returns 1 upon success and 0 upon</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>failure; matrix sizes must agree<span style='mso-spacerun:yes'>&nbsp; </span>and<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=SpellE>fastCopy_Matrix</span><span style='mso-spacerun:yes'>&nbsp; </span>will</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>not<span style='mso-spacerun:yes'>&nbsp; </span>perform<span style='mso-spacerun:yes'>&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>copy<span style='mso-spacerun:yes'>&nbsp; </span>if<span style='mso-spacerun:yes'>&nbsp; </span>&lt;B&gt;<span style='mso-spacerun:yes'>&nbsp; </span>is<span style='mso-spacerun:yes'>&nbsp; </span>less precise than &lt;A&gt;.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix *<span
+class=SpellE>duplicate_Matrix</span>(const Matrix *A, FORMAT <span
+class=SpellE>df</span>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>A</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>source</span></em> <em><span style='font-family:"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>df</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>data</span></em> <em><span style='font-family:
+"Courier New"'>format</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>new</span></em> <em><span style='font-family:
+"Courier New"'>matrix</span></em> (<em><span style='font-family:"Courier New"'>REAL</span></em> <em><span
+style='font-family:"Courier New"'>or</span></em> <em><span style='font-family:
+"Courier New"'>IMAGINARY</span></em>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer to new instance of matrix &lt;A&gt;<span style='mso-spacerun:yes'>&nbsp; </span>Description:</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Creates<span style='mso-spacerun:yes'>&nbsp; </span>an exact duplicate of the original matrix &lt;A&gt;, with</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>the exception that the format can be altered. If the<span style='mso-spacerun:yes'>&nbsp; </span>format</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>is specified to be less precise than that of A then the <span
+class=SpellE>ima</span>-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>ginary</span> data is truncated.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix *<span
+class=SpellE>scale_Matrix</span>(const Matrix *a, double s)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>a</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Matrix</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>s</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>coefficient</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>multiply</span></em> <em><span style='font-family:"Courier New"'>by</span></em> <em><span
+style='font-family:"Courier New"'>each</span></em> <em><span style='font-family:
+"Courier New"'>element</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>matrix</span></em> &lt;<em><span style='font-family:"Courier New"'>a</span></em>&gt;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns:<span style='mso-spacerun:yes'>&nbsp; </span>pointer<span style='mso-spacerun:yes'>&nbsp; </span>to<span style='mso-spacerun:yes'>&nbsp; </span>Matrix<span style='mso-spacerun:yes'>&nbsp; </span>structure<span style='mso-spacerun:yes'>&nbsp; </span>containing<span style='mso-spacerun:yes'>&nbsp; </span>scaled</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>matrix<span style='mso-spacerun:yes'>&nbsp; </span>(type float or double) Description: Scales each <span
+class=SpellE>ele</span>-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>ment</span> of the matrix &lt;a&gt; by some<span style='mso-spacerun:yes'>&nbsp; </span>coefficient<span style='mso-spacerun:yes'>&nbsp; </span>&lt;s&gt;.<span style='mso-spacerun:yes'>&nbsp; </span>All<span style='mso-spacerun:yes'>&nbsp; </span>data</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>types less precise than CVIP_FLOAT or promoted. Diagnostics:</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>prints message of type of promotion being made.<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>Author(s):</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix *<span
+class=SpellE>crop_Matrix</span>(const Matrix *a, unsigned <span class=SpellE>int</span>, unsigned <span
+class=SpellE>int</span>, unsigned <span class=SpellE>int</span>, unsigned <span
+class=SpellE>int</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>a</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>source</span></em> <em><span style='font-family:"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>row</span></em>_<em><span
+style='font-family:"Courier New"'>offset</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>offset</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>row</span></em> <em><span style='font-family:"Courier New"'>from</span></em> <em><span
+style='font-family:"Courier New"'>0</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>col</span></em>_<em><span
+style='font-family:"Courier New"'>offset</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>offset</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>column</span></em> <em><span style='font-family:"Courier New"'>from</span></em> <em><span
+style='font-family:"Courier New"'>0</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>rows</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>number</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>rows</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>cols</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>number</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>columns</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: Returns the new smaller matrix as a<span style='mso-spacerun:yes'>&nbsp; </span>pointer<span style='mso-spacerun:yes'>&nbsp; </span>to<span style='mso-spacerun:yes'>&nbsp; </span>a</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>new<span style='mso-spacerun:yes'>&nbsp; </span>Matrix<span style='mso-spacerun:yes'>&nbsp; </span>structure<span style='mso-spacerun:yes'>&nbsp; </span>using<span style='mso-spacerun:yes'>&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>row<span style='mso-spacerun:yes'>&nbsp; </span>and <span
+class=SpellE>col</span> offsets and</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>number of &lt;rows&gt; and &lt;cols&gt; in the result matrix.<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span><span
+class=SpellE>Descrip</span>-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>tion</span>:<span style='mso-spacerun:yes'>&nbsp; </span>forms<span style='mso-spacerun:yes'>&nbsp; </span>a<span style='mso-spacerun:yes'>&nbsp; </span>sub-matrix<span style='mso-spacerun:yes'>&nbsp; </span>of given size and location from</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>original Diagnostics: returns NULL <span
+class=SpellE>ptr</span>. w/ error<span style='mso-spacerun:yes'>&nbsp; </span>msg.<span style='mso-spacerun:yes'>&nbsp; </span>when</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>submatrix</span><span style='mso-spacerun:yes'>&nbsp; </span>size<span style='mso-spacerun:yes'>&nbsp; </span>exceeds<span style='mso-spacerun:yes'>&nbsp; </span>that of parent matrix.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s):</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span>MATRIX ALGEBRA, NUMERICAL ANALYSIS</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>double <span
+class=SpellE>det_Matrix</span>(const Matrix *A)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>A</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Matrix</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: double value equal to the determinant of the matrix</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span>Finds<span style='mso-spacerun:yes'>&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>determinant<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>the input matrix.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Allocates and frees a matrix for<span style='mso-spacerun:yes'>&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>determinant<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=SpellE>calcula</span>-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>tion</span>.<span style='mso-spacerun:yes'>&nbsp; </span>Exits<span style='mso-spacerun:yes'>&nbsp; </span>and<span style='mso-spacerun:yes'>&nbsp; </span>prints<span style='mso-spacerun:yes'>&nbsp; </span>error<span style='mso-spacerun:yes'>&nbsp; </span>message<span style='mso-spacerun:yes'>&nbsp; </span>on invalid Matrix</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>structure.<span style='mso-spacerun:yes'>&nbsp; </span>Diagnostics: returns 0<span style='mso-spacerun:yes'>&nbsp; </span>w/<span style='mso-spacerun:yes'>&nbsp; </span>corresponding<span style='mso-spacerun:yes'>&nbsp; </span>error</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>message<span style='mso-spacerun:yes'>&nbsp; </span>when matrix is not square. Can not handle a complex</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>matrix.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix *<span
+class=SpellE>invert_Matrix</span>(const Matrix *A)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>A</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>matrix</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>be</span></em> <em><span style='font-family:
+"Courier New"'>inverted</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer to inverted matrix (promoted to<span style='mso-spacerun:yes'>&nbsp; </span>type<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=SpellE>dou</span>-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>ble</span>)<span style='mso-spacerun:yes'>&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span>finds<span style='mso-spacerun:yes'>&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>inverse<span style='mso-spacerun:yes'>&nbsp; </span>of matrix &lt;A&gt; using</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Gauss-Jordan elimination with full pivoting (not your<span style='mso-spacerun:yes'>&nbsp; </span>usual</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>half<span style='mso-spacerun:yes'>&nbsp; </span>pivot<span style='mso-spacerun:yes'>&nbsp; </span>I guess... ) ALSO... this routine will find the</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>inverse of<span style='mso-spacerun:yes'>&nbsp; </span>a<span style='mso-spacerun:yes'>&nbsp; </span>complex<span style='mso-spacerun:yes'>&nbsp; </span>matrix!<span style='mso-spacerun:yes'>&nbsp; </span>Diagnostics:<span style='mso-spacerun:yes'>&nbsp; </span>returns<span style='mso-spacerun:yes'>&nbsp; </span>NULL</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>pointer and issues error message with singular matrices, bad</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix structures.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix *<span
+class=SpellE>transpose_Matrix</span>(const Matrix *A)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>A</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Matrix</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer to new matrix structure of same<span style='mso-spacerun:yes'>&nbsp; </span>type<span style='mso-spacerun:yes'>&nbsp; </span>con-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>taining</span><span style='mso-spacerun:yes'>&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>transposed<span style='mso-spacerun:yes'>&nbsp; </span>matrix Description: transposes the</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>matrix &lt;A&gt; by copying to a new matrix. In<span style='mso-spacerun:yes'>&nbsp; </span>case<span style='mso-spacerun:yes'>&nbsp; </span>you<span style='mso-spacerun:yes'>&nbsp; </span>didn't</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>now<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>that<span style='mso-spacerun:yes'>&nbsp; </span>means<span style='mso-spacerun:yes'>&nbsp; </span>interchange<span style='mso-spacerun:yes'>&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>rows<span style='mso-spacerun:yes'>&nbsp; </span>w/<span style='mso-spacerun:yes'>&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>columns.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix *<span
+class=SpellE>covariance_Matrix</span>(float **<span class=SpellE>bvecP</span>, unsigned <span
+class=SpellE>int</span> <span class=SpellE>no_of_bands</span>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>unsigned <span
+class=SpellE>int</span> <span class=SpellE>vdim</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>bvecP</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>array</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>band</span></em> <em><span style='font-family:"Courier New"'>vectors</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>type</span></em> <em><span style='font-family:"Courier New"'>float</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>no</span></em>_<em><span
+style='font-family:"Courier New"'>of</span></em>_<em><span style='font-family:
+"Courier New"'>bands</span></em></span>&gt; - <em><span style='font-family:
+"Courier New"'>number</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>data</span></em> <em><span style='font-family:
+"Courier New"'>bands</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>vdim</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>vector</span></em> <em><span
+style='font-family:"Courier New"'>dimension</span></em> (<em><span
+style='font-family:"Courier New"'>no</span></em>. <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>pixels</span></em>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer to covariance matrix<span style='mso-spacerun:yes'>&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span>returns</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>the covariance matrix of the band vector.<span style='mso-spacerun:yes'>&nbsp; </span>The dimensions of</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>the matrix are equal to the number of data bands. (e.g.) for</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>an RGB image with 3 data bands the covariance matrix is...</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>_<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>_</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>|<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>|</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>| <span
+class=SpellE>Crr</span> <span class=SpellE>Cgr</span> <span class=SpellE>Cbr</span> |</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>|<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>|</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>| <span
+class=SpellE>Crg</span> <span class=SpellE>Cgg</span> <span class=SpellE>Cbg</span> |</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>|<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>|</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>| <span
+class=SpellE>Crb</span> <span class=SpellE>Cgb</span> <span class=SpellE>Cbb</span> |</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>|<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>|</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>|_<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>_| 3x3</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix *<span
+class=SpellE>eigenSystem_Matrix</span>(Matrix *a)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>a</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>MATRIX</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer to<span style='mso-spacerun:yes'>&nbsp; </span>Matrix<span style='mso-spacerun:yes'>&nbsp; </span>structure<span style='mso-spacerun:yes'>&nbsp; </span>containing<span style='mso-spacerun:yes'>&nbsp; </span>rows<span style='mso-spacerun:yes'>&nbsp; </span>of</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>eigenvectors.<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span>This<span style='mso-spacerun:yes'>&nbsp; </span>function<span style='mso-spacerun:yes'>&nbsp; </span>computes<span style='mso-spacerun:yes'>&nbsp; </span>the</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>eigenvalues</span> and corresponding eigenvectors of<span style='mso-spacerun:yes'>&nbsp; </span>a<span style='mso-spacerun:yes'>&nbsp; </span>real<span style='mso-spacerun:yes'>&nbsp; </span>sym-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>metric<span style='mso-spacerun:yes'>&nbsp; </span>matrix. The <span
+class=SpellE>eigen</span> matrix is returned in terms of row</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>vectors.<span style='mso-spacerun:yes'>&nbsp; </span>The routine also sorts the <span
+class=SpellE>eigenvalues</span> in descend-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>ing</span> order, and rearranges the rows correspondingly.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>En = {E1, E2, E3, ..., En}</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>_<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>_</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>|<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>|</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>| E11 E12 E13 . . E1n |</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>|<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>|</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>| E21 E22 E23 . . E2n |</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>|<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>|</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>| E31 E32 E33 . . E3n |</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>|<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>. . .<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>|</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>| En1 En2 En3 . . <span
+class=SpellE>Enn</span> |</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>|_<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>_| <span
+class=SpellE>nxn</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span>COMPLEX MATRIX UTILITIES</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>void CASSIGN(Matrix *matrix, type, <span
+class=SpellE>int</span> row, <span class=SpellE>int</span> <span class=SpellE>col</span>, <span
+class=SpellE>int</span> r, <span class=SpellE>int</span> <span class=SpellE>i</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>matrix</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Matrix</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>type</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>valid</span></em> <em><span style='font-family:
+"Courier New"'>C</span></em> <em><span style='font-family:"Courier New"'>data</span></em> <em><span
+style='font-family:"Courier New"'>type</span></em> <em><span style='font-family:
+"Courier New"'>for</span></em> <em><span style='font-family:"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>row</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>col</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>column</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>r</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>real</span></em> <em><span style='font-family:
+"Courier New"'>component</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>data</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span style='mso-spacerun:yes'>&nbsp;</span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>i</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>imaginary</span></em> <em><span
+style='font-family:"Courier New"'>component</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>data</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: this macro will assign a complex<span style='mso-spacerun:yes'>&nbsp; </span>number<span style='mso-spacerun:yes'>&nbsp; </span>to<span style='mso-spacerun:yes'>&nbsp; </span>a</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>matrix</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>double CANG(double r, double <span
+class=SpellE>i</span>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: This macro will compute the <span
+class=SpellE>phasor</span> angle<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>a</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>complex number</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>double CMAG(double r, double <span
+class=SpellE>i</span>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: This macro will compute the magnitude of a com-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>plex</span> number</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>double MAGSQ(double r, double <span
+class=SpellE>i</span>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: macro to compute the<span style='mso-spacerun:yes'>&nbsp; </span>magnitude<span style='mso-spacerun:yes'>&nbsp; </span>squared<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>a</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>complex number</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>void CMUL(type, r3, i3, r1, i1, r2, i2)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: macro to perform complex multiply and store the</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>result in &lt;r3&gt; and &lt;i3&gt;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>void REC2POL(type, m, p, <span
+class=SpellE>r,i</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: macro to perform rectangular to<span style='mso-spacerun:yes'>&nbsp; </span>polar<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=SpellE>coordi</span>-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>nate</span> conversion</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span style='mso-spacerun:yes'>&nbsp;</span>void POL2REC(type, r, <span
+class=SpellE>i</span>, m, p)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: macro to perform polar to<span style='mso-spacerun:yes'>&nbsp; </span>rectangular<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=SpellE>coordi</span>-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>nate</span> conversion</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>CVIP_BOOLEAN <span
+class=SpellE>makeComplex_Matrix</span>(Matrix *<span class=SpellE>real_Matrix</span>, CVIP_BOOLEAN verbose)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>real</span></em>_<em><span
+style='font-family:"Courier New"'>Matrix</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>real</span></em> <em><span style='font-family:"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>verbose</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>speak</span></em> <em><span style='font-family:
+"Courier New"'>to</span></em> <em><span style='font-family:"Courier New"'>me</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: 1 - upon success, 0<span style='mso-spacerun:yes'>&nbsp; </span>-<span style='mso-spacerun:yes'>&nbsp; </span>upon<span style='mso-spacerun:yes'>&nbsp; </span>failure<span style='mso-spacerun:yes'>&nbsp; </span>Description:</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>reallocates<span style='mso-spacerun:yes'>&nbsp; </span>twice<span style='mso-spacerun:yes'>&nbsp; </span>the amount of memory already assigned to</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE>real_Matrix</span>&gt; to make a complex.<span style='mso-spacerun:yes'>&nbsp; </span>The new complex<span style='mso-spacerun:yes'>&nbsp; </span>data<span style='mso-spacerun:yes'>&nbsp; </span>can</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>be referenced through **<span
+class=SpellE>iptr</span> of the Matrix structure.<span style='mso-spacerun:yes'>&nbsp; </span>real-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>loc() is used to keep the new data address' contiguous<span style='mso-spacerun:yes'>&nbsp; </span>with</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>that<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>the real data...<span style='mso-spacerun:yes'>&nbsp; </span>rather than allocate a new block</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>of memory.<span style='mso-spacerun:yes'>&nbsp; </span>This has potential advantages when <span
+class=SpellE>peforming</span> the</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>same<span style='mso-spacerun:yes'>&nbsp; </span>operation<span style='mso-spacerun:yes'>&nbsp; </span>on<span style='mso-spacerun:yes'>&nbsp; </span>both data sets (real &amp; <span
+class=SpellE>imag</span>.)<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=SpellE>Diagnos</span>-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>tics: returns a NULL pointer<span style='mso-spacerun:yes'>&nbsp; </span>and<span style='mso-spacerun:yes'>&nbsp; </span>warning<span style='mso-spacerun:yes'>&nbsp; </span>message<span style='mso-spacerun:yes'>&nbsp; </span>when...</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>CVIP_BOOLEAN <span
+class=SpellE>makeReal_Matrix</span>(Matrix *<span class=SpellE>complex_Matrix</span>, CVIP_BOOLEAN verbose)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><em><span style='font-family:"Courier New"'>complex</span></em>_<em><span
+style='font-family:"Courier New"'>Matrix</span></em></span> - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>matrix</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><em><span
+style='font-family:"Courier New"'>verbose</span></em> - <em><span
+style='font-family:"Courier New"'>should</span></em> <span class=SpellE><em><span
+style='font-family:"Courier New"'>i</span></em></span> <em><span
+style='font-family:"Courier New"'>speak</span></em>?</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: 1 - upon success, 0<span style='mso-spacerun:yes'>&nbsp; </span>-<span style='mso-spacerun:yes'>&nbsp; </span>upon<span style='mso-spacerun:yes'>&nbsp; </span>failure<span style='mso-spacerun:yes'>&nbsp; </span>Description:</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>reallocates<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>amount<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>memory<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>associated<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>with</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>complex_Matrix</span> to that of a real matrix Diagnostics: returns</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>NULL<span style='mso-spacerun:yes'>&nbsp; </span>pointer<span style='mso-spacerun:yes'>&nbsp; </span>and error message when...<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix *rect2pol_Matrix(Matrix *A, <span
+class=SpellE>int</span> dir)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>A</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Matrix</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>dir</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>type</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>transformation</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>(<em><span
+style='font-family:"Courier New"'>1</span></em>) - <em><span style='font-family:
+"Courier New"'>rectangular</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>polar</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>(<em><span
+style='font-family:"Courier New"'>anything</span></em> <em><span
+style='font-family:"Courier New"'>else</span></em>) - <em><span
+style='font-family:"Courier New"'>polar</span></em> <em><span style='font-family:
+"Courier New"'>to</span></em> <em><span style='font-family:"Courier New"'>rectangular</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer to Matrix structure containing the<span style='mso-spacerun:yes'>&nbsp; </span>desired</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>transformation<span style='mso-spacerun:yes'>&nbsp; </span>(type float or double) Description: Performs</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>transformation from rectangular to polar coordinates or from</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>polar to rectangular coordinates depending upon the value of</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;dir&gt;.<span style='mso-spacerun:yes'>&nbsp; </span>Values less than type CVIP_FLOAT are promoted. If<span style='mso-spacerun:yes'>&nbsp; </span>a</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>matrix<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>type double is passed the result will be double.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: returns with NULL pointer and<span style='mso-spacerun:yes'>&nbsp; </span>message<span style='mso-spacerun:yes'>&nbsp; </span>when...</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>-<span style='mso-spacerun:yes'>&nbsp; </span>matrix<span style='mso-spacerun:yes'>&nbsp; </span>is not complex also informs user when a promotion</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>takes<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>place.<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s):<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Gregory<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>Hance</span>.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix<span style='mso-spacerun:yes'>&nbsp; </span>*<span
+class=SpellE>and_Matrix</span>(const<span style='mso-spacerun:yes'>&nbsp; </span>Matrix<span style='mso-spacerun:yes'>&nbsp; </span>*A,<span style='mso-spacerun:yes'>&nbsp; </span>const<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>Matrix<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>*B)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>A</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Matrix</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>B</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Matrix</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer to resultant matrix containing, &lt;A&gt;&amp;&lt;B&gt;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: ands the contents of &lt;A&gt; to that of<span style='mso-spacerun:yes'>&nbsp; </span>&lt;B&gt;.<span style='mso-spacerun:yes'>&nbsp; </span>Uses</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>PWISE_MAT<span style='mso-spacerun:yes'>&nbsp; </span>macro<span style='mso-spacerun:yes'>&nbsp; </span>to<span style='mso-spacerun:yes'>&nbsp; </span>do all 15 combinations of integer</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>matrix types.<span style='mso-spacerun:yes'>&nbsp; </span>Promotes to most precise type of &lt;A&gt; and &lt;B&gt;.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Supports complex matrices.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: returns NULL<span style='mso-spacerun:yes'>&nbsp; </span>pointer<span style='mso-spacerun:yes'>&nbsp; </span>w/<span style='mso-spacerun:yes'>&nbsp; </span>error<span style='mso-spacerun:yes'>&nbsp; </span>message<span style='mso-spacerun:yes'>&nbsp; </span>when</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>matrix sizes do not agree.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s):<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Gregory<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>Hance</span>.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix<span style='mso-spacerun:yes'>&nbsp; </span>*<span
+class=SpellE>clone_Matrix</span>(const<span style='mso-spacerun:yes'>&nbsp; </span>Matrix<span style='mso-spacerun:yes'>&nbsp; </span>*<span
+class=SpellE>matP</span>,<span style='mso-spacerun:yes'>&nbsp; </span>CVIP_TYPE<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span><span
+class=SpellE>dt</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>matP</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Matrix</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>dt</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>valid</span></em> <em><span style='font-family:
+"Courier New"'>C</span></em> <em><span style='font-family:"Courier New"'>data</span></em> <em><span
+style='font-family:"Courier New"'>type</span></em> <em><span style='font-family:
+"Courier New"'>for</span></em> <em><span style='font-family:"Courier New"'>matrix</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: New matrix copy.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Uses function <span
+class=SpellE>new_Matrix</span> to provide quick<span style='mso-spacerun:yes'>&nbsp; </span>copy</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>of <span
+class=SpellE>imput</span> matrix.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: None.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s):<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Gregory<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>Hance</span>.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Matrix<span style='mso-spacerun:yes'>&nbsp; </span>*<span
+class=SpellE>duplicate_Matrix</span>(const<span style='mso-spacerun:yes'>&nbsp; </span>Matrix<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>*A,<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>FORMAT<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span><span
+class=SpellE>df</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>A</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>source</span></em> <em><span style='font-family:"Courier New"'>matrix</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>df</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>data</span></em> <em><span style='font-family:
+"Courier New"'>format</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>new</span></em> <em><span style='font-family:
+"Courier New"'>matrix</span></em> (<em><span style='font-family:"Courier New"'>REAL</span></em> <em><span
+style='font-family:"Courier New"'>or</span></em> <em><span style='font-family:
+"Courier New"'>IMAGINARY</span></em>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer to new instance of matrix &lt;A&gt;.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Creates an<span style='mso-spacerun:yes'>&nbsp; </span>exact<span style='mso-spacerun:yes'>&nbsp; </span>duplicate<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>original</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>matrix<span style='mso-spacerun:yes'>&nbsp; </span>&lt;A&gt;,<span style='mso-spacerun:yes'>&nbsp; </span>with<span style='mso-spacerun:yes'>&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>exception<span style='mso-spacerun:yes'>&nbsp; </span>that<span style='mso-spacerun:yes'>&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>format can be</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>altered. If the format is specified to be less precise<span style='mso-spacerun:yes'>&nbsp; </span>than</pre><pre> <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>that of A then the imaginary data is truncated.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: None.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s):<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Gregory<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>Hance</span>.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;type&gt;<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=SpellE>setRealVal_Matrix</span>(Matrix<span style='mso-spacerun:yes'>&nbsp; </span>*matrix,<span style='mso-spacerun:yes'>&nbsp; </span>CVIP_TYPE<span style='mso-spacerun:yes'>&nbsp; </span>type,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>unsigned<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>x,<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>unsigned<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>y,<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>type<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>val</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>matrix</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>type</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>valid</span></em> &quot;<em><span
+style='font-family:"Courier New"'>C</span></em>&quot; <em><span
+style='font-family:"Courier New"'>data</span></em> <em><span style='font-family:
+"Courier New"'>type</span></em> (<em><span style='font-family:"Courier New"'>i</span></em>.<em><span
+style='font-family:"Courier New"'>e</span></em>. <em><span style='font-family:
+"Courier New"'>one</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>byte</span></em>, <em><span style='font-family:
+"Courier New"'>short</span></em>, <span class=SpellE><em><span
+style='font-family:"Courier New"'>int</span></em></span>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><em><span
+style='font-family:"Courier New"'>float</span></em> <em><span style='font-family:
+"Courier New"'>or</span></em> <em><span style='font-family:"Courier New"'>double</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>x</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>column</span></em> <em><span
+style='font-family:"Courier New"'>offset</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>y</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>offset</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>val</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>value</span></em> <em><span style='font-family:
+"Courier New"'>to</span></em> <em><span style='font-family:"Courier New"'>place</span></em> <em><span
+style='font-family:"Courier New"'>into</span></em> <em><span style='font-family:
+"Courier New"'>matrix</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: inserts &lt;<span
+class=SpellE>val</span>&gt; as a &quot;real&quot;<span style='mso-spacerun:yes'>&nbsp; </span>element<span style='mso-spacerun:yes'>&nbsp; </span>at<span style='mso-spacerun:yes'>&nbsp; </span>row<span style='mso-spacerun:yes'>&nbsp; </span>y,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>column x<span style='mso-spacerun:yes'>&nbsp; </span>of matrix.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s):<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Gregory<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class=SpellE>Hance</span>.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;type&gt;<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span><span
+class=SpellE>setVal_Matrix</span>(Matrix<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>*matrix,<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>CVIP_TYPE<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>type,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>unsigned<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>x,<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>unsigned<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>y,<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>type<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>val</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>matrix</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>type</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>valid</span></em> &quot;<em><span
+style='font-family:"Courier New"'>C</span></em>&quot; <em><span
+style='font-family:"Courier New"'>data</span></em> <em><span style='font-family:
+"Courier New"'>type</span></em> (<em><span style='font-family:"Courier New"'>i</span></em>.<em><span
+style='font-family:"Courier New"'>e</span></em>. <em><span style='font-family:
+"Courier New"'>one</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>byte</span></em>, <em><span style='font-family:
+"Courier New"'>short</span></em>, <span class=SpellE><em><span
+style='font-family:"Courier New"'>int</span></em></span>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><em><span
+style='font-family:"Courier New"'>float</span></em> <em><span style='font-family:
+"Courier New"'>or</span></em> <em><span style='font-family:"Courier New"'>double</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>x</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>column</span></em> <em><span
+style='font-family:"Courier New"'>offset</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>y</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>offset</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>val</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>value</span></em> <em><span style='font-family:
+"Courier New"'>to</span></em> <em><span style='font-family:"Courier New"'>place</span></em> <em><span
+style='font-family:"Courier New"'>into</span></em> <em><span style='font-family:
+"Courier New"'>matrix</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Same as <span
+class=SpellE>setREalVal_Matrix</span>; inserts &lt;<span class=SpellE>val</span>&gt;<span style='mso-spacerun:yes'>&nbsp; </span>as<span style='mso-spacerun:yes'>&nbsp; </span>a</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&quot;real&quot; element at row y, column x<span style='mso-spacerun:yes'>&nbsp; </span>of matrix.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s):<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Gregory<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>Hance</span>.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;type&gt;<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=SpellE>setImagVal_Matrix</span>(Matrix<span style='mso-spacerun:yes'>&nbsp; </span>*matrix,<span style='mso-spacerun:yes'>&nbsp; </span>CVIP_TYPE<span style='mso-spacerun:yes'>&nbsp; </span>type,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>unsigned<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>x,<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>unsigned<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>y,<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>type<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>val</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===========================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>matrix</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>a</span></em> <em><span style='font-family:"Courier New"'>Matrix</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>type</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>valid</span></em> &quot;<em><span
+style='font-family:"Courier New"'>C</span></em>&quot; <em><span
+style='font-family:"Courier New"'>data</span></em> <em><span style='font-family:
+"Courier New"'>type</span></em> (<em><span style='font-family:"Courier New"'>i</span></em>.<em><span
+style='font-family:"Courier New"'>e</span></em>. <em><span style='font-family:
+"Courier New"'>one</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>byte</span></em>, <em><span style='font-family:
+"Courier New"'>short</span></em>, <span class=SpellE><em><span
+style='font-family:"Courier New"'>int</span></em></span>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><em><span
+style='font-family:"Courier New"'>float</span></em> <em><span style='font-family:
+"Courier New"'>or</span></em> <em><span style='font-family:"Courier New"'>double</span></em>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>x</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>column</span></em> <em><span
+style='font-family:"Courier New"'>offset</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>y</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>offset</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>val</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>value</span></em> <em><span style='font-family:
+"Courier New"'>to</span></em> <em><span style='font-family:"Courier New"'>place</span></em> <em><span
+style='font-family:"Courier New"'>into</span></em> <em><span style='font-family:
+"Courier New"'>matrix</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: inserts &lt;<span
+class=SpellE>val</span>&gt; as an &quot;imaginary&quot; element at<span style='mso-spacerun:yes'>&nbsp; </span>row</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>y</span>, column x<span style='mso-spacerun:yes'>&nbsp; </span>of matrix.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>The C files containing these functions are located under $<span
+class=SpellE>CVIPtoolsHOME\CVIPC\MatrixAlgebra</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>BUGS</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>none as of yet</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=SpellE>CVIPmatrix.h</span>, <span
+class=SpellE>CVIPcomplex.h</span>, <span class=SpellE>m_file.h</span>, <span
+class=SpellE>m_CovEig.h</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Copyright (C) 1992, 1993, 2004 SIUE - by Gregory <span
+class=SpellE><span class=GramE>Hance</span></span><span class=GramE><span style='mso-spacerun:yes'>&nbsp; </span>and</span><span style='mso-spacerun:yes'>&nbsp; </span>Scott</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>Umbaugh</span>.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

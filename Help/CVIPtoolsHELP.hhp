@@ -1,0 +1,633 @@
+
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=CVIPtoolsHELP.CHM
+Contents file=CVIPtoolsHELP.hhc
+Default Window=win
+Default topic=.\Cviptools_ HELP.htm
+Display compile progress=No
+Error log file=Errlog.txt
+Full-text search=Yes
+Index file=CVIPtoolsHELP.hhk
+Language=0x409 English (United States)
+
+[WINDOWS]
+win="CVIPtoolsHELP","CVIPtoolsHELP.hhc","CVIPtoolsHELP.hhk",".\Cviptools_ HELP.htm",".\Cviptools_ HELP.htm",,,,,0x21520,185,0x40380c,[0,0,1928,1048],0x0,0x0,,,,,0
+
+
+[FILES]
+Cviptools_ HELP.htm
+How To Use CVIPtools\GettingStarted\cvip_start.html
+How To Use CVIPtools\GettingStarted\cvip_contributors.html
+How To Use CVIPtools\GettingStarted\cvip_copyright.html
+How To Use CVIPtools\ImageViewer.html
+How To Use CVIPtools\File\Show Histogram.htm
+How To Use CVIPtools\File\cvip_load_image.html
+How To Use CVIPtools\File\cvip_save.html
+How To Use CVIPtools\File\cvip_exit.html
+How To Use CVIPtools\File\Delete.htm
+How To Use CVIPtools\View\view.htm
+How To Use CVIPtools\Analysis\cvip_ana_geometry.html
+How To Use CVIPtools\Analysis\cvip_ana_edgeline.html
+How To Use CVIPtools\Analysis\cvip_segmentation.html
+How To Use CVIPtools\Analysis\cvip_ana_transforms.html
+How To Use CVIPtools\Analysis\cvip_ana_feature.html
+How To Use CVIPtools\Analysis\cvip_ana_pattern_classification.html
+How To Use CVIPtools\Enhancement\histograms.htm
+How To Use CVIPtools\Enhancement\cvip_enhan_pseudo.html
+How To Use CVIPtools\Enhancement\cvip_enhan_sharp.html
+How To Use CVIPtools\Enhancement\cvip_enhan_smooth.html
+How To Use CVIPtools\Restoration\cvip_restore_noise.html
+How To Use CVIPtools\Restoration\cvip_restore_spatfilter.html
+How To Use CVIPtools\Restoration\cvip_restore_freqfilter.html
+How To Use CVIPtools\Restoration\cvip_restore_geomtransform.html
+How To Use CVIPtools\Compression\cvip_cmprs_prep.html
+How To Use CVIPtools\Compression\cvip_cmprs_lossless.html
+How To Use CVIPtools\Compression\cvip_cmprs_lossy.html
+How To Use CVIPtools\Utilities\cvip_utilarithlogic.html
+How To Use CVIPtools\Utilities\cvip_utilcompare.html
+How To Use CVIPtools\Utilities\cvip_utilconvert.html
+How To Use CVIPtools\Utilities\cvip_utilcreate.html
+How To Use CVIPtools\Utilities\cvip_utilenhance.html
+How To Use CVIPtools\Utilities\cvip_utilfilter.html
+How To Use CVIPtools\Utilities\cvip_utilsize.html
+How To Use CVIPtools\Utilities\cvip_utilstats.htm
+How To Use CVIPtools\CVIP_ATAT\CVIP-ATAT_Help.htm
+How To Use CVIPtools\CVIP_FEPC\CVIP-FEPC_Help.htm
+CVIPlibraries\ArithLogic.htm
+CVIPlibraries\Band.htm
+CVIPlibraries\Color.htm
+CVIPlibraries\Compression.htm
+CVIPlibraries\Conversion.htm
+CVIPlibraries\Display.html
+CVIPlibraries\Feature.htm
+CVIPlibraries\Geometry.htm
+CVIPlibraries\Histogram.htm
+CVIPlibraries\Image.html
+CVIPlibraries\IO.html
+CVIPlibraries\Mapping.html
+CVIPlibraries\Matrix.html
+CVIPlibraries\Morphological.html
+CVIPlibraries\Noise.htm
+CVIPlibraries\Object.html
+CVIPlibraries\ObjectManager.html
+CVIPlibraries\PBM.htm
+CVIPlibraries\pgm.html
+CVIPlibraries\pnm.html
+CVIPlibraries\ppm.html
+CVIPlibraries\ROI.htm
+CVIPlibraries\Segmentation.htm
+CVIPlibraries\SpatialFilter.htm
+CVIPlibraries\Transform.htm
+CVIPlibraries\TransformFilter.htm
+CVIPlibraries\Vector.htm
+CVIP_C_functions\ace2_filter.html
+CVIP_C_functions\ace2_filter.html
+CVIP_C_functions\acuity_nightvision_filter.html
+CVIP_C_functions\ad_filter.htm
+CVIP_C_functions\adapt_median_filter.html
+CVIP_C_functions\adaptive_contrast_filter.html
+CVIP_C_functions\add_Image.html
+CVIP_C_functions\alpha_filter.htm
+CVIP_C_functions\and_Image.htm
+CVIP_C_functions\area.htm
+CVIP_C_functions\aspect.htm
+CVIP_C_functions\auto_threshold_filter.html
+CVIP_C_functions\bilinear_interp.htm
+CVIP_C_functions\bit_compress, bit_decompress, bitplane_sep.htm
+CVIP_C_functions\boiecox_filter.htm
+CVIP_C_functions\btc_compress, btc_decompress.htm
+CVIP_C_functions\btc2_compress, btc2_decompress.htm
+CVIP_C_functions\btc3_compress.htm
+CVIP_C_functions\Butterworth_Band_Pass.htm
+CVIP_C_functions\Butterworth_Band_Reject.htm
+CVIP_C_functions\Butterworth_High.htm
+CVIP_C_functions\Butterworth_Low.htm
+CVIP_C_functions\canny_filter.htm
+CVIP_C_functions\cbrt_Matrix.htm
+CVIP_C_functions\centroid.htm
+CVIP_C_functions\cerchar_filter.html
+CVIP_C_functions\city_block.htm
+CVIP_C_functions\color_contrast_enhance.htm
+CVIP_C_functions\colorxform.htm
+CVIP_C_functions\contra_filter.htm
+CVIP_C_functions\convert_filetype.htm
+CVIP_C_functions\convolve_filter.htm
+CVIP_C_functions\copy_paste.htm
+CVIP_C_functions\create_black.htm
+CVIP_C_functions\create_cosine.htm
+CVIP_C_functions\create_image.htm
+CVIP_C_functions\create_sine.htm
+CVIP_C_functions\create_squarewave.htm
+CVIP_C_functions\crop.htm
+CVIP_C_functions\CVIPhalftone.htm
+CVIP_C_functions\CVIPluminance.htm
+CVIP_C_functions\cylin_inv_xform.htm
+CVIP_C_functions\dct_transform.htm
+CVIP_C_functions\define_histogram.htm
+CVIP_C_functions\display_Image, setDisplay_Image, getDisplay_Image.htm
+CVIP_C_functions\display_mesh.htm
+CVIP_C_functions\display_RAMImage.htm
+CVIP_C_functions\divide_Image.htm
+CVIP_C_functions\divide_Matrix.htm
+CVIP_C_functions\dpc_compress.htm
+CVIP_C_functions\dpc_decompress.html
+CVIP_C_functions\edge_detect_filter.htm
+CVIP_C_functions\edge_detect_setup.htm
+CVIP_C_functions\edge_link_filter.htm
+CVIP_C_functions\encode_data.htm
+CVIP_C_functions\enlarge.htm
+CVIP_C_functions\euclidean_distance.htm
+CVIP_C_functions\euler.htm
+CVIP_C_functions\exp_ace_filter.htm
+CVIP_C_functions\fft_mag.htm
+CVIP_C_functions\fft_phase.htm
+CVIP_C_functions\fft_transform.htm
+CVIP_C_functions\file_to_mesh.htm
+CVIP_C_functions\Find_euler.htm
+CVIP_C_functions\Find_irregular.htm
+CVIP_C_functions\Find_perimeter.htm
+CVIP_C_functions\Find_thinness.htm
+CVIP_C_functions\fractal.htm
+CVIP_C_functions\fuzzyc_segment.htm
+CVIP_C_functions\gamma_noise.htm
+CVIP_C_functions\gaussian_noise.htm
+CVIP_C_functions\geometric_filter.htm
+CVIP_C_functions\geometric_mean.htm
+CVIP_C_functions\GEOMETRY.htm
+CVIP_C_functions\get_default_filter.htm
+CVIP_C_functions\get_histogram, get_histogram_Image.htm
+CVIP_C_functions\getFormat_CVIP.htm
+CVIP_C_functions\glr_compress.htm
+CVIP_C_functions\gray_binary.htm
+CVIP_C_functions\gray_linear.htm
+CVIP_C_functions\gray_multiply.htm
+CVIP_C_functions\gray_multiply2.htm
+CVIP_C_functions\gray_quant_segment.htm
+CVIP_C_functions\gvfsnake_segment.htm
+CVIP_C_functions\h_image.htm
+CVIP_C_functions\haar_transform.htm
+CVIP_C_functions\harmonic_filter.htm
+CVIP_C_functions\harris_filter.html
+CVIP_C_functions\hexrotate.html
+CVIP_C_functions\High_Freq_Emphasis.htm
+CVIP_C_functions\hist_feature.htm
+CVIP_C_functions\hist_slide.htm
+CVIP_C_functions\hist_spec.htm
+CVIP_C_functions\hist_stretch.htm
+CVIP_C_functions\hist_thresh_segment.htm
+CVIP_C_functions\histeq.htm
+CVIP_C_functions\histogram_show.htm
+CVIP_C_functions\homomorphic.htm
+CVIP_C_functions\hough_transform,hough_inverse, hough_filter.htm
+CVIP_C_functions\huf_compress.htm
+CVIP_C_functions\Ideal_Band_Pass.htm
+CVIP_C_functions\Ideal_Band_Reject.htm
+CVIP_C_functions\Ideal_High.htm
+CVIP_C_functions\Ideal_Low.htm
+CVIP_C_functions\ifft_transform.htm
+CVIP_C_functions\igs_segment.htm
+CVIP_C_functions\image_sharp.htm
+CVIP_C_functions\improved_mmse_filter.htm
+CVIP_C_functions\inverse_xformfilter.htm
+CVIP_C_functions\irregular.htm
+CVIP_C_functions\jp2_compress, jp2_decompress.htm
+CVIP_C_functions\jpg_compress, jpg_decompress.htm
+CVIP_C_functions\k_nearest_neighbor.htm
+CVIP_C_functions\keyboard_to_mesh.htm
+CVIP_C_functions\kirsch_filter.htm
+CVIP_C_functions\kuwahara_filter.htm
+CVIP_C_functions\Lab_inv_xform.htm
+CVIP_C_functions\label.htm
+CVIP_C_functions\laws_texture.htm
+CVIP_C_functions\least_squares.htm
+CVIP_C_functions\linxform.htm
+CVIP_C_functions\local_adaptive_zoom.htm
+CVIP_C_functions\local_histeq.htm
+CVIP_C_functions\log_ace_filter.htm
+CVIP_C_functions\lum_average.htm
+CVIP_C_functions\luminance_Image.htm
+CVIP_C_functions\Luv_inv_xform.htm
+CVIP_C_functions\mag_Matrix.htm
+CVIP_C_functions\make_histogram.htm
+CVIP_C_functions\marr_hildreth_filter.htm
+CVIP_C_functions\maximum_filter.htm
+CVIP_C_functions\maximum_value_metric.htm
+CVIP_C_functions\mean_filter.htm
+CVIP_C_functions\mean_test.htm
+CVIP_C_functions\median_cut_segment.htm
+CVIP_C_functions\median_filter.htm
+CVIP_C_functions\mesh_to_file.htm
+CVIP_C_functions\mesh_warping,    mesh_warping_ri,    mesh_warping_setup.htm
+CVIP_C_functions\midpoint_filter.htm
+CVIP_C_functions\min_max_normalization.htm
+CVIP_C_functions\minimum_filter.htm
+CVIP_C_functions\minkowski_distance.htm
+CVIP_C_functions\mmse_filter.htm
+CVIP_C_functions\moravec_filter.html
+CVIP_C_functions\morph_hitmiss.html
+CVIP_C_functions\morph_skeleton.html
+CVIP_C_functions\morph_thinning.html
+CVIP_C_functions\MorphClose_Image.htm
+CVIP_C_functions\MorphDilate_Image.htm
+CVIP_C_functions\MorphErode_Image.htm
+CVIP_C_functions\morphIterMod_Image.htm
+CVIP_C_functions\morpho.htm
+CVIP_C_functions\MorphOpen_Image.htm
+CVIP_C_functions\multiply_Image.htm
+CVIP_C_functions\nearest_centroid.htm
+CVIP_C_functions\nearest_centroid_set.htm
+CVIP_C_functions\nearest_neighbor.htm
+CVIP_C_functions\neg_exp_noise.htm
+CVIP_C_functions\new_ext.htm
+CVIP_C_functions\nonfft_xformfilter.htm
+CVIP_C_functions\not_Image.htm
+CVIP_C_functions\notch.htm
+CVIP_C_functions\object_crop.htm
+CVIP_C_functions\or_Image.htm
+CVIP_C_functions\orientation.htm
+CVIP_C_functions\otsu_segment.htm
+CVIP_C_functions\param_ad_filter.htm
+CVIP_C_functions\parametric_wiener.htm
+CVIP_C_functions\pattern_city_block.htm
+CVIP_C_functions\pattern_euclidean.htm
+CVIP_C_functions\pattern_maximum.htm
+CVIP_C_functions\pattern_min_max_normalization.htm
+CVIP_C_functions\pattern_minkowski.htm
+CVIP_C_functions\pattern_range_normalize.htm
+CVIP_C_functions\pattern_softmax_scaling_normalization.htm
+CVIP_C_functions\pattern_standard_normal_density_normalization.htm
+CVIP_C_functions\pattern_tanimoto.htm
+CVIP_C_functions\pattern_unit_vector_normalization.htm
+CVIP_C_functions\pattern_vector_inner_product.htm
+CVIP_C_functions\pct.html
+CVIP_C_functions\pct_median_segment.htm
+CVIP_C_functions\perimeter.htm
+CVIP_C_functions\power_spect_eq.htm
+CVIP_C_functions\pratt_merit.htm
+CVIP_C_functions\predicate_test.htm
+CVIP_C_functions\prewitt_filter.htm
+CVIP_C_functions\print_mesh.htm
+CVIP_C_functions\prog.htm
+CVIP_C_functions\projection.htm
+CVIP_C_functions\pseudocol_freq.htm
+CVIP_C_functions\quadtree2ras.htm
+CVIP_C_functions\range_normalize.htm
+CVIP_C_functions\raster_deblur_filter.htm
+CVIP_C_functions\rayleigh_noise.htm
+CVIP_C_functions\read_Image.htm
+CVIP_C_functions\regular_mesh.htm
+CVIP_C_functions\remap_Image.htm
+CVIP_C_functions\rms_error.htm
+CVIP_C_functions\robinson_filter.htm
+CVIP_C_functions\rotate.htm
+CVIP_C_functions\rst_invariant.htm
+CVIP_C_functions\sct_split_segment.htm
+CVIP_C_functions\setUpLabel_Objects.htm
+CVIP_C_functions\shen_castan_filter.htm
+CVIP_C_functions\showMax_histogram.htm
+CVIP_C_functions\shrink.htm
+CVIP_C_functions\simple_wiener.htm
+CVIP_C_functions\single_filter.htm
+CVIP_C_functions\smooth_filter.htm
+CVIP_C_functions\snr.htm
+CVIP_C_functions\sobel_filter.htm
+CVIP_C_functions\softmax_scaling.htm
+CVIP_C_functions\solve_c.htm
+CVIP_C_functions\spatial_quant.htm
+CVIP_C_functions\specify_filter.htm
+CVIP_C_functions\speckle_noise.htm
+CVIP_C_functions\spectral_feature.htm
+CVIP_C_functions\spher_inv_xform.htm
+CVIP_C_functions\split_merge_segment.htm
+CVIP_C_functions\sqrt_Matrix.htm
+CVIP_C_functions\square_mag_Matrix.htm
+CVIP_C_functions\standard_normal_density_normalization.htm
+CVIP_C_functions\subtract_Image.htm
+CVIP_C_functions\tanimoto_metric.htm
+CVIP_C_functions\texture.htm
+CVIP_C_functions\texture2.htm
+CVIP_C_functions\thinness.htm
+CVIP_C_functions\threshold_segment.htm
+CVIP_C_functions\trans_compr.htm
+CVIP_C_functions\translate.htm
+CVIP_C_functions\uniform_noise.htm
+CVIP_C_functions\unit_vector_normalization.htm
+CVIP_C_functions\unsharp_filter.htm
+CVIP_C_functions\vector_inner_product.htm
+CVIP_C_functions\vector_quant.htm
+CVIP_C_functions\view_Image.htm
+CVIP_C_functions\walhad_transform.htm
+CVIP_C_functions\watershed_segment.htm
+CVIP_C_functions\wavdaub4_transform.htm
+CVIP_C_functions\wavhaar_transform.htm
+CVIP_C_functions\wiener.htm
+CVIP_C_functions\write_Image.htm
+CVIP_C_functions\xor_Image.htm
+CVIP_C_functions\xvq.htm
+CVIP_C_functions\Ypmean_filter.htm
+CVIP_C_functions\zon_compress, zon_decompress.htm
+CVIP_C_functions\zon2_compress, zon2_decompress.htm
+CVIP_C_functions\zoom.htm
+CVIP_C_functions\zvl_compress.htm
+COM_HELP\Ace2_Filter.html
+COM_HELP\Ace2_Filter.html
+COM_HELP\Acuity_Nightvision_Filter.html
+COM_HELP\ad_filter.html
+COM_HELP\Adapt_Median_Filter.html
+COM_HELP\Adaptive_Contrast_Filter.html
+COM_HELP\Add_Image.html
+COM_HELP\Alpha_Filter.html
+COM_HELP\And_Image.html
+COM_HELP\Area.html
+COM_HELP\Aspect.htm
+COM_HELP\Assemble_Bands.html
+COM_HELP\Auto_Threshold_Filter.html
+COM_HELP\Bilinear_Interp.html
+COM_HELP\Bintocvip.html
+COM_HELP\Bit_Compress.html
+COM_HELP\Bit_decompress.htm
+COM_HELP\Boiecox_Filter.htm
+COM_HELP\btc_compress, btc_decompress.htm
+COM_HELP\Btc_Compress.html
+COM_HELP\Btc_Decompression.html
+COM_HELP\Btc2_Compress.html
+COM_HELP\Btc2_Decompression.html
+COM_HELP\Btc3_Compress.html
+COM_HELP\Btc3_Decompression.html
+COM_HELP\Butterworth_Band_Pass.html
+COM_HELP\Butterworth_Band_Reject.html
+COM_HELP\Butterworth_High.html
+COM_HELP\Butterworth_Low.html
+COM_HELP\Canny_Filter.htm
+COM_HELP\Cast_Image.html
+COM_HELP\CentroID.html
+COM_HELP\Cerchar_Filter.html
+COM_HELP\Check_Bin.html
+COM_HELP\Check_xform_history.html
+COM_HELP\Close_Consol.html
+COM_HELP\Close_Console.html
+COM_HELP\Color_Contrast_Enhancement.html
+COM_HELP\ColorXform.html
+COM_HELP\CondRemap_Image.html
+COM_HELP\Contra_Filter.html
+COM_HELP\Copy_Paste.htm
+COM_HELP\Create_Black.html
+COM_HELP\Create_Checkboard.html
+COM_HELP\Create_Circle.html
+COM_HELP\Create_Cosine.html
+COM_HELP\Create_Degenerate_Circle.html
+COM_HELP\Create_Ellipse.html
+COM_HELP\Create_Line.htm
+COM_HELP\Create_Rectangle.html
+COM_HELP\Create_Sine.html
+COM_HELP\Create_Squarewave.html
+COM_HELP\Crop.html
+COM_HELP\CVIP_OUTPUT.html
+COM_HELP\CVIPhalftone.html
+COM_HELP\Cviptoccc.html
+COM_HELP\Cviptoeps.html
+COM_HELP\Cviptogif.html
+COM_HELP\Cviptoiris.html
+COM_HELP\Cviptoitex.html
+COM_HELP\Cviptojpg.html
+COM_HELP\Cviptopnm.html
+COM_HELP\Cviptoras.html
+COM_HELP\Cviptotiff.html
+COM_HELP\Cviptovip.html
+COM_HELP\Data_Range.html
+COM_HELP\Dct_Transform.html
+COM_HELP\Delete_Image.html
+COM_HELP\Divide_Image.html
+COM_HELP\Dpc_Compress.html
+COM_HELP\Dpc_Decompress.html
+COM_HELP\Draw_mesh.html
+COM_HELP\Duplicate_Image.htm
+COM_HELP\DynRLC_Compression.htm
+COM_HELP\DynRLC_deCompression.htm
+COM_HELP\Edge_Detect_Filter.html
+COM_HELP\Edge_Link_Filter.html
+COM_HELP\Enlarge.html
+COM_HELP\Epstocvip.html
+COM_HELP\Euler.html
+COM_HELP\Exp_Ace_Filter.html
+COM_HELP\Extract_Band.html
+COM_HELP\Fft_Mag.html
+COM_HELP\Fft_Phase.html
+COM_HELP\Fft_Transform.html
+COM_HELP\File_To_Mesh.html
+COM_HELP\Fractal_Compression.htm
+COM_HELP\Fractal_deCompression.htm
+COM_HELP\Fuzzyc_Segment.html
+COM_HELP\Gamma_Noise.html
+COM_HELP\Gaussian_Blur_Filter.html
+COM_HELP\Gaussian_Noise.html
+COM_HELP\Geometric_Filter.html
+COM_HELP\Geometric_Mean.html
+COM_HELP\get_hist_real.html
+COM_HELP\Get_Histogram_Image.html
+COM_HELP\Get_max_min_value.html
+COM_HELP\GetDataformat_Image.html
+COM_HELP\GetDataType_Image.html
+COM_HELP\GetImageInfo.html
+COM_HELP\Getlast_Hist.html
+COM_HELP\GetNoOfBands_Image.html
+COM_HELP\GetNoOfCols_Image.html
+COM_HELP\GetNoOfRows_Image.html
+COM_HELP\giftocvip.html
+COM_HELP\Glr_Compress.html
+COM_HELP\Glr_Decompress.html
+COM_HELP\Gray_Binary.html
+COM_HELP\Gray_Linear.html
+COM_HELP\Gray_Multiplication.html
+COM_HELP\Gray_Multiply.html
+COM_HELP\Gray_Multiply2.html
+COM_HELP\Gray_Quant_Segment.html
+COM_HELP\Graylevel_Quant.html
+COM_HELP\Graylevel_Remap.html
+COM_HELP\GVFSnake_Segment.html
+COM_HELP\H_image.html
+COM_HELP\Haar_Transform.html
+COM_HELP\Harmonic_Filter.html
+COM_HELP\Harris_Filter.html
+COM_HELP\High_Freq_Emphasis.html
+COM_HELP\Highboost.html
+COM_HELP\HighFreq_Emphasis.html
+COM_HELP\Highpass_Spatial.html
+COM_HELP\Hist_Feature.html
+COM_HELP\Hist_Slide.html
+COM_HELP\Hist_Spec.html
+COM_HELP\Hist_Stretch.html
+COM_HELP\Hist_Thresh_Segment.html
+COM_HELP\Histeq.html
+COM_HELP\Histogram_Spec.html
+COM_HELP\History_Add.html
+COM_HELP\History_Check.html
+COM_HELP\History_Copy.html
+COM_HELP\history_create.html
+COM_HELP\History_Get.html
+COM_HELP\History_get_data.html
+COM_HELP\Homomorphic.html
+COM_HELP\Horizontal_Flip.html
+COM_HELP\Hough_Filter.html
+COM_HELP\Huf_Compress.html
+COM_HELP\Huf_Decompress.html
+COM_HELP\Idct_Transform.html
+COM_HELP\Ideal_Band_Pass.html
+COM_HELP\Ideal_Band_Reject.html
+COM_HELP\Ideal_High.html
+COM_HELP\Ideal_Low.html
+COM_HELP\Ifft_Transform.html
+COM_HELP\Igs_Segment.html
+COM_HELP\Improved_Mmse_Filter.html
+COM_HELP\Input_Mesh.html
+COM_HELP\Intensity_Slicing.html
+COM_HELP\Inverse_Xformfilter.html
+COM_HELP\Ipct.html
+COM_HELP\Irregular.html
+COM_HELP\Jp2_Compress.html
+COM_HELP\Jp2_Decompress.html
+COM_HELP\Jpg_Compress.html
+COM_HELP\Jpg_Decompress.html
+COM_HELP\Jpgtocvip.html
+COM_HELP\K_Nearest_Neighbor.htm
+COM_HELP\Kirsch_Filter.html
+COM_HELP\Kuwahara_Filter.htm
+COM_HELP\Label.html
+COM_HELP\Laws_Texture.htm
+COM_HELP\Least_Squares.html
+COM_HELP\Local_Adaptive_Zoom.htm
+COM_HELP\Local_Histeq.html
+COM_HELP\Log_Ace_Filter.html
+COM_HELP\Log_Remap.html
+COM_HELP\LogMap_Image.html
+COM_HELP\Lum_Average.html
+COM_HELP\Luminance_Image.html
+COM_HELP\Make_Histogram.html
+COM_HELP\Marr_Hildreth_Filter.htm
+COM_HELP\Maximum_Filter.html
+COM_HELP\Mean_Filter.html
+COM_HELP\Median_Cut_Segment.html
+COM_HELP\Median_Filter.html
+COM_HELP\Mesh_To_File.html
+COM_HELP\Mesh_Warping.html
+COM_HELP\Mesh_WarpingIR.html
+COM_HELP\Midpoint_Filter.html
+COM_HELP\Minimum_Filter.html
+COM_HELP\Mmse_Filter.html
+COM_HELP\Moravec_Filter.html
+COM_HELP\morph_hitmiss.html
+COM_HELP\morph_skeleton.html
+COM_HELP\morph_thinning.html
+COM_HELP\MorphClose.html
+COM_HELP\MorphDilate.html
+COM_HELP\MorphErode.html
+COM_HELP\Morpho.html
+COM_HELP\Morpho_com.html
+COM_HELP\MorphOpen.html
+COM_HELP\Multi_Resolution_Segment.html
+COM_HELP\Multiply_Image.html
+COM_HELP\Nearest_Centroid.htm
+COM_HELP\Nearest_Neighbor.htm
+COM_HELP\Neg_Exp_Noise.html
+COM_HELP\New_Image.html
+COM_HELP\Nonfft_Xformfilter.html
+COM_HELP\Not_Image.html
+COM_HELP\Notch.html
+COM_HELP\Object_Crop.html
+COM_HELP\Open_Consol_Redirect_Output.html
+COM_HELP\Or_Image.html
+COM_HELP\Orientation.html
+COM_HELP\Otsu_Segment.html
+COM_HELP\param_ad_filter.html
+COM_HELP\Parametric_Wiener.html
+COM_HELP\Pct.html
+COM_HELP\Pct_Color.html
+COM_HELP\Pct_Median_Segment.html
+COM_HELP\Perimeter.html
+COM_HELP\Power_Spect_Eq.html
+COM_HELP\Pratt_Merit.htm
+COM_HELP\Prewitt_Filter.html
+COM_HELP\Projection.html
+COM_HELP\Pseudo_Remap.html
+COM_HELP\Pseudocol_Freq.html
+COM_HELP\Raster_Deblur_Filter.html
+COM_HELP\Rayleigh_noise.html
+COM_HELP\Read_Image.htm
+COM_HELP\Remap_Image.html
+COM_HELP\REMAPP.html
+COM_HELP\Rms_Error.html
+COM_HELP\Robinson_Filter.html
+COM_HELP\Rotate.html
+COM_HELP\Rst_invariant.html
+COM_HELP\Save_Compressed_Data.html
+COM_HELP\Sct_Split_Segment.html
+COM_HELP\Set_Console.html
+COM_HELP\Sharpen_I.html
+COM_HELP\Sharpen_II.html
+COM_HELP\Shen_Castan_Filter.htm
+COM_HELP\Show_Image.html
+COM_HELP\Show_Image_Ex.html
+COM_HELP\Shrink.html
+COM_HELP\Simple_Wiener.html
+COM_HELP\Single_Filter.html
+COM_HELP\Snr.html
+COM_HELP\Sobel_Filter.html
+COM_HELP\Spatial_Quant.html
+COM_HELP\Spec_Hist_Image.html
+COM_HELP\Specify_Filter.html
+COM_HELP\Speckle_Noise.html
+COM_HELP\Spectral_Feature.html
+COM_HELP\Split_Merge_Segment.html
+COM_HELP\Subtract_Image.html
+COM_HELP\Texture2.html
+COM_HELP\TextureFeature.html
+COM_HELP\Thinness.html
+COM_HELP\Threshold_Segment.html
+COM_HELP\Tifftocvip.html
+COM_HELP\Tile_by_name.html
+COM_HELP\Transform_Compression.html
+COM_HELP\Transform_Sharpen.html
+COM_HELP\Transform_Smoothing.html
+COM_HELP\Translate.html
+COM_HELP\Uniform_Noise.html
+COM_HELP\Unsharp_Filter.html
+COM_HELP\Vq_Compress.html
+COM_HELP\Vq_Decompress.html
+COM_HELP\Walhad_Transform.html
+COM_HELP\Watershed_Segment.html
+COM_HELP\Wavdaub4_Transform.html
+COM_HELP\Wavhaar_Transform.html
+COM_HELP\Wiener.html
+COM_HELP\Write_Image.html
+COM_HELP\Xor_Image.html
+COM_HELP\Xvq_Compress.html
+COM_HELP\Xvq_Decompress.html
+COM_HELP\Ypmean_Filter.html
+COM_HELP\Zon_Compress.html
+COM_HELP\Zon_Decompress.html
+COM_HELP\Zon2_Compress.html
+COM_HELP\Zon2_Decompress.html
+COM_HELP\Zoom.html
+COM_HELP\Zvl_Compress.html
+COM_HELP\Zvl_Decompress.html
+COM_HELP\Hist_Thresh_Gray.html
+COM_HELP\Sharpen_III.html
+COM_HELP\Hist_Thresh_Gray.html
+COM_HELP\Sharpen_III.html
+COM_HELP\CLAHE.html
+COM_HELP\CLAHE_Grid.html
+COM_HELP\Dice_Coef.html
+COM_HELP\Jaccard_Index.html
+COM_HELP\Overlap_Coef.html
+COM_HELP\Xor_Error.html
+CVIP_C_functions\CLAHE.htm
+CVIP_C_functions\CLAHE_Grid.htm
+CVIP_C_functions\dice_coef.htm
+CVIP_C_functions\jaccard_index.htm
+CVIP_C_functions\overlap_coef.htm
+CVIP_C_functions\xor_error.htm
+How To Use CVIPtools\Analysis\cvip_ana_preprocessing.html
+
+[INFOTYPES]
+

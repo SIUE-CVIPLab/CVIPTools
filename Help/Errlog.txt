@@ -1,0 +1,18 @@
+Microsoft HTML Help Compiler 4.74.8702
+
+Compiling c:\Users\Jack\Desktop\CVIPtools 5.9h\Help\CVIPtoolsHELP.CHM
+
+HHC4006: Warning: The file "CVIP_C_functions\ace2_filter.html" is already listed in the [FILES] section of the project file.
+HHC4006: Warning: The file "COM_HELP\Ace2_Filter.html" is already listed in the [FILES] section of the project file.
+HHC4006: Warning: The file "COM_HELP\Hist_Thresh_Gray.html" is already listed in the [FILES] section of the project file.
+HHC4006: Warning: The file "COM_HELP\Sharpen_III.html" is already listed in the [FILES] section of the project file.
+
+Compile time: 0 minutes, 3 seconds
+610	Topics
+1,897	Local links
+4	Internet links
+29	Graphics
+
+
+Created c:\Users\Jack\Desktop\CVIPtools 5.9h\Help\CVIPtoolsHELP.CHM, 1,543,194 bytes
+Compression decreased file by 10,867,521 bytes.

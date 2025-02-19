@@ -1,0 +1,1284 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Start">
+		<param name="Local" value=".\How To Use CVIPtools\GettingStarted\cvip_start.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CVIPtools Contributors">
+		<param name="Local" value=".\How To Use CVIPtools\GettingStarted\cvip_contributors.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Copyright information">
+		<param name="Local" value=".\How To Use CVIPtools\GettingStarted\cvip_copyright.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Zvl_Decompress">
+		<param name="Local" value=".\COM_HELP\Zvl_Decompress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Image Viewer">
+		<param name="Local" value=".\How To Use CVIPtools\ImageViewer.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pattern Classification">
+		<param name="Local" value=".\How To Use CVIPtools\Analysis\cvip_ana_pattern_classification.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CVIP-ATAT_Help.htm">
+		<param name="Local" value=".\How To Use CVIPtools\CVIP_ATAT\CVIP-ATAT_Help.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CVIP-FEPC_Help.htm">
+		<param name="Local" value=".\How To Use CVIPtools\CVIP_FEPC\CVIP-FEPC_Help.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ArithLogic">
+		<param name="Local" value=".\CVIPlibraries\ArithLogic.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Band">
+		<param name="Local" value=".\CVIPlibraries\Band.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CLAHE">
+		<param name="Name" value="CLAHE">
+		<param name="Local" value="COM_HELP\CLAHE.html">
+		<param name="Name" value="CLAHE">
+		<param name="Local" value="CVIP_C_functions\CLAHE.htm">
+		<param name="Name" value="CLAHE_Grid">
+		<param name="Local" value="CVIP_C_functions\CLAHE_Grid.htm">
+		<param name="Name" value="CLAHE_Grid">
+		<param name="Local" value="COM_HELP\CLAHE_Grid.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Color">
+		<param name="Local" value=".\CVIPlibraries\Color.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Compression">
+		<param name="Local" value=".\CVIPlibraries\Compression.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Conversion">
+		<param name="Local" value=".\CVIPlibraries\Conversion.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Display">
+		<param name="Local" value=".\CVIPlibraries\Display.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Feature">
+		<param name="Local" value=".\CVIPlibraries\Feature.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Geometry">
+		<param name="Local" value=".\CVIPlibraries\Geometry.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Histogram">
+		<param name="Local" value=".\CVIPlibraries\Histogram.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Image">
+		<param name="Local" value=".\CVIPlibraries\Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="IO">
+		<param name="Local" value=".\CVIPlibraries\IO.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Mapping">
+		<param name="Local" value=".\CVIPlibraries\Mapping.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Matrix">
+		<param name="Local" value=".\CVIPlibraries\Matrix.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Morphological">
+		<param name="Local" value=".\CVIPlibraries\Morphological.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Noise">
+		<param name="Local" value=".\CVIPlibraries\Noise.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Object">
+		<param name="Local" value=".\CVIPlibraries\Object.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ObjectManager">
+		<param name="Local" value=".\CVIPlibraries\ObjectManager.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PBM">
+		<param name="Local" value=".\CVIPlibraries\PBM.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="pgm">
+		<param name="Local" value=".\CVIPlibraries\pgm.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="pnm">
+		<param name="Local" value=".\CVIPlibraries\pnm.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ppm">
+		<param name="Local" value=".\CVIPlibraries\ppm.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ROI">
+		<param name="Local" value=".\CVIPlibraries\ROI.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Segmentation">
+		<param name="Local" value=".\CVIPlibraries\Segmentation.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SpatialFilter">
+		<param name="Local" value=".\CVIPlibraries\SpatialFilter.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Transform">
+		<param name="Local" value=".\CVIPlibraries\Transform.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TransformFilter">
+		<param name="Local" value=".\CVIPlibraries\TransformFilter.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Vector">
+		<param name="Local" value=".\CVIPlibraries\Vector.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="zvl_compress">
+		<param name="Local" value=".\CVIP_C_functions\zvl_compress.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Ace2_Filter">
+		<param name="Local" value=".\COM_HELP\Ace2_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Acuity_Nightvision_Filter">
+		<param name="Local" value=".\COM_HELP\Acuity_Nightvision_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AD_Filter">
+		<param name="Local" value=".\COM_HELP\ad_filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Adapt_Median_Filter">
+		<param name="Local" value=".\COM_HELP\Adapt_Median_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Adaptive_Contrast_Filter">
+		<param name="Local" value=".\COM_HELP\Adaptive_Contrast_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add_Image">
+		<param name="Local" value=".\COM_HELP\Add_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Alpha_Filter">
+		<param name="Local" value=".\COM_HELP\Alpha_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="And_Image">
+		<param name="Local" value=".\COM_HELP\And_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Area">
+		<param name="Local" value=".\COM_HELP\Area.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Aspect">
+		<param name="Local" value=".\COM_HELP\Aspect.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Assemble_Bands">
+		<param name="Local" value=".\COM_HELP\Assemble_Bands.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Auto_Threshold_Segment">
+		<param name="Local" value=".\COM_HELP\Auto_Threshold_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Bilinear_Interp">
+		<param name="Local" value=".\COM_HELP\Bilinear_Interp.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Bintocvip">
+		<param name="Local" value=".\COM_HELP\Bintocvip.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Bit_Compress">
+		<param name="Local" value=".\COM_HELP\Bit_Compress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Bit_decompress">
+		<param name="Local" value=".\COM_HELP\Bit_decompress.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Boiecox_Filter">
+		<param name="Local" value=".\COM_HELP\Boiecox_Filter.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="btc_compress,btc_decompress">
+		<param name="Local" value=".\COM_HELP\btc_compress, btc_decompress.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Btc_Compress">
+		<param name="Local" value=".\COM_HELP\Btc_Compress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Btc_Decompression">
+		<param name="Local" value=".\COM_HELP\Btc_Decompression.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Btc2_Compress">
+		<param name="Local" value=".\COM_HELP\Btc2_Compress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Btc2_Decompression">
+		<param name="Local" value=".\COM_HELP\Btc2_Decompression.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Btc3_Compress">
+		<param name="Local" value=".\COM_HELP\Btc3_Compress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Btc3_Decompression">
+		<param name="Local" value=".\COM_HELP\Btc3_Decompression.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Butterworth_Band_Pass">
+		<param name="Local" value=".\COM_HELP\Butterworth_Band_Pass.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Butterworth_Band_Reject">
+		<param name="Local" value=".\COM_HELP\Butterworth_Band_Reject.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Butterworth_High">
+		<param name="Local" value=".\COM_HELP\Butterworth_High.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Butterworth_Low">
+		<param name="Local" value=".\COM_HELP\Butterworth_Low.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Canny_Filter">
+		<param name="Local" value=".\COM_HELP\Canny_Filter.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cast_Image">
+		<param name="Local" value=".\COM_HELP\Cast_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CentroID">
+		<param name="Local" value=".\COM_HELP\CentroID.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cerchar_Filter">
+		<param name="Local" value=".\COM_HELP\Cerchar_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Check_Bin">
+		<param name="Local" value=".\COM_HELP\Check_Bin.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Check_xform_history">
+		<param name="Local" value=".\COM_HELP\Check_xform_history.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Close_Consol">
+		<param name="Local" value=".\COM_HELP\Close_Consol.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Close_Console">
+		<param name="Local" value=".\COM_HELP\Close_Console.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Color_Contrast_Enhancement">
+		<param name="Local" value=".\COM_HELP\Color_Contrast_Enhancement.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ColorXform">
+		<param name="Local" value=".\COM_HELP\ColorXform.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CondRemap_Image">
+		<param name="Local" value=".\COM_HELP\CondRemap_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Contra_Filter">
+		<param name="Local" value=".\COM_HELP\Contra_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Copy_Paste">
+		<param name="Local" value=".\COM_HELP\Copy_Paste.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create_Black">
+		<param name="Local" value=".\COM_HELP\Create_Black.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create_Checkboard">
+		<param name="Local" value=".\COM_HELP\Create_Checkboard.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create_Circle">
+		<param name="Local" value=".\COM_HELP\Create_Circle.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create_Cosine">
+		<param name="Local" value=".\COM_HELP\Create_Cosine.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create_Degenerate_Circle">
+		<param name="Local" value=".\COM_HELP\Create_Degenerate_Circle.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create_Ellipse">
+		<param name="Local" value=".\COM_HELP\Create_Ellipse.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create_Line">
+		<param name="Local" value=".\COM_HELP\Create_Line.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create_Rectangle">
+		<param name="Local" value=".\COM_HELP\Create_Rectangle.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create_Sine">
+		<param name="Local" value=".\COM_HELP\Create_Sine.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create_Squarewave">
+		<param name="Local" value=".\COM_HELP\Create_Squarewave.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Crop">
+		<param name="Local" value=".\COM_HELP\Crop.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CVIP_OUTPUT">
+		<param name="Local" value=".\COM_HELP\CVIP_OUTPUT.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CVIPhalftone">
+		<param name="Local" value=".\COM_HELP\CVIPhalftone.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cviptoccc">
+		<param name="Local" value=".\COM_HELP\Cviptoccc.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cviptoeps">
+		<param name="Local" value=".\COM_HELP\Cviptoeps.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cviptogif">
+		<param name="Local" value=".\COM_HELP\Cviptogif.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cviptoiris">
+		<param name="Local" value=".\COM_HELP\Cviptoiris.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cviptoitex">
+		<param name="Local" value=".\COM_HELP\Cviptoitex.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cviptojpg">
+		<param name="Local" value=".\COM_HELP\Cviptojpg.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cviptopnm">
+		<param name="Local" value=".\COM_HELP\Cviptopnm.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cviptoras">
+		<param name="Local" value=".\COM_HELP\Cviptoras.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cviptotiff">
+		<param name="Local" value=".\COM_HELP\Cviptotiff.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cviptovip">
+		<param name="Local" value=".\COM_HELP\Cviptovip.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Data_Range">
+		<param name="Local" value=".\COM_HELP\Data_Range.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Dct_Transform">
+		<param name="Local" value=".\COM_HELP\Dct_Transform.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete_Image">
+		<param name="Local" value=".\COM_HELP\Delete_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Divide_Image">
+		<param name="Local" value=".\COM_HELP\Divide_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Dpc_Compress">
+		<param name="Local" value=".\COM_HELP\Dpc_Compress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Dpc_Decompress">
+		<param name="Local" value=".\COM_HELP\Dpc_Decompress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Draw_mesh">
+		<param name="Local" value=".\COM_HELP\Draw_mesh.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Duplicate_Image">
+		<param name="Local" value=".\COM_HELP\Duplicate_Image.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DynRLC_Compression">
+		<param name="Local" value=".\COM_HELP\DynRLC_Compression.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DynRLC_deCompression">
+		<param name="Local" value=".\COM_HELP\DynRLC_deCompression.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edge_Detect_Filter">
+		<param name="Local" value=".\COM_HELP\Edge_Detect_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edge_Link_Filter">
+		<param name="Local" value=".\COM_HELP\Edge_Link_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Enlarge">
+		<param name="Local" value=".\COM_HELP\Enlarge.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Epstocvip">
+		<param name="Local" value=".\COM_HELP\Epstocvip.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Euler">
+		<param name="Local" value=".\COM_HELP\Euler.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Exp_Ace_Filter">
+		<param name="Local" value=".\COM_HELP\Exp_Ace_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Extract_Band">
+		<param name="Local" value=".\COM_HELP\Extract_Band.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Fft_Mag">
+		<param name="Local" value=".\COM_HELP\Fft_Mag.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Fft_Phase">
+		<param name="Local" value=".\COM_HELP\Fft_Phase.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Fft_Transform">
+		<param name="Local" value=".\COM_HELP\Fft_Transform.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="File_To_Mesh">
+		<param name="Local" value=".\COM_HELP\File_To_Mesh.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Fractal_Compression">
+		<param name="Local" value=".\COM_HELP\Fractal_Compression.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Fractal_deCompression">
+		<param name="Local" value=".\COM_HELP\Fractal_deCompression.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Fuzzyc_Segment">
+		<param name="Local" value=".\COM_HELP\Fuzzyc_Segment.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Gamma_Noise">
+		<param name="Local" value=".\COM_HELP\Gamma_Noise.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Gaussian_Blur_Filter">
+		<param name="Local" value=".\COM_HELP\Gaussian_Blur_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Gaussian_Noise">
+		<param name="Local" value=".\COM_HELP\Gaussian_Noise.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Geometric_Filter">
+		<param name="Local" value=".\COM_HELP\Geometric_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Geometric_Mean">
+		<param name="Local" value=".\COM_HELP\Geometric_Mean.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="get_hist_real">
+		<param name="Local" value=".\COM_HELP\get_hist_real.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Get_Histogram_Image">
+		<param name="Local" value=".\COM_HELP\Get_Histogram_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Get_max_min_value">
+		<param name="Local" value=".\COM_HELP\Get_max_min_value.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetDataformat_Image">
+		<param name="Local" value=".\COM_HELP\GetDataformat_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetDataType_Image">
+		<param name="Local" value=".\COM_HELP\GetDataType_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetImageInfo">
+		<param name="Local" value=".\COM_HELP\GetImageInfo.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Getlast_Hist">
+		<param name="Local" value=".\COM_HELP\Getlast_Hist.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetNoOfBands_Image">
+		<param name="Local" value=".\COM_HELP\GetNoOfBands_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetNoOfCols_Image">
+		<param name="Local" value=".\COM_HELP\GetNoOfCols_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetNoOfRows_Image">
+		<param name="Local" value=".\COM_HELP\GetNoOfRows_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="giftocvip">
+		<param name="Local" value=".\COM_HELP\giftocvip.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Glr_Compress">
+		<param name="Local" value=".\COM_HELP\Glr_Compress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Glr_Decompress">
+		<param name="Local" value=".\COM_HELP\Glr_Decompress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Gray_Binary">
+		<param name="Local" value=".\COM_HELP\Gray_Binary.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Gray_Linear">
+		<param name="Local" value=".\COM_HELP\Gray_Linear.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Gray_Multiplication">
+		<param name="Local" value=".\COM_HELP\Gray_Multiplication.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Gray_Multiply">
+		<param name="Local" value=".\COM_HELP\Gray_Multiply.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Gray_Multiply2">
+		<param name="Local" value=".\COM_HELP\Gray_Multiply2.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Gray_Quant_Segment">
+		<param name="Local" value=".\COM_HELP\Gray_Quant_Segment.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Graylevel_Quant">
+		<param name="Local" value=".\COM_HELP\Graylevel_Quant.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Graylevel_Remap">
+		<param name="Local" value=".\COM_HELP\Graylevel_Remap.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GVFSnake_Segment">
+		<param name="Local" value=".\COM_HELP\GVFSnake_Segment.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="H_image">
+		<param name="Local" value=".\COM_HELP\H_image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Haar_Transform">
+		<param name="Local" value=".\COM_HELP\Haar_Transform.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Harmonic_Filter">
+		<param name="Local" value=".\COM_HELP\Harmonic_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Harris_Filter">
+		<param name="Local" value=".\COM_HELP\Harris_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="High_Freq_Emphasis">
+		<param name="Local" value=".\COM_HELP\High_Freq_Emphasis.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Highboost">
+		<param name="Local" value=".\COM_HELP\Highboost.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="HighFreq_Emphasis">
+		<param name="Local" value=".\COM_HELP\HighFreq_Emphasis.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Highpass_Spatial">
+		<param name="Local" value=".\COM_HELP\Highpass_Spatial.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Hist_Feature">
+		<param name="Local" value=".\COM_HELP\Hist_Feature.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Hist_Slide">
+		<param name="Local" value=".\COM_HELP\Hist_Slide.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Hist_Spec">
+		<param name="Local" value=".\COM_HELP\Hist_Spec.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Hist_Stretch">
+		<param name="Local" value=".\COM_HELP\Hist_Stretch.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Hist_Thresh_Segment">
+		<param name="Local" value=".\COM_HELP\Hist_Thresh_Segment.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Histeq">
+		<param name="Local" value=".\COM_HELP\Histeq.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Histogram_Spec">
+		<param name="Local" value=".\COM_HELP\Histogram_Spec.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="History_Add">
+		<param name="Local" value=".\COM_HELP\History_Add.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="History_Check">
+		<param name="Local" value=".\COM_HELP\History_Check.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="History_Copy">
+		<param name="Local" value=".\COM_HELP\History_Copy.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="History_Create">
+		<param name="Local" value=".\COM_HELP\history_create.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="History_Get">
+		<param name="Local" value=".\COM_HELP\History_Get.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="History_get_data">
+		<param name="Local" value=".\COM_HELP\History_get_data.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Homomorphic">
+		<param name="Local" value=".\COM_HELP\Homomorphic.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Horizontal_Flip">
+		<param name="Local" value=".\COM_HELP\Horizontal_Flip.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Hough_Filter">
+		<param name="Local" value=".\COM_HELP\Hough_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Huf_Compress">
+		<param name="Local" value=".\COM_HELP\Huf_Compress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Huf_Decompress">
+		<param name="Local" value=".\COM_HELP\Huf_Decompress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Idct_Transform">
+		<param name="Local" value=".\COM_HELP\Idct_Transform.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Ideal_Band_Pass">
+		<param name="Local" value=".\COM_HELP\Ideal_Band_Pass.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Ideal_Band_Reject">
+		<param name="Local" value=".\COM_HELP\Ideal_Band_Reject.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Ideal_High">
+		<param name="Local" value=".\COM_HELP\Ideal_High.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Ideal_Low">
+		<param name="Local" value=".\COM_HELP\Ideal_Low.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Ifft_Transform">
+		<param name="Local" value=".\COM_HELP\Ifft_Transform.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Igs_Segment">
+		<param name="Local" value=".\COM_HELP\Igs_Segment.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Improved_Mmse_Filter">
+		<param name="Local" value=".\COM_HELP\Improved_Mmse_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Input_Mesh">
+		<param name="Local" value=".\COM_HELP\Input_Mesh.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Intensity_Slicing">
+		<param name="Local" value=".\COM_HELP\Intensity_Slicing.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Inverse_Xformfilter">
+		<param name="Local" value=".\COM_HELP\Inverse_Xformfilter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Ipct">
+		<param name="Local" value=".\COM_HELP\Ipct.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Irregular">
+		<param name="Local" value=".\COM_HELP\Irregular.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Jpg_Compress">
+		<param name="Local" value=".\COM_HELP\Jp2_Compress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Jpg_Decompress">
+		<param name="Local" value=".\COM_HELP\Jp2_Decompress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Jpg_Compress">
+		<param name="Local" value=".\COM_HELP\Jpg_Compress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Jpg_Decompress">
+		<param name="Local" value=".\COM_HELP\Jpg_Decompress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Jpgtocvip">
+		<param name="Local" value=".\COM_HELP\Jpgtocvip.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="K_Nearest_Neighbor">
+		<param name="Local" value=".\COM_HELP\K_Nearest_Neighbor.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Kirsch_Filter">
+		<param name="Local" value=".\COM_HELP\Kirsch_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Kuwahara_Filter">
+		<param name="Local" value=".\COM_HELP\Kuwahara_Filter.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Label">
+		<param name="Local" value=".\COM_HELP\Label.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Laws_Texture.htm">
+		<param name="Local" value=".\COM_HELP\Laws_Texture.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Least_Squares">
+		<param name="Local" value=".\COM_HELP\Least_Squares.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Local_Adaptive_Zoom ">
+		<param name="Local" value=".\COM_HELP\Local_Adaptive_Zoom.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Local_Histeq">
+		<param name="Local" value=".\COM_HELP\Local_Histeq.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Log_Ace_Filter">
+		<param name="Local" value=".\COM_HELP\Log_Ace_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Log_Remap">
+		<param name="Local" value=".\COM_HELP\Log_Remap.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LogMap_Image">
+		<param name="Local" value=".\COM_HELP\LogMap_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Lum_Average">
+		<param name="Local" value=".\COM_HELP\Lum_Average.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Luminance_Image">
+		<param name="Local" value=".\COM_HELP\Luminance_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Make_Histogram">
+		<param name="Local" value=".\COM_HELP\Make_Histogram.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Marr_Hildreth_Filter">
+		<param name="Local" value=".\COM_HELP\Marr_Hildreth_Filter.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Maximum_Filter">
+		<param name="Local" value=".\COM_HELP\Maximum_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Mean_Filter">
+		<param name="Local" value=".\COM_HELP\Mean_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Median_Cut_Segment">
+		<param name="Local" value=".\COM_HELP\Median_Cut_Segment.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Median_Filter">
+		<param name="Local" value=".\COM_HELP\Median_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Mesh_To_File">
+		<param name="Local" value=".\COM_HELP\Mesh_To_File.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Mesh_Warping">
+		<param name="Local" value=".\COM_HELP\Mesh_Warping.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Mesh_WarpingIR">
+		<param name="Local" value=".\COM_HELP\Mesh_WarpingIR.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Midpoint_Filter">
+		<param name="Local" value=".\COM_HELP\Midpoint_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Minimum_Filter">
+		<param name="Local" value=".\COM_HELP\Minimum_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Mmse_Filter">
+		<param name="Local" value=".\COM_HELP\Mmse_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Moravec_Filter">
+		<param name="Local" value=".\COM_HELP\Moravec_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Morph_Hitmiss">
+		<param name="Local" value=".\COM_HELP\morph_hitmiss.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Morph_Skeleton">
+		<param name="Local" value=".\COM_HELP\morph_skeleton.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Morph_Thinning">
+		<param name="Local" value=".\COM_HELP\morph_thinning.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="MorphClose">
+		<param name="Local" value=".\COM_HELP\MorphClose.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="MorphDilate">
+		<param name="Local" value=".\COM_HELP\MorphDilate.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="MorphErode">
+		<param name="Local" value=".\COM_HELP\MorphErode.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Morpho">
+		<param name="Local" value=".\COM_HELP\Morpho.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Morpho_com">
+		<param name="Local" value=".\COM_HELP\Morpho_com.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="MorphOpen">
+		<param name="Local" value=".\COM_HELP\MorphOpen.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Multi_Resolution_Segment">
+		<param name="Local" value=".\COM_HELP\Multi_Resolution_Segment.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Multiply_Image">
+		<param name="Local" value=".\COM_HELP\Multiply_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Nearest_Centroid">
+		<param name="Local" value=".\COM_HELP\Nearest_Centroid.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Nearest_Neighbor">
+		<param name="Local" value=".\COM_HELP\Nearest_Neighbor.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Neg_Exp_Noise">
+		<param name="Local" value=".\COM_HELP\Neg_Exp_Noise.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="New_Image">
+		<param name="Local" value=".\COM_HELP\New_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Nonfft_Xformfilter">
+		<param name="Local" value=".\COM_HELP\Nonfft_Xformfilter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Not_Image">
+		<param name="Local" value=".\COM_HELP\Not_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Notch">
+		<param name="Local" value=".\COM_HELP\Notch.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Object_Crop">
+		<param name="Local" value=".\COM_HELP\Object_Crop.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Open_Consol_Redirect_Output">
+		<param name="Local" value=".\COM_HELP\Open_Consol_Redirect_Output.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Or_Image">
+		<param name="Local" value=".\COM_HELP\Or_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Orientation">
+		<param name="Local" value=".\COM_HELP\Orientation.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Otsu_Segment">
+		<param name="Local" value=".\COM_HELP\Otsu_Segment.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Param_AD_Filter">
+		<param name="Local" value=".\COM_HELP\param_ad_filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Parametric_Wiener">
+		<param name="Local" value=".\COM_HELP\Parametric_Wiener.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pct">
+		<param name="Local" value=".\COM_HELP\Pct.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pct_Color">
+		<param name="Local" value=".\COM_HELP\Pct_Color.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pct_Median_Segment">
+		<param name="Local" value=".\COM_HELP\Pct_Median_Segment.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Perimeter">
+		<param name="Local" value=".\COM_HELP\Perimeter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Power_Spect_Eq">
+		<param name="Local" value=".\COM_HELP\Power_Spect_Eq.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pratt_Merit">
+		<param name="Local" value=".\COM_HELP\Pratt_Merit.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Prewitt_Filter">
+		<param name="Local" value=".\COM_HELP\Prewitt_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Projection">
+		<param name="Local" value=".\COM_HELP\Projection.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pseudo_Remap">
+		<param name="Local" value=".\COM_HELP\Pseudo_Remap.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pseudocol_Freq">
+		<param name="Local" value=".\COM_HELP\Pseudocol_Freq.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Raster_Deblur_Filter">
+		<param name="Local" value=".\COM_HELP\Raster_Deblur_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Rayleigh_noise">
+		<param name="Local" value=".\COM_HELP\Rayleigh_noise.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Read_Image">
+		<param name="Local" value=".\COM_HELP\Read_Image.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Remap_Image">
+		<param name="Local" value=".\COM_HELP\Remap_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="REMAPP">
+		<param name="Local" value=".\COM_HELP\REMAPP.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Rms_Error">
+		<param name="Local" value=".\COM_HELP\Rms_Error.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Robinson_Filter">
+		<param name="Local" value=".\COM_HELP\Robinson_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Rotate">
+		<param name="Local" value=".\COM_HELP\Rotate.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Rst_invariant">
+		<param name="Local" value=".\COM_HELP\Rst_invariant.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Save_Compressed_Data">
+		<param name="Local" value=".\COM_HELP\Save_Compressed_Data.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Sct_Split_Segment">
+		<param name="Local" value=".\COM_HELP\Sct_Split_Segment.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Set_Console">
+		<param name="Local" value=".\COM_HELP\Set_Console.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Sharpen_I">
+		<param name="Local" value=".\COM_HELP\Sharpen_I.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Sharpen_II">
+		<param name="Local" value=".\COM_HELP\Sharpen_II.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Shen_Castan_Filter">
+		<param name="Local" value=".\COM_HELP\Shen_Castan_Filter.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Show_Image">
+		<param name="Local" value=".\COM_HELP\Show_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Show_Image_Ex">
+		<param name="Local" value=".\COM_HELP\Show_Image_Ex.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Shrink">
+		<param name="Local" value=".\COM_HELP\Shrink.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Simple_Wiener">
+		<param name="Local" value=".\COM_HELP\Simple_Wiener.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Single_Filter">
+		<param name="Local" value=".\COM_HELP\Single_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Snr">
+		<param name="Local" value=".\COM_HELP\Snr.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Sobel_Filter">
+		<param name="Local" value=".\COM_HELP\Sobel_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Spatial_Quant">
+		<param name="Local" value=".\COM_HELP\Spatial_Quant.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Spec_Hist_Image">
+		<param name="Local" value=".\COM_HELP\Spec_Hist_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Specify_Filter">
+		<param name="Local" value=".\COM_HELP\Specify_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Speckle_Noise">
+		<param name="Local" value=".\COM_HELP\Speckle_Noise.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Spectral_Feature">
+		<param name="Local" value=".\COM_HELP\Spectral_Feature.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Split_Merge_Segment">
+		<param name="Local" value=".\COM_HELP\Split_Merge_Segment.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Subtract_Image">
+		<param name="Local" value=".\COM_HELP\Subtract_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TextureFeature2">
+		<param name="Local" value=".\COM_HELP\Texture2.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TextureFeature">
+		<param name="Local" value=".\COM_HELP\TextureFeature.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Thinness">
+		<param name="Local" value=".\COM_HELP\Thinness.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Threshold_Segment">
+		<param name="Local" value=".\COM_HELP\Threshold_Segment.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Tifftocvip">
+		<param name="Local" value=".\COM_HELP\Tifftocvip.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Tile_by_name">
+		<param name="Local" value=".\COM_HELP\Tile_by_name.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Transform_Compression">
+		<param name="Local" value=".\COM_HELP\Transform_Compression.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Transform_Sharpen">
+		<param name="Local" value=".\COM_HELP\Transform_Sharpen.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Transform_Smoothing">
+		<param name="Local" value=".\COM_HELP\Transform_Smoothing.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Translate">
+		<param name="Local" value=".\COM_HELP\Translate.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Uniform_Noise">
+		<param name="Local" value=".\COM_HELP\Uniform_Noise.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Unsharp_Filter">
+		<param name="Local" value=".\COM_HELP\Unsharp_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Vq_Compress">
+		<param name="Local" value=".\COM_HELP\Vq_Compress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Vq_Decompress">
+		<param name="Local" value=".\COM_HELP\Vq_Decompress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Walhad_Transform">
+		<param name="Local" value=".\COM_HELP\Walhad_Transform.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Watershed_Segment">
+		<param name="Local" value=".\COM_HELP\Watershed_Segment.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Wavdaub4_Transform">
+		<param name="Local" value=".\COM_HELP\Wavdaub4_Transform.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Wavhaar_Transform">
+		<param name="Local" value=".\COM_HELP\Wavhaar_Transform.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Wiener">
+		<param name="Local" value=".\COM_HELP\Wiener.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Write_Image">
+		<param name="Local" value=".\COM_HELP\Write_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Xor_Image">
+		<param name="Local" value=".\COM_HELP\Xor_Image.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Xvq_Compress">
+		<param name="Local" value=".\COM_HELP\Xvq_Compress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Xvq_Decompress">
+		<param name="Local" value=".\COM_HELP\Xvq_Decompress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Ypmean_Filter">
+		<param name="Local" value=".\COM_HELP\Ypmean_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Zon_Compress">
+		<param name="Local" value=".\COM_HELP\Zon_Compress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Zon_Decompress">
+		<param name="Local" value=".\COM_HELP\Zon_Decompress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Zon2_Compress">
+		<param name="Local" value=".\COM_HELP\Zon2_Compress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Zon2_Decompress">
+		<param name="Local" value=".\COM_HELP\Zon2_Decompress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Zoom">
+		<param name="Local" value=".\COM_HELP\Zoom.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Zvl_Compress">
+		<param name="Local" value=".\COM_HELP\Zvl_Compress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Zvl_Decompress">
+		<param name="Local" value=".\COM_HELP\Zvl_Decompress.html">
+		</OBJECT>
+</UL>
+</BODY></HTML>

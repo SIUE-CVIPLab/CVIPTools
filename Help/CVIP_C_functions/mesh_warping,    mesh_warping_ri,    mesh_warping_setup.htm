@@ -1,0 +1,148 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List
+href="mesh_warping,%20%20%20%20mesh_warping_ri,%20%20%20%20mesh_warping_setup_files/filelist.xml">
+<title>mesh_warping,mesh_warping_ri,mesh_warping_setup</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2004-06-05T00:15:00Z</o:Created>
+  <o:LastSaved>2004-10-20T00:07:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>793</o:Words>
+  <o:Characters>4526</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>37</o:Lines>
+  <o:Paragraphs>10</o:Paragraphs>
+  <o:CharactersWithSpaces>5309</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>mesh_warping,<span style='mso-spacerun:yes'>    </span>mesh_warping_ri,<span style='mso-spacerun:yes'>    </span>mesh_warping_setup<span style='mso-spacerun:yes'>    </span>-</pre><pre><span style='mso-spacerun:yes'>     </span>mesh_warp an image, with regular or irregular input and out-</pre><pre><span style='mso-spacerun:yes'>     </span>put mesh.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &quot;CVIPmesh.h&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>Image *mesh_warping(Image *inputImage,struct</pre><pre><span style='mso-spacerun:yes'>              </span>mesh *inmesh,int method);</pre><pre><span style='mso-spacerun:yes'>      </span>Image *mesh_warping_ri(Image *inputImage,struct</pre><pre><span style='mso-spacerun:yes'>              </span>mesh *inmesh, int method, CVIP_BOOLEAN zero_out);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>int mesh_warping_setup();</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>PATH</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$CVIPtoolsHOME\CVIPC\GEOMETRY\warp.c</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>The mesh_warping() performs: 1. a spatial transformation.</pre><pre><span style='mso-spacerun:yes'>        </span>The function takes the usually (not necessarily)<span style='mso-spacerun:yes'>  </span>irregu-</pre><pre><span style='mso-spacerun:yes'>     </span>lar<span style='mso-spacerun:yes'>  </span>input<span style='mso-spacerun:yes'>  </span>mesh<span style='mso-spacerun:yes'>  </span>structure and creates a regular mesh.<span style='mso-spacerun:yes'>  </span>The</pre><pre><span style='mso-spacerun:yes'>     </span>regular mesh consists of the same number of columns and same</pre><pre><span style='mso-spacerun:yes'>     </span>number<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>rows as the input mesh, and all the cells of the</pre><pre><span style='mso-spacerun:yes'>     </span>regular mesh are rectangulars.<span style='mso-spacerun:yes'>  </span>The regular mesh covers<span style='mso-spacerun:yes'>  </span>the</pre><pre><span style='mso-spacerun:yes'>     </span>whole output image.</pre><pre><span style='mso-spacerun:yes'>        </span>The function goes through the rectangular regions one<span style='mso-spacerun:yes'>  </span>by</pre><pre><span style='mso-spacerun:yes'>     </span>one.<span style='mso-spacerun:yes'>  </span>For<span style='mso-spacerun:yes'>  </span>each of the rectangular region, the function gets</pre><pre><span style='mso-spacerun:yes'>     </span>the corresponding quadrilateral region in the<span style='mso-spacerun:yes'>  </span>input<span style='mso-spacerun:yes'>  </span>image.</pre><pre><span style='mso-spacerun:yes'>     </span>The<span style='mso-spacerun:yes'>  </span>4<span style='mso-spacerun:yes'>  </span>corners<span style='mso-spacerun:yes'>  </span>of the current rectangular region and the 4</pre><pre><span style='mso-spacerun:yes'>     </span>corners<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>corresponding<span style='mso-spacerun:yes'>  </span>quadrilateral<span style='mso-spacerun:yes'>  </span>region<span style='mso-spacerun:yes'>   </span>are</pre><pre><span style='mso-spacerun:yes'>     </span>tiepoints.<span style='mso-spacerun:yes'>  </span>The geometric distortion process within the qua-</pre><pre><span style='mso-spacerun:yes'>     </span>drilateral regions is modeled by a pair<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>bilinear<span style='mso-spacerun:yes'>  </span>equa-</pre><pre><span style='mso-spacerun:yes'>     </span>tions:<span style='mso-spacerun:yes'>  </span>r(x,y)<span style='mso-spacerun:yes'>  </span>=<span style='mso-spacerun:yes'>  </span>c1*x + c2*y + c3*x*y + c4 s(x,y) = c5*x +</pre><pre><span style='mso-spacerun:yes'>     </span>c6*y + c7*x*y + c8</pre><pre><span style='mso-spacerun:yes'>        </span>If (x,y) is a pixel in the output image, (r,s) is (x,y)'s</pre><pre><span style='mso-spacerun:yes'>     </span>corresponding<span style='mso-spacerun:yes'>   </span>pixel<span style='mso-spacerun:yes'>  </span>in<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>input<span style='mso-spacerun:yes'>  </span>image.<span style='mso-spacerun:yes'>  </span>Using<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>8</pre><pre><span style='mso-spacerun:yes'>     </span>tiepoints, the equations can be solved<span style='mso-spacerun:yes'>  </span>for<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>8<span style='mso-spacerun:yes'>  </span>coeffi-</pre><pre><span style='mso-spacerun:yes'>     </span>cients ci, i = 1,2, ...,8 for the current set of tiepoints.</pre><pre><span style='mso-spacerun:yes'>        </span>Using the set of 8 coefficients, for each<span style='mso-spacerun:yes'>  </span>(x,y)<span style='mso-spacerun:yes'>  </span>in<span style='mso-spacerun:yes'>  </span>the</pre><pre><span style='mso-spacerun:yes'>     </span>current<span style='mso-spacerun:yes'>  </span>rectangular<span style='mso-spacerun:yes'>  </span>region,<span style='mso-spacerun:yes'>  </span>the function can computes its</pre><pre><span style='mso-spacerun:yes'>     </span>corresponding pixel (r,s) in the input image.<span style='mso-spacerun:yes'>  </span>If both<span style='mso-spacerun:yes'>  </span>&quot;r&quot;,</pre><pre><span style='mso-spacerun:yes'>     </span>&quot;s&quot;<span style='mso-spacerun:yes'>  </span>are integers, then (r,s)'s gray value is given to (x,y)</pre><pre><span style='mso-spacerun:yes'>     </span>in the output image.<span style='mso-spacerun:yes'>  </span>If any one<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>&quot;r&quot;,<span style='mso-spacerun:yes'>  </span>&quot;s&quot;<span style='mso-spacerun:yes'>  </span>is<span style='mso-spacerun:yes'>  </span>not<span style='mso-spacerun:yes'>  </span>an</pre><pre><span style='mso-spacerun:yes'>     </span>integer,<span style='mso-spacerun:yes'>  </span>(x,y)'s gray value is determined with a gray-level</pre><pre><span style='mso-spacerun:yes'>     </span>interpolation method.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>2. a gray-level interpolation:</pre><pre><span style='mso-spacerun:yes'>        </span>The integer &quot;method&quot; specifies 1 of 3 gray value interpo-</pre><pre><span style='mso-spacerun:yes'>     </span>lation methods:</pre><pre><span style='mso-spacerun:yes'>        </span>1. nearest neighbor</pre><pre><span style='mso-spacerun:yes'>        </span>2. bilinear</pre><pre><span style='mso-spacerun:yes'>        </span>3. average of neighbors</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>        </span>The input mesh structure is pointed to by &quot;inmesh&quot;.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>The mesh_warping_ri() is similar to the mesh_warping(),<span style='mso-spacerun:yes'>  </span>but</pre><pre><span style='mso-spacerun:yes'>     </span>the<span style='mso-spacerun:yes'>  </span>mesh<span style='mso-spacerun:yes'>  </span>for<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>output image can be a irregular one and</pre><pre><span style='mso-spacerun:yes'>     </span>from this irregular mesh a regular mesh is generated for the</pre><pre><span style='mso-spacerun:yes'>     </span>input<span style='mso-spacerun:yes'>  </span>image.<span style='mso-spacerun:yes'>   </span>The function finds out if each pixel is in a</pre><pre><span style='mso-spacerun:yes'>     </span>certain quadilateral region in<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>output<span style='mso-spacerun:yes'>  </span>image<span style='mso-spacerun:yes'>  </span>or<span style='mso-spacerun:yes'>  </span>not.</pre><pre><span style='mso-spacerun:yes'>     </span>Spatial<span style='mso-spacerun:yes'>  </span>transformations<span style='mso-spacerun:yes'>  </span>and<span style='mso-spacerun:yes'>  </span>gray-level interpolations are</pre><pre><span style='mso-spacerun:yes'>     </span>performed between each quadrilateral region<span style='mso-spacerun:yes'>  </span>in<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>output</pre><pre><span style='mso-spacerun:yes'>     </span>image and its corresponding region in the input image.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>In the output image, if one pixel can't find a corresponding</pre><pre><span style='mso-spacerun:yes'>     </span>pixel<span style='mso-spacerun:yes'>  </span>from the input image, zero_out determines whether the</pre><pre><span style='mso-spacerun:yes'>     </span>output pixel will use zero or just copy the same<span style='mso-spacerun:yes'>  </span>row/column</pre><pre><span style='mso-spacerun:yes'>     </span>pixel from the input image.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>TYPES AND CONSTANTS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>struct mesh_node {</pre><pre><span style='mso-spacerun:yes'>          </span>int x;</pre><pre><span style='mso-spacerun:yes'>          </span>int y;</pre><pre><span style='mso-spacerun:yes'>     </span>};</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>struct mesh {</pre><pre><span style='mso-spacerun:yes'>          </span>int width;</pre><pre><span style='mso-spacerun:yes'>          </span>int height;</pre><pre><span style='mso-spacerun:yes'>          </span>struct mesh_node** nodes;</pre><pre><span style='mso-spacerun:yes'>     </span>};</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>struct float_pair {</pre><pre><span style='mso-spacerun:yes'>          </span>float x;</pre><pre><span style='mso-spacerun:yes'>          </span>float y;</pre><pre><span style='mso-spacerun:yes'>     </span>};</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>The mesh_warping() and mesh_warping_ri() both create<span style='mso-spacerun:yes'>  </span>a<span style='mso-spacerun:yes'>  </span>new</pre><pre><span style='mso-spacerun:yes'>     </span>image<span style='mso-spacerun:yes'>  </span>and<span style='mso-spacerun:yes'>  </span>return<span style='mso-spacerun:yes'>  </span>a<span style='mso-spacerun:yes'>  </span>pointer points to the new image.<span style='mso-spacerun:yes'>  </span>The</pre><pre><span style='mso-spacerun:yes'>     </span>mesh_warping_setup() returns 1 when succeeded and returns<span style='mso-spacerun:yes'>  </span>0</pre><pre><span style='mso-spacerun:yes'>     </span>when failed.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPtoolkit.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPimage.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPdef.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;CVIPmesh.h&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>void main ()</pre><pre><span style='mso-spacerun:yes'>      </span>{</pre><pre><span style='mso-spacerun:yes'>          </span>Image<span style='mso-spacerun:yes'>     </span>*inputImage, *outputImage;</pre><pre><span style='mso-spacerun:yes'>          </span>IMAGE_FORMAT<span style='mso-spacerun:yes'>    </span>format;</pre><pre><span style='mso-spacerun:yes'>          </span>int<span style='mso-spacerun:yes'>       </span>method,source;</pre><pre><span style='mso-spacerun:yes'>          </span>char<span style='mso-spacerun:yes'>      </span>*mesh_file,*outputfile, *inputfile;</pre><pre><span style='mso-spacerun:yes'>          </span>struct mesh<span style='mso-spacerun:yes'>  </span>*inmesh;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>          </span>setDisplay_Image(&quot;picture&quot;, &quot;Default&quot;);</pre><pre><span style='mso-spacerun:yes'>          </span>print_CVIP(&quot;The input image file, please: &quot;);</pre><pre><span style='mso-spacerun:yes'>          </span>inputfile = getString_CVIP();</pre><pre><span style='mso-spacerun:yes'>          </span>format = getFormat_CVIP(inputfile);</pre><pre><span style='mso-spacerun:yes'>          </span>inputImage= (Image *)read_Image(inputfile,0);</pre><pre><span style='mso-spacerun:yes'>          </span>view_Image(inputImage, outputfile);</pre><pre><span style='mso-spacerun:yes'>          </span>print_CVIP(&quot;Gray value interpolation method: 0);</pre><pre><span style='mso-spacerun:yes'>          </span>print_CVIP(&quot;1.Nearest neighbor 0);</pre><pre><span style='mso-spacerun:yes'>          </span>print_CVIP(&quot;2.Bilinear interpolation0);</pre><pre><span style='mso-spacerun:yes'>          </span>print_CVIP(&quot;3.Neighbor average0);</pre><pre><span style='mso-spacerun:yes'>          </span>print_CVIP(&quot;0hoice&gt;&gt;&quot;);</pre><pre><span style='mso-spacerun:yes'>          </span>method = getInt_CVIP(10, 1, 3);</pre><pre><span style='mso-spacerun:yes'>          </span>print_CVIP(&quot;The mesh file name, please: &quot;);</pre><pre><span style='mso-spacerun:yes'>          </span>mesh_file = getString_CVIP();</pre><pre><span style='mso-spacerun:yes'>          </span>inmesh = file_to_mesh(mesh_file);</pre><pre><span style='mso-spacerun:yes'>          </span>outputImage = mesh_warping(inputImage,inmesh,method);</pre><pre><span style='mso-spacerun:yes'>          </span>print_CVIP(&quot;0Enter the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>          </span>outputfile = getString_CVIP();</pre><pre><span style='mso-spacerun:yes'>          </span>view_Image(outputImage, outputfile);</pre><pre><span style='mso-spacerun:yes'>          </span>write_Image(outputImage, outputfile, CVIP_NO,<span style='mso-spacerun:yes'>  </span>CVIP_NO,</pre><pre><span style='mso-spacerun:yes'>     </span>format, 1);</pre><pre><span style='mso-spacerun:yes'>      </span>}</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>/*The usage of<span style='mso-spacerun:yes'>  </span>mesh_warping_ri()<span style='mso-spacerun:yes'>  </span>is<span style='mso-spacerun:yes'>  </span>similar<span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span>that<span style='mso-spacerun:yes'>  </span>of</pre><pre><span style='mso-spacerun:yes'>     </span>mesh_warping.*/</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>BUGS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>None at this time</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>display_mesh, file_to_mesh, keyboard_to_mesh,<span style='mso-spacerun:yes'>  </span>mesh_to_file,</pre><pre><span style='mso-spacerun:yes'>     </span>print_mesh</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1995, 2004 SIUE - by Scott Umbaugh and Jianxin Tan.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

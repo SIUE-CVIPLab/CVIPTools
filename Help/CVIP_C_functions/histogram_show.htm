@@ -1,0 +1,175 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="histogram_show_files/filelist.xml">
+<title>histogram_show</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2004-06-04T23:24:00Z</o:Created>
+  <o:LastSaved>2004-10-20T00:02:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>180</o:Words>
+  <o:Characters>1029</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>8</o:Lines>
+  <o:Paragraphs>2</o:Paragraphs>
+  <o:CharactersWithSpaces>1207</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>histogram_show</span> - prints an ASCII representation of <span
+class=GramE>a<span style='mso-spacerun:yes'>  </span><span class=SpellE>histo</span></span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>gram</span> to <span class=SpellE>stdout</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>#include &quot;<span
+class=SpellE>histogram.h</span>&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>histogram_show</span>(float **histogram)</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>histogram</span>&gt; - a 2-D float <span class=SpellE>arrary</span> of the histogram data</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$<span class=SpellE>CVIPtoolsHOME\CVIPC\HISTOGRAM\histogram.c</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE><span
+class=GramE>histogram_show</span></span> prints a<span style='mso-spacerun:yes'>  </span>histogram<span style='mso-spacerun:yes'>  </span>defined<span style='mso-spacerun:yes'>  </span>by<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>double</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>pointer<span style='mso-spacerun:yes'>  </span>to</span><span style='mso-spacerun:yes'>  </span>float which is passed to the function to <span
+class=SpellE>stdout</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>in</span> ASCII representation.<span style='mso-spacerun:yes'>  </span>The output will appear as such:</pre><pre><span style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'>       </span>.</pre><pre><span style='mso-spacerun:yes'>          </span>121***********</pre><pre><span style='mso-spacerun:yes'>          </span>122*****************</pre><pre><span style='mso-spacerun:yes'>          </span>123**************************</pre><pre><span style='mso-spacerun:yes'>          </span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>where</span> the number represents the grey level<span style='mso-spacerun:yes'>  </span>value,<span style='mso-spacerun:yes'>  </span>and<span style='mso-spacerun:yes'>  </span>the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>asterisks<span style='mso-spacerun:yes'>  </span>represent</span><span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>probability of <span
+class=SpellE>occurance</span> for that</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>grey</span> level.<span style='mso-spacerun:yes'>  </span>The maximum probability to occur will occupy 75</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>asterisks</span>.<span style='mso-spacerun:yes'>   </span>The maximum probability will also be printed at</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>the</span> end of the printout.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>This function returns void</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>BUGS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=GramE>none</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>get_histogram</span>,<span style='mso-spacerun:yes'>        </span><span
+class=SpellE>get_histogram_Image</span>,<span style='mso-spacerun:yes'>        </span><span
+class=SpellE>hist_spec</span>,</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>histogram_show</span>, <span class=SpellE>histogram_spec</span>, <span
+class=SpellE>showMax_histogram</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1992, 1996, 2004 SIUE -<span style='mso-spacerun:yes'>  </span>by<span style='mso-spacerun:yes'>  </span>Scott<span style='mso-spacerun:yes'>  </span>E.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>Umbaugh<span style='mso-spacerun:yes'>  </span>and</span></pre><pre><span style='mso-spacerun:yes'>     </span>David A. Lyons.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="copy_paste_files/filelist.xml">
+<title>copy_paste</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2004-06-04T22:14:00Z</o:Created>
+  <o:LastSaved>2004-10-19T23:50:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>724</o:Words>
+  <o:Characters>4127</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>34</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>4842</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>copy_paste</span> - copy a <span
+class=SpellE>subimage</span> from one image and paste to the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>same</span> or another image</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPtoolkit.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPimage.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPconvert.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPgeometry.h</span>&gt;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>Image *<span
+class=SpellE>copy_paste</span>( Image *<span class=SpellE>srcImg</span>, Image *<span
+class=SpellE>destImg</span>,</pre><pre><span style='mso-spacerun:yes'>        </span>unsigned <span
+class=SpellE>start_r</span>, unsigned <span class=SpellE>start_c</span>, unsigned height,</pre><pre><span style='mso-spacerun:yes'>        </span>unsigned width, unsigned <span
+class=SpellE>dest_r</span>, unsigned <span class=SpellE>dest_c</span>,</pre><pre><span style='mso-spacerun:yes'>        </span>CVIP_BOOLEAN transparent);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE>srcImg</span>&gt;<span style='mso-spacerun:yes'>  </span>- source image to copy the <span
+class=SpellE>subimage</span></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE>destImg</span>&gt; - destination image for pasting</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE>start_r</span>&gt; - row value of the upper-left corner of the</pre><pre><span style='mso-spacerun:yes'>                  </span><span
+class=SpellE>subimage</span> on <span class=SpellE>srcImg</span></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE>start_c</span>&gt; - column value of the upper-left corner of the</pre><pre><span style='mso-spacerun:yes'>                  </span><span
+class=SpellE>subimage</span> on <span class=SpellE>srcImg</span></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;height&gt;<span style='mso-spacerun:yes'>  </span>- height of desired <span
+class=SpellE>subimage</span></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;width&gt;<span style='mso-spacerun:yes'>   </span>- width of desired <span
+class=SpellE>subimage</span></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE>dest_r</span>&gt;<span style='mso-spacerun:yes'>  </span>- row value of the upper-left corner of the</pre><pre><span style='mso-spacerun:yes'>                  </span><span
+class=SpellE>destImg</span><span style='mso-spacerun:yes'>  </span>area to paste the <span
+class=SpellE>subimage</span></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE>dest_c</span>&gt;<span style='mso-spacerun:yes'>  </span>- column value of the upper-left corner of the</pre><pre><span style='mso-spacerun:yes'>                  </span><span
+class=SpellE>destImg</span> area to paste the <span class=SpellE>subimage</span></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;transparent&gt; - whether the paste is transparent or not</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$<span class=SpellE>CVIPtoolsHOME\CVIPC\GEOMETRY\copy_paste.c</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>The <span class=SpellE>copy_<span
+class=GramE>paste</span></span><span class=GramE>(</span>3) function copies a <span
+class=SpellE>subimage</span> from the <span class=SpellE>srcImg</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>and<span style='mso-spacerun:yes'>  </span>paste</span><span style='mso-spacerun:yes'>  </span>it<span style='mso-spacerun:yes'>  </span>to <span style='mso-spacerun:yes'> </span>the<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>destImg</span>. <span class=SpellE><span class=GramE>copy_paste</span></span> is designed for</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>cross-image</span> copy-paste, but it<span style='mso-spacerun:yes'>  </span>also<span style='mso-spacerun:yes'>  </span>works<span style='mso-spacerun:yes'>  </span>for<span style='mso-spacerun:yes'>  </span>copy-paste</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>within<span style='mso-spacerun:yes'>  </span>the</span><span style='mso-spacerun:yes'>  </span>same image, which is indicated by making <span
+class=SpellE>srcImg</span></pre><pre><span style='mso-spacerun:yes'>     </span>== <span
+class=SpellE><span class=GramE>destImg</span></span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>If the <span
+class=SpellE>subimage</span> is too large<span class=GramE>,<span style='mso-spacerun:yes'>  </span>the</span><span style='mso-spacerun:yes'>  </span>size<span style='mso-spacerun:yes'>  </span>will<span style='mso-spacerun:yes'>  </span>be<span style='mso-spacerun:yes'>  </span>adjusted</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>automatically<span style='mso-spacerun:yes'>  </span>so</span><span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>subimage</span><span style='mso-spacerun:yes'>  </span>can be successfully copied</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>from</span> the <span class=SpellE>srcImg</span> and pasted to the <span
+class=SpellE>destImg</span>. At the same time,</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>an<span style='mso-spacerun:yes'>  </span>error</span><span style='mso-spacerun:yes'>  </span>message<span style='mso-spacerun:yes'>  </span>is put to the standard error to warn the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>user</span> of the event. <span class=SpellE>crop_<span
+class=GramE>paste</span></span><span class=GramE><span style='mso-spacerun:yes'>  </span>handles</span><span style='mso-spacerun:yes'>  </span>any<span style='mso-spacerun:yes'>  </span>CVIP_TYPE<span style='mso-spacerun:yes'>  </span>data</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>types<span style='mso-spacerun:yes'>  </span>by</span><span style='mso-spacerun:yes'>  </span>first<span style='mso-spacerun:yes'>  </span>boosting<span style='mso-spacerun:yes'>  </span>both<span style='mso-spacerun:yes'>  </span>images<span style='mso-spacerun:yes'>  </span>to CVIP_FLOAT; and</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>remapping</span> the resulting image to the data type of<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>des-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>tImg</span></span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>When a <span
+class=SpellE>subimage</span> is copy-pasted from a <st1:stockticker>REAL</st1:stockticker> image <span
+class=GramE>to<span style='mso-spacerun:yes'>  </span>a</span><span style='mso-spacerun:yes'>  </span>COM-</pre><pre><span style='mso-spacerun:yes'>     </span>PLEX image, the real data on <span
+class=SpellE>srcImg</span> is also used as the <span class=SpellE>ima</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>ginary</span></span> data for pasting. When a <span
+class=SpellE>subimage</span> is copy-pasted from</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>a<span style='mso-spacerun:yes'>  </span>COMPLEX</span><span style='mso-spacerun:yes'>  </span>image<span style='mso-spacerun:yes'>  </span>to a <st1:stockticker>REAL</st1:stockticker> image, the imaginary components</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>are</span> discarded.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>When copy-pasting from image of N bands to another <span
+class=GramE>image<span style='mso-spacerun:yes'>  </span>of</span></pre><pre><span style='mso-spacerun:yes'>     </span>M bands, band mapping is done in the following way. For band</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>band_no</span></span> in the <span class=SpellE>destImg</span>, band (<span
+class=SpellE>band_no</span>*N/M) on the <span class=SpellE>srcImg</span><span style='mso-spacerun:yes'>  </span>is</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>used</span>.<span style='mso-spacerun:yes'>  </span>For example, when copying from single band image (N =</pre><pre><span style='mso-spacerun:yes'>     </span>1) <span
+class=GramE>to</span> a color image (M=3), the single band data is used<span style='mso-spacerun:yes'>  </span>for</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>all<span style='mso-spacerun:yes'>  </span>three</span> bands in the resulting image (<span
+class=SpellE>band_no</span> = 0, 1, 2).</pre><pre><span style='mso-spacerun:yes'>     </span>On the other hand, when copying from a three band image to a</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>single</span> band image, only the red band is used.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>For<span style='mso-spacerun:yes'>  </span>a</span> non-transparent pasting, the<span style='mso-spacerun:yes'>  </span>original<span style='mso-spacerun:yes'>  </span>data<span style='mso-spacerun:yes'>  </span>in<span style='mso-spacerun:yes'>  </span>the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>destImg</span></span> will be overwritten by the <span
+class=SpellE>subimage</span> from the <span class=SpellE>srcImg</span>.</pre><pre><span style='mso-spacerun:yes'>     </span>On the other hand, a transparent pasting will <span
+class=GramE>add<span style='mso-spacerun:yes'>  </span>the</span><span style='mso-spacerun:yes'>  </span>data</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>of<span style='mso-spacerun:yes'>  </span>the</span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>subimage</span><span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>existing <span
+class=SpellE>destImg</span> data. But other</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>region</span> of the <span class=SpellE>destImg</span> might turn out to be relatively darker</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>when</span> transparent pasting is used.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>TYPES AND C<st1:stockticker>ONST</st1:stockticker>ANTS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>NONE</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>The pasted Image pointer on success; a (Image *<span
+class=GramE>)NULL</span> pointer</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>on<span style='mso-spacerun:yes'>  </span>failure</span>.<span style='mso-spacerun:yes'>   </span>In any case, the input Image pointers will be</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>released</span>.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>HISTORY</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>History information recorded: None</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPtoolkit.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPimage.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPconvert.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPgeometry.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPview.h</span>&gt;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>void</span> main()</pre><pre><span style='mso-spacerun:yes'>      </span>{</pre><pre><span style='mso-spacerun:yes'>      </span>Image *<span
+class=SpellE>cvipImage</span>, *cvipImage1;</pre><pre><span style='mso-spacerun:yes'>    </span><span style='mso-spacerun:yes'>  </span>IMAGE_FORMAT format;</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>char</span> *<span class=SpellE>inputfile</span>, *<span
+class=SpellE>outputfile</span>;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>setDisplay_<span class=GramE>Image</span></span><span class=GramE>(</span>&quot;picture&quot;, &quot;Default&quot;);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the first Input File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>inputfile</span></span> =(char *) <span
+class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>format</span> = <span class=SpellE>getFormat_CVIP</span>(<span
+class=SpellE>inputfile</span>);</pre><pre> <span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>cvipImage</span></span> = <span class=SpellE>read_Image</span>(<span
+class=SpellE>inputfile</span>, 1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>cvipImage</span>, <span class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span><span class=SpellE>inputfile</span>);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the second Input File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>inputfile</span></span> =(char *) <span
+class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>format</span> = <span class=SpellE>getFormat_CVIP</span>(<span
+class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span>cvipImage1 = <span
+class=SpellE>read_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>inputfile</span>, 1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span>cvipImage1, <span
+class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span><span class=SpellE>inputfile</span>);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>/* the following <span
+class=GramE>call<span style='mso-spacerun:yes'>  </span>copies</span> a 100x100 area on <span
+class=SpellE>cvipImage</span></pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>beginning</span> from (10, 10), and pastes it to the upper-left</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>corner</span> on cvipImage1 non-transparently.</pre><pre><span style='mso-spacerun:yes'>       </span>*/</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>cvipImage</span></span> = <span class=SpellE>copy_paste</span>(<span
+class=SpellE>cvipImage</span>, cvipImage1, 10, 10, 100,</pre><pre><span style='mso-spacerun:yes'>                  </span>100, 0, 0, CVIP_NO);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>outputfile</span></span> = <span class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>write_<span class=GramE>Image</span></span><span class=GramE>(</span>cvipImage,outputfile,CVIP_NO,CVIP_NO,format,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>cvipImage,outputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span><span class=SpellE>outputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span>}</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=GramE>crop(</span>3), GEOMETRY library</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1995, 2004 SIUE - by Scott Umbaugh and <span
+class=SpellE>Yansheng</span> <span class=SpellE>Wei</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

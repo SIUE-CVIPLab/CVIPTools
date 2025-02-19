@@ -1,0 +1,316 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=FrontPage.Editor.Document>
+<meta name=Generator content="Microsoft FrontPage 4.0">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="Mapping_files/filelist.xml">
+<title>Mapping</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2004-06-04T02:24:00Z</o:Created>
+  <o:LastSaved>2004-06-09T16:14:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>715</o:Words>
+  <o:Characters>4079</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>33</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>4785</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Mapping - CVIPtools toolkit library containing utilities<span style='mso-spacerun:yes'>&nbsp; </span>for</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>mapping data and manipulating data sets</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>#include &lt;CVIPmap.h&gt;</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>FUNCTIONS</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Mapping includes the following functions:</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>condRemap_Image</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp; </span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>linearTrans_Image</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>logMap_Image</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>remap_Image</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>trun_Image</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Image *condRemap_Image(const Image *imageP, CVIP_TYPE dtype,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>unsigned<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>min,<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>unsigned<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>max)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===================================================================</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span style='font-family:
+"Courier New"'>imageP</span></em>&gt; - <em><span style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Image</span></em> <em><span style='font-family:"Courier New"'>structure</span></em> &lt;<em><span
+style='font-family:"Courier New"'>dtype</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>type</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em><span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>the</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><em><span
+style='font-family:"Courier New"'>data</span></em><span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>to</span></em><span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>be</span></em><span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>mapped</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> (<em><span style='font-family:
+"Courier New"'>e</span></em>.<em><span style='font-family:"Courier New"'>g</span></em>. <em><span
+style='font-family:"Courier New"'>CVIP</span></em>_<em><span style='font-family:
+"Courier New"'>BYTE</span></em>).<span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>must</span></em> <em><span style='font-family:
+"Courier New"'>be</span></em> <em><span style='font-family:"Courier New"'>either</span></em> <em><span
+style='font-family:"Courier New"'>as</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><em><span
+style='font-family:"Courier New"'>precise</span></em> <em><span
+style='font-family:"Courier New"'>or</span></em> <em><span style='font-family:
+"Courier New"'>less</span></em> <em><span style='font-family:"Courier New"'>precise</span></em> <em><span
+style='font-family:"Courier New"'>than</span></em> <em><span style='font-family:
+"Courier New"'>that</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>the</span></em> <em><span style='font-family:
+"Courier New"'>input</span></em> <em><span style='font-family:"Courier New"'>image</span></em>.<span style='mso-spacerun:yes'>&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>min</span></em>&gt;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>-<span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>minimum</span></em> <em><span
+style='font-family:"Courier New"'>value</span></em> <em><span style='font-family:
+"Courier New"'>in</span></em> <em><span style='font-family:"Courier New"'>range</span></em> (<em><span
+style='font-family:"Courier New"'>e</span></em>.<em><span style='font-family:
+"Courier New"'>g</span></em>. <em><span style='font-family:"Courier New"'>0</span></em> ) &lt;<em><span
+style='font-family:"Courier New"'>max</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>maximum</span></em> <em><span
+style='font-family:"Courier New"'>value</span></em> <em><span style='font-family:
+"Courier New"'>in</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><em><span
+style='font-family:"Courier New"'>range</span></em> (<em><span
+style='font-family:"Courier New"'>e</span></em>.<em><span style='font-family:
+"Courier New"'>g</span></em>. <em><span style='font-family:"Courier New"'>255</span></em> )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer to a new instance<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>Image<span style='mso-spacerun:yes'>&nbsp; </span>&lt;imageP&gt;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>that<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>has<span style='mso-spacerun:yes'>&nbsp; </span>been<span style='mso-spacerun:yes'>&nbsp; </span>mapped<span style='mso-spacerun:yes'>&nbsp; </span>into<span style='mso-spacerun:yes'>&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>range<span style='mso-spacerun:yes'>&nbsp; </span>[&lt;min&gt;...&lt;max&gt;].</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Called if a non-byte image<span style='mso-spacerun:yes'>&nbsp; </span>is<span style='mso-spacerun:yes'>&nbsp; </span>passed<span style='mso-spacerun:yes'>&nbsp; </span>to<span style='mso-spacerun:yes'>&nbsp; </span>the</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>image viewer. Performs conditional remapping procedure: data</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>in range 0-255 is not remapped; data more than 0.499 outside</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>specified range is completely remapped.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Kun Luo,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Arve Kjoelen.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>void<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span>linearTrans_Image(float<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span>**cvecP,<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>unsigned<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>int</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>no_of_vecs,<span style='mso-spacerun:yes'>&nbsp; </span>unsigned<span style='mso-spacerun:yes'>&nbsp; </span>int<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>vdim,<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>double<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>**transmatrix)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>cvecP</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>an</span></em> <em><span style='font-family:"Courier New"'>array</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>band</span></em> <em><span style='font-family:"Courier New"'>vectors</span></em> &lt;<em><span
+style='font-family:"Courier New"'>no</span></em>_<em><span style='font-family:
+"Courier New"'>of</span></em>_<em><span style='font-family:"Courier New"'>vecs</span></em>&gt; -</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><em><span
+style='font-family:"Courier New"'>number</span></em><span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>vectors</span></em> &lt;<em><span style='font-family:"Courier New"'>vdim</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>dimension</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>each</span></em> <em><span style='font-family:"Courier New"'>vector</span></em> (<em><span
+style='font-family:"Courier New"'>number</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>pixels</span></em>) &lt;<em><span style='font-family:"Courier New"'>transmatrix</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>transformation</span></em> <em><span
+style='font-family:"Courier New"'>matrix</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: linearly<span style='mso-spacerun:yes'>&nbsp; </span>transforms<span style='mso-spacerun:yes'>&nbsp; </span>a<span style='mso-spacerun:yes'>&nbsp; </span>set<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>band<span style='mso-spacerun:yes'>&nbsp; </span>vectors</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;cvecP&gt;<span style='mso-spacerun:yes'>&nbsp; </span>through<span style='mso-spacerun:yes'>&nbsp; </span>a transformation matrix &lt;transmatrix&gt;. The</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>transformation<span style='mso-spacerun:yes'>&nbsp; </span>matrix<span style='mso-spacerun:yes'>&nbsp; </span>must<span style='mso-spacerun:yes'>&nbsp; </span>be<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>have<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>a<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>dimension<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>of</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;no_of_vecs&gt; by &lt;no_of_vecs&gt;.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gregory Hance.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Image *logMap_Image(image *image, int band)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>image</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>Pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Image</span></em> <em><span style='font-family:"Courier New"'>structure</span></em>.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>band</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>the</span></em> <em><span style='font-family:
+"Courier New"'>band</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>do</span></em> <em><span style='font-family:
+"Courier New"'>logarithmic</span></em> <em><span style='font-family:"Courier New"'>mapping</span></em>;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>-<em><span
+style='font-family:"Courier New"'>1</span></em>=<em><span style='font-family:
+"Courier New"'>all</span></em> <em><span style='font-family:"Courier New"'>bands</span></em>, <em><span
+style='font-family:"Courier New"'>0</span></em>=<em><span style='font-family:
+"Courier New"'>1st</span></em> <em><span style='font-family:"Courier New"'>band</span></em>, <em><span
+style='font-family:"Courier New"'>1</span></em>=<em><span style='font-family:
+"Courier New"'>2nd</span></em> <em><span style='font-family:"Courier New"'>band</span></em>, <em><span
+style='font-family:"Courier New"'>etc</span></em>.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>This function remaps a transformed image<span style='mso-spacerun:yes'>&nbsp; </span>using<span style='mso-spacerun:yes'>&nbsp; </span>logarithmic</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>mapping.<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span>The<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>resulting<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>spectra<span style='mso-spacerun:yes'>&nbsp; </span>Image<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>structure<span style='mso-spacerun:yes'>&nbsp; </span>is</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>returned. The &quot;band&quot; specifies on which<span style='mso-spacerun:yes'>&nbsp; </span>band<span style='mso-spacerun:yes'>&nbsp; </span>to<span style='mso-spacerun:yes'>&nbsp; </span>do<span style='mso-spacerun:yes'>&nbsp; </span>loga-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>rithmic mapping. If band == -1, or band &gt; [(number of bands)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>- 1] all bands will be remapped;<span style='mso-spacerun:yes'>&nbsp; </span>otherwise<span style='mso-spacerun:yes'>&nbsp; </span>only<span style='mso-spacerun:yes'>&nbsp; </span>one<span style='mso-spacerun:yes'>&nbsp; </span>band</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>will<span style='mso-spacerun:yes'>&nbsp; </span>be remapped and the return Image is a grayscale image.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>For example, with a color, three-band, RGB image: 0 = Red, 1</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>= Green, 2 = Blue.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Simon Lowh, Yansheng Wei</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Image<span style='mso-spacerun:yes'>&nbsp; </span>*remap_Image(const<span style='mso-spacerun:yes'>&nbsp; </span>Image<span style='mso-spacerun:yes'>&nbsp; </span>*imageP,<span style='mso-spacerun:yes'>&nbsp; </span>CVIP_TYPE dtype,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>unsigned<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>dmin,<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>unsigned<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>dmax)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===================================================================</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span style='font-family:
+"Courier New"'>imageP</span></em>&gt; - <em><span style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Image</span></em> <em><span style='font-family:"Courier New"'>structure</span></em> &lt;<em><span
+style='font-family:"Courier New"'>dtype</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>type</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em><span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>the</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><em><span
+style='font-family:"Courier New"'>data</span></em><span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>to</span></em><span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>be</span></em><span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>mapped</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> (<em><span style='font-family:
+"Courier New"'>e</span></em>.<em><span style='font-family:"Courier New"'>g</span></em>. <em><span
+style='font-family:"Courier New"'>CVIP</span></em>_<em><span style='font-family:
+"Courier New"'>BYTE</span></em>).<span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>must</span></em> <em><span style='font-family:
+"Courier New"'>be</span></em> <em><span style='font-family:"Courier New"'>either</span></em> <em><span
+style='font-family:"Courier New"'>as</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><em><span
+style='font-family:"Courier New"'>precise</span></em> <em><span
+style='font-family:"Courier New"'>or</span></em> <em><span style='font-family:
+"Courier New"'>less</span></em><span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>precise</span></em><span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>than</span></em><span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>that</span></em><span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>of</span></em><span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>the</span></em><span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>input</span></em><span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>image</span></em>.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>dmin</span></em>&gt;<span style='mso-spacerun:yes'>&nbsp; </span>-<span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>minimum</span></em> <em><span
+style='font-family:"Courier New"'>value</span></em> <em><span style='font-family:
+"Courier New"'>in</span></em> <em><span style='font-family:"Courier New"'>range</span></em> (<em><span
+style='font-family:"Courier New"'>e</span></em>.<em><span style='font-family:
+"Courier New"'>g</span></em>. <em><span style='font-family:"Courier New"'>0</span></em> ) &lt;<em><span
+style='font-family:"Courier New"'>dmax</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>maximum</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><em><span
+style='font-family:"Courier New"'>value</span></em> <em><span style='font-family:
+"Courier New"'>in</span></em> <em><span style='font-family:"Courier New"'>range</span></em> (<em><span
+style='font-family:"Courier New"'>e</span></em>.<em><span style='font-family:
+"Courier New"'>g</span></em>. <em><span style='font-family:"Courier New"'>255</span></em> )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer to a new instance<span style='mso-spacerun:yes'>&nbsp; </span>of<span style='mso-spacerun:yes'>&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>Image<span style='mso-spacerun:yes'>&nbsp; </span>&lt;imageP&gt;</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>that<span style='mso-spacerun:yes'>&nbsp; </span>has<span style='mso-spacerun:yes'>&nbsp; </span>been<span style='mso-spacerun:yes'>&nbsp; </span>mapped<span style='mso-spacerun:yes'>&nbsp; </span>into<span style='mso-spacerun:yes'>&nbsp; </span>the<span style='mso-spacerun:yes'>&nbsp; </span>range [&lt;dmin&gt;...&lt;dmax&gt;].</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: performs remapping procedure in which the rela-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>tive<span style='mso-spacerun:yes'>&nbsp; </span>size of each data band is maintained.<span style='mso-spacerun:yes'>&nbsp; </span>Author(s): Gre-</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>gory Hance.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>void trun_Image(const Image *imageP, type dtype, long dmin, long dmax)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>===================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>imageP</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>Pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Image</span></em> <em><span style='font-family:"Courier New"'>structure</span></em>.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>dtype</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>type</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>the</span></em> <em><span
+style='font-family:"Courier New"'>data</span></em> <em><span style='font-family:
+"Courier New"'>to</span></em> <em><span style='font-family:"Courier New"'>be</span></em> <em><span
+style='font-family:"Courier New"'>mapped</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> (<em><span style='font-family:
+"Courier New"'>e</span></em>.<em><span style='font-family:"Courier New"'>g</span></em>. <em><span
+style='font-family:"Courier New"'>CVIP</span></em>_<em><span style='font-family:
+"Courier New"'>BYTE</span></em>). <em><span style='font-family:"Courier New"'>Must</span></em> <em><span
+style='font-family:"Courier New"'>be</span></em> <em><span style='font-family:
+"Courier New"'>either</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><em><span
+style='font-family:"Courier New"'>as</span></em> <em><span style='font-family:
+"Courier New"'>precise</span></em> <em><span style='font-family:"Courier New"'>or</span></em> <em><span
+style='font-family:"Courier New"'>less</span></em> <em><span style='font-family:
+"Courier New"'>precise</span></em>.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>dmin</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>minimum</span></em> <em><span
+style='font-family:"Courier New"'>value</span></em> <em><span style='font-family:
+"Courier New"'>in</span></em> <em><span style='font-family:"Courier New"'>range</span></em> (<em><span
+style='font-family:"Courier New"'>e</span></em>.<em><span style='font-family:
+"Courier New"'>g</span></em>. <em><span style='font-family:"Courier New"'>0</span></em> )</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<em><span
+style='font-family:"Courier New"'>dmax</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>maximum</span></em> <em><span
+style='font-family:"Courier New"'>value</span></em> <em><span style='font-family:
+"Courier New"'>in</span></em> <em><span style='font-family:"Courier New"'>range</span></em> (<em><span
+style='font-family:"Courier New"'>e</span></em>.<em><span style='font-family:
+"Courier New"'>g</span></em>. <em><span style='font-family:"Courier New"'>255</span></em> )</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>This function remaps an image, maintaining the relative size</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>of each data band.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>The C files containing these functions are located under $CVIPtoolsHOME\CVIPC\Mapping<o:p></o:p></pre><pre><o:p>&nbsp;</o:p></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>PATH</h2>
+
+<pre><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>$CVIPtoolsHOME\CVIPlab\lib</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>BUGS</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>none known</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>CVIPtools library quick reference guide</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Copyright (C) 1992, 1993, 2004 SIUE - by Gregory Hance<span style='mso-spacerun:yes'>&nbsp; </span>and<span style='mso-spacerun:yes'>&nbsp; </span>Scott</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Umbaugh.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

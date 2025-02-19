@@ -1,0 +1,232 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="morpho_files/filelist.xml">
+<title>morpho</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2004-06-05T00:22:00Z</o:Created>
+  <o:LastSaved>2004-10-20T00:08:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>606</o:Words>
+  <o:Characters>3460</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>28</o:Lines>
+  <o:Paragraphs>8</o:Paragraphs>
+  <o:CharactersWithSpaces>4058</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=GramE>morpho</span> - higher level function performing iterative<span style='mso-spacerun:yes'>  </span>morpho-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>logical</span> modification based on morphIterMod_Image</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &quot;CVIPimage.h&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;CVIPmorph.h&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Image * <span
+class=GramE>morpho(</span>const<span style='mso-spacerun:yes'>  </span>Image<span style='mso-spacerun:yes'>   </span>*binImage,</pre><pre><span style='mso-spacerun:yes'>        </span><span
+class=GramE>const</span> char * surround_str, CVIP_BOOLEAN rotate,</pre><pre><span style='mso-spacerun:yes'>        </span><span
+class=GramE>int</span> boolFUNC, int connectedness,</pre><pre><span style='mso-spacerun:yes'>        </span><span
+class=GramE>unsigned</span> no_of_iter, int fields)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>binImage</span>&gt; - pointer to Image structure (binary image)</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;surround_str&gt; - pointer to a <span
+class=GramE>string<span style='mso-spacerun:yes'>  </span>holding</span><span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>set<span style='mso-spacerun:yes'>  </span>of</pre><pre><span style='mso-spacerun:yes'>    </span><span style='mso-spacerun:yes'> </span><span
+class=GramE>surrounds</span>, such as &quot;1, 7, 8&quot;.</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>rotate</span>&gt; - rotate or not (CVIP_YES, CVIP_NO)</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>boolFUNC</span>&gt; - integer number for the<span style='mso-spacerun:yes'>  </span>Boolean<span style='mso-spacerun:yes'>  </span>function<span style='mso-spacerun:yes'>  </span>(1-</pre><pre><span style='mso-spacerun:yes'>     </span>6):</pre><pre><span style='mso-spacerun:yes'>          </span>1: 0</pre><pre><span style='mso-spacerun:yes'>          </span>2<span
+class=GramE>: !a</span></pre><pre><span style='mso-spacerun:yes'>          </span>3: ab</pre><pre><span style='mso-spacerun:yes'>          </span>4: a+b</pre><pre><span style='mso-spacerun:yes'>          </span>5: a^b</pre><pre><span style='mso-spacerun:yes'>          </span>6: (<span
+class=GramE>!a</span>)b</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>connectedness</span>&gt;<span style='mso-spacerun:yes'>  </span>-<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>connectivity<span style='mso-spacerun:yes'>  </span>scheme<span style='mso-spacerun:yes'>  </span>being<span style='mso-spacerun:yes'>   </span>used</pre><pre><span style='mso-spacerun:yes'>     </span>(FOUR<span
+class=GramE>,EIGHT,SIX</span>_NWSE,SIX_NESW)</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;no_of_iter&gt; - number of iterations to perform</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>fields</span>&gt; - number of subfields into which the image<span style='mso-spacerun:yes'>  </span>tesse-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>lation</span> will be divided</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$CVIPtoolsHOME\CVIPC\MORPHOLOGICAL\morph.c</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>This is a wrapper function for morphIterMod_Image, <span
+class=GramE>for<span style='mso-spacerun:yes'>  </span>more</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>information</span>, see morphIterMod_Image.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>TYPES AND C<st1:stockticker>ONST</st1:stockticker>ANTS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=GramE>none</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>A pointer to the modified image</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &quot;CVIPtoolkit.h&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;CVIPdef.h&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;CVIPimage.h&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;CVIPmorph.h&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>main</span> () {</pre><pre><span style='mso-spacerun:yes'>         </span>Image *cvipImage, *out_img;</pre><pre><span style='mso-spacerun:yes'>         </span>IMAGE_<span
+class=GramE>FORMAT<span style='mso-spacerun:yes'>  </span>format</span>;</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>char</span> *inputfile,</pre><pre><span style='mso-spacerun:yes'>           </span>*surround_str = (char *) <span
+class=GramE>malloc(</span>sizeof(char) * 80),</pre><pre><span style='mso-spacerun:yes'>            </span><span
+class=GramE>temp</span>;</pre><pre><span style='mso-spacerun:yes'>         </span>CVIP_BOOLEAN rotate;</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>int</span> boolFUNC,</pre><pre><span style='mso-spacerun:yes'>            </span><span
+class=GramE>connectedness</span>,</pre><pre><span style='mso-spacerun:yes'>            </span><span
+class=GramE>fields</span>;</pre><pre><span style='mso-spacerun:yes'>            </span><span
+class=GramE>unsigned</span> no_of_iter;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>         </span>print_<span
+class=GramE>CVIP(</span>&quot;\n\t\tEnter the Input File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>    </span><span style='mso-spacerun:yes'>     </span><span
+class=GramE>inputfile</span> = getString_CVIP();</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>         </span>/* read in the input image */</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>cvipImage</span> = (Image *) read_Image(inputfile, 1);</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>if(</span>cvipImage == NULL) {</pre><pre><span style='mso-spacerun:yes'>            </span>error_<span
+class=GramE>CVIP(</span>&quot;init_Image&quot;,</pre><pre><span style='mso-spacerun:yes'>               </span>&quot;<span
+class=GramE>could</span> not read image file&quot;);</pre><pre><span style='mso-spacerun:yes'>         </span><span style='mso-spacerun:yes'>   </span><span
+class=GramE>free(</span>inputfile);</pre><pre><span style='mso-spacerun:yes'>            </span><span
+class=GramE>exit(</span>1);</pre><pre><span style='mso-spacerun:yes'>          </span>} else view_<span
+class=GramE>Image(</span>cvipImage,inputfile);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>         </span>print_<span
+class=GramE>CVIP(</span>&quot;Please input the surrounds:&quot;);</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>fgets(</span>surround_str, 80, stdin);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>         </span>print_<span
+class=GramE>CVIP(</span>&quot;Rotate? (y/n)&quot;);</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>scanf(</span>&quot;%1s&quot;, &amp;temp);</pre><pre><span style='mso-spacerun:yes'>  </span><span style='mso-spacerun:yes'>       </span><span
+class=GramE>rotate</span> = (temp == 'y') ? CVIP_<span class=GramE>YES :</span> CVIP_NO;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>         </span>print_<span
+class=GramE>CVIP(</span>&quot;The boolean funciton number (1-6):&quot;);</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>scanf(</span>&quot;%d&quot;, &amp;boolFUNC);</pre><pre><span style='mso-spacerun:yes'>            </span><span
+class=GramE>if</span> (boolFUNC &lt; 0 || boolFUNC &gt; 6) {</pre><pre><span style='mso-spacerun:yes'>               </span>error_<span
+class=GramE>CVIP(</span>&quot;main&quot;,</pre><pre><span style='mso-spacerun:yes'>                </span>&quot;The boolean funciton number should be 1 to 6&quot;);</pre><pre><span style='mso-spacerun:yes'>            </span><span
+class=GramE>exit(</span>1);</pre><pre><span style='mso-spacerun:yes'>         </span>}</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>         </span>print_<span
+class=GramE>CVIP(</span>&quot;Connectedness<span style='mso-spacerun:yes'>  </span>(1-FOUR;2-EIGHT;3-SIX_NWSE;4-</pre><pre><span style='mso-spacerun:yes'>     </span>SIX_NESW<span
+class=GramE>):</span>&quot;);</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>scanf(</span>&quot;%1s&quot;, &amp;temp);</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>switch</span> (temp) {</pre><pre><span style='mso-spacerun:yes'>            </span><span
+class=GramE>case</span> '1': connectedness = FOUR; break;</pre><pre><span style='mso-spacerun:yes'>            </span><span
+class=GramE>case</span> '2': connectedness = EIGHT; break;</pre><pre><span style='mso-spacerun:yes'>            </span><span
+class=GramE>case</span> '3': connectedness = SIX_NWSE; break;</pre><pre><span style='mso-spacerun:yes'>            </span><span
+class=GramE>case</span> '4': connectedness = SIX_NESW; break;</pre><pre><span style='mso-spacerun:yes'>            </span><span
+class=GramE>default</span>:</pre><pre><span style='mso-spacerun:yes'>               </span>error_<span
+class=GramE>CVIP(</span>&quot;main&quot;,</pre><pre><span style='mso-spacerun:yes'>     </span><span style='mso-spacerun:yes'>            </span>&quot;The <span
+class=GramE>connectedness<span style='mso-spacerun:yes'>  </span>number</span> should be 1 to 4&quot;);</pre><pre><span style='mso-spacerun:yes'>               </span><span
+class=GramE>exit(</span>1);</pre><pre><span style='mso-spacerun:yes'>         </span>}</pre><pre><span style='mso-spacerun:yes'>         </span>print_<span
+class=GramE>CVIP(</span>&quot;Number of iterations (0 for infinity):&quot;);</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>scanf(</span>&quot;%d&quot;, &amp;no_of_iter);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>         </span>print_<span
+class=GramE>CVIP(</span>&quot;Number of subfields (1-3):&quot;);</pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>scanf(</span>&quot;%d&quot;, &amp;fields);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>if</span> (fields &lt; 1 || fields &gt; 3) {</pre><pre><span style='mso-spacerun:yes'>            </span>error_<span
+class=GramE>CVIP(</span>&quot;main&quot;,</pre><pre><span style='mso-spacerun:yes'>             </span>&quot;The number of subfields should be 1 to 3&quot;);</pre><pre><span style='mso-spacerun:yes'>            </span><span
+class=GramE>exit(</span>1);</pre><pre><span style='mso-spacerun:yes'>         </span>}</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>         </span><span
+class=GramE>if</span> ( (out_img = morpho(cvipImage, surround_str,</pre><pre><span style='mso-spacerun:yes'>               </span><span
+class=GramE>rotate</span>, boolFUNC, connectedness, no_of_iter,</pre><pre><span style='mso-spacerun:yes'>               </span>fields)) == (Image *<span
+class=GramE>)NULL</span>) {</pre><pre><span style='mso-spacerun:yes'>            </span>error_<span
+class=GramE>CVIP(</span>&quot;main&quot;, &quot;Iterative modification<span style='mso-spacerun:yes'>  </span>error&quot;);</pre><pre><span style='mso-spacerun:yes'>            </span><span
+class=GramE>exit(</span>1);</pre><pre><span style='mso-spacerun:yes'>         </span>} else {</pre><pre><span style='mso-spacerun:yes'>            </span>view_<span
+class=GramE>Image(</span>out_img,&quot;Iterative modification&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span style='mso-spacerun:yes'>   </span>}</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>}</pre><pre><span style='mso-spacerun:yes'>      </span>/*</pre><pre><span style='mso-spacerun:yes'>      </span>** <span
+class=GramE>end</span> of function main</pre><pre><span style='mso-spacerun:yes'>      </span>*/</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>HISTORY</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>History information recorded: None</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>MORPHOLOGICAL library, morphIterMod_Image</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1996, 2004 SIUE - by Scott E. <span
+class=GramE>Umbaugh<span style='mso-spacerun:yes'>  </span>and</span><span style='mso-spacerun:yes'>  </span>Yansheng</pre><pre><span style='mso-spacerun:yes'>     </span>Wei.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

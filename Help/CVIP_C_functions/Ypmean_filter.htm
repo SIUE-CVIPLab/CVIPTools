@@ -1,0 +1,226 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="Ypmean_filter_files/filelist.xml">
+<title>Ypmean_filter</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="time"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2004-06-05T01:44:00Z</o:Created>
+  <o:LastSaved>2004-10-20T00:20:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>395</o:Words>
+  <o:Characters>2255</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>18</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>2645</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>Ypmean_filter</span> - a non-linear mean filter which is <span
+class=GramE>better<span style='mso-spacerun:yes'>  </span>at</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>removing<span style='mso-spacerun:yes'>  </span><span class=SpellE>gaussian</span></span><span style='mso-spacerun:yes'>  </span>type<span style='mso-spacerun:yes'>  </span>noise and preserving edge features</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>than</span> the mean filter.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPtoolkit.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPdef.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPspfltr.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>float.h</span>&gt;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Image *<span
+class=SpellE>Ypmean_<span class=GramE>filter</span></span><span class=GramE>(</span>Image *<span
+class=SpellE>imageP</span>, <span class=SpellE>int</span> <span class=SpellE>mask_size</span>, <span
+class=SpellE>int</span> p)</pre><pre><span style='mso-spacerun:yes'>          </span>&lt;<span
+class=SpellE><span class=GramE>imageP</span></span>&gt; - pointer to Image structure.</pre><pre><span style='mso-spacerun:yes'>          </span>&lt;<span
+class=SpellE>mask_size</span>&gt; - size of the filtering window (3-&gt;3x3).</pre><pre><span style='mso-spacerun:yes'>          </span>&lt;p&gt; - filter order.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$<span class=SpellE>CVIPtoolsHOME\CVIPC\SPATIALFILTER\spatial_filter.c</span></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Calculates the sum of the pixels in the filter window raised</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>to<span style='mso-spacerun:yes'>  </span>the</span> power of p, then divided by N*N.<span style='mso-spacerun:yes'>  </span>Returns this value</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>raised</span> to the<span style='mso-spacerun:yes'>  </span>power<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>3/p.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>Good<span style='mso-spacerun:yes'>  </span>at</span><span style='mso-spacerun:yes'>  </span>removing<span style='mso-spacerun:yes'>  </span>positive</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>outliers<span style='mso-spacerun:yes'>  </span>for</span> negative values of p and negative outliers for</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>positive</span> values of p.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>Size<span style='mso-spacerun:yes'>  </span>of</span><span style='mso-spacerun:yes'>  </span>filter<span style='mso-spacerun:yes'>  </span>should<span style='mso-spacerun:yes'>  </span>be<span style='mso-spacerun:yes'>  </span>an<span style='mso-spacerun:yes'>  </span>odd</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>integer</span> limited from &lt; 3 - 31 &gt;, and order of filter is <span
+class=SpellE>lim</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>ited</span></span> from &lt;-<st1:time
+Minute="55" Hour="16">5 to +5</st1:time>&gt;.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>TIPS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Works well on images containing <span
+class=GramE>positive<span style='mso-spacerun:yes'>  </span>outlier</span><span style='mso-spacerun:yes'>  </span>noise<span style='mso-spacerun:yes'>  </span>if</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>the<span style='mso-spacerun:yes'>  </span>parameter</span> P is negative, and on images containing <span
+class=SpellE>nega</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>tive</span></span> outlier noise if the parameter P is positive.<span style='mso-spacerun:yes'>  </span>P should</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>remain</span> small (3-3) for better performance.<span style='mso-spacerun:yes'>  </span>Keep filter mask</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>size</span> small to reduce blurring.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DIAGNOSTICS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Returns a pointer to the modified <span
+class=GramE>Image<span style='mso-spacerun:yes'>  </span>structure</span><span style='mso-spacerun:yes'>  </span>on<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>suc</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>cess</span></span>.<span style='mso-spacerun:yes'>  </span>Returns a NULL pointer if the input Image <span
+class=SpellE>datatype</span> is</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>not</span> CVIP_BYTE and can't be cast to CVIP_FLOAT.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPtoolkit.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPimage.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPdef.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPspfltr.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPconvert.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPview.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIEWER &quot;picture&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIDEO_APP &quot;<span
+class=SpellE>SunVideo</span> &amp;&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>void</span> main()</pre><pre><span style='mso-spacerun:yes'>      </span>{</pre><pre><span style='mso-spacerun:yes'>      </span>Image *<span
+class=SpellE>cvipImage</span>;</pre><pre><span style='mso-spacerun:yes'>      </span>IMAGE_FORMAT format;</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>char</span> *<span class=SpellE>inputfile</span>,*<span
+class=SpellE>outputfile</span>;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>(<span
+class=GramE>void</span>) <span class=SpellE>setDisplay_Image</span>(VIEWER, &quot;Default&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the<span style='mso-spacerun:yes'>  </span>Input File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>inputfile</span></span> =(char *) <span
+class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>format</span> = <span class=SpellE>getFormat_CVIP</span>(<span
+class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>cvipImage</span></span> = <span class=SpellE>read_Image</span>(inputfile,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>cvipImage</span>, <span class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span><span class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span>/* the following call performs a non-linear mean</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>filter</span> in every 3 x 3 window */</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>cvipImage</span></span> = <span class=SpellE>Ypmean_filter</span>(cvipImage,3,2);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>outputfile</span></span> = <span class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>cvipImage,outputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>write_<span class=GramE>Image</span></span><span class=GramE>(</span>cvipImage,outputfile,CVIP_NO,CVIP_NO,format,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span><span class=SpellE>outputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span>}</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>BUGS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=GramE>None.</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1992, 1996, 2004 SIUE - by Scott E. Umbaugh and John</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>A Creighton.</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="geometric_mean_files/filelist.xml">
+<title>geometric_mean</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2004-06-04T23:09:00Z</o:Created>
+  <o:LastSaved>2004-10-19T23:56:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>672</o:Words>
+  <o:Characters>3835</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>31</o:Lines>
+  <o:Paragraphs>8</o:Paragraphs>
+  <o:CharactersWithSpaces>4499</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>geometric_mean</span> - performs a parametric wiener filter</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPimage.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPtransform.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPxformfilter.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPdef.h</span>&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Image *<span
+class=SpellE>geometric_<span class=GramE>mean</span></span><span class=GramE>(</span>Image<span style='mso-spacerun:yes'>  </span>*<span
+class=SpellE>degr</span>,<span style='mso-spacerun:yes'>  </span>Image<span style='mso-spacerun:yes'>  </span>*<span
+class=SpellE>degr_fn</span>,<span style='mso-spacerun:yes'>  </span>Image</pre><pre><span style='mso-spacerun:yes'>     </span>*<span
+class=SpellE>p_noise</span><span class=GramE>,<span style='mso-spacerun:yes'>  </span>Image</span><span style='mso-spacerun:yes'>  </span>*<span
+class=SpellE>p_orig</span>,<span style='mso-spacerun:yes'>  </span>float<span style='mso-spacerun:yes'>  </span>gamma,<span style='mso-spacerun:yes'>  </span>float<span style='mso-spacerun:yes'>  </span>alpha, <span
+class=SpellE>int</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>choice</span>, <span class=SpellE>int</span> cutoff)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE><span class=GramE>degr</span></span>&gt;<span style='mso-spacerun:yes'>    </span>- pointer to the degraded image</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE>degr_fn</span>&gt; - pointer to the degradation function</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE>p_noise</span>&gt; - pointer to the noise power spectral density</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE>p_orig</span><span class=GramE>&gt;<span style='mso-spacerun:yes'>  </span>-</span> pointer to the original<span style='mso-spacerun:yes'>  </span>image<span style='mso-spacerun:yes'>  </span>power<span style='mso-spacerun:yes'>  </span>spectral</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>density</span></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>gamma</span>&gt;<span style='mso-spacerun:yes'>   </span>- 'gamma' in the generalized <span
+class=SpellE>restorationequation</span>.</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>alpha</span>&gt;<span style='mso-spacerun:yes'>   </span>- 'alpha' in the<span style='mso-spacerun:yes'>  </span>generalized<span style='mso-spacerun:yes'>  </span>restoration<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>equa</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>tion</span></span>.</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>choice</span>&gt;<span style='mso-spacerun:yes'>  </span>- sets the maximum gain using the DC value<span style='mso-spacerun:yes'>  </span>as<span style='mso-spacerun:yes'>  </span>a</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>baseline</span></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>cutoff</span>&gt;<span style='mso-spacerun:yes'>  </span>- cutoff frequency for filtering</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$<span class=SpellE>CVIPtoolsHOME\CVIPC\XFORMFILTER\restore_xformfilter.c</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>This function performs a parametric wiener filter.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>See<span style='mso-spacerun:yes'>  </span>any</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>image</span> processing textbook for info on Wiener Filters.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>The function does its own memory management, <span
+class=GramE>freeing<span style='mso-spacerun:yes'>  </span>every</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>thing<span style='mso-spacerun:yes'>  </span>passed</span> to it, so if you need your images intact, make</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>a</span> copy of them before calling this function.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>The function tries to determine whether an FFT has been per-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>formed</span> on the passed images.<span style='mso-spacerun:yes'>  </span>If not, the function will per-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>form</span> the FFT.<span style='mso-spacerun:yes'>  </span>This is especially important to note <span
+class=GramE>for<span style='mso-spacerun:yes'>  </span>the</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>power<span style='mso-spacerun:yes'>  </span>images</span>.<span style='mso-spacerun:yes'>   </span><span
+class=GramE>If<span style='mso-spacerun:yes'>  </span>the</span><span style='mso-spacerun:yes'>  </span>power<span style='mso-spacerun:yes'>  </span>images<span style='mso-spacerun:yes'>  </span>are<span style='mso-spacerun:yes'>  </span>in the spatial</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>domain</span>, they will have an FFT performed on them, before<span style='mso-spacerun:yes'>  </span>the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>squared<span style='mso-spacerun:yes'>  </span>magnitude</span><span style='mso-spacerun:yes'>  </span>is calculated.<span style='mso-spacerun:yes'>  </span>If an FFT is detected in</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>the</span> history of any<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>power<span style='mso-spacerun:yes'>  </span>images,<span style='mso-spacerun:yes'>  </span>that<span style='mso-spacerun:yes'>  </span>image<span style='mso-spacerun:yes'>  </span>is</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>assumed<span style='mso-spacerun:yes'>  </span>to</span><span style='mso-spacerun:yes'>  </span>be<span style='mso-spacerun:yes'>  </span>representing<span style='mso-spacerun:yes'>  </span>a power image, and no squared</pre><pre><span style='mso-spacerun:yes'>  </span><span style='mso-spacerun:yes'>   </span><span
+class=GramE>magnitude</span> is calculated.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>The function will also extend the sizes of the passed images</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>as</span> best it can when they are of unequal size.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Also note that the passed images must have <span
+class=GramE>the<span style='mso-spacerun:yes'>  </span>same</span><span style='mso-spacerun:yes'>  </span>number</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>of</span> (color) bands.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>TYPES AND C<st1:stockticker>ONST</st1:stockticker>ANTS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>None</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>A pointer to the restored (filtered) image</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>HISTORY</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>History information recorded:</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>       </span><span
+class=GramE>parameter</span> #1 = filter cutoff.</pre><pre><span style='mso-spacerun:yes'>       </span><span
+class=GramE>parameter</span> #2 = method 1: F(<span class=SpellE>u,v</span>)=G(<span
+class=SpellE>u,v</span>) when H(<span class=SpellE>u,v</span>)=0</pre><pre><span style='mso-spacerun:yes'>                      </span><span
+class=GramE>method</span> 2: F(<span class=SpellE>u,v</span>)=0 when H(<span
+class=SpellE>u,v</span>)=0</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPtoolkit.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPimage.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPdef.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPconvert.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPview.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPxformfilter.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIEWER &quot;picture&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIDEO_APP &quot;<span
+class=SpellE>SunVideo</span> &amp;&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>void</span> main()</pre><pre><span style='mso-spacerun:yes'>      </span>{</pre><pre><span style='mso-spacerun:yes'>      </span>Image *<span
+class=SpellE>cvipImage</span>,*cvipImage1;</pre><pre><span style='mso-spacerun:yes'>      </span>Image *cvipImage2,*cvipImage3;</pre><pre><span style='mso-spacerun:yes'>      </span>IMAGE_FORMAT format;</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>char</span> *<span class=SpellE>inputfile</span>,*<span
+class=SpellE>outputfile</span>;</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>char</span> *inputfile1,*inputfile2;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>(<span
+class=GramE>void</span>) <span class=SpellE>setDisplay_Image</span>(<span
+class=SpellE>VIEWER,&quot;default</span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the File Name of the degraded</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>image</span>:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>inputfile</span></span> =(char *) <span
+class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>format</span> = <span class=SpellE>getFormat_CVIP</span>(<span
+class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>cvipImage</span></span> = <span class=SpellE>read_Image</span>(inputfile,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>cvipImage</span>, <span class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span><span class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span>/* the following call creates a <span
+class=SpellE>gaussian</span> mask of size</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>3<span style='mso-spacerun:yes'>  </span>*</span> 3 */</pre><pre><span style='mso-spacerun:yes'>      </span>cvipImage1 = (Image *<span
+class=GramE>)<span class=SpellE>h</span></span><span class=SpellE>_image</span>(3,3,3);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the File Name of the original</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>power</span> spectrum image:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span>inputfile1 <span
+class=GramE>=(</span>char *) <span class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>format</span> = <span class=SpellE>getFormat_CVIP</span>(inputfile1);</pre><pre><span style='mso-spacerun:yes'>      </span>cvipImage2 = <span
+class=SpellE>read_<span class=GramE>Image</span></span><span class=GramE>(</span>inputfile1,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span>cvipImage2, inputfile1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span>inputfile1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the File Name of the noise</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>power</span> spectrum image:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span>inputfile2 <span
+class=GramE>=(</span>char *) <span class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>format</span> = <span class=SpellE>getFormat_CVIP</span>(inputfile2);</pre><pre><span style='mso-spacerun:yes'>      </span>cvipImage3 = <span
+class=SpellE>read_<span class=GramE>Image</span></span><span class=GramE>(</span>inputfile2,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span>cvipImage3, inputfile2);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span>inputfile2);</pre><pre><span style='mso-spacerun:yes'>      </span>/* the following call performs the geometric mean on the</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>input</span> image with the <span class=SpellE>gaussian</span> <span
+class=SpellE>mask,alpha</span> equal to .25,gamma</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>equal</span> to .5 and the cut off frequency equal to 32<span style='mso-spacerun:yes'>  </span>*/</pre><pre><span style='mso-spacerun:yes'>      </span>cvipImage3<span
+class=GramE>=(</span>Image *)<span class=SpellE>geometric_mean</span>(cvipImage,cvipImage1,</pre><pre><span style='mso-spacerun:yes'>      </span>cvipImage2<span
+class=GramE>,cvipImage3</span>,.25,.5,1,32);</pre><pre><span style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'>   </span><span
+class=SpellE><span class=GramE>cvipImage</span></span>=(Image *)<span
+class=SpellE>ifft_transform</span>(cvipImage3,256);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>outputfile</span></span> = <span class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>cvipImage,outputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>write_<span class=GramE>Image</span></span><span class=GramE>(</span>cvipImage,outputfile,CVIP_NO,CVIP_NO,format,1);</pre><pre><span style='mso-spacerun:yes'>  </span><span style='mso-spacerun:yes'>    </span><span
+class=GramE>free(</span><span class=SpellE>outputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span>}</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>XFORMFILTER library</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1996, 2004 SIUE -<span style='mso-spacerun:yes'>  </span>by<span style='mso-spacerun:yes'>  </span>Scott<span style='mso-spacerun:yes'>  </span>E.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>Umbaugh<span style='mso-spacerun:yes'>  </span>and</span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>Arve</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>Kjoelen</span></span><span class=GramE>.</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

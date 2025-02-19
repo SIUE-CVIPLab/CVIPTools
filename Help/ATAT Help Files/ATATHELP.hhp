@@ -1,0 +1,29 @@
+
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=ATATHELP.CHM
+Contents file=ATATHELP.hhc
+Default Window=win
+Default topic=Welcome to ATAT.htm
+Display compile progress=No
+Error log file=Errlog.txt
+Full-text search=Yes
+Language=0x409 English (United States)
+
+[WINDOWS]
+win="ATATHELP","ATATHELP.hhc",,"Welcome to ATAT.htm","Welcome to ATAT.htm",,,,,0x21520,185,0x40380c,[0,0,1000,650],,,,,,,0
+
+
+[FILES]
+Welcome to ATAT.htm
+ATAT Process\CVIP_ATAT_HELP.htm
+ATAT Process\Create New Project.htm
+ATAT Process\Images Interface.htm
+ATAT Process\Processes Interface.htm
+ATAT Process\Test and Compare Interface.htm
+ATAT Process\Run Experiment Full Process.htm
+ATAT Process\Run Experiment Full Process_files\*.jpg
+ATAT Process\Run Experiment Full Process_files\*.png
+
+[INFOTYPES]
+

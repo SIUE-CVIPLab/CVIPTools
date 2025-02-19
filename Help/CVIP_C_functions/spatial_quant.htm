@@ -1,0 +1,203 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="spatial_quant_files/filelist.xml">
+<title>spatial_quant</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>7</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2004-06-05T01:03:00Z</o:Created>
+  <o:LastSaved>2004-10-20T00:16:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>448</o:Words>
+  <o:Characters>2560</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>21</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3002</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>spatial_quant - reduces <span
+class=GramE>the<span style='mso-spacerun:yes'>  </span>image</span><span style='mso-spacerun:yes'>  </span>size<span style='mso-spacerun:yes'>  </span>by<span style='mso-spacerun:yes'>  </span>one<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>three</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>methods</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPimage.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPmatrix.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;CVIPgeometry.h&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Image * spatial_<span
+class=GramE>quant(</span>Image *cvipImage, int<span style='mso-spacerun:yes'>  </span>row,<span style='mso-spacerun:yes'>  </span>int<span style='mso-spacerun:yes'>  </span>col,</pre><pre><span style='mso-spacerun:yes'>    </span><span style='mso-spacerun:yes'> </span><span
+class=GramE>int</span> method)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>cvipImage</span>&gt; - pointer to an Image structure</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>row</span>&gt; - number of rows for reduced image</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>column</span>&gt; - number of columns for reduced image</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>method</span>&gt; - reduction method to use where</pre><pre><span style='mso-spacerun:yes'>                       </span>1 = average</pre><pre><span style='mso-spacerun:yes'>          </span><span style='mso-spacerun:yes'>             </span>2 = median</pre><pre><span style='mso-spacerun:yes'>                       </span>3 = decimation</pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$CVIPtoolsHOME\CVIPC\GEOMETRY\spatial_quant.c</pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=GramE>spatial_quant</span> allows the user to specify the number of<span style='mso-spacerun:yes'>  </span>rows</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>and<span style='mso-spacerun:yes'>  </span>columns</span><span style='mso-spacerun:yes'>  </span>in<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>resultant image, corresponding to the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>height</span> and width of the new image.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>The<span style='mso-spacerun:yes'>  </span>integers</span><span style='mso-spacerun:yes'>  </span>specified</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>for<span style='mso-spacerun:yes'>  </span>row</span><span style='mso-spacerun:yes'>  </span>and column sizes must be equal to or less than the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>input</span> image sizes or an error results.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Three methods are available for image reduction:</pre><pre><span style='mso-spacerun:yes'>     </span>1) AVERAGE - each pixel in the new image represents an aver-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>age</span> of the original image pixels it replaces</pre><pre><span style='mso-spacerun:yes'>     </span>2) MEDIAN - each <span
+class=GramE>pixel<span style='mso-spacerun:yes'>  </span>in</span><span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>new<span style='mso-spacerun:yes'>  </span>image<span style='mso-spacerun:yes'>  </span>represents<span style='mso-spacerun:yes'>  </span>the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>median</span> value of the original image pixels it replaces</pre><pre><span style='mso-spacerun:yes'>     </span>3) DECIMATION - each pixel in the <span
+class=GramE>new<span style='mso-spacerun:yes'>  </span>image</span><span style='mso-spacerun:yes'>  </span>has<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>same</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>value<span style='mso-spacerun:yes'>  </span>as</span> a corresponding pixel in the original image; other</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>original-image</span> pixels are discarded</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Because the user may enter different values <span
+class=GramE>for<span style='mso-spacerun:yes'>  </span>height</span><span style='mso-spacerun:yes'>  </span>and</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>width</span>,<span style='mso-spacerun:yes'>  </span>spatial_quant<span style='mso-spacerun:yes'>  </span>may<span style='mso-spacerun:yes'>  </span>be used to geometrically distort</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>the</span> image in a rubber-sheet fashion.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>TYPES AND C<st1:stockticker>ONST</st1:stockticker>ANTS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=GramE>none</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Returns a reduced image upon successful completion<span
+class=GramE>;<span style='mso-spacerun:yes'>  </span>returns</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>NULL upon error in size specification.</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>    </span><span style='mso-spacerun:yes'>   </span>#include &lt;CVIPtoolkit.h&gt;</pre><pre><span style='mso-spacerun:yes'>       </span>#include &lt;CVIPconvert.h&gt;</pre><pre><span style='mso-spacerun:yes'>       </span>#include &lt;CVIPimage.h&gt;</pre><pre><span style='mso-spacerun:yes'>       </span>#include &lt;CVIPmatrix.h&gt;</pre><pre><span style='mso-spacerun:yes'>       </span>#include &quot;CVIPquant.h&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>void</span> main()</pre><pre><span style='mso-spacerun:yes'>      </span>{</pre><pre><span style='mso-spacerun:yes'>      </span>Image *cvipImage;</pre><pre><span style='mso-spacerun:yes'>      </span>IMAGE_FORMAT format;</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>char</span> *inputfile, *outputfile;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>setDisplay_<span
+class=GramE>Image(</span>&quot;picture&quot;, &quot;Default&quot;);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>system(</span>&quot;ln -s /opt/cvipimages/Gray/lena.pgm lena.pgm&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span>print_<span
+class=GramE>CVIP(</span>&quot;\nqThis<span style='mso-spacerun:yes'>  </span>demonstration<span style='mso-spacerun:yes'>  </span>uses<span style='mso-spacerun:yes'>   </span>the<span style='mso-spacerun:yes'>   </span>decimation</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>method</span> of spatial quantization.\n\n&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span>print_<span
+class=GramE>CVIP(</span>&quot;Please enter the image 'lena.pgm' at<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>fol-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>lowing</span> prompt:\n\n&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span>print_<span
+class=GramE>CVIP(</span>&quot;Enter the Input File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>inputfile</span> =(char *) getString_CVIP();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>format</span> = getFormat_CVIP(inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>cvipImage</span> = read_Image(inputfile, 1);</pre><pre><span style='mso-spacerun:yes'>      </span>display_<span
+class=GramE>Image(</span>inputfile,format);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>cvipImage</span> = (Image *)spatial_quant(cvipImage, 200,480,3);</pre><pre><span style='mso-spacerun:yes'>      </span>print_<span
+class=GramE>CVIP(</span>&quot;Enter the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>outputfile</span> = getString_CVIP();</pre><pre><span style='mso-spacerun:yes'>      </span>write_<span
+class=GramE>Image(</span>cvipImage,<span style='mso-spacerun:yes'>   </span>outputfile,CVIP_NO,CVIP_NO,format,</pre><pre><span style='mso-spacerun:yes'>     </span>1);</pre><pre><span style='mso-spacerun:yes'>      </span>display_<span
+class=GramE>Image(</span>outputfile,format);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span>inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span>outputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>}</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>BUGS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>None at this time</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=GramE>none</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1995, 2004 SIUE - by Scott Umbaugh and Kun Luo.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

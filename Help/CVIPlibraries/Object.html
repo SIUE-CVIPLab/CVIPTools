@@ -1,0 +1,603 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=FrontPage.Editor.Document>
+<meta name=Generator content="Microsoft FrontPage 4.0">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="Object_files/filelist.xml">
+<title>Object</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2004-06-04T02:27:00Z</o:Created>
+  <o:LastSaved>2004-06-09T16:20:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>2160</o:Words>
+  <o:Characters>12313</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>102</o:Lines>
+  <o:Paragraphs>28</o:Paragraphs>
+  <o:CharactersWithSpaces>14445</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Object - <span class=SpellE>CVIPtools</span> toolkit <span
+class=GramE>library<span style='mso-spacerun:yes'>&nbsp; </span>for</span><span style='mso-spacerun:yes'>&nbsp; </span>object<span style='mso-spacerun:yes'>&nbsp; </span>analysis</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>and</span> identification</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>#include &lt;<span
+class=SpellE>CVIPobject.h</span>&gt;</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>PATH</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>$<span class=SpellE>CVIPtoolsHOME\lib</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>FUNCTIONS: Object</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Object *<span
+class=SpellE>new_<span class=GramE>Object</span></span><span class=GramE>(</span><span
+class=SpellE>int</span> <span class=SpellE>label_count</span>, Color pixel, <span
+class=SpellE>int</span> <span class=SpellE>r_pos</span>, <span class=SpellE>int</span> <span
+class=SpellE>c_pos</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>label</span></em>_<em><span
+style='font-family:"Courier New"'>count</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>object</span></em> <em><span
+style='font-family:"Courier New"'>label</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>pixel</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>color</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>the</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>r</span></em>_<em><span
+style='font-family:"Courier New"'>pos</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>vertical</span></em> <em><span
+style='font-family:"Courier New"'>position</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>upper</span></em> <em><span style='font-family:"Courier New"'>left</span></em> <em><span
+style='font-family:"Courier New"'>corner</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>c</span></em>_<em><span
+style='font-family:"Courier New"'>pos</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>horizontal</span></em> <em><span
+style='font-family:"Courier New"'>position</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>upper</span></em> <em><span style='font-family:"Courier New"'>left</span></em> <em><span
+style='font-family:"Courier New"'>corner</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer to new initialized object</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: constructor for object class</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span style='mso-spacerun:yes'>&nbsp;&nbsp;</span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> <span class=SpellE>print_Object</span>(void *<span
+class=SpellE>thisP</span>, FILE *<span class=SpellE>fileP</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>thisP</span></em></span></span>&gt; -<em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>fileP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>file</span></em> <em><span style='font-family:
+"Courier New"'>pointer</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: nothing</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: prints the contents of an object structure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>read_Object</span>( void *<span
+class=SpellE>thisP</span>, FILE *<span class=SpellE>fileP</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>thisP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>fileP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>file</span></em> <em><span style='font-family:
+"Courier New"'>pointer</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: integer error status (0 or 1)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: reads an object description from a file</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: returns 0 upon failure to read</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> <span class=SpellE>delete_Object</span>(void *<span
+class=SpellE>objectP</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>objectP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Object</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: nothing</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: <span
+class=SpellE>detroys</span> an instance of an object structure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>match_Object</span>(void *<span
+class=SpellE>objectP</span>, void *<span class=SpellE>labelP</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>objectP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>object</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>labelP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>label</span></em> <em><span style='font-family:"Courier New"'>to</span></em> <em><span
+style='font-family:"Courier New"'>match</span></em> (<span class=SpellE><em><span
+style='font-family:"Courier New"'>int</span></em></span>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: 0 or 1</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: returns 1 for a match and 0 otherwise</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> <span class=SpellE>drawBB_Objects</span>(Image *<span
+class=SpellE>imageP</span>, <span class=SpellE>ObjectList</span> <span
+class=SpellE>listP</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>imageP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>Image</span></em> <em><span style='font-family:"Courier New"'>structure</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>listP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>object</span></em> <em><span style='font-family:"Courier New"'>list</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: nothing</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: draws a bounding box around each box</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>corresponding</span> to each object in the list</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>FUNCTIONS: Chain Codes</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>short</span> <span class=SpellE>build_ChainCode</span>(<span
+class=SpellE>ChainCode</span> *<span class=SpellE>ccP</span>, Image *<span
+class=SpellE>imageP</span>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>c_min</span>, <span
+class=SpellE>int</span> <span class=SpellE>r_min</span>, <span class=SpellE>int</span> <span
+class=SpellE>c_max</span>, <span class=SpellE>int</span> <span class=SpellE>r_max</span>);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>ccP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>chain</span></em> <em><span style='font-family:"Courier New"'>code</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>imageP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>input</span></em> <em><span style='font-family:"Courier New"'>image</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>c</span></em>_<em><span
+style='font-family:"Courier New"'>min</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>upper</span></em> <em><span style='font-family:
+"Courier New"'>left</span></em> <em><span style='font-family:"Courier New"'>column</span></em> <em><span
+style='font-family:"Courier New"'>position</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>region</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>interest</span></em></pre><pre> <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>r</span></em>_<em><span
+style='font-family:"Courier New"'>min</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>upper</span></em> <em><span style='font-family:
+"Courier New"'>left</span></em> <em><span style='font-family:"Courier New"'>row</span></em> <em><span
+style='font-family:"Courier New"'>position</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>region</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>interest</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>c</span></em>_<em><span
+style='font-family:"Courier New"'>max</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>lower</span></em> <span class=GramE><em><span
+style='font-family:"Courier New"'>right</span></em><span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>column</span></em></span> <em><span
+style='font-family:"Courier New"'>position</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>region</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>interest</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>r</span></em>_<em><span
+style='font-family:"Courier New"'>max</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>lower</span></em> <em><span style='font-family:
+"Courier New"'>right</span></em> <em><span style='font-family:"Courier New"'>row</span></em> <em><span
+style='font-family:"Courier New"'>position</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>region</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>interest</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: 1 if successful else 0</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Builds a Freeman chain of vectors</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>describing</span> the edge of the contour with a</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>specified</span> elevation. Always follows the contour</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>in</span> a clockwise direction.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> <span class=SpellE>report_ChainCode</span>(<span
+class=SpellE>ChainCode</span> *<span class=SpellE>ccP</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>ccP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>chain</span></em> <em><span style='font-family:"Courier New"'>code</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp; </span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span>Returns: nothing</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span>Follows the Freeman chain of</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>vectors</span> describing the edge of the contour.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Reports the elevation, start point, direction</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>vectors</span>, and the number of vectors in the chain.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>ChainCode</span> *<span class=SpellE>new_<span class=GramE>ChainCode</span></span><span
+class=GramE>(</span> <span class=SpellE>int</span> <span class=SpellE>start_r</span>, <span
+class=SpellE>int</span> <span class=SpellE>start_c</span>, <span class=SpellE>int</span> <span
+class=SpellE>elev</span> )</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>start</span></em>_<em><span
+style='font-family:"Courier New"'>r</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>row</span></em> <em><span style='font-family:
+"Courier New"'>position</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>tentative</span></em> <em><span
+style='font-family:"Courier New"'>starting</span></em> <em><span
+style='font-family:"Courier New"'>point</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>start</span></em>_<em><span
+style='font-family:"Courier New"'>c</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>column</span></em> <em><span
+style='font-family:"Courier New"'>position</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>tentative</span></em> <em><span style='font-family:"Courier New"'>starting</span></em> <em><span
+style='font-family:"Courier New"'>point</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>elev</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>elevation</span></em> (<em><span
+style='font-family:"Courier New"'>pixel</span></em> <em><span style='font-family:
+"Courier New"'>intensity</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>interest</span></em>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer to new <span
+class=SpellE>ChainCode</span> structure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span>Construct a new chain code object,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Creates and initializes a chain code structure.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void<span style='mso-spacerun:yes'>&nbsp; </span><span class=SpellE>delete</span></span><span
+class=SpellE>_ChainCode</span>(<span class=SpellE>ChainCode</span> *<span
+class=SpellE>ccP</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>ccP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <span class=SpellE><em><span
+style='font-family:"Courier New"'>Chaincode</span></em></span> <em><span
+style='font-family:"Courier New"'>structure</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: nothing</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span>Destroy the memory associated with a</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>ChainCode</span></span><span class=GramE> structure.</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void<span style='mso-spacerun:yes'>&nbsp; </span><span class=SpellE>getXY</span></span><span
+class=SpellE>_ChainCode</span>(<span class=SpellE>ChainCode</span> *<span
+class=SpellE>ccP</span>, <span class=SpellE>int</span> **<span class=SpellE>cP</span>, <span
+class=SpellE>int</span> **<span class=SpellE>rP</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>ccP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <span class=SpellE><em><span
+style='font-family:"Courier New"'>Chaincode</span></em></span> <em><span
+style='font-family:"Courier New"'>structure</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>cP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>array</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>horizontal</span></em> <em><span
+style='font-family:"Courier New"'>integer</span></em> <em><span
+style='font-family:"Courier New"'>coordinates</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>rP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>array</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>vertical</span></em><span style='mso-spacerun:yes'>&nbsp; </span><em><span
+style='font-family:"Courier New"'>integer</span></em> <em><span
+style='font-family:"Courier New"'>coordinates</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: nothing</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span>Express the chain code as a contiguous array</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>of</span> column and row coordinates.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void<span style='mso-spacerun:yes'>&nbsp; </span><span class=SpellE>draw</span></span><span
+class=SpellE>_ChainCode</span>(<span class=SpellE>ChainCode</span> *<span
+class=SpellE>ccP</span>, Image *<span class=SpellE>imageP</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>ccP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <span class=SpellE><em><span
+style='font-family:"Courier New"'>Chaincode</span></em></span> <em><span
+style='font-family:"Courier New"'>structure</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>imageP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>image</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: nothing</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span>overlay (draw) a chain code contour onto an</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>image</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>print_ChainCode</span>(<span
+class=SpellE>ChainCode</span> *<span class=SpellE>ccP</span>, const char *name)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>ccP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <span class=SpellE><em><span
+style='font-family:"Courier New"'>Chaincode</span></em></span> <em><span
+style='font-family:"Courier New"'>structure</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>name</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>string</span></em> <em><span
+style='font-family:"Courier New"'>containing</span></em> <em><span
+style='font-family:"Courier New"'>file</span></em> <em><span style='font-family:
+"Courier New"'>name</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: 1 on success and 0 on failure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description:<span style='mso-spacerun:yes'>&nbsp; </span>Print a chain code representation to a file</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre> <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class=SpellE>ChainCode</span> *<span class=SpellE>read_<span class=GramE>ChainCode</span></span><span
+class=GramE>(</span>const char *name)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>name</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>string</span></em> <em><span
+style='font-family:"Courier New"'>containing</span></em> <em><span
+style='font-family:"Courier New"'>file</span></em> <em><span style='font-family:
+"Courier New"'>name</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer a chain code structure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Read a chain code file representation into a</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>chain</span> code structure.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>ChainCode</span> *<span class=SpellE>read_<span class=GramE>ChainCode</span></span><span
+class=GramE>(</span>const char *name)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>name</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>string</span></em> <em><span
+style='font-family:"Courier New"'>containing</span></em> <em><span
+style='font-family:"Courier New"'>file</span></em> <em><span style='font-family:
+"Courier New"'>name</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer a chain code structure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Read a chain code file representation into a</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>chain</span> code structure.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: Null pointer on failure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>FUNCTIONS: Labeled Objects and object properties</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>ObjectList</span> <span class=SpellE>label_<span class=GramE>Objects</span></span><span
+class=GramE>(</span> Image *<span class=SpellE>imageP</span>, Image **<span
+class=SpellE>labelP</span>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>unsigned</span><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>background)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>imageP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>input</span></em> <em><span style='font-family:"Courier New"'>image</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>labelP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>set</span></em> <em><span style='font-family:
+"Courier New"'>to</span></em> <em><span style='font-family:"Courier New"'>point</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <span class=SpellE><em><span
+style='font-family:"Courier New"'>labelled</span></em></span> <em><span
+style='font-family:"Courier New"'>image</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>background</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>background</span></em> <em><span
+style='font-family:"Courier New"'>pixel</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer to object list structure describing</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>objects</span> in <span class=SpellE>labelled</span> image</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Perform sequential <span
+class=SpellE>labelling</span> on input image.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>The image may be binary, grayscale or color. A color</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>image</span> is limited to a color map of 256 colors or less.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>ObjectVector</span> *<span class=SpellE>listToVector_<span
+class=GramE>Objects</span></span><span class=GramE>(</span><span class=SpellE>ObjectList</span> <span
+class=SpellE>listP</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>listP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>object</span></em> <em><span style='font-family:"Courier New"'>list</span></em> <em><span
+style='font-family:"Courier New"'>structure</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: pointer to object vector</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Create a vector of objects from an object</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>vector</span>.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> <span class=SpellE>printLabel_Objects</span>( <span
+class=SpellE>ObjectList</span> <span class=SpellE>listP</span>, const char *name)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>listP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>object</span></em> <em><span style='font-family:"Courier New"'>list</span></em> <em><span
+style='font-family:"Courier New"'>structure</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>name</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>name</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>file</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>print</span></em> <em><span style='font-family:"Courier New"'>to</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: nothing</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Print object list representation to file</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>readLabel_Objects</span>( <span
+class=SpellE>ObjectList</span> <span class=SpellE>listP</span>, const char *name )</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>listP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>object</span></em> <em><span style='font-family:"Courier New"'>list</span></em> <em><span
+style='font-family:"Courier New"'>structure</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>name</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>name</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>file</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>print</span></em> <em><span style='font-family:"Courier New"'>to</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: 1 on success and 0 on failure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Read object list representation from file</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> <span class=SpellE>getProp_Object</span>(Object *<span
+class=SpellE>objP</span>, ROI *<span class=SpellE>roiP</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>objP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>object</span></em> <em><span style='font-family:"Courier New"'>list</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>roiP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>Pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>ROI</span></em> <em><span style='font-family:"Courier New"'>image</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: nothing</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Obtain object properties for a region of</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>interest</span> in an image. Properties calculated are:</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(1) zero-order moment (area), (2) horizontal center</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>of</span> gravity, (3) vertical center of gravity, (4)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>orientation</span> angle (degrees), (5) <span class=SpellE>eigenvalue</span> ratio.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> <span class=SpellE>getProp_Objects</span>(<span
+class=SpellE>ObjectList</span> <span class=SpellE>listP</span>, Image *<span
+class=SpellE>labelP</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>listP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>object</span></em> <em><span style='font-family:"Courier New"'>list</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>labelP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>Pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <span class=SpellE><em><span
+style='font-family:"Courier New"'>labelled</span></em></span> <em><span
+style='font-family:"Courier New"'>image</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: nothing</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Obtain the object properties for each object</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>in</span> the object list for the specified <span class=SpellE>labelled</span> image.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> <span class=SpellE>printProp_Object</span>( void *<span
+class=SpellE>thisP</span>, FILE *<span class=SpellE>fileP</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>thisP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>fileP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>open</span></em> <em><span style='font-family:
+"Courier New"'>file</span></em> <em><span style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>for</span></em> <em><span style='font-family:
+"Courier New"'>output</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: nothing</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Print the properties of an object</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span style='mso-spacerun:yes'>&nbsp;&nbsp;</span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>void</span> <span class=SpellE>printProp_Objects</span>(<span
+class=SpellE>ObjectList</span> <span class=SpellE>listP</span>, const char *name)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>listP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>object</span></em> <em><span style='font-family:"Courier New"'>list</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>fileP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>open</span></em> <em><span style='font-family:
+"Courier New"'>file</span></em> <em><span style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>for</span></em> <em><span style='font-family:
+"Courier New"'>output</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: nothing</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Print an object list representation to a file</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>readProp_Objects</span>( <span
+class=SpellE>ObjectList</span> <span class=SpellE>listP</span>, const char *name )</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre> <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>listP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>object</span></em> <em><span style='font-family:"Courier New"'>list</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>name</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>name</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>file</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>read</span></em> <em><span style='font-family:"Courier New"'>from</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: 1 on success and 0 on failure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Read an object list representation from a file</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>trimList_Objects</span>( <span
+class=SpellE>ObjectList</span> <span class=SpellE>listP</span>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>unsigned</span> width, unsigned height,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>float</span> <span class=SpellE>p_area_min</span>, float <span
+class=SpellE>p_area_max</span>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>float</span> <span class=SpellE>eig_r_min</span>, float <span
+class=SpellE>eig_r_max</span>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>float</span> <span class=SpellE>angle_min</span>, float <span
+class=SpellE>angle_max</span>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>float</span> <span class=SpellE>p_width</span>, float <span
+class=SpellE>p_height</span>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>CVIP_BOOLEAN <span
+class=SpellE>no_edge</span>)</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=======================================================================</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><span class=GramE><em><span style='font-family:"Courier New"'>listP</span></em></span></span>&gt; - <em><span
+style='font-family:"Courier New"'>pointer</span></em> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>object</span></em> <em><span style='font-family:"Courier New"'>list</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=GramE><em><span style='font-family:"Courier New"'>width</span></em></span>, <em><span
+style='font-family:"Courier New"'>height</span></em>&gt; - <em><span
+style='font-family:"Courier New"'>width</span></em>, <em><span
+style='font-family:"Courier New"'>height</span></em> <em><span
+style='font-family:"Courier New"'>of</span></em> <em><span style='font-family:
+"Courier New"'>image</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>p</span></em>_<em><span
+style='font-family:"Courier New"'>area</span></em>_<em><span style='font-family:
+"Courier New"'>min</span></em></span>, <span class=SpellE><em><span
+style='font-family:"Courier New"'>p</span></em>_<em><span style='font-family:
+"Courier New"'>area</span></em>_<em><span style='font-family:"Courier New"'>max</span></em></span>&gt; - <span
+class=SpellE><em><span style='font-family:"Courier New"'>percentabe</span></em></span> <em><span
+style='font-family:"Courier New"'>minimum</span></em>/<em><span
+style='font-family:"Courier New"'>maximum</span></em> <em><span
+style='font-family:"Courier New"'>area</span></em> <em><span style='font-family:
+"Courier New"'>of</span></em> <em><span style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE><em><span style='font-family:"Courier New"'>relative</span></em></span> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>image</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>eig</span></em>_<em><span
+style='font-family:"Courier New"'>r</span></em>_<em><span style='font-family:
+"Courier New"'>min</span></em></span>, <span class=SpellE><em><span
+style='font-family:"Courier New"'>eig</span></em>_<em><span style='font-family:
+"Courier New"'>r</span></em>_<em><span style='font-family:"Courier New"'>max</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>minimum</span></em>/<em><span
+style='font-family:"Courier New"'>maximum</span></em> <span class=SpellE><em><span
+style='font-family:"Courier New"'>eigenvalue</span></em></span> <em><span
+style='font-family:"Courier New"'>ratio</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>angle</span></em>_<em><span
+style='font-family:"Courier New"'>min</span></em></span>, <span class=SpellE><em><span
+style='font-family:"Courier New"'>angle</span></em>_<em><span style='font-family:
+"Courier New"'>max</span></em></span>&gt; - <em><span style='font-family:"Courier New"'>minimum</span></em>/<em><span
+style='font-family:"Courier New"'>maximum</span></em> <em><span
+style='font-family:"Courier New"'>angle</span></em> <em><span style='font-family:
+"Courier New"'>for</span></em> <em><span style='font-family:"Courier New"'>principal</span></em> <em><span
+style='font-family:"Courier New"'>axis</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>p</span></em>_<em><span
+style='font-family:"Courier New"'>width</span></em></span>, <span class=SpellE><em><span
+style='font-family:"Courier New"'>p</span></em>_<em><span style='font-family:
+"Courier New"'>height</span></em></span>&gt; - <span class=SpellE><em><span
+style='font-family:"Courier New"'>pencentage</span></em></span> <em><span
+style='font-family:"Courier New"'>minimum</span></em> <em><span
+style='font-family:"Courier New"'>width</span></em>/<em><span style='font-family:
+"Courier New"'>height</span></em> <em><span style='font-family:"Courier New"'>of</span></em> <em><span
+style='font-family:"Courier New"'>object</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE><em><span style='font-family:"Courier New"'>relative</span></em></span> <em><span
+style='font-family:"Courier New"'>to</span></em> <em><span style='font-family:
+"Courier New"'>image</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span
+class=SpellE><em><span style='font-family:"Courier New"'>no</span></em>_<em><span
+style='font-family:"Courier New"'>edge</span></em></span>&gt; - <em><span
+style='font-family:"Courier New"'>set</span></em> <em><span style='font-family:
+"Courier New"'>to</span></em> <em><span style='font-family:"Courier New"'>CVIP</span></em>_<em><span
+style='font-family:"Courier New"'>TRUE</span></em> <em><span style='font-family:
+"Courier New"'>is</span></em> <em><span style='font-family:"Courier New"'>object</span></em> <em><span
+style='font-family:"Courier New"'>should</span></em> <em><span
+style='font-family:"Courier New"'>not</span></em> <em><span style='font-family:
+"Courier New"'>touch</span></em> <em><span style='font-family:"Courier New"'>boundary</span></em></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE><em><span style='font-family:"Courier New"'>of</span></em></span> <em><span
+style='font-family:"Courier New"'>image</span></em></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Returns: 1 on success and 0 on failure</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description: Remove objects from a list that do not meet</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>the</span> specified requirements.</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Diagnostics: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></pre><pre>The C files containing these functions are located under $<span
+class=SpellE>CVIPtoolsHOME</span>\CVIPC\Object<o:p></o:p></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>References: none</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Author(s): Gregory <span
+class=SpellE>Hance</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=SpellE>Object.c</span>,<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>ObjectContour.c</span>,<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>ObjectLabel.c</span>,</pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>ObjectProperties.c</span>, <span class=SpellE>TrimList.c</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Copyright (C) 1996, 2004 SIUE - by Scott E <span
+class=SpellE>Umbaugh</span>, Greg <span class=SpellE>Hance</span>.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

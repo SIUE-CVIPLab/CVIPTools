@@ -1,0 +1,276 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="cvip_restore_geomtransform_files/filelist.xml">
+<title>Geometric transforms</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Iris Cheng</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>10</o:Revision>
+  <o:TotalTime>46</o:TotalTime>
+  <o:Created>2003-10-20T16:38:00Z</o:Created>
+  <o:LastSaved>2004-11-26T22:25:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>535</o:Words>
+  <o:Characters>3050</o:Characters>
+  <o:Company>Westar</o:Company>
+  <o:Lines>25</o:Lines>
+  <o:Paragraphs>7</o:Paragraphs>
+  <o:CharactersWithSpaces>3578</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:\5B8B\4F53;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:SimSun;}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:SimSun;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="4098"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white background=background.gif lang=EN-US link=blue vlink=blue
+style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h3><!-- .TH cvip_restore_geomtransform -->Restoration: Geometric Transforms</h3>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p><a name=0></a>Here you can restore an image that has been spatially
+(geometrically) distorted using the method of quadrilateral <span class=SpellE>tiepoints</span>.
+You can also perform the opposite, that is, image distortion or image warping. </p>
+
+<p>The restoration or warping takes place by a using a mesh file which contains
+the (<span class=SpellE>r<span class=GramE>,c</span></span>) coordinates pairs
+for the irregular grid. </p>
+
+<p>Note that to restore an image that has been distorted with this method,
+simply reverse the direction, select the distorted image, and use the same mesh
+file. </p>
+
+<p>To turn On/Off the mesh display, right click on the image and select the
+&#8216;Draw/Show Mesh&#8217; option by clicking the left mouse button as
+desired.</p>
+
+<p>In general, to perform the geometric transform: enter a mesh file name,
+select direction, select gray level interpolation method and press
+&#8216;Apply&#8217;. There are three methods for using/generating the mesh
+file, as follows. </p>
+
+<p class=MsoNormal><a href="#1">To Create A New Mesh File<span class=GramE>:</span></a><br>
+<a href="#2">To Use An Existing Mesh File:</a><br>
+<a href="#3">To Create A Sine Mesh</a></p>
+
+</blockquote>
+
+<h4>&nbsp; &nbsp; TO CREATE A NEW MESH FILE:</h4>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p><a name=1></a>Select &#8216;Enter a new mesh file&#8217; radio button at top
+of the window. </p>
+
+<p>Enter or select the number of rows and columns of mesh points. </p>
+
+<p>Now enter the mesh points. For entering mesh points press the &#8216;Alt <span
+class=GramE>+<span style='mso-spacerun:yes'>&nbsp; </span>click</span> Left
+mouse button&#8217; to select all mesh points one by one. For example: If you
+select 3 rows and 3 columns, you have to enter 9 mesh points. The number of
+mesh points left to enter is displayed in a text box. When all the mesh points
+are entered by the user the program prompts the user to press the
+&#8216;Apply&#8217; button and perform the operation.</p>
+
+<p>As the points are being entered, the mesh will be displayed. To turn On/Off
+the mesh display, right click on the image and select the &#8216;Draw/Show
+Mesh&#8217; option appropriately as desired. If the mesh is NOT acceptable,
+press the &#8216;Redo&#8217; button and enter a new mesh. You may either keep
+or change the mesh file name and number of rows and columns of mesh points. You
+must enter new mesh coordinates. </p>
+
+<p>After you have an acceptable mesh, select the direction of the
+transformation and the gray value interpolation method. Press
+&#8216;Apply&#8217; to apply the mesh to the current image. </p>
+
+<p>To save the mesh you just used, click the &#8216;Save Mesh&#8217; button. As
+default, it will be saved in <i style='mso-bidi-font-style:normal'>$<span
+class=SpellE>CVIPtoolsHOME</span></i>\bin\mesh directory.<o:p></o:p></p>
+
+</blockquote>
+
+<h4><!-- .SS TO USE AN EXISTING MESH FILE: -->&nbsp; &nbsp; TO USE AN EXISTING
+MESH FILE:</h4>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p><a name=2></a>Select &#8216;Use an existing mesh file&#8217; radio button at
+the top of the window. </p>
+
+<p>Press the &#8216;Select&#8217; button. This will take you to the list of
+existing mesh files in the &#8216;mesh&#8217; directory. Select one mesh file
+from the list of<span style='mso-spacerun:yes'>&nbsp; </span>existing mesh
+files.<span style='mso-spacerun:yes'>&nbsp; </span></p>
+
+<p>Select the direction of the transformation and the gray value interpolation
+method. Press &#8216;Apply&#8217; to apply the mesh to the current image. <o:p></o:p></p>
+
+</blockquote>
+
+<h4><!-- .SS TO CREATE A SINE MESH -->&nbsp; &nbsp; TO CR<st1:stockticker>EATE</st1:stockticker>
+A SINE MESH</h4>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p><a name=3></a>Select &#8216;Create a sine mesh&#8217; radio button at the
+top of the window. </p>
+
+<p>Enter a mesh file name. If the file name already exists, you will be
+prompted to change the name. </p>
+
+<p>Enter or select the number of rows or columns of mesh points. The same
+number will be used for both rows and columns. </p>
+
+<p>Note: for a 256 x 256 image, create a sine mesh of 16 x 16 or smaller. For a
+512 x 512 image, the maximum mesh size will be <span class=GramE>32 x 32</span>.
+</p>
+
+<p>Press the &#8216;Apply&#8217; button. A mesh will be created and displayed,
+and will be applied to the current image. </p>
+
+<p>The mesh has its upper-left corner located at column 0, row 25. Its
+approximate dimensions will be 15*(number of rows) x 15*(number of columns). </p>
+
+<p>To save the Sine mesh you just applied to the image, click the &#8216;Save
+Mesh&#8217; button. As default, it will be saved in <i style='mso-bidi-font-style:
+normal'>$<span class=SpellE>CVIPtoolsHOME</span></i>\bin\mesh directory.<o:p></o:p></p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+</blockquote>
+
+<!-- .SS TO USE AN EXISTING MESH FILE: --></div>
+
+<!-- .SH } -->
+</body>
+
+</html>

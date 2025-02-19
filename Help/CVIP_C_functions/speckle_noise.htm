@@ -1,0 +1,195 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="speckle_noise_files/filelist.xml">
+<title>speckle_noise</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>3</o:TotalTime>
+  <o:Created>2004-06-05T01:05:00Z</o:Created>
+  <o:LastSaved>2004-10-20T00:17:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>388</o:Words>
+  <o:Characters>2217</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>18</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>2600</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>speckle_noise - Add speckle noise to an image</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>#include &quot;CVIPnoise.h&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Image<span style='mso-spacerun:yes'>   </span>*speckle_<span
+class=GramE>noise(</span>Image<span style='mso-spacerun:yes'>   </span>*imageP,float<span style='mso-spacerun:yes'>    </span>*psalt,float</pre><pre><span style='mso-spacerun:yes'>     </span>*ppepper);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>imageP</span>&gt; - pointer to Image structure</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>psalt</span>&gt; - probability of salt noise (high gray level = 255)</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>ppepper</span>&gt; - probability of pepper noise (low gray<span style='mso-spacerun:yes'>  </span>level<span style='mso-spacerun:yes'>  </span>=</pre><pre><span style='mso-spacerun:yes'>     </span>0)</pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$CVIPtoolsHOME\CVIPC\SPATIALFILTER\spatial_tools.c</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Speckle noise, also called &quot;<span
+class=GramE>salt<span style='mso-spacerun:yes'>  </span>and</span><span style='mso-spacerun:yes'>  </span>pepper&quot;<span style='mso-spacerun:yes'>  </span>type<span style='mso-spacerun:yes'>  </span>noise,</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>typically</span> occurs in images that are acquired by cameras con-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>taining</span> malfunctioning pixels.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>Salt<span style='mso-spacerun:yes'>  </span>and</span><span style='mso-spacerun:yes'>  </span>Pepper<span style='mso-spacerun:yes'>  </span>noise<span style='mso-spacerun:yes'>  </span>is</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>named<span style='mso-spacerun:yes'>  </span>after</span><span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>white<span style='mso-spacerun:yes'>  </span>and<span style='mso-spacerun:yes'>  </span>black<span style='mso-spacerun:yes'>  </span>appearance<span style='mso-spacerun:yes'>  </span>it adds to</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>images</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>The float <em><span
+style='font-family:"Courier New"'>pblack</span></em> represents the probability of a pixel being</pre><pre><span style='mso-spacerun:yes'>     </span>&quot;<span
+class=GramE>black</span>&quot;,<span style='mso-spacerun:yes'>   </span>or<span style='mso-spacerun:yes'>  </span>0<span style='mso-spacerun:yes'>  </span>in<span style='mso-spacerun:yes'>  </span>grey-level,<span style='mso-spacerun:yes'>  </span>while<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>float<span style='mso-spacerun:yes'>  </span><em><span
+style='font-family:"Courier New"'>pwhite</span></em></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>represents</span> the probability of a pixel being &quot;white&quot;, or 255.</pre><pre><span style='mso-spacerun:yes'>     </span>Note: the sum of <em><span
+style='font-family:"Courier New"'>pblack</span></em> and <em><span
+style='font-family:"Courier New"'>pwhite</span></em> cannot exceed 1.0.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>The speckle_<span class=GramE>noise(</span>)<span style='mso-spacerun:yes'>  </span>function<span style='mso-spacerun:yes'>  </span>returns<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>modified<span style='mso-spacerun:yes'>  </span>Image</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>pointer</span> on success, and returns a NULL pointer on failure</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>BUGS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=GramE>none</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPtoolkit.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPimage.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPconvert.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPview.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;CVIPnoise.h&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIEWER &quot;picture&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIDEO_APP &quot;SunVideo &amp;&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>void</span> main()</pre><pre><span style='mso-spacerun:yes'>      </span>{</pre><pre><span style='mso-spacerun:yes'>      </span>Image *cvipImage;</pre><pre><span style='mso-spacerun:yes'>      </span>IMAGE_FORMAT format;</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>char</span> *inputfile,*outputfile;</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>float</span> psalt=0.1;</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>float</span> ppepper=0.2;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>setDisplay_<span
+class=GramE>Image(</span>VIEWER, &quot;Default&quot;);</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>print_<span
+class=GramE>CVIP(</span>&quot;\n\t\tEnter the Input File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>inputfile</span> =(char *) getString_CVIP();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>format</span> = getFormat_CVIP(inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>cvipImage</span> = read_Image(inputfile, 1);</pre><pre><span style='mso-spacerun:yes'>      </span>view_<span
+class=GramE>Image(</span>cvipImage, inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span>inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>/* the following call adds speckle noise to the input</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>image</span> with the probability of high grey levels equal</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>to</span> 0.1 and the probability of low grey levels equal to</pre><pre><span style='mso-spacerun:yes'>      </span>0.2<span
+class=GramE>.We</span> can use the function speckle_noise_setup so</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>that</span> the user can<span style='mso-spacerun:yes'>  </span>specify the inputs<span style='mso-spacerun:yes'>  </span>*/</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>cvipImage</span> = speckle_noise(cvipImage,&amp;psalt,&amp;ppepper);</pre><pre><span style='mso-spacerun:yes'>      </span>print_<span
+class=GramE>CVIP(</span>&quot;\n\t\tEnter the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>outputfile</span> = getString_CVIP();</pre><pre><span style='mso-spacerun:yes'>      </span>view_<span
+class=GramE>Image(</span>cvipImage,outputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>write_<span
+class=GramE>Image(</span>cvipImage,outputfile,CVIP_NO,CVIP_NO,format,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span>outputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>}</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>gamma_<span class=GramE>noise(</span>3),<span style='mso-spacerun:yes'>     </span>gaussian_noise(3),<span style='mso-spacerun:yes'>     </span>neg_exp_noise(3),</pre><pre><span style='mso-spacerun:yes'>     </span>rayleigh_<span
+class=GramE>noise(</span>3), uniform_noise(3)</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'>  </span>Copyright (C) 1992, 1996, 2004 SIUE -<span style='mso-spacerun:yes'>  </span>by<span style='mso-spacerun:yes'>  </span>Scott<span style='mso-spacerun:yes'>  </span>E.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>Umbaugh<span style='mso-spacerun:yes'>  </span>and</span></pre><pre><span style='mso-spacerun:yes'>     </span>David Lyons.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>CLAHE</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=571
+ style='width:5.95in;border-collapse:collapse'>
+ <tr>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-size:14.0pt;
+  font-family:"Arial Black",sans-serif'>Name</span></p>
+  </td>
+  <td width=444 colspan=2 valign=top style='width:333.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-size:14.0pt;
+  font-family:"Arial Black",sans-serif'>CLAHE</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>performs contrast limited adaptive histogram
+  equalization on neighborhood basis</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-size:14.0pt;
+  font-family:"Arial Black",sans-serif'>Function Prototype</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>CLAHE([in] long* image,[in] int
+  size, [in] double clippercent [in] int mb,[out,retval] long* Result_Image);</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-size:14.0pt;
+  font-family:"Arial Black",sans-serif'>Return Value</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>Result_Image</p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>long *</p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>result image</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-size:14.0pt;
+  font-family:"Arial Black",sans-serif'>Parameters</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-family:"Arial Black",sans-serif'>Name</span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-family:"Arial Black",sans-serif'>Type</span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-family:"Arial Black",sans-serif'>Description</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>image</p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>long *</p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>pointer to a labeled image</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>size</p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>clippercent</p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>int</p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>double</p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>desired blocksize</p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>desired clip percentage</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>mb</p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>int</p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>RGB band on which to calculate
+  histogram (0,1,2)</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-size:14.0pt;
+  font-family:"Arial Black",sans-serif'>Description</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'><pre><span
+  style='font-size:12.0pt;font-family:"Times New Roman",serif'>This function performs a contrast limited adaptive histogram equalization algorithm. </span></pre><pre><span
+  style='font-size:12.0pt;font-family:"Times New Roman",serif'>The algorithm calculates the CDF for the neighborhood of each pixel based on the blocksize. </span></pre><pre><span
+  style='font-size:12.0pt;font-family:"Times New Roman",serif'>Edges are kept using a DCT symmetry method. Images must be a byte value.</span></pre></td>
+ </tr>
+ <tr>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-size:14.0pt;
+  font-family:"Arial Black",sans-serif'>Bugs</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>None.</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

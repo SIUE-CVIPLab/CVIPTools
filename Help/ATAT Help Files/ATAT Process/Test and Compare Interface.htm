@@ -1,0 +1,165 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Test and Compare Tab</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%;
+font-family:"Times New Roman",serif'>Test and Comparison Interface:</span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%;font-family:
+"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman",serif'>Run Section:</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'>The
+run section controls and monitors an experiment. The run button begins an
+experiment using the parameters defined by the Images, Processes, and the
+Compare/Testing sections. During the experiment, the progress bar will fill
+with the current percentage of finished algorithms. This will be represented
+numerically under the progress bar. The type of test currently running will
+also be shown. This will be signified as No Test, Testing, or Comparing. The
+Total Options represents the number of images multiplied by the number of
+algorithms. The Finished Options represents how many of the image/algorithm
+tests have been run. This number only increases during the testing phase. The
+running test can be paused/resumed using the Pause button and can be cancelled
+using the Stop button.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%;font-family:
+"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman",serif'>Compare Section:</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'>This
+section is important if the comparison portion of an experiment is used. This
+is represented when the “Full Test” or “Only Compare” experiments are run.
+Currently, there are seven error metrics and two ways to measure the best
+algorithm. The seven error metrics include RMS, SNR, Subtract, Dice, Jaccard, Overlap,
+and XOR. Checking these boxes will make their thresholds available. Each column
+represents a different band. The numbers within the columns will be used to
+measure the images success based on if the actual error metric is above/below
+it. The above/below is defined differently depending on the error metric
+chosen. </span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%;font-family:
+"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The two remaining checkboxes can be used to compare algorithms rather than
+images. The images will be separated into sets by algorithm. The average of the
+error metrics within each set will be calculated. If standard deviation is
+chosen, then the standard deviation of each set will be calculated using the
+average. The results of these comparison options will be included in an excel
+sheet created at the end of the experiment.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%;font-family:
+"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman",serif'>Testing Section:</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'>ATAT
+can be run using three different experiment modes. The first is a full test.
+This experiment will combine the testing portion with the combination portion.
+Images from the Images Interface will be tested using the algorithms created in
+the Processes Interface. These tests will create resulting images stored in the
+“outputImage” folder within the same folder as the project file. This folder
+will be sorted by algorithm. An algorithm file will also be created that holds
+the ID to algorithm translations. After the test, this folder can be quickly
+accessed using the “Link to Results Folder” option. After these images are
+created, the comparison portion of the experiment begins. Each image in the
+“outputImage” folder will be compared to its ideal image using the error
+metrics defined in the Compare section. These results will be stored in an
+excel sheet with same folder as the project file.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%;font-family:
+"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The other two options are used to split the full test into its two main
+sections. The “Only Test” option will create the resulting images from the
+algorithms and place them into the “outputFolder”. It will then skip the
+comparison section. The “Only Compare” options will skip the testing phase.
+Because of this, the folders used for comparison will need to be specified. The
+Test Directory holds the images that need to be compared. These are often the
+“outputFolder” from a previous “Only Test” or “Full Test” experiment. The Ideal
+Directory holds the images used for comparison. The images in the Test
+Directory must have an identical starting name to one of the Ideal Directory
+images. These folders will then be used to obtain the comparison results. An
+algorithm file can be added if algorithm titles are desired in the excel
+sheets.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%;font-family:
+"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman",serif'>Test Result Section:</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'>After
+a “Test” experiment, images from each algorithm will be created. These images
+will be added to the table within this section along with location and
+parameter data. Clicking on a row will display the result image and its ideal image
+match. As of now, opening too many images can cause increased latency. It may
+be more beneficial to open these results in the CVIPtools GUI.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+
+</div>
+
+</body>
+
+</html>

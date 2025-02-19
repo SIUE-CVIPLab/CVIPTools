@@ -1,0 +1,194 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Dice_Coef</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=571
+ style='width:5.95in;border-collapse:collapse'>
+ <tr>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-size:14.0pt;
+  font-family:"Arial Black",sans-serif'>Name</span></p>
+  </td>
+  <td width=444 colspan=2 valign=top style='width:333.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-size:14.0pt;
+  font-family:"Arial Black",sans-serif'>Dice_Coef</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>Determines the DICE Coefficient of
+  two images</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-size:14.0pt;
+  font-family:"Arial Black",sans-serif'>Function Prototype</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>Dice_Coef([in] long* input_im1,[in]
+  long* input_im2, [out,retval] VARIANT* error_values);</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-size:14.0pt;
+  font-family:"Arial Black",sans-serif'>Return Value</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>error_values</p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>VARIANT*</p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>Pointer to calculated DICE value
+  (double)</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-size:14.0pt;
+  font-family:"Arial Black",sans-serif'>Parameters</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-family:"Arial Black",sans-serif'>Name</span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-family:"Arial Black",sans-serif'>Type</span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-family:"Arial Black",sans-serif'>Description</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>input_im1</p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>Long *</p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>pointer to an Image structure</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>input_im2</p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>Long *</p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>pointer to an Image structure</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-size:14.0pt;
+  font-family:"Arial Black",sans-serif'>Description</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>This function finds the DICE
+  Coefficient of two images.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'><span style='font-size:14.0pt;
+  font-family:"Arial Black",sans-serif'>Bugs</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in;text-align:justify'>None.</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;
+margin-left:0in;text-align:justify;layout-grid-mode:char'>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

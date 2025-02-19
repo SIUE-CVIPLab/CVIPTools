@@ -1,0 +1,237 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="glr_compress_files/filelist.xml">
+<title>glr_compress</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2004-06-04T23:14:00Z</o:Created>
+  <o:LastSaved>2004-10-19T23:59:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>512</o:Words>
+  <o:Characters>2923</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>24</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3429</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>glr_compress</span> - Performs gray level runlength coding</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPtoolkit.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPconvert.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPdef.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>grey_RLC.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;sys/<span
+class=SpellE>types.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;sys/<span
+class=SpellE>stat.h</span>&gt;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>glr_compress</span>(Image *<span
+class=SpellE>inputImage</span>, char *filename, <span class=SpellE>int</span> win)</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE><span class=GramE>inputImage</span></span>&gt; - a pointer to an Image structure</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>filename</span>&gt; - pointer to char string containing filename</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>win</span>&gt; - size of window (1-128)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Image *<span
+class=SpellE>glr_<span class=GramE>decompress</span></span><span class=GramE>(</span>char filename)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'>   </span>&lt;<span
+class=GramE>filename</span>&gt; - name of the compressed file</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$<span class=SpellE>CVIPtoolsHOME\CVIPC\COMPRESSION\gray_RLC.c</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE><span
+class=GramE>glr_compress</span></span> takes three parameters,<span style='mso-spacerun:yes'>   </span>the<span style='mso-spacerun:yes'>  </span>pointer<span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span>the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>input<span style='mso-spacerun:yes'>  </span>image</span><span style='mso-spacerun:yes'>  </span>array of type byte, the file name to which the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>compressed</span> image is to be stored, and the window length. The</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>valid</span> window length is (1-128). The user is suggested to use</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>window</span> length from 1-75 as this range gives better<span style='mso-spacerun:yes'>  </span>results.</pre><pre><span style='mso-spacerun:yes'>     </span>The higher the window range the higher the compression ratio</pre><pre><span style='mso-spacerun:yes'>  </span><span style='mso-spacerun:yes'>   </span><span
+class=GramE>and</span> vice versa. At the end of the compression, <span
+class=GramE>this<span style='mso-spacerun:yes'>  </span>routine</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>automatically<span style='mso-spacerun:yes'>  </span>writes</span><span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>working window the following</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>data</span>: the size of the original image, size of the compressed</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>file</span>, compression ratio.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Algorithmic details can be found in &quot;A <span
+class=GramE>Dynamic<span style='mso-spacerun:yes'>  </span>Window</span>-Based</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>Runlength</span> Coding Algorithm Applied to Gray-Level Images&quot;, M.</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>Kumaran</span>, S.E Umbaugh, GRAPHICAL MODELS AND IMAGE PROCESSING,</pre><pre><span style='mso-spacerun:yes'>     </span>Vol. 57, No. 4, July 1995, pp. 267-282.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>glr_decompress</span></span> takes pointer<span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>character<span style='mso-spacerun:yes'>  </span>array<span style='mso-spacerun:yes'>  </span>and</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>returns</span> pointer to the image. The character array represents</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>the</span> filename to be decoded. <span class=GramE>It<span style='mso-spacerun:yes'>  </span>returns</span><span style='mso-spacerun:yes'>  </span>a<span style='mso-spacerun:yes'>  </span>pointer<span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span>the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>decoded</span> image structure.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>TYPES AND C<st1:stockticker>ONST</st1:stockticker>ANTS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>None</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>glr_compress</span>: 0 on success, -1 on failure</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>glr_decompress</span>: an uncompressed image pointer on success<span
+class=GramE>,<span style='mso-spacerun:yes'>  </span>a</span></pre><pre><span style='mso-spacerun:yes'>     </span>NULL pointer on failure</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>HISTORY</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>History information recorded: None</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPtoolkit.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPimage.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPdef.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPconvert.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPview.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;sys/<span
+class=SpellE>types.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;sys/<span
+class=SpellE>stat.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIEWER &quot;picture&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIDEO_APP &quot;<span
+class=SpellE>SunVideo</span> &amp;&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>void</span> main()</pre><pre><span style='mso-spacerun:yes'>      </span>{</pre><pre><span style='mso-spacerun:yes'>      </span>Image *<span
+class=SpellE>cvipImage</span>;</pre><pre><span style='mso-spacerun:yes'>      </span>IMAGE_FORMAT format;</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>char</span> *<span class=SpellE>inputfile</span>,*<span
+class=SpellE>outputfile</span>;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>setDisplay_<span class=GramE>Image</span></span><span class=GramE>(</span>VIEWER, &quot;Default&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the<span style='mso-spacerun:yes'>  </span>Input File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>inputfile</span></span> =(char *) <span
+class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>format</span> = <span class=SpellE>getFormat_CVIP</span>(<span
+class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>cvipImage</span></span> = <span class=SpellE>read_Image</span>(inputfile,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>cvipImage</span>, <span class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span><span class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span>/* the following call performs the gray level run length</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>coding</span> with the window size equal to 32 */</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>glr_<span class=GramE>compress</span></span><span class=GramE>(</span>cvipImage,&quot;file1&quot;,32);</pre><pre><span style='mso-spacerun:yes'>      </span>/* the following call performs the gray level run length</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>decoding</span> of the &quot;file1&quot; */</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>cvipImage</span></span><span class=GramE>=</span><span
+class=SpellE>glr_decompress</span>(&quot;file1&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>outputfile</span></span> = <span class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>cvipImage,outputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>write_<span class=GramE>Image</span></span><span class=GramE>(</span>cvipImage,outputfile,CVIP_NO,CVIP_NO,format,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span><span class=SpellE>outputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span>}</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>    </span>COMPRESSION library</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DIAGNOSTICS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>The Gray level <span
+class=SpellE>Runlength</span> coding and <span class=GramE>decoding<span style='mso-spacerun:yes'>  </span>algorithm</span><span style='mso-spacerun:yes'>  </span>was</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>designed</span> to work only on monochrome images.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>Muthu</span> Kumar, SIUE</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1995, 2004 SIUE - by Scott Umbaugh and <span
+class=SpellE>Muthu</span> Kumar.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

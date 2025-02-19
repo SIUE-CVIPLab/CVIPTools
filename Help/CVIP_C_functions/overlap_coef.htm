@@ -1,0 +1,107 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>overlap_coef</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:Consolas;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<h2>NAME</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp; overlap_coef – Determines the overlap coefficient of two images.</pre><pre>&nbsp;</pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &quot;CVIPimage.h&quot;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &quot;CVIParithlogic.h&quot;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &quot;CVIPconvert.h&quot;</pre><pre>&nbsp;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp; Image *overlap_coef(Image *inputImage1,Image *inputImage2)</pre><pre>&nbsp;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;inputImage1&gt; - pointer to an Image structure</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;inputImage2&gt; - pointer to an Image structure</pre><pre>&nbsp;</pre>
+
+<h2>PATH</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp; $CVIPtoolsHOME\CVIPC\SEGMENTATION\overlap_coef.c</pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp; This function finds the overlap coefficient value between two images.</pre><pre>&nbsp;</pre>
+
+<h2>TYPES AND CONSTANTS</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp; None</pre><pre>&nbsp;</pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp; The overlap coefficient value.</pre><pre>&nbsp;</pre>
+
+<h2>HISTORY</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp; History information recorded: None</pre><pre>&nbsp;</pre>
+
+<h2>EXAMPLE</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &quot;CVIPimage.h&quot;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &quot;CVIParithlogic.h&quot;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #include &quot;CVIPconvert.h&quot;</pre><pre>&nbsp;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void main() {</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Image *inputImage1, *inputImage2, *outputImage;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IMAGE_FORMAT format;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; char *inputfile1, *inputfile2, *outputfile;</pre><pre>&nbsp;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setDisplay_Image(&quot;picture&quot;, &quot;Default&quot;);</pre><pre>&nbsp;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print_CVIP(&quot;\n\tEnter the first Input File Name:&nbsp; &quot;);</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; inputfile1 =(char *) getString_CVIP();</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; inputImage1 = read_Image(inputfile1, 1);</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; view_Image(inputImage1,inputfile1);</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; free(inputfile1);</pre><pre>&nbsp;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print_CVIP(&quot;\n\t\tEnter the second Input File Name:&nbsp; &quot;);</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; inputfile2 =(char *) getString_CVIP();</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; inputImage2 = read_Image(inputfile2, 1);</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; view_Image(inputImage2,inputfile2);</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; free(inputfile2);</pre><pre>&nbsp;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; outputImage = overlap_coef(inputImage1, inputImage2);</pre><pre>&nbsp;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print_CVIP(&quot;\n\t\tEnter the Output File Name:&nbsp; &quot;);</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; outputfile = getString_CVIP();</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; view_Image(outputImage,outputfile);</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; free(outputfile);</pre><pre>&nbsp;</pre><pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</pre><pre>&nbsp;</pre>
+
+<h2>SEE ALSO</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp; SEGMENTATION library</pre><pre>&nbsp;</pre>
+
+<h2>AUTHOR</h2>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp; Copyright (C) 2020 SIUE - by Scott E. Umbaugh, Charles Stacey.</pre><pre>&nbsp;</pre>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

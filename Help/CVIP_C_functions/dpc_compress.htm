@@ -1,0 +1,243 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="dpc_compress_files/filelist.xml">
+<title>dpc_compress</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2004-06-04T22:35:00Z</o:Created>
+  <o:LastSaved>2004-10-19T23:53:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>503</o:Words>
+  <o:Characters>2868</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>23</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3365</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>dpc_compress</span> - compresses an image using <span
+class=GramE>differential<span style='mso-spacerun:yes'>  </span>pulse</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>code</span> modulation</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPimage.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPcompress.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;sys/<span
+class=SpellE>stat.h</span>&gt;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>dpc_compress</span>(Image *<span
+class=SpellE>inputImage</span>,<span style='mso-spacerun:yes'>  </span>char<span style='mso-spacerun:yes'>  </span>*filename,<span style='mso-spacerun:yes'>  </span>float</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>ratio</span>,<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>int</span><span style='mso-spacerun:yes'>   </span><span
+class=SpellE>bit_length</span>,<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>int</span><span style='mso-spacerun:yes'>  </span>clipping, <span
+class=SpellE>int</span> direction, <span class=SpellE>int</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>origin</span>)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE><span class=GramE>inputImage</span></span>&gt; - a pointer to an Image structure</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>filename</span>&gt; - pointer to char string containing filename</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>ratio</span>&gt; - the correlation factor</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE>bit_length</span>&gt; - number of bits for compression (1 to 8)</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>clipping</span>&gt; - clip to maximum value (1), otherwise 0</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>direction</span>&gt; - scan image horizontally (0) or vertically (1)</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>origin</span>&gt; - use original (1) or reconstructed (0) values</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Image *<span
+class=SpellE>dpc_<span class=GramE>decompress</span></span><span class=GramE>(</span>char *filename)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>filename</span>&gt; - compressed file</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$<span class=SpellE>CVIPtoolsHOME\CVIPC\COMPRESSION\dpcm.c</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>DPCM is a compression <span
+class=GramE>technique<span style='mso-spacerun:yes'>  </span>that</span><span style='mso-spacerun:yes'>  </span>uses<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>predictive</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>method</span> of differential pulse code modulation. It is based on</pre><pre><span style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'>  </span><span
+class=GramE>the</span> observation that adjacent pixels are<span style='mso-spacerun:yes'>  </span>highly<span style='mso-spacerun:yes'>  </span>correlated</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>within<span style='mso-spacerun:yes'>  </span>real</span><span style='mso-spacerun:yes'>  </span>images,<span style='mso-spacerun:yes'>  </span>and it is wasteful to store repeated,</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>large</span> values to represent consecutive pixels.<span style='mso-spacerun:yes'>  </span>Rather<span
+class=GramE>,<span style='mso-spacerun:yes'>  </span>DPCM</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>stores<span style='mso-spacerun:yes'>  </span>an</span> initial value, followed by the difference between</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>the</span> initial value and subsequent pixel values. <span
+class=GramE>For<span style='mso-spacerun:yes'>  </span>example</span>,</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>a<span style='mso-spacerun:yes'>  </span>line</span><span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>10<span style='mso-spacerun:yes'>  </span>white pixels (value = 255) would usually be</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>represented</span> in 80 bits(8 bits/pixel X<span style='mso-spacerun:yes'>  </span>10<span style='mso-spacerun:yes'>  </span>pixels),<span style='mso-spacerun:yes'>  </span>whereas</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>with<span style='mso-spacerun:yes'>  </span>DPCM</span>, only 17 bits are needed: the first pixel needs 8</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>bits</span>, but each of the other<span style='mso-spacerun:yes'>  </span>pixels<span style='mso-spacerun:yes'>  </span>only<span style='mso-spacerun:yes'>  </span>requires<span style='mso-spacerun:yes'>  </span>1<span style='mso-spacerun:yes'>  </span>bit,</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>since<span style='mso-spacerun:yes'>  </span>the</span> difference between the initial value and the <span
+class=SpellE>oth</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>ers</span></span> is zero (255 - 255 = 0).</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>TYPES AND C<st1:stockticker>ONST</st1:stockticker>ANTS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=GramE>none</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>dpc_compress</span>: 0 on success, -1 on failure</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE>dpc_decompression</span>: an uncompressed image pointer on success,</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>a</span> NULL pointer on failure</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>HISTORY</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>History information recorded: None</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>BUGS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>None at this time</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPtoolkit.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPimage.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPdef.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPconvert.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPview.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;sys/<span
+class=SpellE>types.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;sys/<span
+class=SpellE>stat.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIEWER &quot;picture&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIDEO_APP &quot;<span
+class=SpellE>SunVideo</span> &amp;&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>void</span> main()</pre><pre><span style='mso-spacerun:yes'>      </span>{</pre><pre><span style='mso-spacerun:yes'>     </span><span style='mso-spacerun:yes'> </span>Image *<span
+class=SpellE>cvipImage</span>;</pre><pre><span style='mso-spacerun:yes'>      </span>IMAGE_FORMAT format;</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>char</span> *<span class=SpellE>inputfile</span>,*<span
+class=SpellE>outputfile</span>;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>setDisplay_<span class=GramE>Image</span></span><span class=GramE>(</span>VIEWER, &quot;Default&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the<span style='mso-spacerun:yes'>  </span>Input File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>inputfile</span></span> =(char *) <span
+class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>format</span> = <span class=SpellE>getFormat_CVIP</span>(<span
+class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>cvipImage</span></span> = <span class=SpellE>read_Image</span>(inputfile,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>cvipImage</span>, <span class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span><span class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span>/* the following call performs the differential</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>predictive</span> coding on the input image with the correlation</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>factor</span> equal to .9 and the number of bits equal to 3 */</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>dpc_<span class=GramE>compress</span></span><span class=GramE>(</span>cvipImage,&quot;file1&quot;,.9,3,1,0,1,1);</pre><pre><span style='mso-spacerun:yes'>      </span>/* the following call performs the differential predictive</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>decoding</span> of the input image */</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>cvipImage</span></span><span class=GramE>=</span><span
+class=SpellE>dpc_decompress</span>(&quot;file1&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>outputfile</span></span> = <span class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>cvipImage,outputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>write_<span class=GramE>Image</span></span><span class=GramE>(</span>cvipImage,outputfile,CVIP_NO,CVIP_NO,format,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span><span class=SpellE>outputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span>}</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>COMPRESSION library</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1996, 2004 SIUE - by Scott Umbaugh.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,1035 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="cvip_ana_edgeline_files/filelist.xml">
+<link rel=Edit-Time-Data href="cvip_ana_edgeline_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Edge/Line Detection</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Yue</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Ravneet</o:LastAuthor>
+  <o:Revision>22</o:Revision>
+  <o:TotalTime>370</o:TotalTime>
+  <o:Created>2010-05-11T17:07:00Z</o:Created>
+  <o:LastSaved>2013-07-12T21:33:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>2250</o:Words>
+  <o:Characters>12827</o:Characters>
+  <o:Lines>106</o:Lines>
+  <o:Paragraphs>30</o:Paragraphs>
+  <o:CharactersWithSpaces>15047</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:Canny dt:dt="string" link="canny"></o:Canny>
+ </o:CustomDocumentProperties>
+</xml><![endif]-->
+<link rel=themeData href="cvip_ana_edgeline_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="cvip_ana_edgeline_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>120</w:Zoom>
+  <w:DisplayBackgroundShape/>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr>  <u1:mathPr>
+   <u1:mathFont u1:val="Cambria Math"/>
+   <u1:brkBin u1:val="before"/>
+   <u1:brkBinSub u1:val="--"/>
+   <u1:smallFrac u1:val="off"/>
+   <u1:dispDef/>
+   <u1:lMargin u1:val="0"/>
+   <u1:rMargin u1:val="0"/>
+   <u1:defJc u1:val="centerGroup"/>
+   <u1:wrapIndent u1:val="1440"/>
+   <u1:intLim u1:val="subSup"/>
+   <u1:naryLim u1:val="undOvr"/>
+  </u1:mathPr>
+  <u2:mathPr>
+   <u2:mathFont u2:val="Cambria Math"/>
+   <u2:brkBin u2:val="before"/>
+   <u2:brkBinSub u2:val="--"/>
+   <u2:smallFrac u2:val="off"/>
+   <u2:dispDef/>
+   <u2:lMargin u2:val="0"/>
+   <u2:rMargin u2:val="0"/>
+   <u2:defJc u2:val="centerGroup"/>
+   <u2:wrapIndent u2:val="1440"/>
+   <u2:intLim u2:val="subSup"/>
+   <u2:naryLim u2:val="undOvr"/>
+  </u2:mathPr>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="99" Name="No List"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073743103 0 0 415 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-520092929 1073806591 9 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;
+	font-style:italic;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 4 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-unhide:no;
+	mso-style-link:"Body Text Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{mso-style-unhide:no;
+	mso-style-link:"Body Text Indent Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+pre
+	{mso-style-unhide:no;
+	mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-unhide:no;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Cambria;
+	mso-bidi-font-family:"Times New Roman";
+	color:#4F81BD;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Cambria;
+	mso-bidi-font-family:"Times New Roman";
+	color:#4F81BD;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 4";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Cambria;
+	mso-bidi-font-family:"Times New Roman";
+	color:#4F81BD;
+	font-weight:bold;
+	font-style:italic;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML Preformatted";
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	mso-bidi-font-family:Consolas;}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Body Text";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;}
+span.BodyTextIndentChar
+	{mso-style-name:"Body Text Indent Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Body Text Indent";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 9.0pt 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=blue style='tab-interval:.5in'>
+
+<div class=WordSection1>
+
+<h3 style='margin-right:27.0pt;tab-stops:621.0pt'><a
+name="_Analysis:_Edge/Line_Detection"></a>Analysis: Edge/Line Detection</h3>
+
+<p class=MsoNormal style='margin-right:27.35pt;tab-stops:621.0pt'>&nbsp; &nbsp;
+&nbsp;<a href="#_FOR_ALL_FUNCTIONS:">For All Functions:</a><br>
+&nbsp;<span style='mso-spacerun:yes'>    </span><a
+href="#_Kirsch,_Pyramid,_Robinson:">Kirsch, Pyramid, Robinson:</a><br>
+&nbsp; &nbsp; &nbsp;<span class=MsoHyperlink><a href="#_Sobel,_Prewitt:">Sobel,
+Prewitt:</a></span><br>
+&nbsp; &nbsp; &nbsp;<span class=MsoHyperlink><a href="#_Roberts,_Laplacian:">Roberts,
+Laplacian:</a></span><br>
+&nbsp; &nbsp; &nbsp;<a href="#_Frei-Chen:">Frei-Chen:</a></p>
+
+<p class=MsoNormal style='margin-right:27.35pt;tab-stops:621.0pt'><span
+style='mso-spacerun:yes'>     </span><span class=MsoHyperlink><a
+href="#_Marr_Hildreth:">Marr Hildreth:</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:27.35pt;tab-stops:621.0pt'><span
+style='mso-spacerun:yes'>     </span><span class=MsoHyperlink><a href="#_Canny:">Canny:</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:27.35pt;tab-stops:621.0pt'><span
+style='mso-spacerun:yes'>     </span><span class=MsoHyperlink><a
+href="#_Shen-Castan:">Shen-Castan:</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:27.35pt;tab-stops:621.0pt'><span
+style='mso-spacerun:yes'>     </span><span class=MsoHyperlink><a
+href="#_Boie-Cox:">Boie-Cox:</a></span><br>
+&nbsp; &nbsp; &nbsp;<span class=MsoHyperlink><a href="#_Hough:">Hough:</a></span><br>
+&nbsp; &nbsp; &nbsp;<span class=MsoHyperlink><a href="#_Edge_Link:">Edge link</a>:</span></p>
+
+<p class=MsoNormal style='margin-right:27.35pt;tab-stops:621.0pt'><span
+style='mso-spacerun:yes'>     </span><span class=MsoHyperlink><a
+href="#_Pratt_Merit:">Pratt Merit:</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:27.35pt;tab-stops:621.0pt'>&nbsp; &nbsp;
+&nbsp;<span class=MsoHyperlink><a href="#_Cerchar_Filter:">Cerchar Filter:</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:27.35pt;tab-stops:621.0pt'>&nbsp; &nbsp;
+&nbsp;<span class=MsoHyperlink><a href="#_Harris_Filter:">Harris Filter:</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:27.35pt;tab-stops:621.0pt'><a name=0></a>&nbsp;
+&nbsp; &nbsp;<span class=MsoHyperlink><a href="#_Moravec_Filter:">Moravec
+Filter:</a><o:p></o:p></span></p>
+
+<h4 style='margin-right:27.0pt;text-align:justify;tab-stops:621.0pt'><a
+name="_FOR_ALL_FUNCTIONS:"></a>&nbsp; &nbsp; FOR ALL FUNCTIONS:</h4>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-right:27.0pt;
+mso-margin-bottom-alt:auto;margin-left:.5in;text-align:justify;tab-stops:621.0pt'><a
+name=1></a>After setting the desired parameters, press the ‘Apply’ button at
+lower right to perform the operation. Currently, these functions return an
+image which contains the magnitude information only. </p>
+
+<p style='margin-top:5.0pt;margin-right:27.0pt;margin-bottom:5.0pt;margin-left:
+.5in;text-align:justify;tab-stops:621.0pt'>The use of a ‘Pre-filter’ will cause
+the current image to be processed with the chosen filter before edge detection
+takes place. This is typically some form of a smoothing filter that is used to
+smear out high-frequency noise, thereby helping to eliminate false edges caused
+by noise. </p>
+
+<p style='margin-top:5.0pt;margin-right:27.0pt;margin-bottom:5.0pt;margin-left:
+.5in;text-align:justify;tab-stops:621.0pt'>The use of a ‘Post Threshold’ value
+will cause the image that results from the edge detector to have binary
+thresholding performed on it. If you use the default ‘No post threshold’, you
+can manually apply thresholding to the resultant image with the ‘Threshold
+current image at’ at the bottom of the window or from the ‘Utilities -&gt;
+Convert’ window. </p>
+
+<p style='margin-top:5.0pt;margin-right:27.0pt;margin-bottom:5.0pt;margin-left:
+.5in;text-align:justify;tab-stops:621.0pt'>Note that the output image from an
+edge detection operator is of SHORT data type, so may exceed the 0-255 BYTE
+range. If you use the histogram to select a threshold value, be aware that the
+histogram is linearly remapped to BYTE for display. The image data range can be
+found by using the ‘Utilities-&gt;Stats-&gt;Image data range’ selection. A good
+method for threshold selection is to start with the midpoint of this range, and
+then decrease it until desired results are obtained. </p>
+
+<p style='margin-top:5.0pt;margin-right:27.0pt;margin-bottom:5.0pt;margin-left:
+.5in;text-align:justify;tab-stops:621.0pt'><b style='mso-bidi-font-weight:normal'>Note</b>:
+If the kernel size is selected more than 17, it may exceed the data range
+causing invalid image output. Also, depending upon the image data, very large
+kernel size may cause CVIPtools to fail.</p>
+
+<p align=right style='margin-right:23.25pt;text-align:right;tab-stops:621.0pt'><span
+class=MsoHyperlink><a href="#_Analysis:_Edge/Line_Detection">Back to Top</a></span></p>
+
+<h4 style='margin-right:27.0pt;text-align:justify;tab-stops:621.0pt'><a
+name="_Kirsch,_Pyramid,_Robinson:"></a>&nbsp; &nbsp; Kirsch, Pyramid, Robinson:</h4>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-right:27.0pt;
+mso-margin-bottom-alt:auto;margin-left:.5in;text-align:justify;tab-stops:621.0pt'><a
+name=2></a>Select a Pre-filter, if desired, from the pop-up menu. Select or
+enter a Post-threshold value, if desired. The Kirsch and Robinson use 8 masks
+and will provide similar results, since the Robinson uses a simplified version
+of the Kirsch masks. As a result of the specific mask coefficients, the
+Robinson returns an image with a smaller data range. The Pyramid operator uses
+2 masks and will return wider edges, since this implementation is based on 7x7
+masks, and the Kirsch and Robinson are based on 3x3 masks. Kirsch and Robinson
+filters returns magnitude image and direction image. Data range of direction
+image is from -3pi/4 to +pi. </p>
+
+<p align=right style='margin-right:23.25pt;text-align:right;tab-stops:621.0pt'><span
+class=MsoHyperlink><a href="#_Analysis:_Edge/Line_Detection">Back to Top</a></span><o:p></o:p></p>
+
+<h4 style='margin-right:27.0pt;text-align:justify;tab-stops:621.0pt'><!-- .SS Sobel, Prewitt: --><a
+name="_Sobel,_Prewitt:"></a>&nbsp; &nbsp; Sobel, Prewitt:</h4>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-right:27.0pt;
+mso-margin-bottom-alt:auto;margin-left:.5in;text-align:justify;tab-stops:621.0pt'><a
+name=3></a>Enter or select from the pop-up menu a kernel size; in general the
+larger the kernel size, the wider the resulting edges. That is, the edges
+appear more smeared out in the resulting image. Select a Pre-filter, if
+desired, from the pop-up menu. Select or enter a Post-threshold value, if
+desired. Finally, choose whether or not to keep dc. If the ‘Keep DC’ option is
+selected, the output image will retain more of the original image, not just the
+edges. Also the function returns magnitude image and direction image. Data
+range of direction image is from -pi to +pi.</p>
+
+<p align=right style='margin-right:23.25pt;text-align:right;tab-stops:621.0pt'><span
+class=MsoHyperlink><a href="#_Analysis:_Edge/Line_Detection">Back to Top</a></span><o:p></o:p></p>
+
+<h4 style='margin-right:27.0pt;text-align:justify;tab-stops:621.0pt'><!-- .SS Roberts, Laplacian: --><a
+name="_Roberts,_Laplacian:"></a>&nbsp; &nbsp; Roberts, Laplacian:</h4>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-right:27.0pt;
+mso-margin-bottom-alt:auto;margin-left:.5in;text-align:justify;tab-stops:621.0pt'><a
+name=4></a>Select which type/mask to use, select the ‘Show Type/Mask’ button to
+see them. Select a Pre-filter, if desired, from the pop-up menu. Select or
+enter a Post-threshold value, if desired. Finally, choose whether or not to
+Keep DC. If the ‘Keep DC’ option is selected, the output image will retain more
+of the original image, not just the edges. Note that the Roberts Type 2 is
+probably the fastest edge detector. The Laplacian, unlike the others, retains
+the sign of the result with the output image (the sign corresponds to the
+“direction” of the edge). </p>
+
+<p align=right style='margin-right:23.25pt;text-align:right;tab-stops:621.0pt'><span
+class=MsoHyperlink><a href="#_Analysis:_Edge/Line_Detection">Back to Top</a></span><o:p></o:p></p>
+
+<h4 style='margin-right:27.0pt;text-align:justify;tab-stops:621.0pt'><!-- .SS Frei-Chen: --><a
+name="_Frei-Chen:"></a>&nbsp; &nbsp; Frei-Chen:</h4>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-right:27.0pt;
+mso-margin-bottom-alt:auto;margin-left:.5in;text-align:justify;tab-stops:621.0pt'><a
+name=5></a>First select the Frei-Chen subspace desired: line, edge, max, or min
+angle. The line and edge subspace selections use the corresponding four line or
+edge masks as the subspace of interest. The max selection will select the
+maximum of the edge or line subspace projections. The ‘min angle’ returns the
+result from the edge and line projection that has the minimum angle between
+that particular vector (corresponding to the current pixel) and these two
+subspaces. The minimum angle corresponds to the closest fit, without
+consideration of magnitude. <!-- .TP 4 --><o:p></o:p></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
+ margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:2.25pt 2.25pt 2.25pt 2.25pt'>
+<!-- tsb: First select the Frei-Chen subspace desired: line, edge, max, or min angle.
+ -->
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-row-margin-right:546.75pt'>
+  <td width=46 style='width:34.65pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='margin-right:27.0pt;text-align:justify;tab-stops:
+  621.0pt'>&nbsp;</p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=729><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=777 colspan=2 valign=top style='width:582.9pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='margin-right:27.0pt;text-align:justify;tab-stops:
+  621.0pt'>edge subspace: </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=46 valign=top style='width:34.65pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='margin-right:27.0pt;text-align:justify;tab-stops:
+  621.0pt'>&nbsp;</p>
+  </td>
+  <td width=729 valign=top style='width:546.75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='margin-right:27.0pt;text-align:justify;tab-stops:
+  621.0pt'>If you want to set a threshold on the edge projection, select
+  ‘Threshold Angle’, then enter or select a value in degrees. <br>
+  If you don’t want to set a threshold on the edge projection, de-select
+  ‘Threshold Angle’ </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=777 colspan=2 valign=top style='width:582.9pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='margin-right:27.0pt;text-align:justify;tab-stops:
+  621.0pt'>line subspace: </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=46 valign=top style='width:34.65pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='margin-right:27.0pt;text-align:justify;tab-stops:
+  621.0pt'>&nbsp;</p>
+  </td>
+  <td width=729 valign=top style='width:546.75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='margin-right:27.0pt;text-align:justify;tab-stops:
+  621.0pt'>If you want to set a threshold on the line projection, select
+  ‘Threshold Angle’, then enter or select a value in degrees. </p>
+  <p style='margin-right:27.0pt;text-align:justify;tab-stops:621.0pt'>If you
+  don’t want to set a threshold on the line projection, select ‘Threshold
+  Angle’ </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=777 colspan=2 valign=top style='width:582.9pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='margin-right:27.0pt;text-align:justify;tab-stops:
+  621.0pt'>max[edge/line<blink>]</blink> or min angle[edge/line<blink>]</blink>:
+  </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=46 valign=top style='width:34.65pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='margin-right:27.0pt;text-align:justify;tab-stops:
+  621.0pt'>&nbsp;</p>
+  </td>
+  <td width=729 valign=top style='width:546.75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='margin-right:27.0pt;text-align:justify;tab-stops:
+  621.0pt'>Angle threshold does not apply. </p>
+  <p style='margin-right:27.0pt;text-align:justify;tab-stops:621.0pt'>After
+  selecting the projection, select a Pre-filter and/or Post-threshold if
+  desired, and choose whether or not to keep dc. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes'>
+  <td width=46 style='width:34.65pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='margin-right:27.0pt;text-align:justify;tab-stops:
+  621.0pt'>&nbsp;</p>
+  </td>
+  <td width=729 style='width:546.75pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <p class=MsoNormal style='margin-right:27.0pt;text-align:justify;tab-stops:
+  621.0pt'><span style='font-size:10.0pt'>&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p align=right style='margin-right:23.25pt;text-align:right;tab-stops:621.0pt'><a
+name=canny></a><a name="_Marr_Hildreth:"></a><span class=MsoHyperlink><a
+href="#_Analysis:_Edge/Line_Detection">Back to Top</a></span><span
+style='mso-spacerun:yes'>  </span></p>
+
+<h4 style='margin-right:27.0pt;text-align:justify;tab-stops:621.0pt'>Marr
+Hildreth:</h4>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:27.0pt;margin-bottom:
+5.0pt;margin-left:.5in;text-align:justify;tab-stops:621.0pt'><a
+name="_First_select_the_desired_variance_f"></a>First select the desired
+variance for Marr-Hildreth: single variance or double variance. Then select or enter
+the sigma and delta values. If you want to post process the image by combining
+the bands then check the box next to ‘Post-Process by Combining Bands’. If you
+select the Dual Variance then you can see the intermediate images generated in
+this process by checking the option ‘Show intermediate Images’.<span
+style='mso-spacerun:yes'>  </span>After selecting the parameters press the
+‘Apply’ button to the lower right to get the edge detected image<b
+style='mso-bidi-font-weight:normal'>.<o:p></o:p></b></p>
+
+<p align=right style='margin-right:23.25pt;text-align:right;tab-stops:621.0pt'><b
+style='mso-bidi-font-weight:normal'><span style='mso-spacerun:yes'> </span></b><span
+class=MsoHyperlink><a href="#_Analysis:_Edge/Line_Detection">Back to Top</a></span></p>
+
+<h4 style='margin-right:27.0pt;text-align:justify;tab-stops:621.0pt'><a
+name="_Canny:"></a><span style='mso-spacerun:yes'>  </span><span
+style='mso-bidi-font-weight:normal'>Canny: <o:p></o:p></span></h4>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:27.0pt;margin-bottom:
+5.0pt;margin-left:.5in;text-align:justify;tab-stops:621.0pt'>The Canny edge
+detector is optimal for step edges corrupted by white noise. It requires
+selecting and entering three parameters: &quot;High threshold factor&quot;,
+&quot;Low threshold factor&quot;, and &quot;Variance&quot;. The high threshold
+is computed from the image which is greater than 90% of the pixels after
+applying non maxima suppression to the magnitude images. The high threshold is
+multiplied with high threshold factor to obtain the final high threshold for
+hysteresis. The low threshold is computed from the image by averaging the high
+threshold and minimum value in the image after applying the non maxima
+suppression to the magnitude images. The low threshold is then multiplied with
+the low threshold factor to obtain the final low threshold for hysteresis. The
+variance refers to the variance of the Gaussian filter. If you want to view the
+intermediate magnitude and direction (phase) images check the box next to ‘Show
+Intermediate Images’. After setting the parameters press the ‘Apply’ button to
+the lower right to get the edge detected image.</p>
+
+<p align=right style='margin-right:23.25pt;text-align:right;tab-stops:621.0pt'><span
+class=MsoHyperlink><a href="#_Analysis:_Edge/Line_Detection">Back to Top</a></span></p>
+
+<h4 style='margin-right:27.0pt;text-align:justify;tab-stops:621.0pt'><a
+name="_Shen-Castan:"></a><span style='font-weight:normal'><span
+style='mso-spacerun:yes'> </span><a name=shencastan></a><span
+style='mso-spacerun:yes'> </span></span><span style='mso-bidi-font-weight:normal'>Shen-Castan:
+<o:p></o:p></span></h4>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:27.0pt;margin-bottom:
+5.0pt;margin-left:.5in;text-align:justify;tab-stops:621.0pt'>The Shen-Castan
+edge detector was developed as an optimal solution to a specific mathematical
+model. The optimal filter used to smooth the image is the Infinite Symmetric
+Exponential Filter (ISEF). It requires selecting and entering five parameters:
+&quot;High threshold factor&quot;, &quot;Low threshold factor&quot;,
+&quot;Smoothing factor&quot;, &quot;Window size&quot;, and &quot;Thin
+factor&quot;. The high threshold is computed from the image which is greater
+than 90% of the pixels after applying non maxima suppression to the magnitude
+images. The high threshold is multiplied with high threshold factor to obtain
+the final high threshold for hysteresis. The low threshold is computed from the
+image by averaging the high threshold and minimum value in the image after
+applying the non maxima suppression to the magnitude images. The low threshold
+is then multiplied with the low threshold factor to obtain the final low
+threshold for hysteresis. The input image is convolved with ISEF filter of the
+selected smoothing factor, to mitigate the noise effects. However the
+computation is increased by using recursive filters. The window size is the
+size of the window for false zero crossing suppression, which is used to remove
+spurious edges. The thin factor is the distance between the final line points
+which is used to apply thinning. If you want to view the intermediate magnitude
+and direction (phase) images check the box next to ‘Show Intermediate Images’.
+After setting the parameters press the ‘Apply’ button to the lower right to get
+the edge detected image.<b style='mso-bidi-font-weight:normal'><span
+style='mso-spacerun:yes'>     </span><a name=boiecox></a><o:p></o:p></b></p>
+
+<p align=right style='margin-right:23.25pt;text-align:right;tab-stops:621.0pt'><span
+class=MsoHyperlink><a href="#_Analysis:_Edge/Line_Detection">Back to Top</a></span><b
+style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<h4 style='margin-right:27.0pt;text-align:justify;tab-stops:621.0pt'><a
+name="_Boie-Cox:"></a><span style='font-weight:normal;mso-bidi-font-weight:
+bold'><span style='mso-spacerun:yes'>  </span></span>Boie-Cox:</h4>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:27.0pt;margin-bottom:
+5.0pt;margin-left:.5in;text-align:justify;tab-stops:621.0pt'><a
+name="_The_Boie-Cox_edge_detector_is_a_gen"></a><span style='mso-bidi-font-weight:
+bold'>The Boie-Cox edge detector is a generalization of Canny algorithm. It
+requires selecting and entering five parameters: &quot;Ordinary
+threshold&quot;, &quot;hysteresis threshold&quot;, &quot;Variance&quot;, and
+&quot;Thinning edge&quot;. The ordinary threshold is computed by entering the
+&quot;Threshold factor&quot;. If the threshold factor is 1, then the mean absolute
+value of the image is used as the threshold value. If the threshold factor is
+not equal to 1, then threshold value is equal to threshold factor * mean
+absolute value of the image. The hysteresis threshold is computed by entering
+the &quot;Low threshold factor&quot; and the &quot;High Threshold factor&quot;.
+The high threshold is computed from the image which is greater than 90% of the
+pixels after applying non maxima suppression to the magnitude images. The high
+threshold is multiplied with high threshold factor to obtain the final high
+threshold for hysteresis. The low threshold is computed from the image by
+averaging the high threshold and minimum value in the image after applying the
+non maxima suppression to the magnitude images. The low threshold is then
+multiplied with the low threshold factor to obtain the final low threshold for
+hysteresis. The variance refers to the variance of the Gaussian filter. If the
+thinning edge is not selected, thinning is not performed which implies that the
+thickness of the edges is not reduced. If thinning edge is selected, thinning is
+performed. If you want to view the intermediate magnitude and direction (phase)
+images check the box next to ‘Show Intermediate Images’. After setting the
+parameters press the ‘Apply’ button to the lower right to get the edge detected
+image.</span><span style='mso-spacerun:yes'>     </span></p>
+
+<p align=right style='margin-right:23.25pt;text-align:right;tab-stops:621.0pt'><span
+class=MsoHyperlink><a href="#_Analysis:_Edge/Line_Detection">Back to Top</a></span></p>
+
+<h4 style='margin-right:27.0pt;text-align:justify;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 621.0pt 641.2pt 687.0pt 732.8pt'><a
+name="_Hough:"></a><span style='mso-spacerun:yes'>  </span>Hough:<a name=6></a></h4>
+
+<p style='margin-top:5.0pt;margin-right:27.0pt;margin-bottom:5.0pt;margin-left:
+.5in;text-align:justify;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 621.0pt 641.2pt 687.0pt 732.8pt'>The
+‘Line Angles’ entry refers to the angle a desired line makes with the column
+(horizontal) axis in the current image, in a clockwise direction. The range on the
+angles is 0 to 180 degrees. For example, to find a line that runs from the
+upper-left to the lower-right corner, enter 45 as the line angle. To find a
+line that runs from the lower-left to the upper-right, enter 135 as the line
+angle. Note: the angle of the line itself is different from the angle of ‘rho’
+(the normal to the line). </p>
+
+<p style='margin-top:5.0pt;margin-right:27.0pt;margin-bottom:5.0pt;margin-left:
+.5in;text-align:justify;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 621.0pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-spacerun:yes'> </span>You may specify ranges of angles with a dash,
+such as 45-55, and you must use a blank space as a separator, as in 0 45-50 90.
+</p>
+
+<p style='margin-top:5.0pt;margin-right:27.0pt;margin-bottom:5.0pt;margin-left:
+.5in;text-align:justify;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 621.0pt 641.2pt 687.0pt 732.8pt'>After
+entering the line angles, select or enter both the minimum number of pixels
+that define a line and the maximum connect distance. Note that the “Line
+Pixels(min)” applies to all pixels on a given line, so they are not necessarily
+connected. Also, the connect distance applies to all lines, so this will tend
+to fill in open places if too large a number is selected (see ‘Edge Link’
+below). </p>
+
+<p style='margin-top:5.0pt;margin-right:27.0pt;margin-bottom:5.0pt;margin-left:
+.5in;text-align:justify;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 621.0pt 641.2pt 687.0pt 732.8pt'>Note:
+the Hough transform is typically applied to an image after edge detection and
+thresholding have been performed.</p>
+
+<p align=right style='margin-right:23.25pt;text-align:right;tab-stops:621.0pt'><span
+class=MsoHyperlink><a href="#_Analysis:_Edge/Line_Detection">Back to Top</a></span><o:p></o:p></p>
+
+<h4 style='margin-right:27.0pt;text-align:justify;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 621.0pt 641.2pt 687.0pt 732.8pt'><!-- .SS Edge link:  --><a
+name="_Edge_Link:"></a><span style='mso-spacerun:yes'> </span>&nbsp;Edge Link:</h4>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-right:27.0pt;
+mso-margin-bottom-alt:auto;margin-left:.5in;text-align:justify;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 621.0pt 641.2pt 687.0pt 732.8pt'><a
+name=7></a>Select or enter the maximum ‘Connect distance’, this corresponds to
+the maximum ‘open’ area between points that will be filled in. Edge linking is
+normally performed on an image after edge detection AND thresholding has been
+performed. Note that this edge linker tends to fill in small open areas, this
+is due to the fact that it considers ALL lines and not just the ones you think
+appear in the image.<span style='mso-spacerun:yes'>     </span></p>
+
+<p align=right style='margin-right:23.25pt;text-align:right;tab-stops:621.0pt'><span
+class=MsoHyperlink><a href="#_Analysis:_Edge/Line_Detection">Back to Top</a></span></p>
+
+<h4 style='margin-right:27.0pt;text-align:justify;tab-stops:621.0pt'><a
+name="_Pratt_Merit:"></a><span style='mso-spacerun:yes'>  </span><a
+name=prattmerit></a>Pratt Merit:</h4>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%;tab-stops:621.0pt'>This
+function calculates the Pratt’s Figure of Merit of the image. The <b
+style='mso-bidi-font-weight:normal'>Pratt FOM</b>, is defined as follows:</p>
+
+<p class=MsoNormal style='tab-stops:621.0pt'><span
+style='mso-spacerun:yes'>            </span><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_0" o:spid="_x0000_i1025" type="#_x0000_t75"
+ alt="image001.gif" style='width:144.75pt;height:55.5pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="cvip_ana_edgeline_files/image001.gif" o:title="image001"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=193 height=74
+src="cvip_ana_edgeline_files/image001.gif" alt=image001.gif v:shapes="Picture_x0020_0"><![endif]></span></p>
+
+<p class=MsoNormal style='tab-stops:621.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%;tab-stops:621.0pt'><i>I<sub>N</sub></i>
+= the maximum of I<sub>I </sub>and I<sub>F</sub></p>
+
+<p class=MsoNormal style='margin-left:.5in;line-height:200%;tab-stops:621.0pt'><i>I<sub>I</sub></i>
+= the number of ideal edge points in the image</p>
+
+<p class=MsoNormal style='margin-left:.5in;line-height:200%;tab-stops:621.0pt'><i>I<sub>F</sub>
+</i>= the number of edge points found by the edge detector</p>
+
+<p class=MsoNormal style='margin-left:.5in;line-height:200%;tab-stops:621.0pt'><i
+style='mso-bidi-font-style:normal'>&#945; </i>= a scaling constant that can be
+adjusted to adjust the penalty for offset edges</p>
+
+<p class=MsoNormal style='margin-left:.5in;line-height:200%;tab-stops:621.0pt'><i>di
+</i>= the distance of a found edge point to, an ideal edge point</p>
+
+<p style='margin-top:5.0pt;margin-right:23.25pt;margin-bottom:5.0pt;margin-left:
+.5in;tab-stops:621.0pt'>For this metric, <i style='mso-bidi-font-style:normal'>F</i>
+will be 1 for a perfect edge. Normalizing to the maximum of the ideal and found
+edge points guarantees a penalty for smeared edges or missing edge points. In
+general, this metric assigns a better rating to smeared edges than to offset or
+missing edges. This is done because techniques exist to thin smeared edges, but
+it is difficult to determine when an edge is missed. The distance<i
+style='mso-bidi-font-style:normal'>, d</i>, can be defined in more than one way
+and typically depends on the connectivity definition used. To use, select the
+ideal edge image and the edge detection image from the pop-up menu. Enter or
+select the scale factor from the pop-up menu. The scaling factor is the scaling
+constant that can be adjusted to adjust the penalty for offset edges. Press the
+‘Apply’ button to perform the operation. The Pratt’s Figure of Merit appears in
+the ‘Result’ box. If the input image has multiple bands, Pratt’s Figure of
+Merit returns separate values for each band.</p>
+
+<p align=right style='margin-right:23.25pt;text-align:right;tab-stops:621.0pt'><span
+class=MsoHyperlink><a href="#_Analysis:_Edge/Line_Detection">Back to Top</a><o:p></o:p></span></p>
+
+<h4 style='margin-right:23.25pt;text-align:justify;tab-stops:621.0pt'><a
+name="_Cerchar_Filter:"></a><span style='font-weight:normal;mso-bidi-font-weight:
+bold'><span style='mso-spacerun:yes'>  </span></span>Cerchar Filter<span
+style='font-weight:normal;mso-bidi-font-weight:bold'>:</span></h4>
+
+<p style='margin-top:5.0pt;margin-right:23.25pt;margin-bottom:5.0pt;margin-left:
+.5in;tab-stops:621.0pt'>This is used to find the edges in the multispectral
+images. This takes color image as the input. It determines the edges in the
+color image. After selecting the image press apply button to perform the
+operation. The output image is a gray scale image. </p>
+
+<p align=right style='margin-right:23.25pt;text-align:right;tab-stops:621.0pt'><span
+class=MsoHyperlink><a href="#_Analysis:_Edge/Line_Detection">Back to Top</a><o:p></o:p></span></p>
+
+<h4 style='margin-right:23.25pt;text-align:justify;tab-stops:621.0pt'><a
+name="_Harris_Filter:"></a><span style='mso-bidi-font-weight:normal'><span
+style='mso-spacerun:yes'>  </span>Harris Filter</span><span style='font-weight:
+normal'>:</span></h4>
+
+<p style='margin-top:5.0pt;margin-right:23.25pt;margin-bottom:5.0pt;margin-left:
+.5in;tab-stops:621.0pt'>Select the function and enter the threshold value,
+border, alpha and minimum distance. The border value finds out the largest
+corners value in the given pixel range. Dmin value is used to find out the
+corner in the given range. Alpha value is the sensitivity value.</p>
+
+<p align=right style='margin-top:5.0pt;margin-right:23.25pt;margin-bottom:5.0pt;
+margin-left:.5in;text-align:right;tab-stops:621.0pt'><span class=MsoHyperlink><a
+href="#_Analysis:_Edge/Line_Detection">Back to Top<span
+style='mso-spacerun:yes'>  </span></a><o:p></o:p></span></p>
+
+<h4 style='margin-right:23.25pt;text-align:justify;tab-stops:621.0pt'><a
+name="_Moravec_Filter:"></a><span style='mso-bidi-font-weight:normal'><span
+style='mso-spacerun:yes'>  </span>Moravec Filter:</span></h4>
+
+<p style='margin-top:5.0pt;margin-right:23.25pt;margin-bottom:5.0pt;margin-left:
+.5in;tab-stops:621.0pt'>Select desired threshold value. This function finds out
+the corners in the given image. If the threshold value is high the corners are
+less. If the threshold value is low the corners determined are high. After
+selecting the desired threshold value, press Apply button. It produces the
+image with corners.</p>
+
+<p align=right style='margin-right:23.25pt;text-align:right;tab-stops:621.0pt'><span
+class=MsoHyperlink><a href="#_Analysis:_Edge/Line_Detection">Back to Top</a><o:p></o:p></span></p>
+
+<p class=MsoNormal align=right style='mso-margin-top-alt:auto;margin-right:
+23.25pt;mso-margin-bottom-alt:auto;text-align:right;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 8.5in 621.0pt 641.2pt 687.0pt 732.8pt'>&nbsp;<span
+style='mso-spacerun:yes'>       </span><span class=MsoHyperlink><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

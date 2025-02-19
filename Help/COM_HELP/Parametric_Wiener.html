@@ -1,0 +1,361 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="Parametric_Wiener_files/filelist.xml">
+<body background="./background.gif">
+<title>Parametric_Wiener</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Iris Cheng</o:Author>
+  <o:LastAuthor>Iris Cheng</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2003-11-04T17:18:00Z</o:Created>
+  <o:LastSaved>2003-11-04T17:45:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>279</o:Words>
+  <o:Characters>1595</o:Characters>
+  <o:Company>Westar</o:Company>
+  <o:Lines>13</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>1871</o:CharactersWithSpaces>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:\5B8B\4F53;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-para-margin-top:.5gd;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:.5gd;
+	mso-para-margin-left:0in;
+	mso-para-margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:SimSun;
+	mso-bidi-font-family:SimSun;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=571
+ style='width:5.95in;border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:
+ 0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black";
+  mso-fareast-font-family:SimSun'>Name<o:p></o:p></span></p>
+  </td>
+  <td width=444 colspan=2 valign=top style='width:333.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span class=SpellE><span style='font-size:14.0pt;
+  font-family:"Arial Black";mso-fareast-font-family:SimSun'>Parametric_Wiener</span></span><span
+  style='font-size:14.0pt;font-family:"Arial Black";mso-fareast-font-family:
+  SimSun'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'>performs a parametric wiener filter</pre>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black";
+  mso-fareast-font-family:SimSun'>Function Prototype</span><span
+  style='mso-fareast-font-family:SimSun'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'>HRESULT <span
+  class=SpellE>Parametric_Wiener</span>([in] long* image,[in] long* image1,[in]
+  long* image2,[in] long* image3,[in] double gamma,[in] long choice,[in] long
+  cutoff,[<span class=SpellE>out,retval</span>] long* <span class=SpellE>Result_Image</span>)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black";
+  mso-fareast-font-family:SimSun'>Return Value<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span class=SpellE><span style='mso-fareast-font-family:
+  SimSun'>Result_Image</span></span><span style='mso-fareast-font-family:SimSun'><o:p></o:p></span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'>long *<o:p></o:p></span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'><span style='mso-spacerun:yes'>  </span>Result image</pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black";
+  mso-fareast-font-family:SimSun'>Parameters<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-family:"Arial Black";mso-fareast-font-family:
+  SimSun'>Name<o:p></o:p></span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-family:"Arial Black";mso-fareast-font-family:
+  SimSun'>Type<o:p></o:p></span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-family:"Arial Black";mso-fareast-font-family:
+  SimSun'>Description<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'>image<o:p></o:p></span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'>long *<o:p></o:p></span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'>pointer to an Image structure</pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'>Image1<o:p></o:p></span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'>long *<o:p></o:p></span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'>pointer to the degradation function</pre><pre style='margin-top:6.0pt;
+  margin-right:0in;margin-bottom:6.0pt;margin-left:0in'><o:p>&nbsp;</o:p></pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'>Image2<o:p></o:p></span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'>long *<o:p></o:p></span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'>pointer to the noise power spectral density</pre><pre style='margin-top:
+  6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:0in'><o:p>&nbsp;</o:p></pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'>Image3<o:p></o:p></span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'>long *<o:p></o:p></span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'><pre>pointer to the original<span style='mso-spacerun:yes'>  </span>image<span style='mso-spacerun:yes'>  </span>power<span style='mso-spacerun:yes'>  </span>spectral</pre><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'><span style='mso-spacerun:yes'>     </span>density</pre><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'><o:p>&nbsp;</o:p></pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span class=SpellE><span style='mso-fareast-font-family:
+  SimSun'>Gama</span></span><span style='mso-fareast-font-family:SimSun'><o:p></o:p></span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'>Double<o:p></o:p></span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'><pre>'gamma' in the parametric wiener<span style='mso-spacerun:yes'>  </span>filter<span style='mso-spacerun:yes'>  </span><span
+  class=SpellE>equa</span>-</pre><pre style='margin-top:6.0pt;margin-right:
+  0in;margin-bottom:6.0pt;margin-left:0in'><span style='mso-spacerun:yes'>     </span><span
+  class=SpellE>tion</span></pre><pre style='margin-top:6.0pt;margin-right:0in;
+  margin-bottom:6.0pt;margin-left:0in'><o:p>&nbsp;</o:p></pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'>Choice<o:p></o:p></span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'>Long<o:p></o:p></span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'><pre>sets the maximum gain using the DC value<span style='mso-spacerun:yes'>  </span>as<span style='mso-spacerun:yes'>  </span>a</pre><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'><span style='mso-spacerun:yes'>     </span>baseline</pre><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'><o:p>&nbsp;</o:p></pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td width=127 valign=top style='width:95.4pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'>Cutoff<o:p></o:p></span></p>
+  </td>
+  <td width=77 valign=top style='width:58.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'>Long<o:p></o:p></span></p>
+  </td>
+  <td width=367 valign=top style='width:275.0pt;padding:0in 5.4pt 0in 5.4pt'><pre>cutoff frequency for filtering</pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black";
+  mso-fareast-font-family:SimSun'>Description</span><span style='mso-fareast-font-family:
+  SimSun'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'><pre>This function performs a parametric wiener filter.<span style='mso-spacerun:yes'>  </span>See<span style='mso-spacerun:yes'>  </span>any</pre><pre><span style='mso-spacerun:yes'>     </span><span
+  class=GramE>image</span> processing textbook for info on Wiener Filters.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>The function does its own memory management, freeing<span style='mso-spacerun:yes'>  </span>every-</pre><pre><span style='mso-spacerun:yes'>     </span>thing<span style='mso-spacerun:yes'>  </span>passed to it, so if you need your images intact, make</pre><pre><span style='mso-spacerun:yes'>  </span><span style='mso-spacerun:yes'>   </span><span
+  class=GramE>a</span> copy of them before calling this function.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>The function tries to determine whether an FFT has been per-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+  class=GramE>formed</span> on the passed images.<span style='mso-spacerun:yes'>  </span>If not, the function will per-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+  class=GramE>form</span> the FFT.<span style='mso-spacerun:yes'>  </span>This is especially important to note for<span style='mso-spacerun:yes'>  </span>the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+  class=GramE>power<span style='mso-spacerun:yes'>  </span>images</span>.<span style='mso-spacerun:yes'>   </span>If<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>power<span style='mso-spacerun:yes'>  </span>images<span style='mso-spacerun:yes'>  </span>are<span style='mso-spacerun:yes'>  </span>in the spatial</pre><pre><span style='mso-spacerun:yes'>     </span>domain, they will have an FFT performed on them, before<span style='mso-spacerun:yes'>  </span>the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+  class=GramE>squared<span style='mso-spacerun:yes'>  </span>magnitude</span><span style='mso-spacerun:yes'>  </span>is calculated.<span style='mso-spacerun:yes'>  </span>If an FFT is detected in</pre><pre><span style='mso-spacerun:yes'>     </span>the history of any<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>power<span style='mso-spacerun:yes'>  </span>images,<span style='mso-spacerun:yes'>  </span>that<span style='mso-spacerun:yes'>  </span>image<span style='mso-spacerun:yes'>  </span>is</pre><pre> <span style='mso-spacerun:yes'>    </span>assumed<span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span>be<span style='mso-spacerun:yes'>  </span>representing<span style='mso-spacerun:yes'>  </span>a power image, and no squared</pre><pre><span style='mso-spacerun:yes'>     </span><span
+  class=GramE>magnitude</span> is calculated.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>The function will also extend the sizes of the passed images</pre><pre><span style='mso-spacerun:yes'>     </span><span
+  class=GramE>as</span> best it can when they are of unequal size.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Also note that the passed images must have the<span style='mso-spacerun:yes'>  </span>same<span style='mso-spacerun:yes'>  </span>number</pre><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'><span style='mso-spacerun:yes'>     </span><span class=GramE>of</span> (color) bands.</pre><pre><o:p>&nbsp;</o:p></pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:17'>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black";
+  mso-fareast-font-family:SimSun'>Bugs</span><span style='mso-fareast-font-family:
+  SimSun'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18;mso-yfti-lastrow:yes'>
+  <td width=571 colspan=3 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='mso-fareast-font-family:SimSun'>None.<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;
+margin-left:0in'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

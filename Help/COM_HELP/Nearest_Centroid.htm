@@ -1,0 +1,795 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="Nearest_Centroid_files/filelist.xml">
+<title>Nearest_Centroid</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2005-07-02T23:09:00Z</o:Created>
+  <o:LastSaved>2005-07-02T23:11:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>267</o:Words>
+  <o:Characters>1524</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>12</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>1788</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:\5B8B\4F53;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style="tab-interval: .5in">
+
+<div class=Section1>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=571
+ style="WIDTH:
+ 5.95in; BORDER-COLLAPSE: collapse; mso-yfti-tbllook: 480; mso-padding-alt: 0in 5.4pt 0in 5.4pt">
+ <tr style="mso-yfti-irow: 0">
+  <td width=231 colspan=2 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 173pt; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 28pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+   
+  style="FONT-SIZE: 14pt; FONT-FAMILY: 'Arial Black'; mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Name<o:p></o:p></span></p>
+  </td>
+  <td width=341 colspan=2 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 255.4pt; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 28pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  class=SpellE><span style="FONT-SIZE: 14pt;
+  FONT-FAMILY:
+  'Arial Black'; mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Nearest_Centroid</span></span><span style="FONT-SIZE:
+  14pt; FONT-FAMILY:
+  'Arial Black'; mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 1">
+  <td width=571 colspan=4 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 5.95in; PADDING-TOP: 0in" 
+   ><pre>finds the nearest <span
+  class=SpellE>centroid</span> using a distance or similarity measure<o:p></o:p></pre>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 2">
+  <td width=571 colspan=4 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 5.95in; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 28pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+   
+  style="FONT-SIZE: 14pt; FONT-FAMILY: 'Arial Black'; mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Function Prototype</span><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 3">
+  <td width=571 colspan=4 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 5.95in; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-pagination: none" 
+     ><span style="mso-fareast-font-family:
+  SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >HRESULT <span class=SpellE>Nearest_Centroid</span>([in]
+  BSTR* <span class=SpellE>TestFile</span>, [in] BSTR* <span class=SpellE>TrainingFile</span>,
+  [in] BSTR* <span class=SpellE>OutputFile</span>,<span
+  style="mso-spacerun: yes" 
+     >&nbsp; </span>[in] <span class=SpellE>int</span>
+  normalize,<span style="mso-spacerun: yes" 
+     >&nbsp; </span>[in] <span class=SpellE>int</span><span
+  style="mso-spacerun: yes" 
+     >&nbsp; </span><span class=SpellE>distance_similarity</span>,<span
+  
+      style="mso-spacerun: yes">&nbsp; </span>[in] float<span style="mso-spacerun: yes">&nbsp;
+  </span><span class=SpellE>s_min</span>, [in]float <span class=SpellE>s_max</span>,
+  [in] float <span class=SpellE>r_softmax</span>, [in] float <span
+  
+      class=SpellE>r_minkowski</span>, [<span class=SpellE>out,retval</span>] long
+  *<span class=SpellE>ErrorCode</span>);</span><span style="mso-fareast-font-family:
+  SimSun;
+  mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN; mso-bidi-font-size: 10.0pt" 
+     ><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 4">
+  <td width=571 colspan=4 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 5.95in; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 28pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+   
+  style="FONT-SIZE: 14pt; FONT-FAMILY: 'Arial Black'; mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Return Value<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 5">
+  <td width=231 colspan=2 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 173pt; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  class=SpellE><span style="mso-fareast-font-family:
+  SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >ErrorCode</span></span><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p></o:p></span></p>
+  </td>
+  <td width=101 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 75.5pt; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >long*<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 179.9pt; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Pointer to the error code<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 6">
+  <td width=571 colspan=4 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 5.95in; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 28pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+   
+  style="FONT-SIZE: 14pt; FONT-FAMILY: 'Arial Black'; mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Parameters<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 7">
+  <td width=155 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 116.55pt; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+   
+  style="FONT-FAMILY: 'Arial Black'; mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Name<o:p></o:p></span></p>
+  </td>
+  <td width=176 colspan=2 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 131.95pt; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+   
+  style="FONT-FAMILY: 'Arial Black'; mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Type<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 179.9pt; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+   
+  style="FONT-FAMILY: 'Arial Black'; mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Description<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 8">
+  <td width=155 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 116.55pt; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  class=SpellE><span style="mso-fareast-font-family:
+  SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >TestFile</span></span><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p></o:p></span></p>
+  </td>
+  <td width=176 colspan=2 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 131.95pt; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >BSTR*<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 179.9pt; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Pointer to test (text) file<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 9">
+  <td width=155 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 116.55pt; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  class=SpellE><span style="mso-fareast-font-family:
+  SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >TrainingFile</span></span><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p></o:p></span></p>
+  </td>
+  <td width=176 colspan=2 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 131.95pt; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >BSTR*<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 179.9pt; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Pointer to training (text) file<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 10">
+  <td width=155 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 116.55pt; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  class=SpellE><span style="mso-fareast-font-family:
+  SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >OutputFile</span></span><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p></o:p></span></p>
+  </td>
+  <td width=176 colspan=2 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 131.95pt; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >BSTR*<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 179.9pt; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Pointer to&nbsp;output (text) file<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="HEIGHT: 28.35pt; mso-yfti-irow: 11">
+  <td width=155 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt;
+  PADDING-BOTTOM: 0in; WIDTH: 116.55pt; PADDING-TOP: 0in; HEIGHT: 28.35pt" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >normalize<o:p></o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  class=SpellE><span style="mso-fareast-font-family:
+  SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >distance_similarity</span></span><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p></o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-pagination: none" 
+     ><span style="mso-fareast-font-family:
+  SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><span style="mso-spacerun: yes" 
+     >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span class=SpellE>s_min</span><o:p></o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  class=SpellE><span style="mso-fareast-font-family:
+  SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >s_max</span></span><span style="mso-fareast-font-family:
+  SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p></o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  class=SpellE><span style="mso-fareast-font-family:
+  SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >r_softmax</span></span><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p></o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  class=SpellE><span style="mso-fareast-font-family:
+  SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >r_minkowski</span></span><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><span style="mso-spacerun: yes" 
+     >&nbsp; </span><span
+  style="mso-spacerun: yes" 
+     >&nbsp;&nbsp;</span><span style="mso-spacerun: yes" 
+     >&nbsp;</span><o:p></o:p></span></p>
+  </td>
+  <td width=176 colspan=2 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt;
+  PADDING-BOTTOM: 0in; WIDTH: 131.95pt; PADDING-TOP: 0in; HEIGHT: 28.35pt" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  class=SpellE><span style="mso-fareast-font-family:
+  SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >int</span></span><span style="mso-fareast-font-family:
+  SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p></o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  class=SpellE><span style="mso-fareast-font-family:
+  SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >int</span></span><span style="mso-fareast-font-family:
+  SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p></o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >float<o:p></o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >float<o:p></o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >float<o:p></o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >float<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt;
+  PADDING-BOTTOM: 0in; WIDTH: 179.9pt; PADDING-TOP: 0in; HEIGHT: 28.35pt" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Normalization method used<o:p></o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Distance measure used<o:p></o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in
+  6pt 25.1pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 25.1pt; mso-pagination: none" 
+     ><span style="mso-fareast-font-family:
+  SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Minimum value for the specified range (min-max
+  norm. only); else use <span style="mso-spacerun: yes" 
+     >&nbsp;</span>-1<o:p></o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in 6pt 25.1pt; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 25.1pt; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Maximum value for the specified range (min-max norm. only); else use <span
+  style="mso-spacerun: yes" 
+     >&nbsp;</span>-1<o:p></o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in 6pt 25.1pt; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 25.1pt; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in 6pt 25.1pt; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 25.1pt; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Used with <span class=SpellE>softmax</span> scaling only; else use <span
+  
+      style="mso-spacerun: yes">&nbsp;</span>-1<o:p></o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in 6pt 25.1pt; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 25.1pt; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Used with <span class=SpellE>minkowski</span> distance only; else use <span
+  
+      style="mso-spacerun: yes">&nbsp;</span>-1<o:p></o:p></span></p>
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p>&nbsp;</o:p></span></p>
+  <pre style="MARGIN-LEFT: 0.5in"><span style="mso-fareast-language: ZH-CN"><o:p>&nbsp;</o:p></span></pre></td>
+ </tr>
+ <tr style="mso-yfti-irow: 12">
+  <td width=571 colspan=4 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 5.95in; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 28pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+   
+  style="FONT-SIZE: 14pt; FONT-FAMILY: 'Arial Black'; mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Description </span><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 13">
+  <td width=571 colspan=4 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 5.95in; PADDING-TOP: 0in" 
+   ><pre><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>This function uses the selected distance or similarity measure<o:p></o:p></pre><pre><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>to find the closest match in the training set to every entry in <o:p></o:p></pre><pre><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  class=GramE>the</span> test set. It uses the training set to generate the <span
+  class=SpellE>centroid</span> <o:p></o:p></pre><pre><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>for all the classes in the training file and then uses this <o:p></o:p></pre><pre><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  class=GramE>new</span> training file as the main training file.<o:p></o:p></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>Values to be used for:<span
+  style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </span><o:p></o:p></pre><pre><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></pre><pre><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  class=SpellE>normalize</span>: <o:p></o:p></pre><pre><span
+  style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></pre><pre><span
+  style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0 – No Normalization<o:p></o:p></pre><pre><span
+  style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1 – Range-normalize<o:p></o:p></pre><pre><span
+  style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>2 – Unit Vector normalization<o:p></o:p></pre><pre><span
+  style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>3 – Standard Normal Density normalization<o:p></o:p></pre><pre><span
+  style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>4 – Min-max normalization<o:p></o:p></pre><pre><span
+  style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>5 – <span class=SpellE>Softmax</span> scaling<o:p></o:p></pre><pre><span
+  style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> <o:p></o:p></pre><pre><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  class=SpellE>distance_similarity</span>: <o:p></o:p></pre><pre><span
+  style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></pre><pre><span
+  style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1 – Euclidean Distance<o:p></o:p></pre><pre><span
+  style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>2 – City block or Absolute value metric<o:p></o:p></pre><pre><span
+  style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>3 – Maximum value metric<o:p></o:p></pre><pre><span
+  style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>4 – <span class=SpellE>Minkowski</span> distance<o:p></o:p></pre><pre><span
+  style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>5 – Vector inner product<o:p></o:p></pre><pre><span
+  style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>6 – <span class=SpellE>Tanimoto</span> metric</pre><PRE>	</PRE><PRE>  Error Codes:<PRE><o:p></o:p>&nbsp;</PRE><PRE class=MsoNormal style="MARGIN: 6pt 0in; TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none"><SPAN style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN"><o:p><FONT face="Courier New" size=2>&nbsp;1: The headers in the training and test files don't match </FONT></o:p></SPAN></PRE><PRE class=MsoNormal style="MARGIN: 6pt 0in; TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none"><SPAN style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN"><o:p><FONT face="Courier New" size=2>&nbsp;2: K is greater than the number of entries in the training setor K&lt;=0 </FONT></o:p></SPAN></PRE><PRE class=MsoNormal style="MARGIN: 6pt 0in; TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none"><SPAN style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN"><o:p><FONT face="Courier New" size=2>&nbsp;3: s_min is greater than or equal to s_max </FONT></o:p></SPAN></PRE><PRE class=MsoNormal style="MARGIN: 6pt 0in; TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none"><SPAN style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN"><o:p><FONT face="Courier New" size=2>&nbsp;4: Data range is 0 and so the data can't be normalized </FONT></o:p></SPAN></PRE><PRE class=MsoNormal style="MARGIN: 6pt 0in; TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none"><SPAN style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN"><o:p><FONT face="Courier New" size=2>&nbsp;5: Divisor is 0 in Tanimoto similarity measure </FONT></o:p></SPAN></PRE><PRE class=MsoNormal style="MARGIN: 6pt 0in; TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none"><SPAN style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN"><o:p><FONT face="Courier New" size=2>&nbsp;7: Can't open, read or create file </FONT></o:p></SPAN></PRE><PRE class=MsoNormal style="MARGIN: 6pt 0in; TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none"><SPAN style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN"><o:p><FONT face="Courier New" size=2>&nbsp;9: Memory allocation error </FONT></o:p></SPAN></PRE><PRE class=MsoNormal style="MARGIN: 6pt 0in; TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none"><SPAN style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN"><o:p><FONT face="Courier New" size=2>&nbsp;10: Every entry in training set should have a class name </FONT></o:p></SPAN></PRE><PRE class=MsoNormal style="MARGIN: 6pt 0in; TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none"><SPAN style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN"><o:p><FONT face="Courier New" size=2>&nbsp;12: r in minkowski should be a positive integer </FONT></o:p></SPAN></PRE><PRE class=MsoNormal style="MARGIN: 6pt 0in; TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none"><SPAN style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN"><o:p><FONT face="Courier New" size=2>&nbsp;13: There is more than one header in the training or test feature file</FONT></o:p></SPAN></PRE></PRE>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 14">
+  <td width=571 colspan=4 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 5.95in; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 28pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+   
+  style="FONT-SIZE: 14pt; FONT-FAMILY: 'Arial Black'; mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >Bugs</span><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     ><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 15; mso-yfti-lastrow: yes">
+  <td width=571 colspan=4 valign=top style="PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; WIDTH: 5.95in; PADDING-TOP: 0in" 
+   >
+  <p class=MsoNormal style="MARGIN:
+  6pt
+  0in;
+  TEXT-INDENT: 24pt; TEXT-ALIGN: justify; mso-para-margin-top: .5gd; mso-para-margin-right: 0in; mso-para-margin-bottom: .5gd; mso-para-margin-left: 0in; mso-char-indent-count: 2.0; mso-pagination: none" 
+     ><span
+  
+  style="mso-fareast-font-family: SimSun; mso-font-kerning: 1.0pt; mso-fareast-language: ZH-CN" 
+     >N/A<o:p></o:p></span></p>
+  </td>
+ </tr><![if !supportMisalignedColumns]>
+ <tr height=0>
+  <td width=155 style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" 
+   ></td>
+  <td width=75 style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" 
+   ></td>
+  <td width=101 style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" 
+   ></td>
+  <td width=240 style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" 
+   ></td>
+ </tr><![endif]>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

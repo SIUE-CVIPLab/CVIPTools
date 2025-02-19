@@ -1,0 +1,240 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="cvip_enhan_pseudo_files/filelist.xml">
+<title>Pseudocolor</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Yue</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>13</o:Revision>
+  <o:TotalTime>25</o:TotalTime>
+  <o:Created>2003-10-20T04:19:00Z</o:Created>
+  <o:LastSaved>2004-09-25T23:55:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>706</o:Words>
+  <o:Characters>4025</o:Characters>
+  <o:Lines>33</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>4722</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="4098"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white background=background.gif lang=EN-US link=blue vlink=blue
+style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h3><!-- .TH cvip_enhan_pseudo -->Enhancement: Pseudocolor</h3>
+
+<p style='margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><a name=0></a>Pseudocolor works on grayscale and binary images.
+Pseudocolor is often used to enhance images since the human visual system can
+perceive thousands of colors in a small spatial area, but only about 100 gray
+levels. <o:p></o:p></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-right:.5in;mso-margin-bottom-alt:
+auto;margin-left:.5in'><!-- .SS FOR ALL FUNCTIONS: --><a href="#1">For All
+Functions:</a><br>
+<a href="#2">Frequency domain mapping:</a><br>
+<a href="#3">Gray level mapping:</a></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-right:.5in;mso-margin-bottom-alt:
+auto;margin-left:.5in'><span class=MsoHyperlink><a
+href="cvip_enhan_pseudo.html#graylevel2">Gray level mapping II:</a></span><br>
+<a href="#4">Intensity slicing:</a></p>
+
+<h4>&nbsp; &nbsp; FOR ALL FUNCTIONS:</h4>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-right:.5in;mso-margin-bottom-alt:
+auto;margin-left:.5in'><a name=1></a>After setting the desired parameters,
+press the &#8216;Apply&#8217; button at lower right to perform the operation. </p>
+
+<p style='margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'>The current image is automatically selected, and can be changed by
+clicking mouse button 1 on an image in the main window&#8217;s image queue. <o:p></o:p></p>
+
+<h4><!-- .SS Frequency domain mapping: -->&nbsp; &nbsp; Frequency domain
+mapping:</h4>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-right:.5in;mso-margin-bottom-alt:
+auto;margin-left:.5in'><a name=2></a>This works by first performing a Fourier
+transform on the image, filtering, followed by an inverse Fourier transform.
+The spectral regions used for the filters are circular and ring-shaped, with a low-pass
+region about the origin specified by the low cut-off, a band-pass region
+specified by the low and high cut-off, and the high-pass region specified by
+the high cut-off. Then the inverse Fourier transform is performed on each of
+the filtered outputs separately, and the results from each of the bands are put
+into either the red, green or blue band of a color image. </p>
+
+<p style='margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'>To use, select or enter low and high cut-off frequencies, then select a
+color for the low-pass, band-pass, and high-pass bands. Each band must be a
+different color (R, G, or B). <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!-- .SS Gray level mapping: --></p>
+
+<h4>&nbsp; &nbsp; Gray level mapping:</h4>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-right:.5in;mso-margin-bottom-alt:
+auto;margin-left:.5in'><a name=3></a>Gray level mapping pseudocolor works by
+defining a different mapping equation for each of the red, green and blue bands
+of the output color image. The input is the original gray level values. </p>
+
+<p style='margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'>To use, select a shape for each band from its pop-up menu. Note that
+customized gray level mapping/pseudocolor can be done using
+Enhancement-&gt;Histograms-&gt;Linear Modification in conjunction with
+Utilities-&gt;Create-&gt;Extract and Utilities-&gt;Create-&gt;Assemble bands. </p>
+
+<p style='margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'><o:p>&nbsp;</o:p></p>
+
+<p style='margin-right:.5in'><b style='mso-bidi-font-weight:normal'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><a name=graylevel2></a>Gray
+level mapping II:<o:p></o:p></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-right:.5in;mso-margin-bottom-alt:
+auto;margin-left:.5in'>Gray level mapping pseudocolor works by defining a
+different mapping equation for each of the red, green and blue bands of the
+output color image. The inputs are the original gray level values. </p>
+
+<p style='margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'>To use, select the required mapping file from the pop-up menu or load it
+from a different directory or just type in the filename in the text box
+provided. Select a Gray scale image on which the mapping is to be performed.
+You can also make your own map by pressing the &#8216;Custom Remap Curve&#8217;
+button at the bottom of the &#8216;Enhancement&#8217; window. Here, you can
+select either the &#8216;Linear&#8217; or &#8216;Lagrange Interpolation&#8217;
+method. Select the &#8216;Red&#8217;, &#8216;Blue&#8217; or &#8216;Green&#8217;
+band and then make your own curve. The &#8216;Y&#8217; axis represents the
+&#8216;Remapped Values&#8217; and the &#8216;X&#8217; axis represents the
+&#8216;Original Values&#8217;. To make a common curve for all bands select
+&#8216;All&#8217; and then make the curve. You can make a curve by selecting
+any point in the &#8216;Interpolation Box&#8217; by a left mouse click. The
+left mouse button is also used to drag the points. The points at the ends can
+only move up and down while the points created at other locations can move
+anywhere inside the box. To get rid of any point, just get the mouse on that
+point and click the right mouse button. You can also add the points manually by
+selecting or entering the &#8216;X&#8217; and &#8216;Y&#8217; co-ordinates from
+the pop-up menu. Press &#8216;Add&#8217; after entering each point. After you
+make a curve for all the bands, press &#8216;All&#8217; to view all the curves
+together. Then press &#8216;Save&#8217; to save this map. When this map is
+saved it appears in the main windows pop-up menu. You can then select it and
+press &#8216;Apply&#8217; at the lower right of the &#8216;Enhancement&#8217;
+window to perform the gray level mapping.</p>
+
+<h4><span style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></span></h4>
+
+<h4><span style='mso-bidi-font-weight:normal'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='mso-spacerun:yes'>&nbsp;</span>Intensity Slicing:</h4>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-right:.5in;mso-margin-bottom-alt:
+auto;margin-left:.5in'><a name=4></a>Here you can specify up to four ranges of
+gray levels and the RGB values for the colors to which you want to map each
+range of gray level values. </p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-right:.5in;mso-margin-bottom-alt:
+auto;margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;margin-right:.5in;mso-margin-bottom-alt:
+auto;margin-left:.5in'>Intensity slicing will change all pixels with values in
+the range &#8216;From&#8217; to the range &#8216;To&#8217; from their gray
+values to a color with RGB values selected or entered in the boxes to the right
+of the range. </p>
+
+<p style='margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'>In the topmost &#8216;From&#8217; box, select or enter a value, then
+select or enter a larger value in the &#8216;To&#8217; box beside it. Then
+select or enter the RGB values in the boxes in the same row as the desired
+range. </p>
+
+<p style='margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'>You may designate up to four ranges for slicing. Use the rows in order
+from top to bottom, and each new row must start &#8216;From&#8217; a larger
+value than the preceding row&#8217;s &#8216;To&#8217; value. </p>
+
+<p style='margin-top:5.0pt;margin-right:.5in;margin-bottom:5.0pt;margin-left:
+.5in'>Checking the &#8216;Set Out of Range Data to 0&#8217; box will cause the
+selected range(s) to be returned on a black image; not selecting or deselecting
+it will return the original image with color highlights in the selected
+range(s). <!-- .SH } --></p>
+
+</div>
+
+</body>
+
+</html>

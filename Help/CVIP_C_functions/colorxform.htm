@@ -1,0 +1,246 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="colorxform_files/filelist.xml">
+<title>colorxform</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2004-06-04T22:09:00Z</o:Created>
+  <o:LastSaved>2004-10-19T23:49:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>548</o:Words>
+  <o:Characters>3128</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>26</o:Lines>
+  <o:Paragraphs>7</o:Paragraphs>
+  <o:CharactersWithSpaces>3669</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE><span
+class=GramE>colorxform</span></span> - transforms an RGB image into a new color space</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPdef.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPcomplex.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPtoolkit.h</span>&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;<span
+class=SpellE>CVIPcolor.h</span>&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>Image<span style='mso-spacerun:yes'>  </span>*</span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>colorxform</span>(const<span style='mso-spacerun:yes'>  </span>Image<span style='mso-spacerun:yes'>  </span>*<span
+class=SpellE>rgbImage</span>,<span style='mso-spacerun:yes'>   </span>COLOR_FORMAT</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>newcspace</span></span>, float *norm, float *<span
+class=SpellE>refwhite</span>, <span class=SpellE>int</span> dir)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE><span class=GramE>rgbImage</span></span>&gt; - pointer to an Image structure (data type equal</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>to</span> or less precise than type CVIP_FLOAT)</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE><span class=GramE>newcspace</span></span>&gt; - desired color space</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>norm</span>&gt; - pointer to a normalization vector</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=SpellE><span class=GramE>refwhite</span></span>&gt; - pointer to reference white values (for <st1:stockticker>LUV</st1:stockticker> and</pre><pre><span style='mso-spacerun:yes'>     </span>LAB only)</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;<span
+class=GramE>dir</span>&gt; - direction of transform (1 =&gt; (RGB-&gt;<span
+class=SpellE>newcspace</span>)<span style='mso-spacerun:yes'>  </span>else</pre><pre><span style='mso-spacerun:yes'>     </span>(<span
+class=SpellE><span class=GramE>newcspace</span></span>-&gt;RGB)</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$<span class=SpellE>CVIPtoolsHOME\CVIPC\COLOR\cxform.c</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Transforms an RGB image into a new color space <span
+class=GramE>specified<span style='mso-spacerun:yes'>  </span>by</span></pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=SpellE><span class=GramE>newcspace</span></span>&gt;, one of...</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>HSL - Hue/Saturation/Lightness,</pre><pre><span style='mso-spacerun:yes'>      </span>HSV - Hue/Saturation/Value,</pre><pre><span style='mso-spacerun:yes'>      </span>SCT - Spherical Coordinates Transform,</pre><pre><span style='mso-spacerun:yes'>      </span>CCT - Cylindrical Coordinates Transform,</pre><pre><span style='mso-spacerun:yes'>      </span>LAB - C.I.E. L*a*b* Color Coordinate System,</pre><pre><span style='mso-spacerun:yes'>      </span><st1:stockticker>LUV</st1:stockticker> - C.I.E. L*u*v<span
+class=GramE>*<span style='mso-spacerun:yes'>  </span>Color</span><span style='mso-spacerun:yes'>  </span>Coordinate<span style='mso-spacerun:yes'>  </span>System,</pre><pre><span style='mso-spacerun:yes'>      </span>XYZ - <span
+class=GramE>Chromaticity<span style='mso-spacerun:yes'>  </span>Coordinate</span> System.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Each <span
+class=GramE>transform<span style='mso-spacerun:yes'>  </span>requires</span><span style='mso-spacerun:yes'>  </span>that<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>input<span style='mso-spacerun:yes'>  </span>image<span style='mso-spacerun:yes'>  </span>be<span style='mso-spacerun:yes'>   </span>nor-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>malized</span></span><span class=GramE><span style='mso-spacerun:yes'>  </span>between</span><span style='mso-spacerun:yes'>  </span>0 and 1. A pointer to a normalization <span
+class=SpellE>vec</span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>tor</span></span> &lt;norm&gt; must be passed that contains a set of<span style='mso-spacerun:yes'>  </span>values<span style='mso-spacerun:yes'>  </span>to</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>normalize</span> the<span style='mso-spacerun:yes'>  </span>image<span style='mso-spacerun:yes'>  </span>bands<span style='mso-spacerun:yes'>  </span>with. (<span
+class=GramE>e.g</span>. norm[0] = norm[1] =</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>norm[</span>2] = 255.0). If &lt;norm&gt; is NULL then it will <span
+class=GramE>be<span style='mso-spacerun:yes'>  </span>assumed</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>that<span style='mso-spacerun:yes'>  </span>the</span><span style='mso-spacerun:yes'>  </span>input<span style='mso-spacerun:yes'>  </span>image is already normalized. <span
+class=SpellE><span class=GramE>colorxform</span></span> is</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>capable</span> of performing several inverse transforms as well. If</pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=GramE>dir</span>&gt;<span style='mso-spacerun:yes'>  </span>is<span style='mso-spacerun:yes'>  </span>passed as any other value except for one then the</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>inverse</span> transform (&lt;<span class=SpellE>newcspace</span>&gt;-&gt;RGB)<span style='mso-spacerun:yes'>  </span>will<span style='mso-spacerun:yes'>   </span>be<span style='mso-spacerun:yes'>   </span>performed.</pre><pre><span style='mso-spacerun:yes'>     </span>Currently the only inverse transforms that are supported are</pre><pre><span style='mso-spacerun:yes'>     </span>HSL-&gt;<span
+class=GramE>RGB<span style='mso-spacerun:yes'>  </span>&amp;</span><span style='mso-spacerun:yes'>  </span>HSV-&gt;RGB.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>If<span style='mso-spacerun:yes'>  </span>either</span><span style='mso-spacerun:yes'>  </span>a<span style='mso-spacerun:yes'>   </span>L*a*b*<span style='mso-spacerun:yes'>   </span>or<span style='mso-spacerun:yes'>   </span>L*u*v*</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>transform</span><span style='mso-spacerun:yes'>   </span>is<span style='mso-spacerun:yes'>   </span>requested<span style='mso-spacerun:yes'>   </span>then<span style='mso-spacerun:yes'>  </span>an<span style='mso-spacerun:yes'>  </span>additional<span style='mso-spacerun:yes'>  </span>parameter</pre><pre><span style='mso-spacerun:yes'>     </span>&lt;<span
+class=SpellE><span class=GramE>refwhite</span></span>&gt; must be<span style='mso-spacerun:yes'>  </span>passed<span style='mso-spacerun:yes'>  </span>as<span style='mso-spacerun:yes'>  </span>well<span style='mso-spacerun:yes'>  </span>(e.g.<span style='mso-spacerun:yes'>   </span><span
+class=SpellE><span class=GramE>refwhite</span></span><span class=GramE>[</span>0]<span style='mso-spacerun:yes'>  </span>=</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>refwhite</span></span><span class=GramE>[</span>1]<span style='mso-spacerun:yes'>  </span>= <span
+class=SpellE>refwhite</span>[2] = 1.0 ). All transforms will also</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>be</span> normalized to the range [0.0 ... 1.0] except<span style='mso-spacerun:yes'>  </span>for<span style='mso-spacerun:yes'>  </span>L*a*b*</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>and<span style='mso-spacerun:yes'>  </span>L</span>*u*v*<span style='mso-spacerun:yes'>  </span>whose<span style='mso-spacerun:yes'>  </span>range will vary with different values of</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>reference</span> white.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>TYPES AND C<st1:stockticker>ONST</st1:stockticker>ANTS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>None</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Pointer to transformed image</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>HISTORY</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>History information recorded: None</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPtoolkit.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPimage.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPdef.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPview.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPconvert.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPcomplex.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;<span
+class=SpellE>CVIPcolor.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIEWER &quot;picture&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIDEO_APP &quot;<span
+class=SpellE>SunVideo</span> &amp;&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>void</span> main()</pre><pre><span style='mso-spacerun:yes'>      </span>{</pre><pre><span style='mso-spacerun:yes'>      </span>Image *<span
+class=SpellE>cvipImage</span>;</pre><pre><span style='mso-spacerun:yes'>      </span>IMAGE_FORMAT format;</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>char</span> *<span class=SpellE>inputfile</span>,*<span
+class=SpellE>outputfile</span>;</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>float</span> norm[3]={255.0,255.0,255.0};</pre><pre><span style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'>   </span><span
+class=GramE>float</span> ref[3]={1.0,1.0,1.0};</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>setDisplay_<span class=GramE>Image</span></span><span class=GramE>(</span>VIEWER, &quot;Default&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span>/* <span
+class=GramE>The</span> input image should be a COLOR one */</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the<span style='mso-spacerun:yes'>  </span>Input File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>inputfile</span></span> =(char *) <span
+class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>format</span> = <span class=SpellE>getFormat_CVIP</span>(<span
+class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>cvipImage</span></span> = <span class=SpellE>read_Image</span>(inputfile,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>cvipImage</span>, <span class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span><span class=SpellE>inputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span>/* the following call transforms an RGB image into</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>a</span> new color space <st1:stockticker>LUV</st1:stockticker> */</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>cvipImage</span></span><span class=GramE>=</span><span
+class=SpellE>colorxform</span>(cvipImage,<st1:stockticker>LUV</st1:stockticker>,norm,ref,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>print_<span class=GramE>CVIP</span></span><span class=GramE>(</span>&quot;\n\t\<span
+class=SpellE>tEnter</span> the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE><span class=GramE>outputfile</span></span> = <span class=SpellE>getString_CVIP</span>();</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>view_<span class=GramE>Image</span></span><span class=GramE>(</span><span
+class=SpellE>cvipImage,outputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=SpellE>write_<span class=GramE>Image</span></span><span class=GramE>(</span>cvipImage,outputfile,CVIP_NO,CVIP_NO,VIP,1);</pre><pre><span style='mso-spacerun:yes'>      </span><span
+class=GramE>free(</span><span class=SpellE>outputfile</span>);</pre><pre><span style='mso-spacerun:yes'>      </span>}</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>COLOR library</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1996, 2004 SIUE -<span style='mso-spacerun:yes'>  </span>by<span style='mso-spacerun:yes'>  </span>Scott<span style='mso-spacerun:yes'>  </span>E.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>Umbaugh<span style='mso-spacerun:yes'>  </span>and</span><span style='mso-spacerun:yes'>  </span>Greg</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>Hance</span></span><span class=GramE>.</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

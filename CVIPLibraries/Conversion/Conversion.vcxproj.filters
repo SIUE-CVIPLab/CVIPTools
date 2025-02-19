@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\BMP">
+      <UniqueIdentifier>{d183da7d-d706-4ac2-92ac-ec26f3e82d63}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\JPEG2000">
+      <UniqueIdentifier>{14890565-074f-4894-917b-c8d657f77685}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\PNG">
+      <UniqueIdentifier>{eccc52dc-2aa4-4ede-a89d-a366c45b19ec}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\CVIPC\Conversion\bintocvip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\bmptocvip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\ccctocvip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\convert.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\convertutils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\cvipandiris.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptobin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptobmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptoccc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptoeps.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptogif.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptoitex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptojpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptojpeg2000.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptopnm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptops.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptoras.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptotiff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\cviptovip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\epstocvip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\giftocvip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\gray_binary.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\halftone.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\itextocvip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\jpeg2000tocvip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\jpegtocvip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\navy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\pnmtocvip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\rastocvip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\tifftocvip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\viptocvip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\BMP\BMPDECOD.C">
+      <Filter>Source Files\BMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\BMP\BMPENCOD.C">
+      <Filter>Source Files\BMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\BMP\BMPHEAD.C">
+      <Filter>Source Files\BMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\BMP\BMPREAD.C">
+      <Filter>Source Files\BMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\BMP\BMPWRITE.C">
+      <Filter>Source Files\BMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\BMP\ENDIANIO.C">
+      <Filter>Source Files\BMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\bio.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\cio.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\cviptoopj.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\dwt.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\event.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\getopt.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\index.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\j2k.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\j2k_lib.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\jp2.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\jp2_decode.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\jp2_encode.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\jpt.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\mct.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\mqc.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\openjpeg.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\opjconvert.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\opjimage.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\opjtocvip.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\pi.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\raw.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\t1.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\t1_generate_luts.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\t2.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\tcd.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\JPEG2000\tgt.c">
+      <Filter>Source Files\JPEG2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\adler32.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\compress.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\crc32.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\deflate.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\gzio.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\infback.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\inffast.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\inflate.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\inftrees.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\minigzip.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\png.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngerror.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pnggccrd.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngget.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngmem.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngpread.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngread.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngrio.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngrtran.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngrutil.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngset.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngtrans.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngvcrd.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngwio.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngwrite.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngwtran.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\pngwutil.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\readPNG.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\trees.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\uncompr.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\writePNG.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CVIPC\Conversion\PNG\zutil.c">
+      <Filter>Source Files\PNG</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

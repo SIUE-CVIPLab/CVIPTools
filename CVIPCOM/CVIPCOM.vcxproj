@@ -1,0 +1,836 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CVIPCOM</ProjectName>
+    <ProjectGuid>{5C4D0B7D-3CB4-4B2B-B465-5F3C4661F976}</ProjectGuid>
+    <Keyword>AtlProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\bin\</OutDir>
+    <TargetName>CVIPtools</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\bin\</OutDir>
+    <TargetName>CVIPtools</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Include</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Midl>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>CVIPCOM_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>CVIPCOM_i.c</InterfaceIdentifierFileName>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProxyFileName>CVIPCOM_p.c</ProxyFileName>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>$(IntDir)CVIPCOM.tlb</TypeLibraryName>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>oncrpc.lib;rpcrt4.lib;Nafxcwd.lib;Libcmtd.lib</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib;Nafxcwd.lib;Libcmtd.lib</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\CVIPCOM.def</ModuleDefinitionFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <RegisterOutput>true</RegisterOutput>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Include</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Midl>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <HeaderFileName>CVIPCOM_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>CVIPCOM_i.c</InterfaceIdentifierFileName>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProxyFileName>CVIPCOM_p.c</ProxyFileName>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>$(IntDir)CVIPCOM.tlb</TypeLibraryName>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>oncrpc.lib;rpcrt4.lib;nafxcw.lib;Libcmt.lib</AdditionalDependencies>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib;Nafxcw.lib;Libcmt.lib</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\CVIPCOM.def</ModuleDefinitionFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <RegisterOutput>true</RegisterOutput>
+      <SubSystem>Windows</SubSystem>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CVIPC\ArithLogic\dice_coef.c" />
+    <ClCompile Include="..\CVIPC\ArithLogic\jaccard_index.c" />
+    <ClCompile Include="..\CVIPC\ArithLogic\overlap_coef.c" />
+    <ClCompile Include="..\CVIPC\Histogram\CLAHE.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\marr_hildreth_edge.c" />
+    <ClCompile Include="CVIPCOM.cpp" />
+    <ClCompile Include="CVIPCOM_i.c" />
+    <ClCompile Include="CVIPtools.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="..\CVIPC\ArithLogic\arithlogic.c" />
+    <ClCompile Include="..\CVIPC\ArithLogic\xor_error.c" />
+    <ClCompile Include="..\CVIPC\BandUtilities\assemble_bands.c" />
+    <ClCompile Include="..\CVIPC\BandUtilities\bandcast.c" />
+    <ClCompile Include="..\CVIPC\BandUtilities\bandcopy.c" />
+    <ClCompile Include="..\CVIPC\BandUtilities\bandminmax.c" />
+    <ClCompile Include="..\CVIPC\BandUtilities\extract_band.c" />
+    <ClCompile Include="..\CVIPC\BandUtilities\mem_alloc.c" />
+    <ClCompile Include="..\CVIPC\Color\color_adjust.c" />
+    <ClCompile Include="..\CVIPC\Color\color_contrast_enhance.c" />
+    <ClCompile Include="..\CVIPC\Color\ColorMap.c" />
+    <ClCompile Include="..\CVIPC\Color\cxform.c" />
+    <ClCompile Include="..\CVIPC\Color\cxform_setup.c" />
+    <ClCompile Include="..\CVIPC\Color\lum_average.c" />
+    <ClCompile Include="..\CVIPC\Color\luminance.c" />
+    <ClCompile Include="..\CVIPC\Color\misc_fcns.c" />
+    <ClCompile Include="..\CVIPC\Color\pct.c" />
+    <ClCompile Include="..\CVIPC\Color\pseudocol_freq.c" />
+    <ClCompile Include="..\CVIPC\Color\pseudocolor.c" />
+    <ClCompile Include="..\CVIPC\Compression\bitplane_RLC.c" />
+    <ClCompile Include="..\CVIPC\Compression\block_trunc_coding.c" />
+    <ClCompile Include="..\CVIPC\Compression\com_setup.c" />
+    <ClCompile Include="..\CVIPC\Compression\dpcm.c" />
+    <ClCompile Include="..\CVIPC\Compression\fracdec.c" />
+    <ClCompile Include="..\CVIPC\Compression\fracenc.c" />
+    <ClCompile Include="..\CVIPC\Compression\grey_RLC.c" />
+    <ClCompile Include="..\CVIPC\Compression\huffman.c" />
+    <ClCompile Include="..\CVIPC\Compression\jpeg.c" />
+    <ClCompile Include="..\CVIPC\Compression\LBG_utils.c" />
+    <ClCompile Include="..\CVIPC\Compression\m_btc.c" />
+    <ClCompile Include="..\CVIPC\Compression\quant.c" />
+    <ClCompile Include="..\CVIPC\Compression\rms_error.c" />
+    <ClCompile Include="..\CVIPC\Compression\trans_compr.c" />
+    <ClCompile Include="..\CVIPC\Compression\vector_quantization.c" />
+    <ClCompile Include="..\CVIPC\Compression\vq_coding.c" />
+    <ClCompile Include="..\CVIPC\Compression\vq_fileio.c" />
+    <ClCompile Include="..\CVIPC\Compression\vq_initial.c" />
+    <ClCompile Include="..\CVIPC\Compression\wvq.c" />
+    <ClCompile Include="..\CVIPC\Compression\xvq.c" />
+    <ClCompile Include="..\CVIPC\Compression\zonal.c" />
+    <ClCompile Include="..\CVIPC\Compression\zonal2.c" />
+    <ClCompile Include="..\CVIPC\Compression\zvl.c" />
+    <ClCompile Include="..\CVIPC\Conversion\bintocvip.c" />
+    <ClCompile Include="..\CVIPC\Conversion\bmptocvip.c" />
+    <ClCompile Include="..\CVIPC\Conversion\ccctocvip.c" />
+    <ClCompile Include="..\CVIPC\Conversion\convert.c" />
+    <ClCompile Include="..\CVIPC\Conversion\convertutils.c" />
+    <ClCompile Include="..\CVIPC\Conversion\cvipandiris.c" />
+    <ClCompile Include="..\CVIPC\Conversion\cviptobin.c" />
+    <ClCompile Include="..\CVIPC\Conversion\cviptobmp.c" />
+    <ClCompile Include="..\CVIPC\Conversion\cviptoccc.c" />
+    <ClCompile Include="..\CVIPC\Conversion\cviptoeps.c" />
+    <ClCompile Include="..\CVIPC\Conversion\cviptogif.c" />
+    <ClCompile Include="..\CVIPC\Conversion\cviptoitex.c" />
+    <ClCompile Include="..\CVIPC\Conversion\cviptojpeg.c" />
+    <ClCompile Include="..\CVIPC\Conversion\cviptojpeg2000.c" />
+    <ClCompile Include="..\CVIPC\Conversion\cviptopnm.c" />
+    <ClCompile Include="..\CVIPC\Conversion\cviptops.c" />
+    <ClCompile Include="..\CVIPC\Conversion\cviptoras.c" />
+    <ClCompile Include="..\CVIPC\Conversion\cviptotiff.c" />
+    <ClCompile Include="..\CVIPC\Conversion\cviptovip.c" />
+    <ClCompile Include="..\CVIPC\Conversion\epstocvip.c" />
+    <ClCompile Include="..\CVIPC\Conversion\giftocvip.c" />
+    <ClCompile Include="..\CVIPC\Conversion\gray_binary.c" />
+    <ClCompile Include="..\CVIPC\Conversion\halftone.c" />
+    <ClCompile Include="..\CVIPC\Conversion\itextocvip.c" />
+    <ClCompile Include="..\CVIPC\Conversion\jpeg2000tocvip.c" />
+    <ClCompile Include="..\CVIPC\Conversion\jpegtocvip.c" />
+    <ClCompile Include="..\CVIPC\Conversion\navy.c" />
+    <ClCompile Include="..\CVIPC\Conversion\pnmtocvip.c" />
+    <ClCompile Include="..\CVIPC\Conversion\rastocvip.c" />
+    <ClCompile Include="..\CVIPC\Conversion\tifftocvip.c" />
+    <ClCompile Include="..\CVIPC\Conversion\viptocvip.c" />
+    <ClCompile Include="..\CVIPC\Conversion\BMP\BMPDECOD.C" />
+    <ClCompile Include="..\CVIPC\Conversion\BMP\BMPENCOD.C" />
+    <ClCompile Include="..\CVIPC\Conversion\BMP\BMPHEAD.C" />
+    <ClCompile Include="..\CVIPC\Conversion\BMP\BMPREAD.C" />
+    <ClCompile Include="..\CVIPC\Conversion\BMP\BMPWRITE.C" />
+    <ClCompile Include="..\CVIPC\Conversion\BMP\ENDIANIO.C" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\cdjpeg.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcapimin.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcapistd.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jccoefct.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jccolor.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcdctmgr.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jchuff.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcinit.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcmainct.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcmarker.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcmaster.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcomapi.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcparam.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcphuff.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcprepct.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jcsample.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jctrans.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdapimin.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdapistd.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdatadst.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdatasrc.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdcoefct.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdcolor.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jddctmgr.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdhuff.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdinput.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdmainct.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdmarker.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdmaster.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdmerge.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdphuff.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdpostct.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdsample.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jdtrans.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jerror.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jfdctflt.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jfdctfst.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jfdctint.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jidctflt.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jidctfst.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jidctint.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jidctred.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jmemansi.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jmemmgr.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jquant1.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jquant2.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jrdcvip.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jutils.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\jwrcvip.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\rdbmp.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\rdcolmap.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\rdgif.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\rdppm.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\rdrle.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\rdswitch.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\rdtarga.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\wrbmp.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\wrgif.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\wrppm.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\wrrle.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG\wrtarga.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\bio.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\cio.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\cviptoopj.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\dwt.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\event.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\getopt.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\index.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\j2k.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\j2k_lib.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\jp2.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\jp2_decode.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\jp2_encode.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\jpt.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\mct.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\mqc.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\openjpeg.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\opjconvert.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\opjimage.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\opjtocvip.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\pi.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\raw.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\t1.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\t1_generate_luts.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\t2.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\tcd.c" />
+    <ClCompile Include="..\CVIPC\Conversion\JPEG2000\tgt.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpbm1.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpbm2.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpbm3.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpbm4.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpbm5.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpgm1.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpgm2.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpnm1.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpnm2.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpnm3.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libpnm4.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libppm1.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libppm2.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libppm3.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libppm4.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PBMPLUS\libppm5.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\adler32.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\compress.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\crc32.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\deflate.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\gzio.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\infback.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\inffast.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\inflate.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\inftrees.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\minigzip.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\png.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngerror.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pnggccrd.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngget.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngmem.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngpread.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngread.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngrio.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngrtran.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngrutil.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngset.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngtrans.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngvcrd.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngwio.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngwrite.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngwtran.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\pngwutil.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\readPNG.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\trees.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\uncompr.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\writePNG.c" />
+    <ClCompile Include="..\CVIPC\Conversion\PNG\zutil.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_aux.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_close.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_codec.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_color.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_compress.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_dir.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_dirinfo.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_dirread.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_dirwrite.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_dumpmode.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_error.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_extension.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_fax3.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_fax3sm.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_flush.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_getimage.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_jpeg.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_luv.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_lzw.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_next.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_open.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_packbits.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_pixarlog.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_predict.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_print.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_read.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_strip.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_swab.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_thunder.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_tile.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_version.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_warning.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_win32.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_write.c" />
+    <ClCompile Include="..\CVIPC\Conversion\TIFF\tif_zip.c" />
+    <ClCompile Include="..\CVIPC\Display\display.c" />
+    <ClCompile Include="..\CVIPC\Feature\binary_feature.c" />
+    <ClCompile Include="..\CVIPC\Feature\city_block.c" />
+    <ClCompile Include="..\CVIPC\Feature\Cooccurrence_Matrix.c" />
+    <ClCompile Include="..\CVIPC\Feature\cvip_pgmtexture.c" />
+    <ClCompile Include="..\CVIPC\Feature\CVIP_textureSetUp.c" />
+    <ClCompile Include="..\CVIPC\Feature\euclidean_distance.c" />
+    <ClCompile Include="..\CVIPC\Feature\hist_feature.c" />
+    <ClCompile Include="..\CVIPC\Feature\k_nearest_neighbor.c" />
+    <ClCompile Include="..\CVIPC\Feature\label.c" />
+    <ClCompile Include="..\CVIPC\Feature\laws_texture.c" />
+    <ClCompile Include="..\CVIPC\Feature\maximum_value_metric.c" />
+    <ClCompile Include="..\CVIPC\Feature\min_max_normalization.c" />
+    <ClCompile Include="..\CVIPC\Feature\minkowski_distance.c" />
+    <ClCompile Include="..\CVIPC\Feature\nearest_centroid.c" />
+    <ClCompile Include="..\CVIPC\Feature\nearest_centroid_set.c" />
+    <ClCompile Include="..\CVIPC\Feature\nearest_neighbor.c" />
+    <ClCompile Include="..\CVIPC\Feature\pattern_city_block.c" />
+    <ClCompile Include="..\CVIPC\Feature\pattern_euclidean.c" />
+    <ClCompile Include="..\CVIPC\Feature\pattern_maximum.c" />
+    <ClCompile Include="..\CVIPC\Feature\pattern_min_max_normalization.c" />
+    <ClCompile Include="..\CVIPC\Feature\pattern_minkowski.c" />
+    <ClCompile Include="..\CVIPC\Feature\pattern_range_normalize.c" />
+    <ClCompile Include="..\CVIPC\Feature\pattern_softmax_scaling_normalization.c" />
+    <ClCompile Include="..\CVIPC\Feature\pattern_standard_normal_density_normalization.c" />
+    <ClCompile Include="..\CVIPC\Feature\pattern_tanimoto.c" />
+    <ClCompile Include="..\CVIPC\Feature\pattern_unit_vector_normalization.c" />
+    <ClCompile Include="..\CVIPC\Feature\pattern_vector_inner_product.c" />
+    <ClCompile Include="..\CVIPC\Feature\range_normalize.c" />
+    <ClCompile Include="..\CVIPC\Feature\rst_invariant.c" />
+    <ClCompile Include="..\CVIPC\Feature\size_norm_projection.c" />
+    <ClCompile Include="..\CVIPC\Feature\softmax_scaling.c" />
+    <ClCompile Include="..\CVIPC\Feature\spectral_feature.c" />
+    <ClCompile Include="..\CVIPC\Feature\standard_normal_density_normalizatoin.c" />
+    <ClCompile Include="..\CVIPC\Feature\tanimoto_metric.c" />
+    <ClCompile Include="..\CVIPC\Feature\Texture_Features.c" />
+    <ClCompile Include="..\CVIPC\Feature\unit_vector_normalization.c" />
+    <ClCompile Include="..\CVIPC\Feature\vector_inner_product.c" />
+    <ClCompile Include="..\CVIPC\Geometry\bilinear.c" />
+    <ClCompile Include="..\CVIPC\Geometry\copy_paste.c" />
+    <ClCompile Include="..\CVIPC\Geometry\cosine.c" />
+    <ClCompile Include="..\CVIPC\Geometry\create_image.c" />
+    <ClCompile Include="..\CVIPC\Geometry\crop.c" />
+    <ClCompile Include="..\CVIPC\Geometry\enlarge.c" />
+    <ClCompile Include="..\CVIPC\Geometry\horizontal.c" />
+    <ClCompile Include="..\CVIPC\Geometry\local_adaptive_zoom.c" />
+    <ClCompile Include="..\CVIPC\Geometry\object_crop.c" />
+    <ClCompile Include="..\CVIPC\Geometry\rotate.c" />
+    <ClCompile Include="..\CVIPC\Geometry\SeedFill.c" />
+    <ClCompile Include="..\CVIPC\Geometry\shrink.c" />
+    <ClCompile Include="..\CVIPC\Geometry\sine.c" />
+    <ClCompile Include="..\CVIPC\Geometry\spatial_quant.c" />
+    <ClCompile Include="..\CVIPC\Geometry\square.c" />
+    <ClCompile Include="..\CVIPC\Geometry\translate.c" />
+    <ClCompile Include="..\CVIPC\Geometry\warp.c" />
+    <ClCompile Include="..\CVIPC\Geometry\zoom.c" />
+    <ClCompile Include="..\CVIPC\Histogram\ee.c" />
+    <ClCompile Include="..\CVIPC\Histogram\eefunc.c" />
+    <ClCompile Include="..\CVIPC\Histogram\get_hist_real.c" />
+    <ClCompile Include="..\CVIPC\Histogram\graylevel_mod.c" />
+    <ClCompile Include="..\CVIPC\Histogram\hist_slide.c" />
+    <ClCompile Include="..\CVIPC\Histogram\hist_stretch.c" />
+    <ClCompile Include="..\CVIPC\Histogram\histeq.c" />
+    <ClCompile Include="..\CVIPC\Histogram\histogram.c" />
+    <ClCompile Include="..\CVIPC\Histogram\local_heq.c" />
+    <ClCompile Include="..\CVIPC\Image\chk_bin.c" />
+    <ClCompile Include="..\CVIPC\Image\history.c" />
+    <ClCompile Include="..\CVIPC\Image\image.c" />
+    <ClCompile Include="..\CVIPC\IOUtilities\errormsg.c" />
+    <ClCompile Include="..\CVIPC\IOUtilities\file.c" />
+    <ClCompile Include="..\CVIPC\IOUtilities\getvalue.c" />
+    <ClCompile Include="..\CVIPC\IOUtilities\MemAlloc.c" />
+    <ClCompile Include="..\CVIPC\Mapping\logremap.c" />
+    <ClCompile Include="..\CVIPC\Mapping\relremap.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_alloc.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_arith_bin.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_conj.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_convolve.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_copy.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_CovEig.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_crop.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_det.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_file.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_invert.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_logic_bin.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_magnitude.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_makecomplex.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_makereal.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_mult.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_print.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_scale.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_sqrt.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\m_trans.c" />
+    <ClCompile Include="..\CVIPC\MatrixAlgebra\rec2pol.c" />
+    <ClCompile Include="..\CVIPC\Morphological\labeling_lab.c" />
+    <ClCompile Include="..\CVIPC\Morphological\morph.c" />
+    <ClCompile Include="..\CVIPC\Morphological\morph_hitmiss.c" />
+    <ClCompile Include="..\CVIPC\Morphological\morph_skeleton.c" />
+    <ClCompile Include="..\CVIPC\Morphological\morph_thinning.c" />
+    <ClCompile Include="..\CVIPC\Morphological\morphCODE.c" />
+    <ClCompile Include="..\CVIPC\Morphological\morphSET.c" />
+    <ClCompile Include="..\CVIPC\Noise\noise.c" />
+    <ClCompile Include="..\CVIPC\Object\DigitalLine.c" />
+    <ClCompile Include="..\CVIPC\Object\Object.c" />
+    <ClCompile Include="..\CVIPC\Object\ObjectContour.c" />
+    <ClCompile Include="..\CVIPC\Object\ObjectLabel.c" />
+    <ClCompile Include="..\CVIPC\Object\ObjectProperties.c" />
+    <ClCompile Include="..\CVIPC\Object\ObjectSetUp.c" />
+    <ClCompile Include="..\CVIPC\Object\TrimList.c" />
+    <ClCompile Include="..\CVIPC\ObjectManager\DLL.c" />
+    <ClCompile Include="..\CVIPC\ObjectManager\HT.c" />
+    <ClCompile Include="..\CVIPC\ObjectManager\LL.c" />
+    <ClCompile Include="..\CVIPC\ObjectManager\Stack.c" />
+    <ClCompile Include="..\CVIPC\RegionOfInterest\ROI.c" />
+    <ClCompile Include="..\CVIPC\Segmentation\autothreshold_segment.c" />
+    <ClCompile Include="..\CVIPC\Segmentation\findNonSkin.c" />
+    <ClCompile Include="..\CVIPC\Segmentation\fuzzyc.c" />
+    <ClCompile Include="..\CVIPC\Segmentation\gray_quant.c" />
+    <ClCompile Include="..\CVIPC\Segmentation\gvfsnake.c" />
+    <ClCompile Include="..\CVIPC\Segmentation\hist_thresh.c" />
+    <ClCompile Include="..\CVIPC\Segmentation\igs.c" />
+    <ClCompile Include="..\CVIPC\Segmentation\median_cut.c" />
+    <ClCompile Include="..\CVIPC\Segmentation\otsu.c" />
+    <ClCompile Include="..\CVIPC\Segmentation\pct_median.c" />
+    <ClCompile Include="..\CVIPC\Segmentation\sct_split.c" />
+    <ClCompile Include="..\CVIPC\Segmentation\Spline.c" />
+    <ClCompile Include="..\CVIPC\Segmentation\split_merge.c" />
+    <ClCompile Include="..\CVIPC\Segmentation\splitnMerge.c" />
+    <ClCompile Include="..\CVIPC\Segmentation\threshold.c" />
+    <ClCompile Include="..\CVIPC\Segmentation\watershed.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\adaptive_anisotropic_diffusion.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\adaptive_contrast.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\boiecox_edge.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\canny_edge_detection.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\cerchar_filter.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\convolve_Image.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\edge_detect.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\harris_corner_detection.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\hough.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\img_sharp.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\improved_mmse_filter.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\kirsch_filter.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\kuwahara_filter.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\lee_filter.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\median_hist.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\mmse_filter.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\moravec_corner_detection.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\nightvision.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\nonmaxima_suppression.cpp" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\pratts.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\prewitt_filter.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\raster_deblur.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\robinson_filter.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\shen_castan_edge.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\single_filter.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\smooth.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\sobel_filter.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\spatial_filter.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\spatial_tools.c" />
+    <ClCompile Include="..\CVIPC\SpatialFilter\unsharp.c" />
+    <ClCompile Include="..\CVIPC\Transforms\check_xform_history.c" />
+    <ClCompile Include="..\CVIPC\Transforms\dct.c" />
+    <ClCompile Include="..\CVIPC\Transforms\fft.c" />
+    <ClCompile Include="..\CVIPC\Transforms\fft_mag.c" />
+    <ClCompile Include="..\CVIPC\Transforms\fft_phase.c" />
+    <ClCompile Include="..\CVIPC\Transforms\fft_setup.c" />
+    <ClCompile Include="..\CVIPC\Transforms\haar.c" />
+    <ClCompile Include="..\CVIPC\Transforms\inverse_fft.c" />
+    <ClCompile Include="..\CVIPC\Transforms\walhad.c" />
+    <ClCompile Include="..\CVIPC\Transforms\wavelet.c" />
+    <ClCompile Include="..\CVIPC\Transforms\xform_setup.c" />
+    <ClCompile Include="..\CVIPC\Transforms\xform_util.c" />
+    <ClCompile Include="..\CVIPC\Transforms\zero_pad.c" />
+    <ClCompile Include="..\CVIPC\VectorAlgebra\bandvec.c" />
+    <ClCompile Include="..\CVIPC\VectorAlgebra\filterVector.c" />
+    <ClCompile Include="..\CVIPC\VectorAlgebra\findHisto.c" />
+    <ClCompile Include="..\CVIPC\VectorAlgebra\normalize.c" />
+    <ClCompile Include="..\CVIPC\VectorAlgebra\subSample.c" />
+    <ClCompile Include="..\CVIPC\VectorAlgebra\VectorMinMax.c" />
+    <ClCompile Include="..\CVIPC\XformFilter\bpf_setup.c" />
+    <ClCompile Include="..\CVIPC\XformFilter\brf_setup.c" />
+    <ClCompile Include="..\CVIPC\XformFilter\filter.c" />
+    <ClCompile Include="..\CVIPC\XformFilter\h_image.c" />
+    <ClCompile Include="..\CVIPC\XformFilter\hfe_setup.c" />
+    <ClCompile Include="..\CVIPC\XformFilter\homomorphic.c" />
+    <ClCompile Include="..\CVIPC\XformFilter\hpf_setup.c" />
+    <ClCompile Include="..\CVIPC\XformFilter\lpf_setup.c" />
+    <ClCompile Include="..\CVIPC\XformFilter\nonfft_filter.c" />
+    <ClCompile Include="..\CVIPC\XformFilter\notch.c" />
+    <ClCompile Include="..\CVIPC\XformFilter\restore_xformfilter.c" />
+    <ClCompile Include="..\CVIPC\XformFilter\xformfilter_setup.c" />
+    <ClCompile Include="superPixel.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CVIPCOM.h" />
+    <ClInclude Include="CVIPCOM_i.h" />
+    <ClInclude Include="CVIPtools.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\Include\bilinear.h" />
+    <ClInclude Include="..\Include\bilinear_prim.h" />
+    <ClInclude Include="..\Include\bio.h" />
+    <ClInclude Include="..\Include\bitplane_RLC.h" />
+    <ClInclude Include="..\Include\block_trunc_coding.h" />
+    <ClInclude Include="..\Include\BMP.H" />
+    <ClInclude Include="..\Include\boundary_points.h" />
+    <ClInclude Include="..\Include\cderror.h" />
+    <ClInclude Include="..\Include\cdjpeg.h" />
+    <ClInclude Include="..\Include\cio.h" />
+    <ClInclude Include="..\Include\color_adjust.h" />
+    <ClInclude Include="..\Include\ColorMap.h" />
+    <ClInclude Include="..\Include\convert.h" />
+    <ClInclude Include="..\Include\CVIPalloc.h" />
+    <ClInclude Include="..\Include\CVIParith.h" />
+    <ClInclude Include="..\Include\CVIParithlogic.h" />
+    <ClInclude Include="..\Include\CVIPband.h" />
+    <ClInclude Include="..\Include\CVIPbin.h" />
+    <ClInclude Include="..\Include\CVIPbitwiseIO.h" />
+    <ClInclude Include="..\Include\CVIPccc.h" />
+    <ClInclude Include="..\Include\CVIPcmap.h" />
+    <ClInclude Include="..\Include\CVIPcolor.h" />
+    <ClInclude Include="..\Include\CVIPcomplex.h" />
+    <ClInclude Include="..\Include\CVIPcompress.h" />
+    <ClInclude Include="..\Include\CVIPconutils.h" />
+    <ClInclude Include="..\Include\CVIPconvert.h" />
+    <ClInclude Include="..\Include\CVIPdef.h" />
+    <ClInclude Include="..\Include\CVIPdermvis.h" />
+    <ClInclude Include="..\Include\CVIPdisplay.h" />
+    <ClInclude Include="..\Include\CVIPdrawimg.h" />
+    <ClInclude Include="..\Include\CVIPenhance.h" />
+    <ClInclude Include="..\Include\CVIPeps.h" />
+    <ClInclude Include="..\Include\CVIPerror.h" />
+    <ClInclude Include="..\Include\CVIPfeatures.h" />
+    <ClInclude Include="..\Include\CVIPfile.h" />
+    <ClInclude Include="..\Include\CVIPfs.h" />
+    <ClInclude Include="..\Include\CVIPgeometry.h" />
+    <ClInclude Include="..\Include\CVIPget.h" />
+    <ClInclude Include="..\Include\CVIPgif.h" />
+    <ClInclude Include="..\Include\CVIPhalftone.h" />
+    <ClInclude Include="..\Include\CVIPheli_rot.h" />
+    <ClInclude Include="..\Include\CVIPhisto.h" />
+    <ClInclude Include="..\Include\CVIPhistory.h" />
+    <ClInclude Include="..\Include\CVIPicon.h" />
+    <ClInclude Include="..\Include\CVIPimage.h" />
+    <ClInclude Include="..\Include\CVIPiris.h" />
+    <ClInclude Include="..\Include\CVIPitex.h" />
+    <ClInclude Include="..\Include\CVIPjpeg.h" />
+    <ClInclude Include="..\Include\CVIPjpeg2000.h" />
+    <ClInclude Include="..\Include\CVIPluminance.h" />
+    <ClInclude Include="..\Include\CVIPmagic.h" />
+    <ClInclude Include="..\Include\CVIPmanager.h" />
+    <ClInclude Include="..\Include\CVIPmap.h" />
+    <ClInclude Include="..\Include\CVIPmatrix.h" />
+    <ClInclude Include="..\Include\CVIPmesh.h" />
+    <ClInclude Include="..\Include\CVIPmorph.h" />
+    <ClInclude Include="..\Include\CVIPnoise.h" />
+    <ClInclude Include="..\Include\CVIPobject.h" />
+    <ClInclude Include="..\Include\CVIPparse.h" />
+    <ClInclude Include="..\Include\CVIPpattern.h" />
+    <ClInclude Include="..\Include\CVIPpng.h" />
+    <ClInclude Include="..\Include\CVIPpnm.h" />
+    <ClInclude Include="..\Include\CVIPps.h" />
+    <ClInclude Include="..\Include\CVIPras.h" />
+    <ClInclude Include="..\Include\CVIProi.h" />
+    <ClInclude Include="..\Include\CVIPsegment.h" />
+    <ClInclude Include="..\Include\CVIPspfltr.h" />
+    <ClInclude Include="..\Include\CVIPstring.h" />
+    <ClInclude Include="..\Include\CVIPtexture.h" />
+    <ClInclude Include="..\Include\CVIPtiff.h" />
+    <ClInclude Include="..\Include\CVIPtoolkit.h" />
+    <ClInclude Include="..\Include\CVIPtools.h" />
+    <ClInclude Include="..\Include\CVIPtransform.h" />
+    <ClInclude Include="..\Include\CVIPtyp.h" />
+    <ClInclude Include="..\Include\CVIPvector.h" />
+    <ClInclude Include="..\Include\CVIPview.h" />
+    <ClInclude Include="..\Include\CVIPvip.h" />
+    <ClInclude Include="..\Include\CVIPxel.h" />
+    <ClInclude Include="..\Include\CVIPxformfilter.h" />
+    <ClInclude Include="..\Include\DATATYPE.H" />
+    <ClInclude Include="..\Include\deform_template.h" />
+    <ClInclude Include="..\Include\DermVis.h" />
+    <ClInclude Include="..\Include\DermvisDat.h" />
+    <ClInclude Include="..\Include\DigitalLine.h" />
+    <ClInclude Include="..\Include\dirent.h" />
+    <ClInclude Include="..\Include\dithers.h" />
+    <ClInclude Include="..\Include\DLL.h" />
+    <ClInclude Include="..\Include\dwt.h" />
+    <ClInclude Include="..\Include\ee.h" />
+    <ClInclude Include="..\Include\eefunc.h" />
+    <ClInclude Include="..\Include\ENDIANIO.H" />
+    <ClInclude Include="..\Include\event.h" />
+    <ClInclude Include="..\Include\fcm.h" />
+    <ClInclude Include="..\Include\filterVector.h" />
+    <ClInclude Include="..\Include\findHisto.h" />
+    <ClInclude Include="..\Include\findNonSkin.h" />
+    <ClInclude Include="..\Include\fix.h" />
+    <ClInclude Include="..\Include\fractal.h" />
+    <ClInclude Include="..\Include\ftw.h" />
+    <ClInclude Include="..\Include\fuzzyc.h" />
+    <ClInclude Include="..\Include\g3states.h" />
+    <ClInclude Include="..\Include\getopt.h" />
+    <ClInclude Include="..\Include\gray_binary.h" />
+    <ClInclude Include="..\Include\grey_RLC.h" />
+    <ClInclude Include="..\Include\hist.h" />
+    <ClInclude Include="..\Include\hist_thresh.h" />
+    <ClInclude Include="..\Include\histogram.h" />
+    <ClInclude Include="..\Include\HT.h" />
+    <ClInclude Include="..\Include\huffman.h" />
+    <ClInclude Include="..\Include\image.h" />
+    <ClInclude Include="..\Include\imaging.h" />
+    <ClInclude Include="..\Include\img2imgmap.h" />
+    <ClInclude Include="..\Include\index.h" />
+    <ClInclude Include="..\Include\int.h" />
+    <ClInclude Include="..\Include\j2k.h" />
+    <ClInclude Include="..\Include\j2k_lib.h" />
+    <ClInclude Include="..\Include\jchuff.h" />
+    <ClInclude Include="..\Include\jconfig.h" />
+    <ClInclude Include="..\Include\jdct.h" />
+    <ClInclude Include="..\Include\jdhuff.h" />
+    <ClInclude Include="..\Include\jerror.h" />
+    <ClInclude Include="..\Include\jinclude.h" />
+    <ClInclude Include="..\Include\jmemsys.h" />
+    <ClInclude Include="..\Include\jmorecfg.h" />
+    <ClInclude Include="..\Include\jp2.h" />
+    <ClInclude Include="..\Include\jpegint.h" />
+    <ClInclude Include="..\Include\jpeglib.h" />
+    <ClInclude Include="..\Include\jpt.h" />
+    <ClInclude Include="..\Include\jversion.h" />
+    <ClInclude Include="..\Include\labeling.h" />
+    <ClInclude Include="..\Include\laws_texture.h" />
+    <ClInclude Include="..\Include\LBG.h" />
+    <ClInclude Include="..\Include\libpbm.h" />
+    <ClInclude Include="..\Include\libpgm.h" />
+    <ClInclude Include="..\Include\libppm.h" />
+    <ClInclude Include="..\Include\Link.h" />
+    <ClInclude Include="..\Include\LL.h" />
+    <ClInclude Include="..\Include\m_CovEig.h" />
+    <ClInclude Include="..\Include\m_file.h" />
+    <ClInclude Include="..\Include\machdep.h" />
+    <ClInclude Include="..\Include\masks.h" />
+    <ClInclude Include="..\Include\MATcopy.h" />
+    <ClInclude Include="..\Include\MATmult.h" />
+    <ClInclude Include="..\Include\MATpwise.h" />
+    <ClInclude Include="..\Include\MATscale.h" />
+    <ClInclude Include="..\Include\mct.h" />
+    <ClInclude Include="..\Include\median_cut.h" />
+    <ClInclude Include="..\Include\misc_fcns.h" />
+    <ClInclude Include="..\Include\mqc.h" />
+    <ClInclude Include="..\Include\mymath.h" />
+    <ClInclude Include="..\Include\newfeature.h" />
+    <ClInclude Include="..\Include\Object.h" />
+    <ClInclude Include="..\Include\ObjectContour.h" />
+    <ClInclude Include="..\Include\ObjectLabel.h" />
+    <ClInclude Include="..\Include\ObjectProperties.h" />
+    <ClInclude Include="..\Include\openjpeg.h" />
+    <ClInclude Include="..\Include\opj_includes.h" />
+    <ClInclude Include="..\Include\opj_malloc.h" />
+    <ClInclude Include="..\Include\pbm.h" />
+    <ClInclude Include="..\Include\pbmfont.h" />
+    <ClInclude Include="..\Include\pbmplus.h" />
+    <ClInclude Include="..\Include\pct.h" />
+    <ClInclude Include="..\Include\pgm.h" />
+    <ClInclude Include="..\Include\pi.h" />
+    <ClInclude Include="..\Include\pnm.h" />
+    <ClInclude Include="..\Include\port.h" />
+    <ClInclude Include="..\Include\ppbm.h" />
+    <ClInclude Include="..\Include\ppbmplus.h" />
+    <ClInclude Include="..\Include\ppgm.h" />
+    <ClInclude Include="..\Include\ppm.h" />
+    <ClInclude Include="..\Include\ppmcmap.h" />
+    <ClInclude Include="..\Include\ppmdraw.h" />
+    <ClInclude Include="..\Include\prototypes.h" />
+    <ClInclude Include="..\Include\pversion.h" />
+    <ClInclude Include="..\Include\rast.h" />
+    <ClInclude Include="..\Include\raw.h" />
+    <ClInclude Include="..\Include\sct_split.h" />
+    <ClInclude Include="..\Include\SeedFill.h" />
+    <ClInclude Include="..\Include\seg.h" />
+    <ClInclude Include="..\Include\Spline.h" />
+    <ClInclude Include="..\Include\split_merge.h" />
+    <ClInclude Include="..\Include\Stack.h" />
+    <ClInclude Include="..\Include\subSample.h" />
+    <ClInclude Include="..\Include\t1.h" />
+    <ClInclude Include="..\Include\t1_luts.h" />
+    <ClInclude Include="..\Include\t2.h" />
+    <ClInclude Include="..\Include\t4.h" />
+    <ClInclude Include="..\Include\tcd.h" />
+    <ClInclude Include="..\Include\tgt.h" />
+    <ClInclude Include="..\Include\threshold.h" />
+    <ClInclude Include="..\Include\tif_config.h" />
+    <ClInclude Include="..\Include\tif_dir.h" />
+    <ClInclude Include="..\Include\tif_fax3.h" />
+    <ClInclude Include="..\Include\tif_predict.h" />
+    <ClInclude Include="..\Include\tiff.h" />
+    <ClInclude Include="..\Include\tiffcomp.h" />
+    <ClInclude Include="..\Include\tiffconf.h" />
+    <ClInclude Include="..\Include\tiffio.h" />
+    <ClInclude Include="..\Include\tiffiop.h" />
+    <ClInclude Include="..\Include\tiffvers.h" />
+    <ClInclude Include="..\Include\TrimList.h" />
+    <ClInclude Include="..\Include\tristimulus.h" />
+    <ClInclude Include="..\Include\uvcode.h" />
+    <ClInclude Include="..\Include\vector_data.h" />
+    <ClInclude Include="..\Include\vector_quant.h" />
+    <ClInclude Include="..\Include\version.h" />
+    <ClInclude Include="..\Include\watershed.h" />
+    <ClInclude Include="..\Include\wavelet.h" />
+    <ClInclude Include="..\Include\waves.h" />
+    <ClInclude Include="..\Include\zconf.h" />
+    <ClInclude Include="..\Include\zlib.h" />
+    <ClInclude Include="..\Include\zonal.h" />
+    <ClInclude Include="..\Include\rpc\auth.h" />
+    <ClInclude Include="..\Include\rpc\auth_uni.h" />
+    <ClInclude Include="..\Include\rpc\bcopy.h" />
+    <ClInclude Include="..\Include\rpc\clnt.h" />
+    <ClInclude Include="..\Include\rpc\netdb.h" />
+    <ClInclude Include="..\Include\rpc\pmap_cln.h" />
+    <ClInclude Include="..\Include\rpc\pmap_pro.h" />
+    <ClInclude Include="..\Include\rpc\pmap_rmt.h" />
+    <ClInclude Include="..\Include\rpc\rpc.h" />
+    <ClInclude Include="..\Include\rpc\rpc_msg.h" />
+    <ClInclude Include="..\Include\rpc\svc.h" />
+    <ClInclude Include="..\Include\rpc\svc_auth.h" />
+    <ClInclude Include="..\Include\rpc\types.h" />
+    <ClInclude Include="..\Include\rpc\xdr.h" />
+    <ClInclude Include="..\Include\X11\cursorfont.h" />
+    <ClInclude Include="..\Include\X11\keysym.h" />
+    <ClInclude Include="..\Include\X11\keysymdef.h" />
+    <ClInclude Include="..\Include\X11\X.h" />
+    <ClInclude Include="..\Include\X11\Xatom.h" />
+    <ClInclude Include="..\Include\X11\Xfuncproto.h" />
+    <ClInclude Include="..\Include\X11\Xlib.h" />
+    <ClInclude Include="..\Include\X11\Xutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CVIPCOM.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CVIPCOM.def" />
+    <None Include="CVIPCOM.rgs" />
+    <None Include="CVIPtools.rgs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="CVIPCOM.idl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

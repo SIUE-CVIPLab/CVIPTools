@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<COMLibraries>
+  <COMEntry Type="File" Id="_CVIPCOM" SharedFileId="_2B34C7F7_AA14_4BF1_A845_816DE13FF5C9" DirectoryId="dir_2B34C7F7_AA14_4BF1_A845_816DE13FF5C9" Source="..\..\CVIPCOM\Debug\CVIPCOM.tlb">
+    <Hidden>no</Hidden>
+    <KeyPath>yes</KeyPath>
+    <ReadOnly>no</ReadOnly>
+    <System>no</System>
+    <TrueType>no</TrueType>
+    <Vital>yes</Vital>
+    <Permanent>no</Permanent>
+    <SharedDllRefCount>no</SharedDllRefCount>
+    <Transitive>no</Transitive>
+  </COMEntry>
+</COMLibraries>

@@ -1,0 +1,247 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="PBM_files/filelist.xml">
+<title>PBM</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>3</o:TotalTime>
+  <o:Created>2004-06-04T02:27:00Z</o:Created>
+  <o:LastSaved>2004-06-09T16:23:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>618</o:Words>
+  <o:Characters>3524</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>29</o:Lines>
+  <o:Paragraphs>8</o:Paragraphs>
+  <o:CharactersWithSpaces>4134</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE><span
+class=GramE>pbm</span></span> - functions to support portable bitmap programs</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>#include &lt;<span
+class=SpellE>pbm.h</span>&gt;</pre><pre><span style='mso-spacerun:yes'>     </span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION - PACKAGE-WIDE ROUTINES</h2>
+
+<pre><span style='mso-spacerun:yes'>  </span>KEYWORD MATCHING</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>pm_keymatch</span>( char* <span
+class=SpellE>str</span>, char* keyword, <span class=SpellE>int</span> <span
+class=SpellE>minchars</span> )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Does a case-insensitive match of <span
+class=SpellE>str</span> <span class=GramE>against<span style='mso-spacerun:yes'>  </span>keyword</span>.<span style='mso-spacerun:yes'>   </span><span
+class=SpellE><span class=GramE>str</span></span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>can</span> be a leading <span class=SpellE>sunstring</span> of keyword, but at least <span
+class=SpellE>minchars</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>must</span> be present.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>  </span>LOG BASE TWO</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>pm_maxvaltobits</span>( <span
+class=SpellE>int</span> <span class=SpellE>maxval</span> )</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>pm_bitstomaxval</span>( <span
+class=SpellE>int</span> bits )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Convert between a <span
+class=SpellE>maxval</span> <span class=GramE>and<span style='mso-spacerun:yes'>  </span>the</span><span style='mso-spacerun:yes'>  </span>minimum<span style='mso-spacerun:yes'>  </span>number<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>bits</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>required</span> to hold it.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>  </span>MESSAGES AND ERRORS</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pm_message</span>( char* <span
+class=SpellE>fmt</span>, ... )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span>) style routine to write an informational message.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pm_error</span>( char* <span
+class=SpellE>fmt</span>, ... )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span>) style routine to write an error message and abort.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pm_usage</span>( char* usage )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Write a usage message.<span style='mso-spacerun:yes'>   </span><span
+class=GramE>The<span style='mso-spacerun:yes'>  </span>string</span><span style='mso-spacerun:yes'>  </span>should<span style='mso-spacerun:yes'>  </span>indicate<span style='mso-spacerun:yes'>  </span>what</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>arguments</span> are to be provided to the program.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>  </span>GENERIC FILE MANAGEMENT</pre><pre><span style='mso-spacerun:yes'>     </span>FILE* <span
+class=SpellE>pm_<span class=GramE>openr</span></span><span class=GramE>(</span> char* name )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Open the given <span
+class=GramE>file<span style='mso-spacerun:yes'>  </span>for</span><span style='mso-spacerun:yes'>  </span>reading,<span style='mso-spacerun:yes'>  </span>with<span style='mso-spacerun:yes'>  </span>appropriate<span style='mso-spacerun:yes'>  </span>error</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>checking</span>.<span style='mso-spacerun:yes'>   </span><span
+class=GramE>A<span style='mso-spacerun:yes'>  </span>filename</span><span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>&quot;-&quot;<span style='mso-spacerun:yes'>  </span>is<span style='mso-spacerun:yes'>  </span>taken as equivalent to</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>stdin</span></span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>FILE* <span
+class=SpellE>pm_<span class=GramE>openw</span></span><span class=GramE>(</span> char* name )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Open the given <span
+class=GramE>file<span style='mso-spacerun:yes'>  </span>for</span><span style='mso-spacerun:yes'>  </span>writing,<span style='mso-spacerun:yes'>  </span>with<span style='mso-spacerun:yes'>  </span>appropriate<span style='mso-spacerun:yes'>  </span>error</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>checking</span>.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pm_close</span>( FILE* <span
+class=SpellE>fp</span> )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Close the file descriptor, with appropriate error checking.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>  </span>ENDIAN I/O</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>pm_readbigshort</span>( FILE* in, short* <span
+class=SpellE>sP</span> )</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>pm_writebigshort</span>( FILE* out, short s )</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>pm_readbiglong</span>( FILE* in, long* <span
+class=SpellE>lP</span> )</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>pm_writebiglong</span>( FILE* out, long l )</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>pm_readlittleshort</span>( FILE* in, short* <span
+class=SpellE>sP</span> )</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>pm_writelittleshort</span>( FILE* out, short s )</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>pm_readlittlelong</span>( FILE* in, long* <span
+class=SpellE>lP</span> )</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>int</span></span> <span class=SpellE>pm_writelittlelong</span>( FILE* out, long l )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Routines to read and write short <span
+class=GramE>and<span style='mso-spacerun:yes'>  </span>long</span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>ints</span><span style='mso-spacerun:yes'>  </span>in<span style='mso-spacerun:yes'>  </span>either</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>big</span>- or little-endian byte order.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>DESCRIPTION - PBM-SPECIFIC ROUTINES</h2>
+
+<pre><span style='mso-spacerun:yes'>  </span>TYPES AND CONSTANTS</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>typedef</span></span> ... bit;</pre><pre><span style='mso-spacerun:yes'>     </span>#define PBM_<span
+class=GramE>WHITE ...</span></pre><pre><span style='mso-spacerun:yes'>     </span>#define PBM_<span
+class=GramE>BLACK ...</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>each</span> bit should contain only<span style='mso-spacerun:yes'>  </span>the<span style='mso-spacerun:yes'>  </span>values<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>PBM_WHITE<span style='mso-spacerun:yes'>  </span>or</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>PBM_BLACK.</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>#define PBM_<span
+class=GramE>FORMAT ...</span></pre><pre><span style='mso-spacerun:yes'>     </span>#define RPBM_<span
+class=GramE>FORMAT ...</span></pre><pre><span style='mso-spacerun:yes'>     </span>#define PBM_TYPE PBM_FORMAT</pre><pre><span style='mso-spacerun:yes'>     </span>#define PBM_FORMAT_<span
+class=GramE>TYPE(</span>f) ...</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>For distinguishing different file formats and types.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>  </span>INITIALIZATION</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pbm_init</span>( <span class=SpellE>int</span>* <span
+class=SpellE>argcP</span>, char* <span class=SpellE>argv</span>[] )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>All PBM programs must call this routine.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>  </span>MEMORY MANAGEMENT</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>bit</span>** <span class=SpellE>pbm_allocarray</span>( <span
+class=SpellE>int</span> cols, <span class=SpellE>int</span> rows )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Allocate an array of bits.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>bit</span>* <span class=SpellE>pbm_allocrow</span>( <span
+class=SpellE>int</span> cols )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Allocate a row of the given number of bits.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pbm_freearray</span>( bit** bits, <span
+class=SpellE>int</span> rows )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Free the array <span
+class=GramE>allocated<span style='mso-spacerun:yes'>  </span>with</span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>pbm_allocarray</span>()<span style='mso-spacerun:yes'>  </span>containing</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>the</span> given number of rows.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pbm_freerow</span>( bit* <span
+class=SpellE>bitrow</span> )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Free a row of bits.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>  </span>READING FILES</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pbm_readpbminit</span>( FILE* <span
+class=SpellE>fp</span>, <span class=SpellE>int</span>* <span class=SpellE>colsP</span>, <span
+class=SpellE>int</span>* <span class=SpellE>rowsP</span>, <span class=SpellE>int</span>* <span
+class=SpellE>formatP</span> )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Read the header from a PBM file, filling in <span
+class=GramE>the<span style='mso-spacerun:yes'>  </span>rows</span>,<span style='mso-spacerun:yes'>  </span>cols</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>and</span> format variables.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pbm_readpbmrow</span>( FILE* <span
+class=SpellE>fp</span>, bit* <span class=SpellE>bitrow</span>, <span
+class=SpellE>int</span> cols, <span class=SpellE>int</span> format )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Read a row of bits into the <span
+class=SpellE>bitrow</span> array.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>Format<span style='mso-spacerun:yes'>  </span>and</span><span style='mso-spacerun:yes'>  </span>cols</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>were</span> filled in by <span class=SpellE>pbm_readpbminit</span>().</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>bit</span>** <span class=SpellE>pbm_readpbm</span>( FILE* <span
+class=SpellE>fp</span>, <span class=SpellE>int</span>* <span class=SpellE>colsP</span>, <span
+class=SpellE>int</span>* <span class=SpellE>rowsP</span> )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Read an entire bitmap file into memory, returning <span
+class=GramE>the<span style='mso-spacerun:yes'>  </span><span class=SpellE>allo</span></span>-</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE>cated</span></span><span class=GramE><span style='mso-spacerun:yes'>  </span>array</span><span style='mso-spacerun:yes'>  </span>and<span style='mso-spacerun:yes'>  </span>filling<span style='mso-spacerun:yes'>  </span>in<span style='mso-spacerun:yes'>  </span>the rows and cols variables.</pre><pre><span style='mso-spacerun:yes'>     </span>This function <span
+class=GramE>combines<span style='mso-spacerun:yes'>  </span><span class=SpellE>pbm</span></span><span
+class=SpellE>_readpbminit</span>(),<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>pbm_allocarray</span>()</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>and</span> <span class=SpellE>pbm_readpbmrow</span>().</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>  </span>WRITING FILES</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pbm_writepbminit</span>( FILE* <span
+class=SpellE>fp</span>, <span class=SpellE>int</span> cols, <span class=SpellE>int</span> rows, <span
+class=SpellE>int</span> <span class=SpellE>forceplain</span> )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Write the header for a portable bitmap file.<span style='mso-spacerun:yes'>  </span>The <span
+class=SpellE>forceplain</span></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>flag</span> forces a plain-format file to be written, as opposed to</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>a</span> raw-format one.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pbm_writepbmrow</span>( FILE* <span
+class=SpellE>fp</span>, bit* <span class=SpellE>bitrow</span>, <span
+class=SpellE>int</span> cols, <span class=SpellE>int</span> <span class=SpellE>forceplain</span> )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Write a row from a portable bitmap.</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>void</span> <span class=SpellE>pbm_writepbm</span>( FILE* <span
+class=SpellE>fp</span>, bit** bits, <span class=SpellE>int</span> cols, <span
+class=SpellE>int</span> rows, <span class=SpellE>int</span> <span class=SpellE>forceplain</span> )</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>Write the header and all data for a <span
+class=GramE>portable<span style='mso-spacerun:yes'>  </span>bitmap</span>.<span style='mso-spacerun:yes'>   </span>This</pre><pre><span style='mso-spacerun:yes'>     </span><span
+class=GramE>function</span> combines <span class=SpellE>pbm_writepbminit</span>() and <span
+class=SpellE>pbm_writepbmrow</span>().</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=SpellE>pgm</span>(3), <span
+class=SpellE>ppm</span>(3), pnm(3)</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span><span class=GramE>Copyright (C) 1989, 1991, 2004 by Tony Hansen and <span
+class=SpellE>Jef</span> <span class=SpellE>Poskanzer</span>.</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

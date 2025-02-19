@@ -1,0 +1,155 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="threshold_segment_files/filelist.xml">
+<title>threshold_segment</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>ACADEMIC COMPUTING</o:Author>
+  <o:LastAuthor>ACADEMIC COMPUTING</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2004-06-05T01:22:00Z</o:Created>
+  <o:LastSaved>2004-10-20T00:18:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>450</o:Words>
+  <o:Characters>2567</o:Characters>
+  <o:Company>SIUE</o:Company>
+  <o:Lines>21</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3011</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2>NAME</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>threshold_segment - performs a binary threshold on an image</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SYNOPSIS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &quot;CVIPtools.h&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;CVIPimage.h&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;CVIPdef.h&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;stdio.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &quot;threshold.h&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>Image *threshold_segment(Image<span style='mso-spacerun:yes'>  </span>*inputImage,<span style='mso-spacerun:yes'>  </span>unsigned<span style='mso-spacerun:yes'>  </span>int</pre><pre><span style='mso-spacerun:yes'>     </span>threshval, CVIP_BOOLEAN thresh_inbyte)</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>&lt;inputImage&gt; - pointer to Image structure</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;threshval&gt; - threshold value</pre><pre><span style='mso-spacerun:yes'>      </span>&lt;thresh_inbyte&gt;</pre><pre><span style='mso-spacerun:yes'>               </span>- CVIP_NO apply threshval directly to image data;</pre><pre><span style='mso-spacerun:yes'>          </span><span style='mso-spacerun:yes'>     </span>- CVIP_YES<span style='mso-spacerun:yes'>  </span>threshval is CVIP_BYTE range; remap to</pre><pre><span style='mso-spacerun:yes'>                 </span>image data range before thresholding.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2><st1:stockticker>PATH</st1:stockticker></h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>$CVIPtoolsHOME\CVIPC\SEGMENTATION\threshold.c</pre>
+
+<h2>DESCRIPTION</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>This function performs a binary threshold on an input image.</pre><pre><span style='mso-spacerun:yes'>     </span>It <span style='mso-spacerun:yes'> </span>sets<span style='mso-spacerun:yes'>  </span>pixels<span style='mso-spacerun:yes'>  </span>of<span style='mso-spacerun:yes'>  </span>value greater than &lt;threshval&gt; to 255;</pre><pre><span style='mso-spacerun:yes'>     </span>those less than or equal to &lt;threshval&gt;<span style='mso-spacerun:yes'>  </span>are<span style='mso-spacerun:yes'>  </span>set<span style='mso-spacerun:yes'>  </span>to<span style='mso-spacerun:yes'>  </span>zero.</pre><pre><span style='mso-spacerun:yes'>     </span>Each<span style='mso-spacerun:yes'>  </span>band of a multi-band images is thresholded separately.</pre><pre><span style='mso-spacerun:yes'>     </span>If &lt;thresh_inbyte&gt; is 0, &lt;threshval&gt; is applied directly<span style='mso-spacerun:yes'>  </span>to</pre><pre><span style='mso-spacerun:yes'>     </span>the<span style='mso-spacerun:yes'>  </span>image<span style='mso-spacerun:yes'>  </span>data.<span style='mso-spacerun:yes'>  </span>If &lt;thresh_inbyte&gt; equals 1,<span style='mso-spacerun:yes'>  </span>&lt;threshval&gt;</pre><pre><span style='mso-spacerun:yes'>     </span>is remapped to<span style='mso-spacerun:yes'>  </span>its<span style='mso-spacerun:yes'>  </span>corresponding<span style='mso-spacerun:yes'>  </span>CVIP_BYTE<span style='mso-spacerun:yes'>  </span>value<span style='mso-spacerun:yes'>  </span>before</pre><pre><span style='mso-spacerun:yes'>     </span>thresholding according to the formula:</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>                    </span>&lt;threshval&gt; x (max_val - min_val)</pre><pre><span style='mso-spacerun:yes'>     </span>&lt;new_thresh&gt; = --------------------------------- + min_val</pre><pre><span style='mso-spacerun:yes'>                                  </span>255</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>     </span>where max_val and min_val are the maximum and minimum values</pre><pre><span style='mso-spacerun:yes'>     </span>found in the image.<span style='mso-spacerun:yes'>  </span>This option is provided for consistancy</pre><pre><span style='mso-spacerun:yes'>     </span>with the method used to display histograms in<span style='mso-spacerun:yes'>  </span>CVIPtools<span style='mso-spacerun:yes'>  </span>--</pre><pre><span style='mso-spacerun:yes'>     </span>histograms<span style='mso-spacerun:yes'>  </span>are<span style='mso-spacerun:yes'>  </span>remapped to CVIP_BYTE range, 0 to 255. With</pre><pre><span style='mso-spacerun:yes'>     </span>this option the user can select a threshold<span style='mso-spacerun:yes'>  </span>value<span style='mso-spacerun:yes'>  </span>directly</pre><pre><span style='mso-spacerun:yes'>     </span>from the histogram.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>TYPES AND C<st1:stockticker>ONST</st1:stockticker>ANTS</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>None</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>RETURN VALUES</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>A thresholded image.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>BUGS</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>None at this time</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>EXAMPLE</h2>
+
+<pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPtoolkit.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPimage.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPdef.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPconvert.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#include &lt;CVIPview.h&gt;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIEWER &quot;picture&quot;</pre><pre><span style='mso-spacerun:yes'>      </span>#define VIDEO_APP &quot;SunVideo &amp;&quot;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>  </span><span style='mso-spacerun:yes'>    </span>void main()</pre><pre><span style='mso-spacerun:yes'>      </span>{</pre><pre><span style='mso-spacerun:yes'>      </span>Image *cvipImage;</pre><pre><span style='mso-spacerun:yes'>      </span>IMAGE_FORMAT format;</pre><pre><span style='mso-spacerun:yes'>      </span>char *inputfile,*outputfile;</pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>      </span>setDisplay_Image(VIEWER, &quot;Default&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span>print_CVIP(&quot;\n\t\tEnter the<span style='mso-spacerun:yes'>  </span>Input File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span>inputfile =(char *) getString_CVIP();</pre><pre> <span style='mso-spacerun:yes'>     </span>format = getFormat_CVIP(inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>cvipImage = read_Image(inputfile,1);</pre><pre><span style='mso-spacerun:yes'>      </span>view_Image(cvipImage, inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>free(inputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>/* the following call performs the binary threshold</pre><pre><span style='mso-spacerun:yes'>      </span>on the input image with the threshval equal to 128 */</pre><pre><span style='mso-spacerun:yes'>      </span>cvipImage = (Image *)threshold_segment(cvipImage,128,</pre><pre><span style='mso-spacerun:yes'>      </span>CVIP_YES);</pre><pre><span style='mso-spacerun:yes'>      </span>print_CVIP(&quot;\n\t\tEnter the Output File Name:<span style='mso-spacerun:yes'>  </span>&quot;);</pre><pre><span style='mso-spacerun:yes'>      </span>outputfile = getString_CVIP();</pre><pre><span style='mso-spacerun:yes'>      </span>view_Image(cvipImage,outputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>write_Image(cvipImage,outputfile,CVIP_NO,CVIP_NO,</pre><pre><span style='mso-spacerun:yes'>      </span>format,1);</pre><pre><span style='mso-spacerun:yes'>      </span>free(outputfile);</pre><pre><span style='mso-spacerun:yes'>      </span>}</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>SEE ALSO</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>SEGMENTATION library</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<h2>AUTHOR</h2>
+
+<pre><span style='mso-spacerun:yes'>     </span>Copyright (C) 1995, 1996, 2004 SIUE - by Scott Umbaugh,<span style='mso-spacerun:yes'>  </span>Kun<span style='mso-spacerun:yes'>  </span>Luo,</pre><pre><span style='mso-spacerun:yes'>     </span>and Yansheng Wei.</pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

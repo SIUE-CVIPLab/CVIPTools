@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CVIPimages", "CVIPimages\CVIPimages.vdproj", "{B7AA378A-595D-4597-8803-CC47ADF37C91}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CVIPlib", "CVIPlib\CVIPlib.vdproj", "{9FC88178-8780-4AB1-8C43-AECC243B2CE6}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CVIPsource", "CVIPsource\CVIPsource.vdproj", "{F64572EC-4294-4A91-BAC6-FAA19F33000D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CVIPtoolsCD", "CVIPtoolsCD\CVIPtoolsCD.vdproj", "{019549D1-FEE6-45E5-A9D7-16C2700CE9A1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{426D7020-3689-4750-BC6A-13313CF539BC} = {426D7020-3689-4750-BC6A-13313CF539BC}
+		{9FC88178-8780-4AB1-8C43-AECC243B2CE6} = {9FC88178-8780-4AB1-8C43-AECC243B2CE6}
+		{B7AA378A-595D-4597-8803-CC47ADF37C91} = {B7AA378A-595D-4597-8803-CC47ADF37C91}
+		{F64572EC-4294-4A91-BAC6-FAA19F33000D} = {F64572EC-4294-4A91-BAC6-FAA19F33000D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RefreshEnv", "RefreshEnv\RefreshEnv.vcxproj", "{426D7020-3689-4750-BC6A-13313CF539BC}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CVIPtoolsWeb", "CVIPtoolsWeb\CVIPtoolsWeb.vdproj", "{1EF22F3E-7DEA-49FE-B446-B06B9788280E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7AA378A-595D-4597-8803-CC47ADF37C91}.Debug|Win32.ActiveCfg = Release
+		{B7AA378A-595D-4597-8803-CC47ADF37C91}.Debug|Win32.Build.0 = Release
+		{B7AA378A-595D-4597-8803-CC47ADF37C91}.Release|Win32.ActiveCfg = Release
+		{B7AA378A-595D-4597-8803-CC47ADF37C91}.Release|Win32.Build.0 = Release
+		{9FC88178-8780-4AB1-8C43-AECC243B2CE6}.Debug|Win32.ActiveCfg = Release
+		{9FC88178-8780-4AB1-8C43-AECC243B2CE6}.Debug|Win32.Build.0 = Release
+		{9FC88178-8780-4AB1-8C43-AECC243B2CE6}.Release|Win32.ActiveCfg = Release
+		{9FC88178-8780-4AB1-8C43-AECC243B2CE6}.Release|Win32.Build.0 = Release
+		{F64572EC-4294-4A91-BAC6-FAA19F33000D}.Debug|Win32.ActiveCfg = Release
+		{F64572EC-4294-4A91-BAC6-FAA19F33000D}.Debug|Win32.Build.0 = Release
+		{F64572EC-4294-4A91-BAC6-FAA19F33000D}.Release|Win32.ActiveCfg = Release
+		{F64572EC-4294-4A91-BAC6-FAA19F33000D}.Release|Win32.Build.0 = Release
+		{019549D1-FEE6-45E5-A9D7-16C2700CE9A1}.Debug|Win32.ActiveCfg = Release
+		{019549D1-FEE6-45E5-A9D7-16C2700CE9A1}.Debug|Win32.Build.0 = Release
+		{019549D1-FEE6-45E5-A9D7-16C2700CE9A1}.Release|Win32.ActiveCfg = Release
+		{019549D1-FEE6-45E5-A9D7-16C2700CE9A1}.Release|Win32.Build.0 = Release
+		{426D7020-3689-4750-BC6A-13313CF539BC}.Debug|Win32.ActiveCfg = Release|Win32
+		{426D7020-3689-4750-BC6A-13313CF539BC}.Debug|Win32.Build.0 = Release|Win32
+		{426D7020-3689-4750-BC6A-13313CF539BC}.Release|Win32.ActiveCfg = Release|Win32
+		{426D7020-3689-4750-BC6A-13313CF539BC}.Release|Win32.Build.0 = Release|Win32
+		{1EF22F3E-7DEA-49FE-B446-B06B9788280E}.Debug|Win32.ActiveCfg = Release
+		{1EF22F3E-7DEA-49FE-B446-B06B9788280E}.Debug|Win32.Build.0 = Release
+		{1EF22F3E-7DEA-49FE-B446-B06B9788280E}.Release|Win32.ActiveCfg = Release
+		{1EF22F3E-7DEA-49FE-B446-B06B9788280E}.Release|Win32.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

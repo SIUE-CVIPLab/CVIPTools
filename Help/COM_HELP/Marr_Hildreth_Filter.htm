@@ -1,0 +1,201 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Marr_Hildreth_Filter</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:Consolas;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=571
+ style='width:5.95in;border-collapse:collapse'>
+ <tr>
+  <td width=164 valign=top style='width:122.65pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black",sans-serif'>Name</span></p>
+  </td>
+  <td width=408 colspan=3 valign=top style='width:305.75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black",sans-serif'>Marr_Hildreth_Filter</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=4 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'>performs a Marr Hildreth edge detection on the image</pre></td>
+ </tr>
+ <tr>
+  <td width=571 colspan=4 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black",sans-serif'>Function
+  Prototype</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=4 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'>Marr_Hildreth_Filter([in] long* image, [in] float
+  sigma, [in] int threshold, [out,retval] long* Result_Image);</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=4 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black",sans-serif'>Return
+  Value</span></p>
+  </td>
+ </tr>
+ <tr style='height:34.65pt'>
+  <td width=168 colspan=2 valign=top style='width:1.75in;padding:0in 5.4pt 0in 5.4pt;
+  height:34.65pt'>
+  <p class=MsoNormal>Result_Image</p>
+  </td>
+  <td width=70 valign=top style='width:52.7pt;padding:0in 5.4pt 0in 5.4pt;
+  height:34.65pt'>
+  <p class=MsoNormal>long *</p>
+  </td>
+  <td width=333 valign=top style='width:249.7pt;padding:0in 5.4pt 0in 5.4pt;
+  height:34.65pt'><pre style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'>  Result image</pre></td>
+ </tr>
+ <tr>
+  <td width=571 colspan=4 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black",sans-serif'>Parameters</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=164 valign=top style='width:122.65pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial Black",sans-serif'>Name</span></p>
+  </td>
+  <td width=75 colspan=2 valign=top style='width:56.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial Black",sans-serif'>Type</span></p>
+  </td>
+  <td width=333 valign=top style='width:249.7pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"Arial Black",sans-serif'>Description</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=164 valign=top style='width:122.65pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>image</p>
+  </td>
+  <td width=75 colspan=2 valign=top style='width:56.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>long *</p>
+  </td>
+  <td width=333 valign=top style='width:249.7pt;padding:0in 5.4pt 0in 5.4pt'><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'>pointer to an input Image structure</pre></td>
+ </tr>
+ <tr>
+  <td width=164 valign=top style='width:122.65pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>sigma</p>
+  </td>
+  <td width=75 colspan=2 valign=top style='width:56.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>float</p>
+  </td>
+  <td width=333 valign=top style='width:249.7pt;padding:0in 5.4pt 0in 5.4pt'><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'>Sigma value</pre></td>
+ </tr>
+ <tr>
+  <td width=164 valign=top style='width:122.65pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Threshold</p>
+  </td>
+  <td width=75 colspan=2 valign=top style='width:56.05pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Int</p>
+  </td>
+  <td width=333 valign=top style='width:249.7pt;padding:0in 5.4pt 0in 5.4pt'><pre
+  style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+  0in'>Threshold used for zero crossings</pre></td>
+ </tr>
+ <tr>
+  <td width=571 colspan=4 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black",sans-serif'>Description</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=4 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='text-indent:.5in;line-height:200%'>Marr-Hildreth
+  Filter works by performing three steps:</p>
+  <p class=MsoNormal style='margin-left:.5in;line-height:200%'>1. Convolve the
+  image with a Gaussian smoothing filter</p>
+  <p class=MsoNormal style='margin-left:.5in;line-height:200%'>2. Convolve the
+  image with a Laplacian mask</p>
+  <p class=MsoNormal style='margin-left:.5in;line-height:200%'>3. Find the zero
+  crossings (threshold) of the image from Step 2.</p>
+  <pre>&nbsp;</pre></td>
+ </tr>
+ <tr>
+  <td width=571 colspan=4 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'><span style='font-size:14.0pt;font-family:"Arial Black",sans-serif'>Bugs</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=571 colspan=4 valign=top style='width:5.95in;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+  6.0pt;margin-left:0in'>None.</p>
+  </td>
+ </tr>
+ <tr height=0>
+  <td width=164 style='border:none'></td>
+  <td width=4 style='border:none'></td>
+  <td width=70 style='border:none'></td>
+  <td width=333 style='border:none'></td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,3116 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="right">
+	<param name="Background" value="0xffffff">
+	<param name="Foreground" value="0xff000008">
+	<param name="Window Styles" value="0x627">
+	<param name="ImageType" value="Folder">
+<param name="Font" value="MS Sans Serif,9,0">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Welcome to CVIPtools">
+		<param name="Local" value=".\Cviptools_ HELP.htm">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="How To Use CVIPtools">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Getting Started">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Start">
+				<param name="Local" value=".\How To Use CVIPtools\GettingStarted\cvip_start.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="CVIPtools Contributors">
+				<param name="Local" value=".\How To Use CVIPtools\GettingStarted\cvip_contributors.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Copyright information">
+				<param name="Local" value=".\How To Use CVIPtools\GettingStarted\cvip_copyright.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Image Viewer">
+			<param name="Local" value=".\How To Use CVIPtools\ImageViewer.html">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="File">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Show Histogram">
+				<param name="Local" value=".\How To Use CVIPtools\File\Show Histogram.htm">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Open an image">
+				<param name="Local" value=".\How To Use CVIPtools\File\cvip_load_image.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Save an image">
+				<param name="Local" value=".\How To Use CVIPtools\File\cvip_save.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Exiting the program">
+				<param name="Local" value=".\How To Use CVIPtools\File\cvip_exit.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Delete">
+				<param name="Local" value=".\How To Use CVIPtools\File\Delete.htm">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="View">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="View">
+				<param name="Local" value=".\How To Use CVIPtools\View\view.htm">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Analysis">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Preprocessing">
+				<param name="Local" value="How To Use CVIPtools\Analysis\cvip_ana_preprocessing.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Geometry">
+				<param name="Local" value=".\How To Use CVIPtools\Analysis\cvip_ana_geometry.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Edge/Line Detection">
+				<param name="Local" value=".\How To Use CVIPtools\Analysis\cvip_ana_edgeline.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Segmentation">
+				<param name="Local" value=".\How To Use CVIPtools\Analysis\cvip_segmentation.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Transforms">
+				<param name="Local" value=".\How To Use CVIPtools\Analysis\cvip_ana_transforms.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Features">
+				<param name="Local" value=".\How To Use CVIPtools\Analysis\cvip_ana_feature.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pattern Classification">
+				<param name="Local" value=".\How To Use CVIPtools\Analysis\cvip_ana_pattern_classification.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Enhancement">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Histogram/Contrast">
+				<param name="Local" value=".\How To Use CVIPtools\Enhancement\histograms.htm">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pseudocolor">
+				<param name="Local" value=".\How To Use CVIPtools\Enhancement\cvip_enhan_pseudo.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Sharpening">
+				<param name="Local" value=".\How To Use CVIPtools\Enhancement\cvip_enhan_sharp.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Smoothing">
+				<param name="Local" value=".\How To Use CVIPtools\Enhancement\cvip_enhan_smooth.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Restoration">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Noise">
+				<param name="Local" value=".\How To Use CVIPtools\Restoration\cvip_restore_noise.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Spatial filters">
+				<param name="Local" value=".\How To Use CVIPtools\Restoration\cvip_restore_spatfilter.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Frequency filters">
+				<param name="Local" value=".\How To Use CVIPtools\Restoration\cvip_restore_freqfilter.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Geometric transforms">
+				<param name="Local" value=".\How To Use CVIPtools\Restoration\cvip_restore_geomtransform.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Compression">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Preprocessing">
+				<param name="Local" value=".\How To Use CVIPtools\Compression\cvip_cmprs_prep.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Lossless">
+				<param name="Local" value=".\How To Use CVIPtools\Compression\cvip_cmprs_lossless.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Lossy">
+				<param name="Local" value=".\How To Use CVIPtools\Compression\cvip_cmprs_lossy.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Utilities">
+			<param name="ImageNumber" value="2">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Arith/Logic">
+				<param name="Local" value=".\How To Use CVIPtools\Utilities\cvip_utilarithlogic.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Compare">
+				<param name="Local" value=".\How To Use CVIPtools\Utilities\cvip_utilcompare.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Convert">
+				<param name="Local" value=".\How To Use CVIPtools\Utilities\cvip_utilconvert.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Create">
+				<param name="Local" value=".\How To Use CVIPtools\Utilities\cvip_utilcreate.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Enhance">
+				<param name="Local" value=".\How To Use CVIPtools\Utilities\cvip_utilenhance.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Filter">
+				<param name="Local" value=".\How To Use CVIPtools\Utilities\cvip_utilfilter.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Size">
+				<param name="Local" value=".\How To Use CVIPtools\Utilities\cvip_utilsize.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Stats">
+				<param name="Local" value=".\How To Use CVIPtools\Utilities\cvip_utilstats.htm">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="CVIP-ATAT">
+			<param name="Local" value=".\How To Use CVIPtools\CVIP_ATAT\CVIP-ATAT_Help.htm">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="CVIP-FEPC">
+			<param name="Local" value=".\How To Use CVIPtools\CVIP_FEPC\CVIP-FEPC_Help.htm">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CVIPtools Libraries">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ArithLogic">
+			<param name="Local" value=".\CVIPlibraries\ArithLogic.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Band">
+			<param name="Local" value=".\CVIPlibraries\Band.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Color">
+			<param name="Local" value=".\CVIPlibraries\Color.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Compression">
+			<param name="Local" value=".\CVIPlibraries\Compression.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Conversion">
+			<param name="Local" value=".\CVIPlibraries\Conversion.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Display">
+			<param name="Local" value=".\CVIPlibraries\Display.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Feature">
+			<param name="Local" value=".\CVIPlibraries\Feature.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Geometry">
+			<param name="Local" value=".\CVIPlibraries\Geometry.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Histogram">
+			<param name="Local" value=".\CVIPlibraries\Histogram.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Image">
+			<param name="Local" value=".\CVIPlibraries\Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="IO">
+			<param name="Local" value=".\CVIPlibraries\IO.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Mapping">
+			<param name="Local" value=".\CVIPlibraries\Mapping.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Matrix">
+			<param name="Local" value=".\CVIPlibraries\Matrix.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Morphological">
+			<param name="Local" value=".\CVIPlibraries\Morphological.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Noise">
+			<param name="Local" value=".\CVIPlibraries\Noise.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Object">
+			<param name="Local" value=".\CVIPlibraries\Object.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ObjectManager">
+			<param name="Local" value=".\CVIPlibraries\ObjectManager.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="PBM">
+			<param name="Local" value=".\CVIPlibraries\PBM.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pgm">
+			<param name="Local" value=".\CVIPlibraries\pgm.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pnm">
+			<param name="Local" value=".\CVIPlibraries\pnm.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ppm">
+			<param name="Local" value=".\CVIPlibraries\ppm.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ROI">
+			<param name="Local" value=".\CVIPlibraries\ROI.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Segmentation">
+			<param name="Local" value=".\CVIPlibraries\Segmentation.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="SpatialFilter">
+			<param name="Local" value=".\CVIPlibraries\SpatialFilter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Transform">
+			<param name="Local" value=".\CVIPlibraries\Transform.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="TransformFilter">
+			<param name="Local" value=".\CVIPlibraries\TransformFilter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Vector">
+			<param name="Local" value=".\CVIPlibraries\Vector.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CVIPtools C Functions">
+		<param name="Local" value=".\CVIP_C_functions\ace2_filter.html">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ace2_filter">
+			<param name="Local" value=".\CVIP_C_functions\ace2_filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="acuity_nightvision_filter">
+			<param name="Local" value=".\CVIP_C_functions\acuity_nightvision_filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ad_filter.htm">
+			<param name="Local" value=".\CVIP_C_functions\ad_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="adapt_median_filter">
+			<param name="Local" value=".\CVIP_C_functions\adapt_median_filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="adaptive_contrast_filter">
+			<param name="Local" value=".\CVIP_C_functions\adaptive_contrast_filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="add_Image">
+			<param name="Local" value=".\CVIP_C_functions\add_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="alpha_filter">
+			<param name="Local" value=".\CVIP_C_functions\alpha_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="and_Image">
+			<param name="Local" value=".\CVIP_C_functions\and_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="area">
+			<param name="Local" value=".\CVIP_C_functions\area.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="aspect">
+			<param name="Local" value=".\CVIP_C_functions\aspect.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="auto_threshold_segment">
+			<param name="Local" value=".\CVIP_C_functions\auto_threshold_filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="bilinear_interp">
+			<param name="Local" value=".\CVIP_C_functions\bilinear_interp.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="bit_compress,bit_decompress,bitplane_sep">
+			<param name="Local" value=".\CVIP_C_functions\bit_compress, bit_decompress, bitplane_sep.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="boiecox_filter">
+			<param name="Local" value=".\CVIP_C_functions\boiecox_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="btc_compress,btc_decompress">
+			<param name="Local" value=".\CVIP_C_functions\btc_compress, btc_decompress.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="btc2_compress,btc2_decompress">
+			<param name="Local" value=".\CVIP_C_functions\btc2_compress, btc2_decompress.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="btc3_compress">
+			<param name="Local" value=".\CVIP_C_functions\btc3_compress.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Butterworth_Band_Pass">
+			<param name="Local" value=".\CVIP_C_functions\Butterworth_Band_Pass.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Butterworth_Band_Reject">
+			<param name="Local" value=".\CVIP_C_functions\Butterworth_Band_Reject.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Butterworth_High">
+			<param name="Local" value=".\CVIP_C_functions\Butterworth_High.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Butterworth_Low">
+			<param name="Local" value=".\CVIP_C_functions\Butterworth_Low.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="canny_filter">
+			<param name="Local" value=".\CVIP_C_functions\canny_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cbrt_Matrix">
+			<param name="Local" value=".\CVIP_C_functions\cbrt_Matrix.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="centroid">
+			<param name="Local" value=".\CVIP_C_functions\centroid.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cerchar_filter">
+			<param name="Local" value=".\CVIP_C_functions\cerchar_filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="city_block">
+			<param name="Local" value=".\CVIP_C_functions\city_block.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="CLAHE">
+			<param name="Local" value="CVIP_C_functions\CLAHE.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="CLAHE_Grid">
+			<param name="Local" value="CVIP_C_functions\CLAHE_Grid.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="color_contrast_enhance">
+			<param name="Local" value=".\CVIP_C_functions\color_contrast_enhance.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="colorxform">
+			<param name="Local" value=".\CVIP_C_functions\colorxform.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="contra_filter">
+			<param name="Local" value=".\CVIP_C_functions\contra_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="convert_filetype">
+			<param name="Local" value=".\CVIP_C_functions\convert_filetype.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="convolve_filter">
+			<param name="Local" value=".\CVIP_C_functions\convolve_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="copy_paste">
+			<param name="Local" value=".\CVIP_C_functions\copy_paste.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="create_black">
+			<param name="Local" value=".\CVIP_C_functions\create_black.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="create_cosine">
+			<param name="Local" value=".\CVIP_C_functions\create_cosine.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="create_image">
+			<param name="Local" value=".\CVIP_C_functions\create_image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="create_sine">
+			<param name="Local" value=".\CVIP_C_functions\create_sine.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="create_squarewave">
+			<param name="Local" value=".\CVIP_C_functions\create_squarewave.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="crop">
+			<param name="Local" value=".\CVIP_C_functions\crop.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="CVIPhalftone">
+			<param name="Local" value=".\CVIP_C_functions\CVIPhalftone.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="CVIPluminance">
+			<param name="Local" value=".\CVIP_C_functions\CVIPluminance.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cylin_inv_xform">
+			<param name="Local" value=".\CVIP_C_functions\cylin_inv_xform.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="dct_transform">
+			<param name="Local" value=".\CVIP_C_functions\dct_transform.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="define_histogram">
+			<param name="Local" value=".\CVIP_C_functions\define_histogram.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="dice_coef">
+			<param name="Local" value="CVIP_C_functions\dice_coef.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="display_Image,setDisplay_Image,getDisplay_Image">
+			<param name="Local" value=".\CVIP_C_functions\display_Image, setDisplay_Image, getDisplay_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="display_mesh">
+			<param name="Local" value=".\CVIP_C_functions\display_mesh.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="display_RAMImage">
+			<param name="Local" value=".\CVIP_C_functions\display_RAMImage.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="divide_Image">
+			<param name="Local" value=".\CVIP_C_functions\divide_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="divide_Matrix">
+			<param name="Local" value=".\CVIP_C_functions\divide_Matrix.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="dpc_compress">
+			<param name="Local" value=".\CVIP_C_functions\dpc_compress.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="dpc_decompress">
+			<param name="Local" value=".\CVIP_C_functions\dpc_decompress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="edge_detect_filter">
+			<param name="Local" value=".\CVIP_C_functions\edge_detect_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="edge_detect_setup">
+			<param name="Local" value=".\CVIP_C_functions\edge_detect_setup.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="edge_link_filter">
+			<param name="Local" value=".\CVIP_C_functions\edge_link_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="encode_data">
+			<param name="Local" value=".\CVIP_C_functions\encode_data.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="enlarge">
+			<param name="Local" value=".\CVIP_C_functions\enlarge.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="euclidean_distance">
+			<param name="Local" value=".\CVIP_C_functions\euclidean_distance.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="euler">
+			<param name="Local" value=".\CVIP_C_functions\euler.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="exp_ace_filter">
+			<param name="Local" value=".\CVIP_C_functions\exp_ace_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fft_mag">
+			<param name="Local" value=".\CVIP_C_functions\fft_mag.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fft_phase">
+			<param name="Local" value=".\CVIP_C_functions\fft_phase.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fft_transform">
+			<param name="Local" value=".\CVIP_C_functions\fft_transform.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="file_to_mesh">
+			<param name="Local" value=".\CVIP_C_functions\file_to_mesh.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Find_euler">
+			<param name="Local" value=".\CVIP_C_functions\Find_euler.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Find_irregular">
+			<param name="Local" value=".\CVIP_C_functions\Find_irregular.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Find_perimeter">
+			<param name="Local" value=".\CVIP_C_functions\Find_perimeter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Find_thinness">
+			<param name="Local" value=".\CVIP_C_functions\Find_thinness.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fractal">
+			<param name="Local" value=".\CVIP_C_functions\fractal.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fuzzyc_segment">
+			<param name="Local" value=".\CVIP_C_functions\fuzzyc_segment.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="gamma_noise">
+			<param name="Local" value=".\CVIP_C_functions\gamma_noise.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="gaussian_noise">
+			<param name="Local" value=".\CVIP_C_functions\gaussian_noise.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="geometric_filter">
+			<param name="Local" value=".\CVIP_C_functions\geometric_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="geometric_mean">
+			<param name="Local" value=".\CVIP_C_functions\geometric_mean.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GEOMETRY">
+			<param name="Local" value=".\CVIP_C_functions\GEOMETRY.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="get_default_filter">
+			<param name="Local" value=".\CVIP_C_functions\get_default_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="get_histogram,get_histogram_Image">
+			<param name="Local" value=".\CVIP_C_functions\get_histogram, get_histogram_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="getFormat_CVIP">
+			<param name="Local" value=".\CVIP_C_functions\getFormat_CVIP.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="glr_compress">
+			<param name="Local" value=".\CVIP_C_functions\glr_compress.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="gray_binary">
+			<param name="Local" value=".\CVIP_C_functions\gray_binary.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="gray_linear">
+			<param name="Local" value=".\CVIP_C_functions\gray_linear.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="gray_multiply">
+			<param name="Local" value=".\CVIP_C_functions\gray_multiply.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="gray_multiply2">
+			<param name="Local" value=".\CVIP_C_functions\gray_multiply2.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="gray_quant_segment">
+			<param name="Local" value=".\CVIP_C_functions\gray_quant_segment.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="gvfsnake_segment">
+			<param name="Local" value=".\CVIP_C_functions\gvfsnake_segment.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="h_image">
+			<param name="Local" value=".\CVIP_C_functions\h_image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="haar_transform">
+			<param name="Local" value=".\CVIP_C_functions\haar_transform.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="harmonic_filter">
+			<param name="Local" value=".\CVIP_C_functions\harmonic_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="harris_filter">
+			<param name="Local" value=".\CVIP_C_functions\harris_filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="hexrotate">
+			<param name="Local" value=".\CVIP_C_functions\hexrotate.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="High_Freq_Emphasis">
+			<param name="Local" value=".\CVIP_C_functions\High_Freq_Emphasis.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="hist_feature">
+			<param name="Local" value=".\CVIP_C_functions\hist_feature.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="hist_slide">
+			<param name="Local" value=".\CVIP_C_functions\hist_slide.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="hist_spec">
+			<param name="Local" value=".\CVIP_C_functions\hist_spec.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="hist_stretch">
+			<param name="Local" value=".\CVIP_C_functions\hist_stretch.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="hist_thresh_segment">
+			<param name="Local" value=".\CVIP_C_functions\hist_thresh_segment.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="histeq">
+			<param name="Local" value=".\CVIP_C_functions\histeq.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="histogram_show">
+			<param name="Local" value=".\CVIP_C_functions\histogram_show.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="homomorphic">
+			<param name="Local" value=".\CVIP_C_functions\homomorphic.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="hough_transform,hough_inverse,hough_filter">
+			<param name="Local" value=".\CVIP_C_functions\hough_transform,hough_inverse, hough_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="huf_compress">
+			<param name="Local" value=".\CVIP_C_functions\huf_compress.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ideal_Band_Pass">
+			<param name="Local" value=".\CVIP_C_functions\Ideal_Band_Pass.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ideal_Band_Reject">
+			<param name="Local" value=".\CVIP_C_functions\Ideal_Band_Reject.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ideal_High">
+			<param name="Local" value=".\CVIP_C_functions\Ideal_High.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ideal_Low">
+			<param name="Local" value=".\CVIP_C_functions\Ideal_Low.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ifft_transform">
+			<param name="Local" value=".\CVIP_C_functions\ifft_transform.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="igs_segment">
+			<param name="Local" value=".\CVIP_C_functions\igs_segment.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="image_sharp">
+			<param name="Local" value=".\CVIP_C_functions\image_sharp.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="improved_mmse_filter">
+			<param name="Local" value=".\CVIP_C_functions\improved_mmse_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="inverse_xformfilter">
+			<param name="Local" value=".\CVIP_C_functions\inverse_xformfilter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="irregular">
+			<param name="Local" value=".\CVIP_C_functions\irregular.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="jaccard_index">
+			<param name="Local" value="CVIP_C_functions\jaccard_index.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="jpg_compress,jpg_decompress">
+			<param name="Local" value=".\CVIP_C_functions\jp2_compress, jp2_decompress.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="jpg_compress,jpg_decompress">
+			<param name="Local" value=".\CVIP_C_functions\jpg_compress, jpg_decompress.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="k_nearest_neighbor">
+			<param name="Local" value=".\CVIP_C_functions\k_nearest_neighbor.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="keyboard_to_mesh">
+			<param name="Local" value=".\CVIP_C_functions\keyboard_to_mesh.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="kirsch_filter">
+			<param name="Local" value=".\CVIP_C_functions\kirsch_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="kuwahara_filter">
+			<param name="Local" value=".\CVIP_C_functions\kuwahara_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lab_inv_xform">
+			<param name="Local" value=".\CVIP_C_functions\Lab_inv_xform.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="label">
+			<param name="Local" value=".\CVIP_C_functions\label.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="laws_texture">
+			<param name="Local" value=".\CVIP_C_functions\laws_texture.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="least_squares">
+			<param name="Local" value=".\CVIP_C_functions\least_squares.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="linxform">
+			<param name="Local" value=".\CVIP_C_functions\linxform.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="local_adaptive_zoom ">
+			<param name="Local" value=".\CVIP_C_functions\local_adaptive_zoom.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="local_histeq">
+			<param name="Local" value=".\CVIP_C_functions\local_histeq.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="log_ace_filter">
+			<param name="Local" value=".\CVIP_C_functions\log_ace_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="lum_average">
+			<param name="Local" value=".\CVIP_C_functions\lum_average.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="luminance_Image">
+			<param name="Local" value=".\CVIP_C_functions\luminance_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Luv_inv_xform">
+			<param name="Local" value=".\CVIP_C_functions\Luv_inv_xform.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="mag_Matrix">
+			<param name="Local" value=".\CVIP_C_functions\mag_Matrix.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="make_histogram">
+			<param name="Local" value=".\CVIP_C_functions\make_histogram.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="marr_hildreth_filter">
+			<param name="Local" value=".\CVIP_C_functions\marr_hildreth_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="maximum_filter">
+			<param name="Local" value=".\CVIP_C_functions\maximum_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="maximum_value_metric">
+			<param name="Local" value=".\CVIP_C_functions\maximum_value_metric.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="mean_filter">
+			<param name="Local" value=".\CVIP_C_functions\mean_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="mean_test">
+			<param name="Local" value=".\CVIP_C_functions\mean_test.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="median_cut_segment">
+			<param name="Local" value=".\CVIP_C_functions\median_cut_segment.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="median_filter">
+			<param name="Local" value=".\CVIP_C_functions\median_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="mesh_to_file">
+			<param name="Local" value=".\CVIP_C_functions\mesh_to_file.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="mesh_warping,mesh_warping_ri,mesh_warping_setup">
+			<param name="Local" value=".\CVIP_C_functions\mesh_warping,    mesh_warping_ri,    mesh_warping_setup.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="midpoint_filter">
+			<param name="Local" value=".\CVIP_C_functions\midpoint_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="min_max_normalization">
+			<param name="Local" value=".\CVIP_C_functions\min_max_normalization.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="minimum_filter">
+			<param name="Local" value=".\CVIP_C_functions\minimum_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="minkowski_distance">
+			<param name="Local" value=".\CVIP_C_functions\minkowski_distance.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="mmse_filter">
+			<param name="Local" value=".\CVIP_C_functions\mmse_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="moravec_filter">
+			<param name="Local" value=".\CVIP_C_functions\moravec_filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="morph_hitmiss">
+			<param name="Local" value=".\CVIP_C_functions\morph_hitmiss.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="morph_skeleton">
+			<param name="Local" value=".\CVIP_C_functions\morph_skeleton.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="morph_thinning">
+			<param name="Local" value=".\CVIP_C_functions\morph_thinning.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="MorphClose_Image">
+			<param name="Local" value=".\CVIP_C_functions\MorphClose_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="MorphDilate_Image">
+			<param name="Local" value=".\CVIP_C_functions\MorphDilate_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="MorphErode_Image">
+			<param name="Local" value=".\CVIP_C_functions\MorphErode_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="morphIterMod_Image">
+			<param name="Local" value=".\CVIP_C_functions\morphIterMod_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="morpho">
+			<param name="Local" value=".\CVIP_C_functions\morpho.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="MorphOpen_Image">
+			<param name="Local" value=".\CVIP_C_functions\MorphOpen_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="multiply_Image">
+			<param name="Local" value=".\CVIP_C_functions\multiply_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="nearest_centroid">
+			<param name="Local" value=".\CVIP_C_functions\nearest_centroid.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="nearest_centroid_set">
+			<param name="Local" value=".\CVIP_C_functions\nearest_centroid_set.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="nearest_neighbor">
+			<param name="Local" value=".\CVIP_C_functions\nearest_neighbor.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="neg_exp_noise">
+			<param name="Local" value=".\CVIP_C_functions\neg_exp_noise.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="new_ext">
+			<param name="Local" value=".\CVIP_C_functions\new_ext.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="nonfft_xformfilter">
+			<param name="Local" value=".\CVIP_C_functions\nonfft_xformfilter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="not_Image">
+			<param name="Local" value=".\CVIP_C_functions\not_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="notch">
+			<param name="Local" value=".\CVIP_C_functions\notch.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="object_crop">
+			<param name="Local" value=".\CVIP_C_functions\object_crop.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="or_Image">
+			<param name="Local" value=".\CVIP_C_functions\or_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="orientation">
+			<param name="Local" value=".\CVIP_C_functions\orientation.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="otsu_segment">
+			<param name="Local" value=".\CVIP_C_functions\otsu_segment.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overlap_coef">
+			<param name="Local" value="CVIP_C_functions\overlap_coef.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="param_ad_filter.htm">
+			<param name="Local" value=".\CVIP_C_functions\param_ad_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="parametric_wiener">
+			<param name="Local" value=".\CVIP_C_functions\parametric_wiener.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pattern_city_block">
+			<param name="Local" value=".\CVIP_C_functions\pattern_city_block.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pattern_euclidean">
+			<param name="Local" value=".\CVIP_C_functions\pattern_euclidean.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pattern_maximum">
+			<param name="Local" value=".\CVIP_C_functions\pattern_maximum.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pattern_min_max_normalization">
+			<param name="Local" value=".\CVIP_C_functions\pattern_min_max_normalization.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pattern_minkowski">
+			<param name="Local" value=".\CVIP_C_functions\pattern_minkowski.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pattern_range_normailze">
+			<param name="Local" value=".\CVIP_C_functions\pattern_range_normalize.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pattern_softmax_scaling_normalization">
+			<param name="Local" value=".\CVIP_C_functions\pattern_softmax_scaling_normalization.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pattern_standard_normal_density_normailzation">
+			<param name="Local" value=".\CVIP_C_functions\pattern_standard_normal_density_normalization.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pattern_tanimoto">
+			<param name="Local" value=".\CVIP_C_functions\pattern_tanimoto.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pattern_unit_vector_normalization">
+			<param name="Local" value=".\CVIP_C_functions\pattern_unit_vector_normalization.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pattern_vector_inner_product">
+			<param name="Local" value=".\CVIP_C_functions\pattern_vector_inner_product.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pct">
+			<param name="Local" value=".\CVIP_C_functions\pct.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pct_median_segment">
+			<param name="Local" value=".\CVIP_C_functions\pct_median_segment.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="perimeter">
+			<param name="Local" value=".\CVIP_C_functions\perimeter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="power_spect_eq">
+			<param name="Local" value=".\CVIP_C_functions\power_spect_eq.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pratt_merit">
+			<param name="Local" value=".\CVIP_C_functions\pratt_merit.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="predicate_test">
+			<param name="Local" value=".\CVIP_C_functions\predicate_test.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="prewitt_filter">
+			<param name="Local" value=".\CVIP_C_functions\prewitt_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="print_mesh">
+			<param name="Local" value=".\CVIP_C_functions\print_mesh.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="prog">
+			<param name="Local" value=".\CVIP_C_functions\prog.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="projection">
+			<param name="Local" value=".\CVIP_C_functions\projection.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pseudocol_freq">
+			<param name="Local" value=".\CVIP_C_functions\pseudocol_freq.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="quadtree2ras">
+			<param name="Local" value=".\CVIP_C_functions\quadtree2ras.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="range_normalize">
+			<param name="Local" value=".\CVIP_C_functions\range_normalize.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="raster_deblur_filter">
+			<param name="Local" value=".\CVIP_C_functions\raster_deblur_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="rayleigh_noise">
+			<param name="Local" value=".\CVIP_C_functions\rayleigh_noise.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="read_Image">
+			<param name="Local" value=".\CVIP_C_functions\read_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="regular_mesh">
+			<param name="Local" value=".\CVIP_C_functions\regular_mesh.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="remap_Image">
+			<param name="Local" value=".\CVIP_C_functions\remap_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="rms_error">
+			<param name="Local" value=".\CVIP_C_functions\rms_error.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="robinson_filter">
+			<param name="Local" value=".\CVIP_C_functions\robinson_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="rotate">
+			<param name="Local" value=".\CVIP_C_functions\rotate.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="rst_invariant">
+			<param name="Local" value=".\CVIP_C_functions\rst_invariant.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="sct_split_segment">
+			<param name="Local" value=".\CVIP_C_functions\sct_split_segment.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setUpLabel_Objects">
+			<param name="Local" value=".\CVIP_C_functions\setUpLabel_Objects.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="shen_castan_filter">
+			<param name="Local" value=".\CVIP_C_functions\shen_castan_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="showMax_histogram">
+			<param name="Local" value=".\CVIP_C_functions\showMax_histogram.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="shrink">
+			<param name="Local" value=".\CVIP_C_functions\shrink.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="simple_wiener">
+			<param name="Local" value=".\CVIP_C_functions\simple_wiener.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="single_filter">
+			<param name="Local" value=".\CVIP_C_functions\single_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="smooth_filter">
+			<param name="Local" value=".\CVIP_C_functions\smooth_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="snr">
+			<param name="Local" value=".\CVIP_C_functions\snr.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="sobel_filter">
+			<param name="Local" value=".\CVIP_C_functions\sobel_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="softmax_scaling">
+			<param name="Local" value=".\CVIP_C_functions\softmax_scaling.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="solve_c">
+			<param name="Local" value=".\CVIP_C_functions\solve_c.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="spatial_quant">
+			<param name="Local" value=".\CVIP_C_functions\spatial_quant.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="specify_filter">
+			<param name="Local" value=".\CVIP_C_functions\specify_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="speckle_noise">
+			<param name="Local" value=".\CVIP_C_functions\speckle_noise.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="spectral_feature">
+			<param name="Local" value=".\CVIP_C_functions\spectral_feature.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="spher_inv_xform">
+			<param name="Local" value=".\CVIP_C_functions\spher_inv_xform.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="split_merge_segment">
+			<param name="Local" value=".\CVIP_C_functions\split_merge_segment.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="sqrt_Matrix">
+			<param name="Local" value=".\CVIP_C_functions\sqrt_Matrix.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="square_mag_Matrix">
+			<param name="Local" value=".\CVIP_C_functions\square_mag_Matrix.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="standard_normal_density_normalization">
+			<param name="Local" value=".\CVIP_C_functions\standard_normal_density_normalization.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="subtract_Image">
+			<param name="Local" value=".\CVIP_C_functions\subtract_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tanimoto_metric">
+			<param name="Local" value=".\CVIP_C_functions\tanimoto_metric.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="texture">
+			<param name="Local" value=".\CVIP_C_functions\texture.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="texture2">
+			<param name="Local" value=".\CVIP_C_functions\texture2.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="thinness">
+			<param name="Local" value=".\CVIP_C_functions\thinness.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="threshold_segment">
+			<param name="Local" value=".\CVIP_C_functions\threshold_segment.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="trans_compr">
+			<param name="Local" value=".\CVIP_C_functions\trans_compr.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="translate">
+			<param name="Local" value=".\CVIP_C_functions\translate.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="uniform_noise">
+			<param name="Local" value=".\CVIP_C_functions\uniform_noise.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="unit_vector_normailzation">
+			<param name="Local" value=".\CVIP_C_functions\unit_vector_normalization.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="unsharp_filter">
+			<param name="Local" value=".\CVIP_C_functions\unsharp_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vector_inner_product">
+			<param name="Local" value=".\CVIP_C_functions\vector_inner_product.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vector_quant">
+			<param name="Local" value=".\CVIP_C_functions\vector_quant.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="view_Image">
+			<param name="Local" value=".\CVIP_C_functions\view_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="walhad_transform">
+			<param name="Local" value=".\CVIP_C_functions\walhad_transform.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="watershed_segment.htm">
+			<param name="Local" value=".\CVIP_C_functions\watershed_segment.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="wavdaub4_transform">
+			<param name="Local" value=".\CVIP_C_functions\wavdaub4_transform.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="wavhaar_transform">
+			<param name="Local" value=".\CVIP_C_functions\wavhaar_transform.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="wiener">
+			<param name="Local" value=".\CVIP_C_functions\wiener.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="write_Image">
+			<param name="Local" value=".\CVIP_C_functions\write_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="xor_error">
+			<param name="Local" value="CVIP_C_functions\xor_error.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="xor_Image">
+			<param name="Local" value=".\CVIP_C_functions\xor_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="xvq">
+			<param name="Local" value=".\CVIP_C_functions\xvq.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ypmean_filter">
+			<param name="Local" value=".\CVIP_C_functions\Ypmean_filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="zon_compress,zon_decompress">
+			<param name="Local" value=".\CVIP_C_functions\zon_compress, zon_decompress.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="zon2_compress,zon2_decompress">
+			<param name="Local" value=".\CVIP_C_functions\zon2_compress, zon2_decompress.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="zoom">
+			<param name="Local" value=".\CVIP_C_functions\zoom.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="zvl_compress">
+			<param name="Local" value=".\CVIP_C_functions\zvl_compress.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CVIPtools COM Functions">
+		<param name="Local" value=".\COM_HELP\Ace2_Filter.html">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ace2_Filter">
+			<param name="Local" value=".\COM_HELP\Ace2_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Acuity_Nightvision_Filter">
+			<param name="Local" value=".\COM_HELP\Acuity_Nightvision_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="AD_Filter">
+			<param name="Local" value=".\COM_HELP\ad_filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Adapt_Median_Filter">
+			<param name="Local" value=".\COM_HELP\Adapt_Median_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Adaptive_Contrast_Filter">
+			<param name="Local" value=".\COM_HELP\Adaptive_Contrast_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Add_Image">
+			<param name="Local" value=".\COM_HELP\Add_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Alpha_Filter">
+			<param name="Local" value=".\COM_HELP\Alpha_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="And_Image">
+			<param name="Local" value=".\COM_HELP\And_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Area">
+			<param name="Local" value=".\COM_HELP\Area.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Aspect">
+			<param name="Local" value=".\COM_HELP\Aspect.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Assemble_Bands">
+			<param name="Local" value=".\COM_HELP\Assemble_Bands.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Auto_Threshold_Segment">
+			<param name="Local" value=".\COM_HELP\Auto_Threshold_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Bilinear_Interp">
+			<param name="Local" value=".\COM_HELP\Bilinear_Interp.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Bintocvip">
+			<param name="Local" value=".\COM_HELP\Bintocvip.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Bit_Compress">
+			<param name="Local" value=".\COM_HELP\Bit_Compress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Bit_decompress">
+			<param name="Local" value=".\COM_HELP\Bit_decompress.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Boiecox_Filter">
+			<param name="Local" value=".\COM_HELP\Boiecox_Filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="btc_compress,btc_decompress">
+			<param name="Local" value=".\COM_HELP\btc_compress, btc_decompress.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Btc_Compress">
+			<param name="Local" value=".\COM_HELP\Btc_Compress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Btc_Decompression">
+			<param name="Local" value=".\COM_HELP\Btc_Decompression.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Btc2_Compress">
+			<param name="Local" value=".\COM_HELP\Btc2_Compress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Btc2_Decompression">
+			<param name="Local" value=".\COM_HELP\Btc2_Decompression.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Btc3_Compress">
+			<param name="Local" value=".\COM_HELP\Btc3_Compress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Btc3_Decompression">
+			<param name="Local" value=".\COM_HELP\Btc3_Decompression.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Butterworth_Band_Pass">
+			<param name="Local" value=".\COM_HELP\Butterworth_Band_Pass.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Butterworth_Band_Reject">
+			<param name="Local" value=".\COM_HELP\Butterworth_Band_Reject.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Butterworth_High">
+			<param name="Local" value=".\COM_HELP\Butterworth_High.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Butterworth_Low">
+			<param name="Local" value=".\COM_HELP\Butterworth_Low.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Canny_Filter">
+			<param name="Local" value=".\COM_HELP\Canny_Filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cast_Image">
+			<param name="Local" value=".\COM_HELP\Cast_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="CentroID">
+			<param name="Local" value=".\COM_HELP\CentroID.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cerchar_Filter">
+			<param name="Local" value=".\COM_HELP\Cerchar_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Check_Bin">
+			<param name="Local" value=".\COM_HELP\Check_Bin.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Check_xform_history">
+			<param name="Local" value=".\COM_HELP\Check_xform_history.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="CLAHE">
+			<param name="Local" value="COM_HELP\CLAHE.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="CLAHE_Grid">
+			<param name="Local" value="COM_HELP\CLAHE_Grid.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Close_Consol">
+			<param name="Local" value=".\COM_HELP\Close_Consol.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Close_Console">
+			<param name="Local" value=".\COM_HELP\Close_Console.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Color_Contrast_Enhancement">
+			<param name="Local" value=".\COM_HELP\Color_Contrast_Enhancement.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ColorXform">
+			<param name="Local" value=".\COM_HELP\ColorXform.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="CondRemap_Image">
+			<param name="Local" value=".\COM_HELP\CondRemap_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Contra_Filter">
+			<param name="Local" value=".\COM_HELP\Contra_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Copy_Paste">
+			<param name="Local" value=".\COM_HELP\Copy_Paste.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Create_Black">
+			<param name="Local" value=".\COM_HELP\Create_Black.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Create_Checkboard">
+			<param name="Local" value=".\COM_HELP\Create_Checkboard.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Create_Circle">
+			<param name="Local" value=".\COM_HELP\Create_Circle.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Create_Cosine">
+			<param name="Local" value=".\COM_HELP\Create_Cosine.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Create_Degenerate_Circle">
+			<param name="Local" value=".\COM_HELP\Create_Degenerate_Circle.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Create_Ellipse">
+			<param name="Local" value=".\COM_HELP\Create_Ellipse.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Create_Line">
+			<param name="Local" value=".\COM_HELP\Create_Line.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Create_Rectangle">
+			<param name="Local" value=".\COM_HELP\Create_Rectangle.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Create_Sine">
+			<param name="Local" value=".\COM_HELP\Create_Sine.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Create_Squarewave">
+			<param name="Local" value=".\COM_HELP\Create_Squarewave.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Crop">
+			<param name="Local" value=".\COM_HELP\Crop.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="CVIP_OUTPUT">
+			<param name="Local" value=".\COM_HELP\CVIP_OUTPUT.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="CVIPhalftone">
+			<param name="Local" value=".\COM_HELP\CVIPhalftone.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cviptoccc">
+			<param name="Local" value=".\COM_HELP\Cviptoccc.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cviptoeps">
+			<param name="Local" value=".\COM_HELP\Cviptoeps.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cviptogif">
+			<param name="Local" value=".\COM_HELP\Cviptogif.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cviptoiris">
+			<param name="Local" value=".\COM_HELP\Cviptoiris.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cviptoitex">
+			<param name="Local" value=".\COM_HELP\Cviptoitex.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cviptojpg">
+			<param name="Local" value=".\COM_HELP\Cviptojpg.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cviptopnm">
+			<param name="Local" value=".\COM_HELP\Cviptopnm.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cviptoras">
+			<param name="Local" value=".\COM_HELP\Cviptoras.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cviptotiff">
+			<param name="Local" value=".\COM_HELP\Cviptotiff.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cviptovip">
+			<param name="Local" value=".\COM_HELP\Cviptovip.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Data_Range">
+			<param name="Local" value=".\COM_HELP\Data_Range.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Dct_Transform">
+			<param name="Local" value=".\COM_HELP\Dct_Transform.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Delete_Image">
+			<param name="Local" value=".\COM_HELP\Delete_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Dice_Coef">
+			<param name="Local" value="COM_HELP\Dice_Coef.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Divide_Image">
+			<param name="Local" value=".\COM_HELP\Divide_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Dpc_Compress">
+			<param name="Local" value=".\COM_HELP\Dpc_Compress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Dpc_Decompress">
+			<param name="Local" value=".\COM_HELP\Dpc_Decompress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Draw_mesh">
+			<param name="Local" value=".\COM_HELP\Draw_mesh.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Duplicate_Image">
+			<param name="Local" value=".\COM_HELP\Duplicate_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="DynRLC_Compression">
+			<param name="Local" value=".\COM_HELP\DynRLC_Compression.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="DynRLC_deCompression">
+			<param name="Local" value=".\COM_HELP\DynRLC_deCompression.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Edge_Detect_Filter">
+			<param name="Local" value=".\COM_HELP\Edge_Detect_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Edge_Link_Filter">
+			<param name="Local" value=".\COM_HELP\Edge_Link_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Enlarge">
+			<param name="Local" value=".\COM_HELP\Enlarge.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Epstocvip">
+			<param name="Local" value=".\COM_HELP\Epstocvip.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Euler">
+			<param name="Local" value=".\COM_HELP\Euler.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Exp_Ace_Filter">
+			<param name="Local" value=".\COM_HELP\Exp_Ace_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Extract_Band">
+			<param name="Local" value=".\COM_HELP\Extract_Band.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Fft_Mag">
+			<param name="Local" value=".\COM_HELP\Fft_Mag.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Fft_Phase">
+			<param name="Local" value=".\COM_HELP\Fft_Phase.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Fft_Transform">
+			<param name="Local" value=".\COM_HELP\Fft_Transform.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="File_To_Mesh">
+			<param name="Local" value=".\COM_HELP\File_To_Mesh.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Fractal_Compression">
+			<param name="Local" value=".\COM_HELP\Fractal_Compression.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Fractal_deCompression">
+			<param name="Local" value=".\COM_HELP\Fractal_deCompression.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Fuzzyc_Segment">
+			<param name="Local" value=".\COM_HELP\Fuzzyc_Segment.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Gamma_Noise">
+			<param name="Local" value=".\COM_HELP\Gamma_Noise.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Gaussian_Blur_Filter">
+			<param name="Local" value=".\COM_HELP\Gaussian_Blur_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Gaussian_Noise">
+			<param name="Local" value=".\COM_HELP\Gaussian_Noise.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Geometric_Filter">
+			<param name="Local" value=".\COM_HELP\Geometric_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Geometric_Mean">
+			<param name="Local" value=".\COM_HELP\Geometric_Mean.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="get_hist_real">
+			<param name="Local" value=".\COM_HELP\get_hist_real.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Get_Histogram_Image">
+			<param name="Local" value=".\COM_HELP\Get_Histogram_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Get_max_min_value">
+			<param name="Local" value=".\COM_HELP\Get_max_min_value.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GetDataformat_Image">
+			<param name="Local" value=".\COM_HELP\GetDataformat_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GetDataType_Image">
+			<param name="Local" value=".\COM_HELP\GetDataType_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GetImageInfo">
+			<param name="Local" value=".\COM_HELP\GetImageInfo.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Getlast_Hist">
+			<param name="Local" value=".\COM_HELP\Getlast_Hist.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GetNoOfBands_Image">
+			<param name="Local" value=".\COM_HELP\GetNoOfBands_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GetNoOfCols_Image">
+			<param name="Local" value=".\COM_HELP\GetNoOfCols_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GetNoOfRows_Image">
+			<param name="Local" value=".\COM_HELP\GetNoOfRows_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="giftocvip">
+			<param name="Local" value=".\COM_HELP\giftocvip.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Glr_Compress">
+			<param name="Local" value=".\COM_HELP\Glr_Compress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Glr_Decompress">
+			<param name="Local" value=".\COM_HELP\Glr_Decompress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Gray_Binary">
+			<param name="Local" value=".\COM_HELP\Gray_Binary.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Gray_Linear">
+			<param name="Local" value=".\COM_HELP\Gray_Linear.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Gray_Multiplication">
+			<param name="Local" value=".\COM_HELP\Gray_Multiplication.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Gray_Multiply">
+			<param name="Local" value=".\COM_HELP\Gray_Multiply.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Gray_Multiply2">
+			<param name="Local" value=".\COM_HELP\Gray_Multiply2.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Gray_Quant_Segment">
+			<param name="Local" value=".\COM_HELP\Gray_Quant_Segment.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Graylevel_Quant">
+			<param name="Local" value=".\COM_HELP\Graylevel_Quant.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Graylevel_Remap">
+			<param name="Local" value=".\COM_HELP\Graylevel_Remap.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GVFSnake_Segment">
+			<param name="Local" value=".\COM_HELP\GVFSnake_Segment.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="H_image">
+			<param name="Local" value=".\COM_HELP\H_image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Haar_Transform">
+			<param name="Local" value=".\COM_HELP\Haar_Transform.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Harmonic_Filter">
+			<param name="Local" value=".\COM_HELP\Harmonic_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Harris_Filter">
+			<param name="Local" value=".\COM_HELP\Harris_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="High_Freq_Emphasis">
+			<param name="Local" value=".\COM_HELP\High_Freq_Emphasis.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Highboost">
+			<param name="Local" value=".\COM_HELP\Highboost.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="HighFreq_Emphasis">
+			<param name="Local" value=".\COM_HELP\HighFreq_Emphasis.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Highpass_Spatial">
+			<param name="Local" value=".\COM_HELP\Highpass_Spatial.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Hist_Feature">
+			<param name="Local" value=".\COM_HELP\Hist_Feature.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Hist_Slide">
+			<param name="Local" value=".\COM_HELP\Hist_Slide.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Hist_Spec">
+			<param name="Local" value=".\COM_HELP\Hist_Spec.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Hist_Stretch">
+			<param name="Local" value=".\COM_HELP\Hist_Stretch.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Hist_Thresh_Gray">
+			<param name="Local" value="COM_HELP\Hist_Thresh_Gray.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Hist_Thresh_Segment">
+			<param name="Local" value=".\COM_HELP\Hist_Thresh_Segment.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Histeq">
+			<param name="Local" value=".\COM_HELP\Histeq.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Histogram_Spec">
+			<param name="Local" value=".\COM_HELP\Histogram_Spec.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="History_Add">
+			<param name="Local" value=".\COM_HELP\History_Add.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="History_Check">
+			<param name="Local" value=".\COM_HELP\History_Check.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="History_Copy">
+			<param name="Local" value=".\COM_HELP\History_Copy.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="History_Create">
+			<param name="Local" value=".\COM_HELP\history_create.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="History_Get">
+			<param name="Local" value=".\COM_HELP\History_Get.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="History_get_data">
+			<param name="Local" value=".\COM_HELP\History_get_data.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Homomorphic">
+			<param name="Local" value=".\COM_HELP\Homomorphic.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Horizontal_Flip">
+			<param name="Local" value=".\COM_HELP\Horizontal_Flip.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Hough_Filter">
+			<param name="Local" value=".\COM_HELP\Hough_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Huf_Compress">
+			<param name="Local" value=".\COM_HELP\Huf_Compress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Huf_Decompress">
+			<param name="Local" value=".\COM_HELP\Huf_Decompress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Idct_Transform">
+			<param name="Local" value=".\COM_HELP\Idct_Transform.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ideal_Band_Pass">
+			<param name="Local" value=".\COM_HELP\Ideal_Band_Pass.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ideal_Band_Reject">
+			<param name="Local" value=".\COM_HELP\Ideal_Band_Reject.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ideal_High">
+			<param name="Local" value=".\COM_HELP\Ideal_High.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ideal_Low">
+			<param name="Local" value=".\COM_HELP\Ideal_Low.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ifft_Transform">
+			<param name="Local" value=".\COM_HELP\Ifft_Transform.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Igs_Segment">
+			<param name="Local" value=".\COM_HELP\Igs_Segment.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Improved_Mmse_Filter">
+			<param name="Local" value=".\COM_HELP\Improved_Mmse_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Input_Mesh">
+			<param name="Local" value=".\COM_HELP\Input_Mesh.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Intensity_Slicing">
+			<param name="Local" value=".\COM_HELP\Intensity_Slicing.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Inverse_Xformfilter">
+			<param name="Local" value=".\COM_HELP\Inverse_Xformfilter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ipct">
+			<param name="Local" value=".\COM_HELP\Ipct.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Irregular">
+			<param name="Local" value=".\COM_HELP\Irregular.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Jaccard_Index">
+			<param name="Local" value="COM_HELP\Jaccard_Index.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Jpg_Compress">
+			<param name="Local" value=".\COM_HELP\Jp2_Compress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Jpg_Decompress">
+			<param name="Local" value=".\COM_HELP\Jp2_Decompress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Jpg_Compress">
+			<param name="Local" value=".\COM_HELP\Jpg_Compress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Jpg_Decompress">
+			<param name="Local" value=".\COM_HELP\Jpg_Decompress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Jpgtocvip">
+			<param name="Local" value=".\COM_HELP\Jpgtocvip.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="K_Nearest_Neighbor">
+			<param name="Local" value=".\COM_HELP\K_Nearest_Neighbor.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Kirsch_Filter">
+			<param name="Local" value=".\COM_HELP\Kirsch_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Kuwahara_Filter">
+			<param name="Local" value=".\COM_HELP\Kuwahara_Filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Label">
+			<param name="Local" value=".\COM_HELP\Label.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Laws_Texture">
+			<param name="Local" value=".\COM_HELP\Laws_Texture.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Least_Squares">
+			<param name="Local" value=".\COM_HELP\Least_Squares.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Local_Adaptive_Zoom ">
+			<param name="Local" value=".\COM_HELP\Local_Adaptive_Zoom.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Local_Histeq">
+			<param name="Local" value=".\COM_HELP\Local_Histeq.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Log_Ace_Filter">
+			<param name="Local" value=".\COM_HELP\Log_Ace_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Log_Remap">
+			<param name="Local" value=".\COM_HELP\Log_Remap.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="LogMap_Image">
+			<param name="Local" value=".\COM_HELP\LogMap_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lum_Average">
+			<param name="Local" value=".\COM_HELP\Lum_Average.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Luminance_Image">
+			<param name="Local" value=".\COM_HELP\Luminance_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Make_Histogram">
+			<param name="Local" value=".\COM_HELP\Make_Histogram.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Marr_Hildreth_Filter">
+			<param name="Local" value=".\COM_HELP\Marr_Hildreth_Filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Maximum_Filter">
+			<param name="Local" value=".\COM_HELP\Maximum_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Mean_Filter">
+			<param name="Local" value=".\COM_HELP\Mean_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Median_Cut_Segment">
+			<param name="Local" value=".\COM_HELP\Median_Cut_Segment.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Median_Filter">
+			<param name="Local" value=".\COM_HELP\Median_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Mesh_To_File">
+			<param name="Local" value=".\COM_HELP\Mesh_To_File.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Mesh_Warping">
+			<param name="Local" value=".\COM_HELP\Mesh_Warping.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Mesh_WarpingIR">
+			<param name="Local" value=".\COM_HELP\Mesh_WarpingIR.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Midpoint_Filter">
+			<param name="Local" value=".\COM_HELP\Midpoint_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Minimum_Filter">
+			<param name="Local" value=".\COM_HELP\Minimum_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Mmse_Filter">
+			<param name="Local" value=".\COM_HELP\Mmse_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Moravec_Filter">
+			<param name="Local" value=".\COM_HELP\Moravec_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Morph_Hitmiss">
+			<param name="Local" value=".\COM_HELP\morph_hitmiss.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Morph_Skeleton">
+			<param name="Local" value=".\COM_HELP\morph_skeleton.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Morph_Thinning">
+			<param name="Local" value=".\COM_HELP\morph_thinning.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="MorphClose">
+			<param name="Local" value=".\COM_HELP\MorphClose.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="MorphDilate">
+			<param name="Local" value=".\COM_HELP\MorphDilate.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="MorphErode">
+			<param name="Local" value=".\COM_HELP\MorphErode.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Morpho">
+			<param name="Local" value=".\COM_HELP\Morpho.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Morpho_com">
+			<param name="Local" value=".\COM_HELP\Morpho_com.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="MorphOpen">
+			<param name="Local" value=".\COM_HELP\MorphOpen.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Multi_Resolution_Segment">
+			<param name="Local" value=".\COM_HELP\Multi_Resolution_Segment.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Multiply_Image">
+			<param name="Local" value=".\COM_HELP\Multiply_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Nearest_Centroid">
+			<param name="Local" value=".\COM_HELP\Nearest_Centroid.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Nearest_Neighbor">
+			<param name="Local" value=".\COM_HELP\Nearest_Neighbor.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Neg_Exp_Noise">
+			<param name="Local" value=".\COM_HELP\Neg_Exp_Noise.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="New_Image">
+			<param name="Local" value=".\COM_HELP\New_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Nonfft_Xformfilter">
+			<param name="Local" value=".\COM_HELP\Nonfft_Xformfilter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Not_Image">
+			<param name="Local" value=".\COM_HELP\Not_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Notch">
+			<param name="Local" value=".\COM_HELP\Notch.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Object_Crop">
+			<param name="Local" value=".\COM_HELP\Object_Crop.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Open_Consol_Redirect_Output">
+			<param name="Local" value=".\COM_HELP\Open_Consol_Redirect_Output.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Or_Image">
+			<param name="Local" value=".\COM_HELP\Or_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Orientation">
+			<param name="Local" value=".\COM_HELP\Orientation.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Otsu_Segment">
+			<param name="Local" value=".\COM_HELP\Otsu_Segment.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Overlap_Coef">
+			<param name="Local" value="COM_HELP\Overlap_Coef.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Param_AD_Filter">
+			<param name="Local" value=".\COM_HELP\param_ad_filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Parametric_Wiener">
+			<param name="Local" value=".\COM_HELP\Parametric_Wiener.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Pct">
+			<param name="Local" value=".\COM_HELP\Pct.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Pct_Color">
+			<param name="Local" value=".\COM_HELP\Pct_Color.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Pct_Median_Segment">
+			<param name="Local" value=".\COM_HELP\Pct_Median_Segment.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Perimeter">
+			<param name="Local" value=".\COM_HELP\Perimeter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Power_Spect_Eq">
+			<param name="Local" value=".\COM_HELP\Power_Spect_Eq.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Pratt_Merit">
+			<param name="Local" value=".\COM_HELP\Pratt_Merit.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Prewitt_Filter">
+			<param name="Local" value=".\COM_HELP\Prewitt_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Projection">
+			<param name="Local" value=".\COM_HELP\Projection.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Pseudo_Remap">
+			<param name="Local" value=".\COM_HELP\Pseudo_Remap.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Pseudocol_Freq">
+			<param name="Local" value=".\COM_HELP\Pseudocol_Freq.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Raster_Deblur_Filter">
+			<param name="Local" value=".\COM_HELP\Raster_Deblur_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Rayleigh_noise">
+			<param name="Local" value=".\COM_HELP\Rayleigh_noise.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Read_Image">
+			<param name="Local" value=".\COM_HELP\Read_Image.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Remap_Image">
+			<param name="Local" value=".\COM_HELP\Remap_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="REMAPP">
+			<param name="Local" value=".\COM_HELP\REMAPP.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Rms_Error">
+			<param name="Local" value=".\COM_HELP\Rms_Error.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Robinson_Filter">
+			<param name="Local" value=".\COM_HELP\Robinson_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Rotate">
+			<param name="Local" value=".\COM_HELP\Rotate.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Rst_invariant">
+			<param name="Local" value=".\COM_HELP\Rst_invariant.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Save_Compressed_Data">
+			<param name="Local" value=".\COM_HELP\Save_Compressed_Data.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Sct_Split_Segment">
+			<param name="Local" value=".\COM_HELP\Sct_Split_Segment.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Set_Console">
+			<param name="Local" value=".\COM_HELP\Set_Console.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Sharpen_I">
+			<param name="Local" value=".\COM_HELP\Sharpen_I.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Sharpen_II">
+			<param name="Local" value=".\COM_HELP\Sharpen_II.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="SharpenIII">
+			<param name="Local" value="COM_HELP\Sharpen_III.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Shen_Castan_Filter">
+			<param name="Local" value=".\COM_HELP\Shen_Castan_Filter.htm">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Show_Image">
+			<param name="Local" value=".\COM_HELP\Show_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Show_Image_Ex">
+			<param name="Local" value=".\COM_HELP\Show_Image_Ex.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Shrink">
+			<param name="Local" value=".\COM_HELP\Shrink.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Simple_Wiener">
+			<param name="Local" value=".\COM_HELP\Simple_Wiener.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Single_Filter">
+			<param name="Local" value=".\COM_HELP\Single_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Snr">
+			<param name="Local" value=".\COM_HELP\Snr.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Sobel_Filter">
+			<param name="Local" value=".\COM_HELP\Sobel_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Spatial_Quant">
+			<param name="Local" value=".\COM_HELP\Spatial_Quant.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Spec_Hist_Image">
+			<param name="Local" value=".\COM_HELP\Spec_Hist_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Specify_Filter">
+			<param name="Local" value=".\COM_HELP\Specify_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Speckle_Noise">
+			<param name="Local" value=".\COM_HELP\Speckle_Noise.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Spectral_Feature">
+			<param name="Local" value=".\COM_HELP\Spectral_Feature.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Split_Merge_Segment">
+			<param name="Local" value=".\COM_HELP\Split_Merge_Segment.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Subtract_Image">
+			<param name="Local" value=".\COM_HELP\Subtract_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="TextureFeature2">
+			<param name="Local" value=".\COM_HELP\Texture2.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="TextureFeature">
+			<param name="Local" value=".\COM_HELP\TextureFeature.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Thinness">
+			<param name="Local" value=".\COM_HELP\Thinness.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Threshold_Segment">
+			<param name="Local" value=".\COM_HELP\Threshold_Segment.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Tifftocvip">
+			<param name="Local" value=".\COM_HELP\Tifftocvip.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Tile_by_name">
+			<param name="Local" value=".\COM_HELP\Tile_by_name.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Transform_Compression">
+			<param name="Local" value=".\COM_HELP\Transform_Compression.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Transform_Sharpen">
+			<param name="Local" value=".\COM_HELP\Transform_Sharpen.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Transform_Smoothing">
+			<param name="Local" value=".\COM_HELP\Transform_Smoothing.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Translate">
+			<param name="Local" value=".\COM_HELP\Translate.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Uniform_Noise">
+			<param name="Local" value=".\COM_HELP\Uniform_Noise.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Unsharp_Filter">
+			<param name="Local" value=".\COM_HELP\Unsharp_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Vq_Compress">
+			<param name="Local" value=".\COM_HELP\Vq_Compress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Vq_Decompress">
+			<param name="Local" value=".\COM_HELP\Vq_Decompress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Walhad_Transform">
+			<param name="Local" value=".\COM_HELP\Walhad_Transform.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Watershed_Segment">
+			<param name="Local" value=".\COM_HELP\Watershed_Segment.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Wavdaub4_Transform">
+			<param name="Local" value=".\COM_HELP\Wavdaub4_Transform.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Wavhaar_Transform">
+			<param name="Local" value=".\COM_HELP\Wavhaar_Transform.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Wiener">
+			<param name="Local" value=".\COM_HELP\Wiener.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Write_Image">
+			<param name="Local" value=".\COM_HELP\Write_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Xor_Error">
+			<param name="Local" value="COM_HELP\Xor_Error.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Xor_Image">
+			<param name="Local" value=".\COM_HELP\Xor_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Xvq_Compress">
+			<param name="Local" value=".\COM_HELP\Xvq_Compress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Xvq_Decompress">
+			<param name="Local" value=".\COM_HELP\Xvq_Decompress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ypmean_Filter">
+			<param name="Local" value=".\COM_HELP\Ypmean_Filter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Zon_Compress">
+			<param name="Local" value=".\COM_HELP\Zon_Compress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Zon_Decompress">
+			<param name="Local" value=".\COM_HELP\Zon_Decompress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Zon2_Compress">
+			<param name="Local" value=".\COM_HELP\Zon2_Compress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Zon2_Decompress">
+			<param name="Local" value=".\COM_HELP\Zon2_Decompress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Zoom">
+			<param name="Local" value=".\COM_HELP\Zoom.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Zvl_Compress">
+			<param name="Local" value=".\COM_HELP\Zvl_Compress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Zvl_Decompress">
+			<param name="Local" value=".\COM_HELP\Zvl_Decompress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>
