@@ -37,9 +37,9 @@ namespace CVIPFEPC.CvipFile
 {
     public class ImageObject : CvipObject
     {
-        [ThreadStatic]
-        static private CVIPTools cvip;
-        static private object lockCvip = new object();
+
+        private CVIPTools cvip;
+        private object lockCvip = new object();
 
         private int nBands = -1;
         private int pImage = 0;
@@ -121,16 +121,16 @@ namespace CVIPFEPC.CvipFile
             }
         }
 
-        static private CVIPTools CvipOp
+        private CVIPTools CvipOp
         {
             get
             {
-                lock (ImageObject.lockCvip)
+                lock (this.lockCvip)
                 {
-                    if (ImageObject.cvip == null)
-                        ImageObject.cvip = new CVIPTools();
+                    if (this.cvip == null)
+                        this.cvip = new CVIPTools();
                 }
-                return ImageObject.cvip;
+                return this.cvip;
             }
         }
         private int CvipImage

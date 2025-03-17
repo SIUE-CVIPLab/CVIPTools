@@ -30,6 +30,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace CVIPFEPC.CvipFile
 {
@@ -46,6 +47,21 @@ namespace CVIPFEPC.CvipFile
         protected string sTmpTrainingSetFile = null;
         protected string sTmpTestSetFile = null;
         protected string sWorkingDir = null;
+
+        protected Dictionary<Normalization, FeatureVector[][]> trainingFeatureVectorsByNorm = new Dictionary<Normalization, FeatureVector[][]>();
+        protected Dictionary<Normalization, FeatureVector[][]> centroidFeatureVectorsByNorm = new Dictionary<Normalization, FeatureVector[][]>();
+        protected Dictionary<Normalization, FeatureVector[][]> trainingLLOFeatureVectorsByNorm = new Dictionary<Normalization, FeatureVector[][]>();
+        protected Dictionary<Normalization, FeatureVector[][]> centroidLLOFeatureVectorsByNorm = new Dictionary<Normalization, FeatureVector[][]>();
+
+        public void ResetFeatureVectors()
+        {
+            trainingFeatureVectorsByNorm = new Dictionary<Normalization, FeatureVector[][]>();
+            centroidFeatureVectorsByNorm = new Dictionary<Normalization, FeatureVector[][]>();
+            trainingLLOFeatureVectorsByNorm = new Dictionary<Normalization, FeatureVector[][]>();
+            centroidLLOFeatureVectorsByNorm = new Dictionary<Normalization, FeatureVector[][]>();
+        }
+
+        FeatureVector[] tempfeatureVetors = null;
 
         public FeatureFileSet(bool bLeave1Out)
         {
@@ -166,9 +182,14 @@ namespace CVIPFEPC.CvipFile
             MultiStepJobEventArgs args = new MultiStepJobEventArgs(e.WorkerThread);
             e.NewJob(count, RunTestState.CreateFeatureFiles);
             e.ReportProgress();
+
             if (norm == Normalization.None)
             {
-                FeatureVector[] fv1D = this.TrainingSet.FeatureVectors.GetFeatureVectors(args);
+                if (this.tempfeatureVetors == null)
+                {
+                    this.tempfeatureVetors = this.TrainingSet.FeatureVectors.GetFeatureVectors(args);
+                }
+                FeatureVector[] fv1D = this.tempfeatureVetors;
                 if (e.CancellationRequested || args.WorkCancelled)
                 {
                     e.WorkCancelled = true;
@@ -178,17 +199,25 @@ namespace CVIPFEPC.CvipFile
                 if ((e.ErrorMsg != null) || e.WorkCancelled)
                     return;
             }
+
             if ((norm != Normalization.None) || (this.CentroidSet != null))
             {
                 FeatureVector[][] fv2D = null;
                 if (this.CentroidSet != null)
                 {
-                    fv2D = this.CentroidSet.FeatureVectors.GetLeaveOneOutVectors(norm, args);
-                    if (e.CancellationRequested || args.WorkCancelled)
+                    // Check if the dictionary already contains the FeatureVector for the given normalization
+                    if (!this.centroidLLOFeatureVectorsByNorm.TryGetValue(norm, out fv2D))
                     {
-                        e.WorkCancelled = true;
-                        return;
+                        // If not, generate it and store it in the dictionary
+                        fv2D = this.CentroidSet.FeatureVectors.GetLeaveOneOutVectors(norm, args);
+                        if (e.CancellationRequested || args.WorkCancelled)
+                        {
+                            e.WorkCancelled = true;
+                            return;
+                        }
+                        this.centroidLLOFeatureVectorsByNorm[norm] = fv2D;
                     }
+
                     for (this.idxLooTest = 0; this.idxLooTest < this.TrainingSet.Count; this.idxLooTest++)
                     {
                         this.CentroidSet.WriteToFile(NormalizedFileName(this.CentroidSetFile, norm), fv2D[this.idxLooTest], e);
@@ -198,12 +227,19 @@ namespace CVIPFEPC.CvipFile
                 }
                 else
                 {
-                    fv2D = this.TrainingSet.FeatureVectors.GetLeaveOneOutVectors(norm, args);
-                    if (e.CancellationRequested || args.WorkCancelled)
+                    // Check if the dictionary already contains the FeatureVector for the given normalization
+                    if (!this.trainingLLOFeatureVectorsByNorm.TryGetValue(norm, out fv2D))
                     {
-                        e.WorkCancelled = true;
-                        return;
+                        // If not, generate it and store it in the dictionary
+                        fv2D = this.TrainingSet.FeatureVectors.GetLeaveOneOutVectors(norm, args);
+                        if (e.CancellationRequested || args.WorkCancelled)
+                        {
+                            e.WorkCancelled = true;
+                            return;
+                        }
+                        this.trainingLLOFeatureVectorsByNorm[norm] = fv2D;
                     }
+
                     for (this.idxLooTest = 0; this.idxLooTest < this.TrainingSet.Count; this.idxLooTest++)
                     {
                         this.TrainingSet.WriteLooFile(NormalizedFileName(this.TrainingSetFile, norm), fv2D[this.idxLooTest], true, this.idxLooTest, e);
@@ -211,6 +247,7 @@ namespace CVIPFEPC.CvipFile
                             return;
                     }
                 }
+
                 if (norm != Normalization.None)
                 {
                     this.TrainingSet.WriteToFile(NormalizedFileName(this.TestSetFile, norm), fv2D[this.idxLooTest], e);
@@ -220,14 +257,24 @@ namespace CVIPFEPC.CvipFile
                 this.idxLooTest = -1;
             }
         }
+
         protected void WriteTrainingTestFileSet(Normalization norm, MultiStepJobEventArgs e)
         {
-            FeatureVector[][] fv = this.TrainingSet.FeatureVectors.GetTrainingTestVectors(norm, e);
-            if (e.CancellationRequested || e.WorkCancelled)
+            FeatureVector[][] fv;
+
+            // Check if the dictionary already contains the FeatureVector for the given normalization
+            if (!this.trainingFeatureVectorsByNorm.TryGetValue(norm, out fv))
             {
-                e.WorkCancelled = true;
-                return;
+                // If not, generate it and store it in the dictionary
+                fv = this.TrainingSet.FeatureVectors.GetTrainingTestVectors(norm, e);
+                if (e.CancellationRequested || e.WorkCancelled)
+                {
+                    e.WorkCancelled = true;
+                    return;
+                }
+                this.trainingFeatureVectorsByNorm[norm] = fv;
             }
+
             int count = 0;
             for (int i = 0; i < 3; i++)
             {
@@ -236,10 +283,8 @@ namespace CVIPFEPC.CvipFile
                 count += fv[i].Length;
                 // if (FeatureHeader.UseCombTex)
                 //count = count * ((FeatureHeader.TextureDistanceUpper - FeatureHeader.TextureDistanceLower) / FeatureHeader.TextureDistanceIncrement) + 1;
-
-
             }
-            
+
             e.NewJob(count, RunTestState.CreateFeatureFiles);
             e.ReportProgress();
             for (int i = 0; i < 3; i++)
@@ -257,14 +302,36 @@ namespace CVIPFEPC.CvipFile
             FeatureVector[] fvTestSet = null;
 
             if (this.Normalization == Normalization.None)
-                fvTrainingSet = fvTestSet = this.TrainingSet.FeatureVectors.GetFeatureVectors(e);
+            {
+                if (this.tempfeatureVetors == null)
+                {
+                    this.tempfeatureVetors = this.TrainingSet.FeatureVectors.GetFeatureVectors(e);
+                }
+                fvTrainingSet = fvTestSet = this.tempfeatureVetors;
+            }
             else
-                fvTrainingSet = fvTestSet = this.TrainingSet.FeatureVectors.GetLeaveOneOutVectors(this.Normalization, e)[idxTest];
+            {
+                // Check if the dictionary already contains the FeatureVector for the given normalization
+                if (!this.trainingLLOFeatureVectorsByNorm.TryGetValue(this.Normalization, out FeatureVector[][] trainingVectors))
+                {
+                    // If not, generate it and store it in the dictionary
+                    trainingVectors = this.TrainingSet.FeatureVectors.GetLeaveOneOutVectors(this.Normalization, e);
+                    if (e.CancellationRequested || e.WorkCancelled)
+                    {
+                        e.WorkCancelled = true;
+                        return;
+                    }
+                    this.trainingLLOFeatureVectorsByNorm[this.Normalization] = trainingVectors;
+                }
+                fvTrainingSet = fvTestSet = trainingVectors[idxTest];
+            }
+
             if (e.CancellationRequested || e.WorkCancelled)
             {
                 e.WorkCancelled = true;
                 return;
             }
+
             if (this.CentroidSet == null)
             {
                 e.NewJob(this.TrainingSet.Count, RunTestState.CreateFeatureFiles);
@@ -275,31 +342,48 @@ namespace CVIPFEPC.CvipFile
             }
             else
             {
-                FeatureVector[][] fvCentroidSet = this.CentroidSet.FeatureVectors.GetLeaveOneOutVectors(this.Normalization, e);
+                // Check if the dictionary already contains the FeatureVector for the given normalization
+                if (!this.centroidLLOFeatureVectorsByNorm.TryGetValue(this.Normalization, out FeatureVector[][] centroidVectors))
+                {
+                    // If not, generate it and store it in the dictionary
+                    centroidVectors = this.CentroidSet.FeatureVectors.GetLeaveOneOutVectors(this.Normalization, e);
+                    if (e.CancellationRequested || e.WorkCancelled)
+                    {
+                        e.WorkCancelled = true;
+                        return;
+                    }
+                    this.centroidLLOFeatureVectorsByNorm[this.Normalization] = centroidVectors;
+                }
+
+                e.NewJob(this.CentroidSet.Count + 1, RunTestState.CreateFeatureFiles);
+                e.ReportProgress();
+                this.CentroidSet.WriteToFile(this.TmpTrainingSetFile, centroidVectors[idxTest], e);
+                if ((e.ErrorMsg != null) || e.WorkCancelled)
+                    return;
+
+                if (this.Normalization != Normalization.None)
+                    fvTestSet = centroidVectors[this.TrainingSet.Count];
+            }
+
+            this.TrainingSet.WriteLooFile(this.TmpTestSetFile, fvTestSet, false, idxTest, e);
+        }
+        public void WriteTmpTrainingTestFiles(MultiStepJobEventArgs e)
+        {
+            FeatureVector[][] fv;
+
+            // Check if the dictionary already contains the FeatureVector for the given normalization
+            if (!this.trainingFeatureVectorsByNorm.TryGetValue(this.Normalization, out fv))
+            {
+                // If not, generate it and store it in the dictionary
+                fv = this.TrainingSet.FeatureVectors.GetTrainingTestVectors(this.Normalization, e);
                 if (e.CancellationRequested || e.WorkCancelled)
                 {
                     e.WorkCancelled = true;
                     return;
                 }
-                e.NewJob(this.CentroidSet.Count + 1, RunTestState.CreateFeatureFiles);
-                e.ReportProgress();
-                this.CentroidSet.WriteToFile(this.TmpTrainingSetFile, fvCentroidSet[idxTest], e);
-                if ((e.ErrorMsg != null) || e.WorkCancelled)
-                    return;
+                this.trainingFeatureVectorsByNorm[this.Normalization] = fv;
+            }
 
-                if (this.Normalization != Normalization.None)
-                    fvTestSet = fvCentroidSet[this.TrainingSet.Count];
-            }
-            this.TrainingSet.WriteLooFile(this.TmpTestSetFile, fvTestSet, false, idxTest, e);
-        }
-        public void WriteTmpTrainingTestFiles(MultiStepJobEventArgs e)
-        {
-            FeatureVector[][] fv = this.TrainingSet.FeatureVectors.GetTrainingTestVectors(this.Normalization, e);
-            if (e.CancellationRequested || e.WorkCancelled)
-            {
-                e.WorkCancelled = true;
-                return;
-            }
             int idxTraining = (this.CentroidSet != null) ? 2 : 0;
             e.NewJob(fv[idxTraining].Length + fv[1].Length, RunTestState.CreateFeatureFiles);
             e.ReportProgress();
@@ -1004,17 +1088,26 @@ namespace CVIPFEPC.CvipFile
                         }
 
                     }
-                    for (int j = 0; j < count; j++)
+                    Parallel.For(0, count, j =>
                     {
+                        var startTime = DateTime.Now;
+                        Console.WriteLine($"Start Time for index {j}: {startTime:HH:mm:ss.fff}");
+
                         ff.FeatureVectors.fvNonNormalized[j] = ff[j].FeatureVector;
+                        
                         if (e.CancellationRequested)
                         {
                             e.WorkCancelled = true;
                             return;
                         }
+
                         e.StepComplete();
                         e.ReportProgress();
-                    }
+
+                        var endTime = DateTime.Now;
+                        Console.WriteLine($"End Time for index {j}: {endTime:HH:mm:ss.fff}");
+                    });
+
                 }
             }
 

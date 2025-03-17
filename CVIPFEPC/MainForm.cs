@@ -396,6 +396,8 @@ namespace CVIPFEPC
                 OnSingleTest(ffs, e as MultiStepJobEventArgs);
             else
                 OnCombinatoricTest(ffs, e as MultiStepJobEventArgs);
+
+            ffs.ResetFeatureVectors();
         }
         private void OnSingleTest(FeatureFileSet ffs, MultiStepJobEventArgs e)
         {
