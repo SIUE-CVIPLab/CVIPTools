@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Southern Illinois University Edwardsville")]
 [assembly: AssemblyProduct("CVIPATAT")]
-[assembly: AssemblyCopyright("Copyright © 2023 Scott Umbaugh and SIUE")]
+[assembly: AssemblyCopyright("Copyright © 2025 Scott Umbaugh and SIUE")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("5.9.8.0")]
-[assembly: AssemblyFileVersion("5.9.8.0")]
+[assembly: AssemblyVersion("5.9.9.0")]
+[assembly: AssemblyFileVersion("5.9.9.0")]

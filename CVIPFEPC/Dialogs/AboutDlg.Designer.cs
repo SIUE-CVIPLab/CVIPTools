@@ -75,7 +75,7 @@
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(100, 15);
             this.lblVersion.TabIndex = 10;
-            this.lblVersion.Text = "Version: 5.9h";
+            this.lblVersion.Text = "Version: 5.9i";
             // 
             // lblCopyright
             // 
@@ -85,7 +85,7 @@
             this.lblCopyright.Name = "lblCopyright";
             this.lblCopyright.Size = new System.Drawing.Size(469, 15);
             this.lblCopyright.TabIndex = 9;
-            this.lblCopyright.Text = "Copyright © 1993-2023 Scott E Umbaugh @ Southern Illinois University Edwardsville" +
+            this.lblCopyright.Text = "Copyright © 1993-2025 Scott E Umbaugh @ Southern Illinois University Edwardsville" +
     "";
             // 
             // lblTitle

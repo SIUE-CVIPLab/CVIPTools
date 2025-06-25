@@ -49,16 +49,11 @@ namespace CVIPFEPC.CvipFile
         protected string sWorkingDir = null;
 
         protected Dictionary<Normalization, FeatureVector[][]> trainingFeatureVectorsByNorm = new Dictionary<Normalization, FeatureVector[][]>();
-        protected Dictionary<Normalization, FeatureVector[][]> centroidFeatureVectorsByNorm = new Dictionary<Normalization, FeatureVector[][]>();
-        protected Dictionary<Normalization, FeatureVector[][]> trainingLLOFeatureVectorsByNorm = new Dictionary<Normalization, FeatureVector[][]>();
-        protected Dictionary<Normalization, FeatureVector[][]> centroidLLOFeatureVectorsByNorm = new Dictionary<Normalization, FeatureVector[][]>();
+
 
         public void ResetFeatureVectors()
         {
             trainingFeatureVectorsByNorm = new Dictionary<Normalization, FeatureVector[][]>();
-            centroidFeatureVectorsByNorm = new Dictionary<Normalization, FeatureVector[][]>();
-            trainingLLOFeatureVectorsByNorm = new Dictionary<Normalization, FeatureVector[][]>();
-            centroidLLOFeatureVectorsByNorm = new Dictionary<Normalization, FeatureVector[][]>();
         }
 
         FeatureVector[] tempfeatureVetors = null;
@@ -206,7 +201,7 @@ namespace CVIPFEPC.CvipFile
                 if (this.CentroidSet != null)
                 {
                     // Check if the dictionary already contains the FeatureVector for the given normalization
-                    if (!this.centroidLLOFeatureVectorsByNorm.TryGetValue(norm, out fv2D))
+                    if (!this.trainingFeatureVectorsByNorm.TryGetValue(norm, out fv2D))
                     {
                         // If not, generate it and store it in the dictionary
                         fv2D = this.CentroidSet.FeatureVectors.GetLeaveOneOutVectors(norm, args);
@@ -215,7 +210,7 @@ namespace CVIPFEPC.CvipFile
                             e.WorkCancelled = true;
                             return;
                         }
-                        this.centroidLLOFeatureVectorsByNorm[norm] = fv2D;
+                        this.trainingFeatureVectorsByNorm[norm] = fv2D;
                     }
 
                     for (this.idxLooTest = 0; this.idxLooTest < this.TrainingSet.Count; this.idxLooTest++)
@@ -228,7 +223,7 @@ namespace CVIPFEPC.CvipFile
                 else
                 {
                     // Check if the dictionary already contains the FeatureVector for the given normalization
-                    if (!this.trainingLLOFeatureVectorsByNorm.TryGetValue(norm, out fv2D))
+                    if (!this.trainingFeatureVectorsByNorm.TryGetValue(norm, out fv2D))
                     {
                         // If not, generate it and store it in the dictionary
                         fv2D = this.TrainingSet.FeatureVectors.GetLeaveOneOutVectors(norm, args);
@@ -237,7 +232,7 @@ namespace CVIPFEPC.CvipFile
                             e.WorkCancelled = true;
                             return;
                         }
-                        this.trainingLLOFeatureVectorsByNorm[norm] = fv2D;
+                        this.trainingFeatureVectorsByNorm[norm] = fv2D;
                     }
 
                     for (this.idxLooTest = 0; this.idxLooTest < this.TrainingSet.Count; this.idxLooTest++)
@@ -312,7 +307,7 @@ namespace CVIPFEPC.CvipFile
             else
             {
                 // Check if the dictionary already contains the FeatureVector for the given normalization
-                if (!this.trainingLLOFeatureVectorsByNorm.TryGetValue(this.Normalization, out FeatureVector[][] trainingVectors))
+                if (!this.trainingFeatureVectorsByNorm.TryGetValue(this.Normalization, out FeatureVector[][] trainingVectors))
                 {
                     // If not, generate it and store it in the dictionary
                     trainingVectors = this.TrainingSet.FeatureVectors.GetLeaveOneOutVectors(this.Normalization, e);
@@ -321,7 +316,7 @@ namespace CVIPFEPC.CvipFile
                         e.WorkCancelled = true;
                         return;
                     }
-                    this.trainingLLOFeatureVectorsByNorm[this.Normalization] = trainingVectors;
+                    this.trainingFeatureVectorsByNorm[this.Normalization] = trainingVectors;
                 }
                 fvTrainingSet = fvTestSet = trainingVectors[idxTest];
             }
@@ -343,7 +338,7 @@ namespace CVIPFEPC.CvipFile
             else
             {
                 // Check if the dictionary already contains the FeatureVector for the given normalization
-                if (!this.centroidLLOFeatureVectorsByNorm.TryGetValue(this.Normalization, out FeatureVector[][] centroidVectors))
+                if (!this.trainingFeatureVectorsByNorm.TryGetValue(this.Normalization, out FeatureVector[][] centroidVectors))
                 {
                     // If not, generate it and store it in the dictionary
                     centroidVectors = this.CentroidSet.FeatureVectors.GetLeaveOneOutVectors(this.Normalization, e);
@@ -352,7 +347,7 @@ namespace CVIPFEPC.CvipFile
                         e.WorkCancelled = true;
                         return;
                     }
-                    this.centroidLLOFeatureVectorsByNorm[this.Normalization] = centroidVectors;
+                    this.trainingFeatureVectorsByNorm[this.Normalization] = centroidVectors;
                 }
 
                 e.NewJob(this.CentroidSet.Count + 1, RunTestState.CreateFeatureFiles);
@@ -1090,9 +1085,6 @@ namespace CVIPFEPC.CvipFile
                     }
                     Parallel.For(0, count, j =>
                     {
-                        var startTime = DateTime.Now;
-                        Console.WriteLine($"Start Time for index {j}: {startTime:HH:mm:ss.fff}");
-
                         ff.FeatureVectors.fvNonNormalized[j] = ff[j].FeatureVector;
                         
                         if (e.CancellationRequested)
@@ -1103,9 +1095,6 @@ namespace CVIPFEPC.CvipFile
 
                         e.StepComplete();
                         e.ReportProgress();
-
-                        var endTime = DateTime.Now;
-                        Console.WriteLine($"End Time for index {j}: {endTime:HH:mm:ss.fff}");
                     });
 
                 }

@@ -66,7 +66,7 @@ namespace CVIP_ATAT
             this.copyright.Name = "copyright";
             this.copyright.Size = new System.Drawing.Size(503, 13);
             this.copyright.TabIndex = 2;
-            this.copyright.Text = "     Copyright© 2010-2023 Scott E Umbaugh @ Southern Illinois University Edwardsv" +
+            this.copyright.Text = "     Copyright© 2010-2025 Scott E Umbaugh @ Southern Illinois University Edwardsv" +
     "ille";
             // 
             // version
@@ -77,7 +77,7 @@ namespace CVIP_ATAT
             this.version.Name = "version";
             this.version.Size = new System.Drawing.Size(79, 13);
             this.version.TabIndex = 2;
-            this.version.Text = "Version: 5.9h";
+            this.version.Text = "Version: 5.9i";
             // 
             // author
             // 

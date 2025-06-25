@@ -298,6 +298,5 @@ Image *tifftocvip(tiff_file, verbose)
 	    pm_error( "unknown photometric: %d", photomet );
 	    }
 	}
-
     return tiff_Image;
     }

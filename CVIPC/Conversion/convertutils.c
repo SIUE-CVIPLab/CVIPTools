@@ -110,11 +110,11 @@ void CVIPsyserror( reason )
 char* reason;
 {
 #if ! (defined(i386BSD) || defined(linux))
-   extern const char* sys_errlist[];
+   extern const char* strerror[];
 #endif
    char* e;
 
-   e = (char *)sys_errlist[errno];
+   e = (char *)strerror[errno];
 
    if ( reason != 0 && reason[0] != '\0' )
       CVIPerror( "%s - %s", reason, e );
